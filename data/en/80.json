@@ -1,0 +1,274 @@
+{
+ "number": 80,
+ "name": "عبس",
+ "englishName": "Abasa",
+ "numberOfAyahs": 42,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "He frowned",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "عَبَسَ وَتَوَلّٰىٓۙ",
+   "textLatin": "‘Abasa wa tawallā.",
+   "textEnglish": "HE FROWNED and turned away"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "اَنْ جَاۤءَهُ الْاَعْمٰىۗ",
+   "textLatin": "An jā'ahul-a‘mā.",
+   "textEnglish": "because the blind man approached him!"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "وَمَا يُدْرِيْكَ لَعَلَّهٗ يَزَّكّٰىٓۙ",
+   "textLatin": "Wa mā yudrīka la‘allahū yazzakkā.",
+   "textEnglish": "Yet for all thou didst know, [O Muhammad,] he might perhaps have grown in purity,"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "اَوْ يَذَّكَّرُ فَتَنْفَعَهُ الذِّكْرٰىۗ",
+   "textLatin": "Au yażżakkaru fatanfa‘ahuż-żikrā.",
+   "textEnglish": "or have been reminded [of the truth], and helped by this reminder."
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "اَمَّا مَنِ اسْتَغْنٰىۙ",
+   "textLatin": "Ammā manistagnā.",
+   "textEnglish": "Now as for him who believes himself to be self-sufficient"
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "فَاَنْتَ لَهٗ تَصَدّٰىۗ",
+   "textLatin": "Fa anta lahū taṣaddā.",
+   "textEnglish": "to him didst thou give thy whole attention,"
+  },
+  {
+   "numberInSurah": 7,
+   "textArabic": "وَمَا عَلَيْكَ اَلَّا يَزَّكّٰىۗ",
+   "textLatin": "Wa mā ‘alaika allā yazzakkā.",
+   "textEnglish": "although thou art not accountable for his failure to attain to purity;"
+  },
+  {
+   "numberInSurah": 8,
+   "textArabic": "وَاَمَّا مَنْ جَاۤءَكَ يَسْعٰىۙ",
+   "textLatin": "Wa ammā man jā'aka yas‘ā.",
+   "textEnglish": "but as for him who came unto thee full of eagerness"
+  },
+  {
+   "numberInSurah": 9,
+   "textArabic": "وَهُوَ يَخْشٰىۙ",
+   "textLatin": "Wa huwa yakhsyā.",
+   "textEnglish": "and in awe [of God]"
+  },
+  {
+   "numberInSurah": 10,
+   "textArabic": "فَاَنْتَ عَنْهُ تَلَهّٰىۚ",
+   "textLatin": "Fa anta ‘anhu talahhā.",
+   "textEnglish": "him didst thou disregard!"
+  },
+  {
+   "numberInSurah": 11,
+   "textArabic": "كَلَّآ اِنَّهَا تَذْكِرَةٌ ۚ",
+   "textLatin": "Kallā innahā tażkirah(tun).",
+   "textEnglish": "NAY, VERILY, these [messages] are but a reminder:"
+  },
+  {
+   "numberInSurah": 12,
+   "textArabic": "فَمَنْ شَاۤءَ ذَكَرَهٗ ۘ",
+   "textLatin": "Faman syā'a żakarah(ū).",
+   "textEnglish": "and so, whoever is willing may remember Him"
+  },
+  {
+   "numberInSurah": 13,
+   "textArabic": "فِيْ صُحُفٍ مُّكَرَّمَةٍۙ",
+   "textLatin": "Fī ṣuḥufim mukarrmah(tin).",
+   "textEnglish": "in [the light of His] revelations blest with dignity,"
+  },
+  {
+   "numberInSurah": 14,
+   "textArabic": "مَّرْفُوْعَةٍ مُّطَهَّرَةٍ ۢ ۙ",
+   "textLatin": "Marfū‘atim muṭahharah(tin).",
+   "textEnglish": "lofty and pure,"
+  },
+  {
+   "numberInSurah": 15,
+   "textArabic": "بِاَيْدِيْ سَفَرَةٍۙ",
+   "textLatin": "Bi'aidī safarah(tin).",
+   "textEnglish": "[borne] by the hands of messengers"
+  },
+  {
+   "numberInSurah": 16,
+   "textArabic": "كِرَامٍۢ بَرَرَةٍۗ",
+   "textLatin": "Kirāmim bararah(tin).",
+   "textEnglish": "noble and most virtuous."
+  },
+  {
+   "numberInSurah": 17,
+   "textArabic": "قُتِلَ الْاِنْسَانُ مَآ اَكْفَرَهٗۗ",
+   "textLatin": "Qutilal-insānu mā akfarah(ū).",
+   "textEnglish": "[But only too often] man destroys himself: how stubbornly does he deny the truth!"
+  },
+  {
+   "numberInSurah": 18,
+   "textArabic": "مِنْ اَيِّ شَيْءٍ خَلَقَهٗۗ",
+   "textLatin": "Min ayyi syai'in khalaqah(ū).",
+   "textEnglish": "[Does man ever consider] out of what substance [God] creates him?"
+  },
+  {
+   "numberInSurah": 19,
+   "textArabic": "مِنْ نُّطْفَةٍۗ خَلَقَهٗ فَقَدَّرَهٗۗ",
+   "textLatin": "Min nuṭfah(tin), khalaqahū fa qaddarah(ū).",
+   "textEnglish": "Out of a drop of sperm He creates him, and thereupon determines his nature,"
+  },
+  {
+   "numberInSurah": 20,
+   "textArabic": "ثُمَّ السَّبِيْلَ يَسَّرَهٗۙ",
+   "textLatin": "Ṡummas-sabīla yassarah(ū).",
+   "textEnglish": "and then makes it easy for him to go through life;"
+  },
+  {
+   "numberInSurah": 21,
+   "textArabic": "ثُمَّ اَمَاتَهٗ فَاَقْبَرَهٗۙ",
+   "textLatin": "Ṡumma amātahū fa aqbarah(ū).",
+   "textEnglish": "and in the end He causes him to die and brings him to the grave;"
+  },
+  {
+   "numberInSurah": 22,
+   "textArabic": "ثُمَّ اِذَا شَاۤءَ اَنْشَرَهٗۗ",
+   "textLatin": "Ṡumma iżā syā'a ansyarah(ū).",
+   "textEnglish": "and then, if it be His will, He shall raise him again to life,"
+  },
+  {
+   "numberInSurah": 23,
+   "textArabic": "كَلَّا لَمَّا يَقْضِ مَآ اَمَرَهٗۗ",
+   "textLatin": "Kallā lammā yaqḍi mā amarah(ū).",
+   "textEnglish": "Nay, but [man] has never yet fulfilled what He has enjoined upon him!"
+  },
+  {
+   "numberInSurah": 24,
+   "textArabic": "فَلْيَنْظُرِ الْاِنْسَانُ اِلٰى طَعَامِهٖٓ ۙ ",
+   "textLatin": "Falyanẓuril-insānu ilā ṭa‘āmih(ī).",
+   "textEnglish": "Let man, then, consider [the sources of] his food:"
+  },
+  {
+   "numberInSurah": 25,
+   "textArabic": "اَنَّا صَبَبْنَا الْمَاۤءَ صَبًّاۙ",
+   "textLatin": "Annā ṣababnal-mā'a ṣabbā(n).",
+   "textEnglish": "[how it is] that We pour down water, pouring it down abundantly;"
+  },
+  {
+   "numberInSurah": 26,
+   "textArabic": "ثُمَّ شَقَقْنَا الْاَرْضَ شَقًّاۙ",
+   "textLatin": "Ṡumma syaqaqnal-arḍa syaqqā(n).",
+   "textEnglish": "and then We cleave the earth [with new growth], cleaving it asunder,"
+  },
+  {
+   "numberInSurah": 27,
+   "textArabic": "فَاَنْۢبَتْنَا فِيْهَا حَبًّاۙ",
+   "textLatin": "Fa'ambatnā fīhā ḥabbā(n).",
+   "textEnglish": "and thereupon We cause grain to grow out of it,"
+  },
+  {
+   "numberInSurah": 28,
+   "textArabic": "وَّعِنَبًا وَّقَضْبًاۙ",
+   "textLatin": "Wa ‘inabaw wa qaḍbā(n).",
+   "textEnglish": "and vines and edible plants,"
+  },
+  {
+   "numberInSurah": 29,
+   "textArabic": "وَّزَيْتُوْنًا وَّنَخْلًاۙ",
+   "textLatin": "Wa zaitūnaw wa nakhlā(n).",
+   "textEnglish": "and olive trees and date-palms,"
+  },
+  {
+   "numberInSurah": 30,
+   "textArabic": "وَّحَدَاۤىِٕقَ غُلْبًا",
+   "textLatin": "Wa ḥadā'iqa gulbā(n).",
+   "textEnglish": "and gardens dense with foliage,"
+  },
+  {
+   "numberInSurah": 31,
+   "textArabic": "وَفَاكِهَةً وَّاَبًّا",
+   "textLatin": "Wa fākihataw wa abbā(n).",
+   "textEnglish": "and fruits and herbage,"
+  },
+  {
+   "numberInSurah": 32,
+   "textArabic": "مَتَاعًا لَّكُمْ وَلِاَنْعَامِكُمْۗ",
+   "textLatin": "Matā‘al lakum wa li'an‘āmikum.",
+   "textEnglish": "for you and for your animals to enjoy."
+  },
+  {
+   "numberInSurah": 33,
+   "textArabic": "فَاِذَا جَاۤءَتِ الصَّاۤخَّةُ ۖ",
+   "textLatin": "Fa iżā jā'atiṣ-ṣākhkhah(tu).",
+   "textEnglish": "AND SO, when the piercing call [of resurrection] is heard"
+  },
+  {
+   "numberInSurah": 34,
+   "textArabic": "يَوْمَ يَفِرُّ الْمَرْءُ مِنْ اَخِيْهِۙ",
+   "textLatin": "Yauma yafirrul-mar'u min akhīh(i).",
+   "textEnglish": "on a Day when everyone will [want to] flee from his brother,"
+  },
+  {
+   "numberInSurah": 35,
+   "textArabic": "وَاُمِّهٖ وَاَبِيْهِۙ",
+   "textLatin": "Wa ummihī wa abīh(i).",
+   "textEnglish": "and from his mother and father,"
+  },
+  {
+   "numberInSurah": 36,
+   "textArabic": "وَصَاحِبَتِهٖ وَبَنِيْهِۗ",
+   "textLatin": "Wa ṣāḥibatihī wa banīh(i).",
+   "textEnglish": "and from his spouse and his children:"
+  },
+  {
+   "numberInSurah": 37,
+   "textArabic": "لِكُلِّ امْرِئٍ مِّنْهُمْ يَوْمَىِٕذٍ شَأْنٌ يُّغْنِيْهِۗ",
+   "textLatin": "Likullimri'im minhum yauma'iżin sya'nuy yugnīh(i).",
+   "textEnglish": "on that Day, to every one of them will his own state be of sufficient concern."
+  },
+  {
+   "numberInSurah": 38,
+   "textArabic": "وُجُوْهٌ يَّوْمَىِٕذٍ مُّسْفِرَةٌۙ",
+   "textLatin": "Wujūhuy yauma'iżim musfirah(tun).",
+   "textEnglish": "Some faces will on that Day be bright with happiness,"
+  },
+  {
+   "numberInSurah": 39,
+   "textArabic": "ضَاحِكَةٌ مُّسْتَبْشِرَةٌ ۚ",
+   "textLatin": "Ḍāḥikatum mustabsyirah(tun).",
+   "textEnglish": "laughing, rejoicing at glad tidings."
+  },
+  {
+   "numberInSurah": 40,
+   "textArabic": "وَوُجُوْهٌ يَّوْمَىِٕذٍ عَلَيْهَا غَبَرَةٌۙ",
+   "textLatin": "Wa wujūhuy yauma'iżin ‘alaihā gabarah(tun).",
+   "textEnglish": "And some faces will on that Day with dust be covered,"
+  },
+  {
+   "numberInSurah": 41,
+   "textArabic": "تَرْهَقُهَا قَتَرَةٌ ۗ",
+   "textLatin": "Tarhaquhā qatarah(tun).",
+   "textEnglish": "with darkness overspread:"
+  },
+  {
+   "numberInSurah": 42,
+   "textArabic": "اُولٰۤىِٕكَ هُمُ الْكَفَرَةُ الْفَجَرَةُ ࣖ",
+   "textLatin": "Ulā'ika humul-kafaratul-fajarah(tu).",
+   "textEnglish": "these, these will be the ones who denied the truth and were immersed in iniquity!"
+  }
+ ],
+ "nextSurah": {
+  "number": 81,
+  "name": "التكوير",
+  "englishName": "At-Takwir",
+  "numberOfAyahs": 29
+ },
+ "previousSurah": {
+  "number": 79,
+  "name": "النّٰزعٰت",
+  "englishName": "An-Naazi'aat",
+  "numberOfAyahs": 46
+ }
+}

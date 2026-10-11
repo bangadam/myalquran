@@ -1,0 +1,40 @@
+{
+ "number": 110,
+ "name": "النصر",
+ "englishName": "An-Nasr",
+ "numberOfAyahs": 3,
+ "revelationType": "Medinan",
+ "englishNameTranslation": "Divine Support",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "اِذَا جَاۤءَ نَصْرُ اللّٰهِ وَالْفَتْحُۙ",
+   "textLatin": "Iżā jā'a naṣrullāhi wal-fatḥ(u).",
+   "textEnglish": "WHEN GOD'S SUCCOUR comes, and victory,"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "وَرَاَيْتَ النَّاسَ يَدْخُلُوْنَ فِيْ دِيْنِ اللّٰهِ اَفْوَاجًاۙ",
+   "textLatin": "Wa ra'aitan-nāsa yadkhulūna fī dīnillāhi afwājā(n).",
+   "textEnglish": "and thou seest people enter God's religion in hosts,"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُۗ اِنَّهٗ كَانَ تَوَّابًا ࣖ",
+   "textLatin": "Fasabbiḥ biḥamdi rabbika wastagfirh(u), innahū kāna tawwābā(n).",
+   "textEnglish": "extol thy Sustainer's limitless glory, and praise Him, and seek His forgiveness: for, behold, He is ever an acceptor of repentance."
+  }
+ ],
+ "nextSurah": {
+  "number": 111,
+  "name": "اللهب",
+  "englishName": "Al-Masad",
+  "numberOfAyahs": 5
+ },
+ "previousSurah": {
+  "number": 109,
+  "name": "الكٰفرون",
+  "englishName": "Al-Kaafiroon",
+  "numberOfAyahs": 6
+ }
+}

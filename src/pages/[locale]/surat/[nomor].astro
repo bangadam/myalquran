@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ReaderControls from '../../../components/ReaderControls';
+import { locales, labels, surahNumbers, localizedSurah, type Locale } from '../../../lib/content';
+import TranslationCredit from '../../../components/TranslationCredit.astro';
+import { Ellipsis, BookmarkCheck, BookOpen } from 'lucide-react';
+import { interfaceLabels } from '../../../lib/interface-labels';
+
+export function getStaticPaths() {
+  return locales.flatMap(locale => surahNumbers.map(nomor => ({ params: { locale, nomor: String(nomor) } })));
+}
+const locale = Astro.params.locale as Locale;
+const number = Number(Astro.params.nomor);
+const t = labels(locale);
+const ui = interfaceLabels[locale];
+const surah = localizedSurah(number, locale);
+const previous = number > 1 ? localizedSurah(number - 1, locale) : null;
+const next = number < 114 ? localizedSurah(number + 1, locale) : null;
+---
+<BaseLayout title={`${surah.latin} — ${t.quran}`} locale={locale} section="quran" description={`${surah.latin} · ${surah.count} ${t.verses}`}>
+  <a class="back-link" href={`/${locale}/`}>← {t.directory}</a>
+
+  <header class="surah-heading">
+    <p class="arabic-title" lang="ar" dir="rtl">{surah.name}</p>
+    <h1>{surah.latin}</h1>
+    <p class="metadata mb-0">{surah.meaning && <><span>{surah.meaning}</span><span aria-hidden="true"> · </span></>}{surah.count} {t.verses}<span aria-hidden="true"> · </span>{surah.place === 'Mekah' ? t.mecca : t.medina}</p>
+  </header>
+
+  <ReaderControls labels={t} locale={locale} verseCount={surah.count} client:load />
+  {surah.translationSource && <TranslationCredit source={surah.translationSource} />}
+  {!surah.verses[0].translation && <aside class="availability"><p>{t.missingTranslation}</p><p class="mb-0">{t.arabicOnly}</p></aside>}
+
+  <div aria-label={`${surah.latin} · ${surah.count} ${t.verses}`}>
+    {surah.verses.map(verse => <section class="verse" id={`ayat-${verse.number}`} aria-label={`${t.verse} ${verse.number}`}>
+      <div class="verse-label">
+        <a href={`#ayat-${verse.number}`} aria-label={`${t.verse} ${verse.number} · ${surah.latin}`}>{t.verse} <span class="ml-1 font-semibold text-primary tabular-nums">{verse.number}</span></a>
+        <span class="bookmark-indicator" data-bookmark-indicator hidden aria-hidden="true"><BookmarkCheck size={16} /></span>
+        <details class="verse-actions"><summary aria-label={`${ui.actions} · ${t.verse} ${verse.number}`}><Ellipsis size={20} aria-hidden="true" /></summary><div class="verse-action-panel">
+          <button type="button" class="verse-save" data-save-verse data-surah={number} data-verse={verse.number} data-save-label={t.saveVerse} data-remove-label={t.removeVerse} aria-pressed="false" hidden>{t.saveVerse}</button>
+          <a class="text-link" href={`/${locale}/tafsir/${number}/#ayat-${verse.number}`}><BookOpen size={18} aria-hidden="true" />{t.readTafsir}</a>
+          {verse.translationNotes && <a class="text-link" href={`#notes-${verse.number}`} data-open-notes>{t.notes}</a>}
+        </div></details>
+      </div>
+      <p class="arabic" lang="ar" dir="rtl">{verse.arabic}</p>
+      <p class="reader-text latin" lang="id">{verse.latin}</p>
+      {verse.translation && <p class="reader-text verse-translation" lang={locale}>{verse.translation}</p>}
+      {verse.translationNotes && <details class="translation-notes" id={`notes-${verse.number}`}><summary>{t.notes}</summary><p class="reader-text prose" lang={locale}>{verse.translationNotes}</p></details>}
+    </section>)}
+  </div>
+
+  <nav class="page-pagination border-t border-[var(--divider)] pt-4" aria-label={t.directory}>
+    {previous && <a class="text-link flex-col items-start justify-center leading-snug" href={`/${locale}/surat/${previous.number}/`}><span>← {t.previous}</span><span class="text-foreground font-semibold">{previous.latin}</span></a>}
+    {next && <a class="text-link ml-auto flex-col items-end justify-center text-right leading-snug" href={`/${locale}/surat/${next.number}/`}><span>{t.next} →</span><span class="text-foreground font-semibold">{next.latin}</span></a>}
+  </nav>
+</BaseLayout>

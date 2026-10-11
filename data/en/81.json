@@ -1,0 +1,196 @@
+{
+ "number": 81,
+ "name": "التكوير",
+ "englishName": "At-Takwir",
+ "numberOfAyahs": 29,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "The Overthrowing",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "اِذَا الشَّمْسُ كُوِّرَتْۖ",
+   "textLatin": "Iżasy-syamsu kuwwirat.",
+   "textEnglish": "WHEN THE SUN is shrouded in darkness,"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "وَاِذَا النُّجُوْمُ انْكَدَرَتْۖ",
+   "textLatin": "Wa iżan-nujūmunkadarat.",
+   "textEnglish": "and when the stars lose their light,"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "وَاِذَا الْجِبَالُ سُيِّرَتْۖ",
+   "textLatin": "Wa iżal-jibālu suyyirat.",
+   "textEnglish": "and when the mountains are made to vanish,"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "وَاِذَا الْعِشَارُ عُطِّلَتْۖ",
+   "textLatin": "Wa iżal-‘isyāru ‘uṭṭilat.",
+   "textEnglish": "and when she-camels big with young, about to give birth, are left untended,"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "وَاِذَا الْوُحُوْشُ حُشِرَتْۖ",
+   "textLatin": "Wa iżal-wuḥūsy ḥusyirat.",
+   "textEnglish": "and when all beasts are gathered together,"
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "وَاِذَا الْبِحَارُ سُجِّرَتْۖ",
+   "textLatin": "Wa iżal-biḥāru sujjirat.",
+   "textEnglish": "and when the seas boil over,"
+  },
+  {
+   "numberInSurah": 7,
+   "textArabic": "وَاِذَا النُّفُوْسُ زُوِّجَتْۖ",
+   "textLatin": "Wa iżan-nufūsu zuwwijat.",
+   "textEnglish": "and when all human beings are coupled [with their deeds],"
+  },
+  {
+   "numberInSurah": 8,
+   "textArabic": "وَاِذَا الْمَوْءٗدَةُ سُىِٕلَتْۖ ",
+   "textLatin": "Wa iżal-mau'ūdatu su'ilat.",
+   "textEnglish": "and when the girl-child that was buried alive is made to ask"
+  },
+  {
+   "numberInSurah": 9,
+   "textArabic": "بِاَيِّ ذَنْۢبٍ قُتِلَتْۚ",
+   "textLatin": "Bi'ayyi żambin qutilat.",
+   "textEnglish": "for what crime she had been slain,"
+  },
+  {
+   "numberInSurah": 10,
+   "textArabic": "وَاِذَا الصُّحُفُ نُشِرَتْۖ",
+   "textLatin": "Wa iżaṣ-ṣuḥufu nusyirat.",
+   "textEnglish": "and when the scrolls [of men's deeds] are unfolded,"
+  },
+  {
+   "numberInSurah": 11,
+   "textArabic": "وَاِذَا السَّمَاۤءُ كُشِطَتْۖ",
+   "textLatin": "Wa iżas-samā'u kusyiṭat.",
+   "textEnglish": "and when heaven is laid bare,"
+  },
+  {
+   "numberInSurah": 12,
+   "textArabic": "وَاِذَا الْجَحِيْمُ سُعِّرَتْۖ",
+   "textLatin": "Wa iżal-jaḥīmu su‘‘irat.",
+   "textEnglish": "and when the blazing fire [of hell] is kindled bright,"
+  },
+  {
+   "numberInSurah": 13,
+   "textArabic": "وَاِذَا الْجَنَّةُ اُزْلِفَتْۖ",
+   "textLatin": "Wa iżal-jannatu uzlifat.",
+   "textEnglish": "and when paradise is brought into view:"
+  },
+  {
+   "numberInSurah": 14,
+   "textArabic": "عَلِمَتْ نَفْسٌ مَّآ اَحْضَرَتْۗ",
+   "textLatin": "‘Alimat nafsum mā aḥḍarat.",
+   "textEnglish": "[on that Day] every human being will come to know what he has prepared [for himself]."
+  },
+  {
+   "numberInSurah": 15,
+   "textArabic": "فَلَآ اُقْسِمُ بِالْخُنَّسِۙ",
+   "textLatin": "Falā uqsimu bil-khunnas(i).",
+   "textEnglish": "BUT NAY! I call to witness the revolving stars,"
+  },
+  {
+   "numberInSurah": 16,
+   "textArabic": "الْجَوَارِ الْكُنَّسِۙ",
+   "textLatin": "Al-jawāril-kunnas(i).",
+   "textEnglish": "the planets that run their course and set,"
+  },
+  {
+   "numberInSurah": 17,
+   "textArabic": "وَالَّيْلِ اِذَا عَسْعَسَۙ",
+   "textLatin": "Wal-laili iżā ‘as‘as(a).",
+   "textEnglish": "and the night as it darkly falls,"
+  },
+  {
+   "numberInSurah": 18,
+   "textArabic": "وَالصُّبْحِ اِذَا تَنَفَّسَۙ",
+   "textLatin": "Waṣ-ṣubḥi iżā tanaffas(a).",
+   "textEnglish": "and the morn as it softly breathes:"
+  },
+  {
+   "numberInSurah": 19,
+   "textArabic": "اِنَّهٗ لَقَوْلُ رَسُوْلٍ كَرِيْمٍۙ",
+   "textLatin": "Innahū laqaulu rasūlin karīm(in).",
+   "textEnglish": "behold, this [divine writ] is indeed the [inspired] word of a noble apostle,"
+  },
+  {
+   "numberInSurah": 20,
+   "textArabic": "ذِيْ قُوَّةٍ عِنْدَ ذِى الْعَرْشِ مَكِيْنٍۙ",
+   "textLatin": "Żī quwwatin ‘inda żil-‘arsyi makīn(in).",
+   "textEnglish": "with strength endowed, secure with Him who in almightiness is enthroned"
+  },
+  {
+   "numberInSurah": 21,
+   "textArabic": "مُّطَاعٍ ثَمَّ اَمِيْنٍۗ",
+   "textLatin": "Muṭā‘in ṡamma amīn(in).",
+   "textEnglish": "[the word] of one to be heeded, and worthy of trust!"
+  },
+  {
+   "numberInSurah": 22,
+   "textArabic": "وَمَا صَاحِبُكُمْ بِمَجْنُوْنٍۚ",
+   "textLatin": "Wa mā ṣāḥibukum bimajnūn(in).",
+   "textEnglish": "For, this fellow-man of yours is not a madman:"
+  },
+  {
+   "numberInSurah": 23,
+   "textArabic": "وَلَقَدْ رَاٰهُ بِالْاُفُقِ الْمُبِيْنِۚ",
+   "textLatin": "Wa laqad ra'āhu bil-ufuqil-mubīn(i).",
+   "textEnglish": "he truly beheld [the angel - beheld] him on the clear horizon;"
+  },
+  {
+   "numberInSurah": 24,
+   "textArabic": "وَمَا هُوَ عَلَى الْغَيْبِ بِضَنِيْنٍۚ",
+   "textLatin": "Wa mā huwa ‘alal-gaibi biḍanīn(in).",
+   "textEnglish": "and he is not one to begrudge others the knowledge [of whatever has been revealed to him] out of that which is beyond the reach of human Perception."
+  },
+  {
+   "numberInSurah": 25,
+   "textArabic": "وَمَا هُوَ بِقَوْلِ شَيْطٰنٍ رَّجِيْمٍۚ",
+   "textLatin": "Wa mā huwa biqauli syaiṭānir rajīm(in).",
+   "textEnglish": "Nor is this [message] the word of any satanic force accursed."
+  },
+  {
+   "numberInSurah": 26,
+   "textArabic": "فَاَيْنَ تَذْهَبُوْنَۗ",
+   "textLatin": "Fa aina tażhabūn(a).",
+   "textEnglish": "Whither, then, will you go?"
+  },
+  {
+   "numberInSurah": 27,
+   "textArabic": "اِنْ هُوَ اِلَّا ذِكْرٌ لِّلْعٰلَمِيْنَۙ",
+   "textLatin": "In huwa illā żikrul lil-‘ālamīn(a).",
+   "textEnglish": "This [message] is no less than a reminder to all mankind –"
+  },
+  {
+   "numberInSurah": 28,
+   "textArabic": "لِمَنْ شَاۤءَ مِنْكُمْ اَنْ يَّسْتَقِيْمَۗ",
+   "textLatin": "Liman syā'a minkum ay yastaqīm(a).",
+   "textEnglish": "to everyone of you who wills to walk a straight way."
+  },
+  {
+   "numberInSurah": 29,
+   "textArabic": "وَمَا تَشَاۤءُوْنَ اِلَّآ اَنْ يَّشَاۤءَ اللّٰهُ رَبُّ الْعٰلَمِيْنَ ࣖ",
+   "textLatin": "Wa mā tasyā'ūna illā ay yasyā'allāhu rabbul-‘ālamīn(a).",
+   "textEnglish": "But you cannot will it unless God, the Sustainer of all the worlds, wills [to show you that way]."
+  }
+ ],
+ "nextSurah": {
+  "number": 82,
+  "name": "الانفطار",
+  "englishName": "Al-Infitaar",
+  "numberOfAyahs": 19
+ },
+ "previousSurah": {
+  "number": 80,
+  "name": "عبس",
+  "englishName": "Abasa",
+  "numberOfAyahs": 42
+ }
+}

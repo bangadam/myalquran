@@ -1,0 +1,12 @@
+---
+import type { TranslationSource } from '../lib/content';
+
+interface Props { source: TranslationSource; }
+const { source } = Astro.props;
+---
+<aside class="translation-credit metadata" lang="en" aria-label={source.title}>
+  <p class="mb-1 font-semibold text-foreground">{source.title} · v{source.version}</p>
+  <p class="mb-2">{source.description}</p>
+  <p class="mb-1">Source edition: {source.sourceUpdatedAt}</p>
+  <p class="mb-0 flex flex-wrap gap-x-3"><a class="inline-flex min-h-11 items-center underline underline-offset-4 text-primary" href={source.url}>{source.publisher}</a><a class="inline-flex min-h-11 items-center underline underline-offset-4 text-primary" href={source.termsUrl}>Republication terms</a></p>
+</aside>

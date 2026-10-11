@@ -1,0 +1,53 @@
+{
+ "nomor": 114,
+ "nama": "الناس",
+ "namaLatin": "An-Nas",
+ "jumlahAyat": 6,
+ "tempatTurun": "Madinah",
+ "arti": "Manusia",
+ "deskripsi": "Surat ini terdiri atas 6 ayat, termasuk golongan surat-surat Makkiyah,  diturunkan sesudah surat Al Falaq. Nama <i>An Naas</i> diambil dari <i>An Naas</i> yang berulang kali disebut dalam surat ini yang artinya manusia.",
+ "ayat": [
+  {
+   "nomorAyat": 1,
+   "teksArab": "قُلْ اَعُوْذُ بِرَبِّ النَّاسِۙ",
+   "teksLatin": "Qul a‘ūżu birabbin-nās(i).",
+   "teksIndonesia": "Katakanlah (Nabi Muhammad), “Aku berlindung kepada Tuhan manusia,"
+  },
+  {
+   "nomorAyat": 2,
+   "teksArab": "مَلِكِ النَّاسِۙ",
+   "teksLatin": "Malikin-nās(i).",
+   "teksIndonesia": "raja manusia,"
+  },
+  {
+   "nomorAyat": 3,
+   "teksArab": "اِلٰهِ النَّاسِۙ",
+   "teksLatin": "Ilāhin-nās(i).",
+   "teksIndonesia": "sembahan manusia"
+  },
+  {
+   "nomorAyat": 4,
+   "teksArab": "مِنْ شَرِّ الْوَسْوَاسِ ەۙ الْخَنَّاسِۖ",
+   "teksLatin": "Min syarril-waswāsil-khannās(i).",
+   "teksIndonesia": "dari kejahatan (setan) pembisik yang bersembunyi"
+  },
+  {
+   "nomorAyat": 5,
+   "teksArab": "الَّذِيْ يُوَسْوِسُ فِيْ صُدُوْرِ النَّاسِۙ",
+   "teksLatin": "Allażī yuwaswisu fī ṣudūrin-nās(i).",
+   "teksIndonesia": "yang membisikkan (kejahatan) ke dalam dada manusia,"
+  },
+  {
+   "nomorAyat": 6,
+   "teksArab": "مِنَ الْجِنَّةِ وَالنَّاسِ ࣖ ",
+   "teksLatin": "Minal jinnati wan-nās(i).",
+   "teksIndonesia": "dari (golongan) jin dan manusia.”"
+  }
+ ],
+ "suratSebelumnya": {
+  "nomor": 113,
+  "nama": "الفلق",
+  "namaLatin": "Al-Falaq",
+  "jumlahAyat": 5
+ }
+}

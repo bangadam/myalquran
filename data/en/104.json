@@ -1,0 +1,76 @@
+{
+ "number": 104,
+ "name": "الهمزة",
+ "englishName": "Al-Humaza",
+ "numberOfAyahs": 9,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "The Traducer",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍۙ",
+   "textLatin": "Wailul likulli humazatil-lumazah(tin).",
+   "textEnglish": "WOE unto every slanderer, fault-finder!"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": " ۨالَّذِيْ جَمَعَ مَالًا وَّعَدَّدَهٗۙ",
+   "textLatin": "Allażī jama‘a mālaw wa ‘addadah(ū).",
+   "textEnglish": "[Woe unto him who amasses wealth and counts it a safeguard,"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "يَحْسَبُ اَنَّ مَالَهٗٓ اَخْلَدَهٗۚ",
+   "textLatin": "Yaḥsabu anna mālahū akhladah(ū).",
+   "textEnglish": "thinking that his wealth will make him live forever!"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "كَلَّا لَيُنْۢبَذَنَّ فِى الْحُطَمَةِۖ",
+   "textLatin": "Kallā layumbażanna fil-ḥuṭamah(ti).",
+   "textEnglish": "Nay, but [in the life to come such as] he shall indeed be abandoned to crushing torment!"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "وَمَآ اَدْرٰىكَ مَا الْحُطَمَةُ ۗ",
+   "textLatin": "Wa mā adrāka mal-ḥuṭamah(tu).",
+   "textEnglish": "And what could make thee conceive what that crushing torment will be?"
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "نَارُ اللّٰهِ الْمُوْقَدَةُۙ",
+   "textLatin": "Nārullāhil-mūqadah(tu).",
+   "textEnglish": "A fire kindled by God,"
+  },
+  {
+   "numberInSurah": 7,
+   "textArabic": "الَّتِيْ تَطَّلِعُ عَلَى الْاَفْـِٕدَةِۗ",
+   "textLatin": "Allatī taṭṭali‘u ‘alal-af'idah(ti).",
+   "textEnglish": "which will rise over the [guilty] hearts:"
+  },
+  {
+   "numberInSurah": 8,
+   "textArabic": "اِنَّهَا عَلَيْهِمْ مُّؤْصَدَةٌۙ",
+   "textLatin": "Innahā ‘alaihim mu'ṣadah(tun).",
+   "textEnglish": "verily, it will close in upon them"
+  },
+  {
+   "numberInSurah": 9,
+   "textArabic": "فِيْ عَمَدٍ مُّمَدَّدَةٍ ࣖ",
+   "textLatin": "Fī ‘amadim mumaddadah(tin).",
+   "textEnglish": "in endless columns!"
+  }
+ ],
+ "nextSurah": {
+  "number": 105,
+  "name": "الفيل",
+  "englishName": "Al-Fil",
+  "numberOfAyahs": 5
+ },
+ "previousSurah": {
+  "number": 103,
+  "name": "العصر",
+  "englishName": "Al-Asr",
+  "numberOfAyahs": 3
+ }
+}

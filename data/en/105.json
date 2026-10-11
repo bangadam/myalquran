@@ -1,0 +1,52 @@
+{
+ "number": 105,
+ "name": "الفيل",
+ "englishName": "Al-Fil",
+ "numberOfAyahs": 5,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "The Elephant",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "اَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِاَصْحٰبِ الْفِيْلِۗ",
+   "textLatin": "Alam tara kaifa fa‘ala rabbuka bi'aṣḥābil-fīl(i).",
+   "textEnglish": "ART THOU NOT aware of how thy Sustainer dealt with the Army of the Elephant?"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "اَلَمْ يَجْعَلْ كَيْدَهُمْ فِيْ تَضْلِيْلٍۙ",
+   "textLatin": "Alam yaj‘al kaidahum fī taḍlīl(in).",
+   "textEnglish": "Did He not utterly confound their artful planning?"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "وَّاَرْسَلَ عَلَيْهِمْ طَيْرًا اَبَابِيْلَۙ",
+   "textLatin": "Wa arsala ‘alaihim ṭairan abābīl(a).",
+   "textEnglish": "Thus, He let loose upon them great swarms of flying creatures"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "تَرْمِيْهِمْ بِحِجَارَةٍ مِّنْ سِجِّيْلٍۙ",
+   "textLatin": "Tarmīhim biḥijāratim min sijjīl(in).",
+   "textEnglish": "which smote them with stone-hard blows of chastisement pre-ordained,"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُوْلٍ ࣖ ",
+   "textLatin": "Fa ja‘alahum ka‘aṣfim ma'kūl(in).",
+   "textEnglish": "and caused them to become like a field of grain that has been eaten down to stubble"
+  }
+ ],
+ "nextSurah": {
+  "number": 106,
+  "name": "قريش",
+  "englishName": "Quraish",
+  "numberOfAyahs": 4
+ },
+ "previousSurah": {
+  "number": 104,
+  "name": "الهمزة",
+  "englishName": "Al-Humaza",
+  "numberOfAyahs": 9
+ }
+}

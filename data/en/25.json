@@ -1,0 +1,484 @@
+{
+ "number": 25,
+ "name": "الفرقان",
+ "englishName": "Al-Furqaan",
+ "numberOfAyahs": 77,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "The Criterion",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "تَبٰرَكَ الَّذِيْ نَزَّلَ الْفُرْقَانَ عَلٰى عَبْدِهٖ لِيَكُوْنَ لِلْعٰلَمِيْنَ نَذِيْرًا ۙ",
+   "textLatin": "Tabārakal-lażī nazzalal-furqāna ‘alā ‘abdihī liyakūna lil-‘ālamīna nażīrā(n).",
+   "textEnglish": "Hallowed is He who from on high, step by step, has bestowed upon His servant the standard by which to discern the true from the false, so that to all the world it might be a warning:"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": " ۨالَّذِيْ لَهٗ مُلْكُ السَّمٰوٰتِ وَالْاَرْضِ وَلَمْ يَتَّخِذْ وَلَدًا وَّلَمْ يَكُنْ لَّهٗ شَرِيْكٌ فِى الْمُلْكِ وَخَلَقَ كُلَّ شَيْءٍ فَقَدَّرَهٗ تَقْدِيْرًا",
+   "textLatin": "Allażī lahū mulkus-samāwāti wal-arḍi wa lam yattakhiż waladaw wa lam yakul lahū syarīkun fil-mulki wa khalaqa  kulla syai'in fa qaddarahū taqdīrā(n).",
+   "textEnglish": "He to whom the dominion over the heavens and the earth belongs, and who begets no offspring, and has no partner in His dominion: for it is He who creates every thing and determines its nature in accordance with [His own] design."
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "وَاتَّخَذُوْا مِنْ دُوْنِهٖٓ اٰلِهَةً لَّا يَخْلُقُوْنَ شَيْـًٔا وَّهُمْ يُخْلَقُوْنَ وَلَا يَمْلِكُوْنَ لِاَنْفُسِهِمْ ضَرًّا وَّلَا نَفْعًا وَّلَا يَمْلِكُوْنَ مَوْتًا وَّلَا حَيٰوةً وَّلَا نُشُوْرًا",
+   "textLatin": "Wattakhażū min dūnihī ālihatal lā yakhluqūna syai'aw wa hum yukhlaqūna wa lā yamlikūna li'anfusihim ḍarraw wa lā naf‘aw wa lā yamlikūna mautaw wa lā ḥayātaw wa lā nusyūrā(n).",
+   "textEnglish": "And yet, some choose to worship, instead of Him, imaginary deities that cannot create anything but are themselves created, and have it not within their power to avert harm from, or bring benefit to, themselves, and have no power over death, nor over life, nor over resurrection!"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "وَقَالَ الَّذِيْنَ كَفَرُوْٓا اِنْ هٰذَآ اِلَّآ اِفْكُ ِۨافْتَرٰىهُ وَاَعَانَهٗ عَلَيْهِ قَوْمٌ اٰخَرُوْنَۚ فَقَدْ جَاۤءُوْ ظُلْمًا وَّزُوْرًا ۚ",
+   "textLatin": "Wa qālal-lażīna kafarū in hāżā illā ifkuniftarāhu wa a‘ānahū ‘alaihi qaumun ākharūn(a), fa qad jā'ū ẓulmaw wa zūrā(n).",
+   "textEnglish": "Moreover, those who are bent on denying the truth are wont to say, “This [Qur’an] is nothing but a lie, which he [himself] has devised with the help of other people, who thereupon have perverted the truth and brought a falsehood into being.”"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "وَقَالُوْٓا اَسَاطِيْرُ الْاَوَّلِيْنَ اكْتَتَبَهَا فَهِيَ تُمْلٰى عَلَيْهِ بُكْرَةً وَّاَصِيْلًا",
+   "textLatin": "Wa qālū asāṭīrul-awwalīnaktatabahā fa hiya tumlā ‘alaihi bukrataw wa aṣīlā(n).",
+   "textEnglish": "And they say, “Fables of ancient times which he has caused to be written down, so that they might be read out to him at morn and evening!”"
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "قُلْ اَنْزَلَهُ الَّذِيْ يَعْلَمُ السِّرَّ  فِى السَّمٰوٰتِ وَالْاَرْضِۗ اِنَّهٗ كَانَ غَفُوْرًا رَّحِيْمًا",
+   "textLatin": "Qul anzalahul-lażī ya‘lamus-sirra fis-samāwāti wal-arḍ(i), innahū kāna gafūrar raḥīmā(n).",
+   "textEnglish": "Say [O Muhammad]: “He who knows all the mysteries of the heavens and the earth has bestowed from on high this [Qur’an upon me]! Verily, He is much-forgiving, a dispenser of grace!”"
+  },
+  {
+   "numberInSurah": 7,
+   "textArabic": "وَقَالُوْا مَالِ هٰذَا الرَّسُوْلِ يَأْكُلُ الطَّعَامَ وَيَمْشِيْ فِى الْاَسْوَاقِۗ  لَوْلَآ اُنْزِلَ اِلَيْهِ مَلَكٌ فَيَكُوْنَ مَعَهٗ نَذِيْرًا ۙ",
+   "textLatin": "Wa qālū mā lihāżar-rasūli ya'kuluṭ-ṭa‘āma wa yamsyī fil-aswāq(i), lau lā unzila ‘alaihi malakun fa yakūna ma‘ahū nażīrā(n).",
+   "textEnglish": "Yet they say: What sort of apostle is this [man] who eats food [like all other mortals] and goes about in the market places? Why has not an angel [visibly] been sent down unto him, to act as a warner together with him?”"
+  },
+  {
+   "numberInSurah": 8,
+   "textArabic": "اَوْ يُلْقٰىٓ اِلَيْهِ كَنْزٌ اَوْ تَكُوْنُ لَهٗ جَنَّةٌ يَّأْكُلُ مِنْهَاۗ وَقَالَ الظّٰلِمُوْنَ اِنْ تَتَّبِعُوْنَ اِلَّا رَجُلًا مَّسْحُوْرًا",
+   "textLatin": "Au yulqā ilaihi kanzun au takūnu lahū jannatuy ya'kulu minhā, wa qālaẓ-ẓālimūna in tattabi‘ūna illā rajulam masḥūrā(n).",
+   "textEnglish": "Or: “[Why has not] a treasure been granted to him [by God]?” Or: “He should [at least] have a [bountiful] garden, so that he could eat thereof [without effort]!” And so these evildoers say [unto one another], “If you were to follow [Muhammad, you would follow] but a man bewitched!”"
+  },
+  {
+   "numberInSurah": 9,
+   "textArabic": "اُنْظُرْ كَيْفَ ضَرَبُوْا لَكَ الْاَمْثَالَ فَضَلُّوْا فَلَا يَسْتَطِيْعُوْنَ سَبِيْلًا ࣖ",
+   "textLatin": "Unẓur kaifa ḍarabū lakal-amṡāla fa ḍallū falā yastaṭī‘ūna sabīlā(n).",
+   "textEnglish": "See to what they liken thee, [O Prophet, simply] because they have gone astray and are now unable to find a way to the truth]!"
+  },
+  {
+   "numberInSurah": 10,
+   "textArabic": "تَبٰرَكَ الَّذِيْٓ اِنْ شَاۤءَ جَعَلَ لَكَ خَيْرًا مِّنْ ذٰلِكَ جَنّٰتٍ تَجْرِيْ مِنْ تَحْتِهَا الْاَنْهٰرُۙ وَيَجْعَلْ لَّكَ قُصُوْرًا",
+   "textLatin": "Tabārakal-lażī in syā'a ja‘ala laka khairam min żālika jannātin tajrī min taḥtihal-anhār(u), wa yaj‘al laka quṣūrā(n).",
+   "textEnglish": "Hallowed is He who, if it be His will, shall give thee something better than that [whereof they speak] - gardens through which running waters flow - and shall assign to thee mansions [of bliss in the life to come]."
+  },
+  {
+   "numberInSurah": 11,
+   "textArabic": "بَلْ كَذَّبُوْا بِالسَّاعَةِۙ وَاَعْتَدْنَا لِمَنْ كَذَّبَ بِالسَّاعَةِ سَعِيْرًا",
+   "textLatin": "Bal każżabū bis-sā‘ah(ti), wa a‘tadnā liman każżaba bis-sā‘ati sa‘īrā(n).",
+   "textEnglish": "But nay! It is [the very coming of] the Last Hour to which they give the lie! However, for such as give the lie to [the announce­ment of] the Last Hour We have readied a blazing flame:"
+  },
+  {
+   "numberInSurah": 12,
+   "textArabic": "اِذَا رَاَتْهُمْ مِّنْ مَّكَانٍۢ بَعِيْدٍ سَمِعُوْا لَهَا تَغَيُّظًا وَّزَفِيْرًا",
+   "textLatin": "Iżā ra'athum mim makānim ba‘īdin sami‘ū lahā tagayyuẓaw wa zafīrā(n).",
+   "textEnglish": "when it shall face them from afar, they will hear its angry roar and its hiss;"
+  },
+  {
+   "numberInSurah": 13,
+   "textArabic": "وَاِذَآ اُلْقُوْا مِنْهَا مَكَانًا ضَيِّقًا مُّقَرَّنِيْنَ دَعَوْا هُنَالِكَ ثُبُوْرًا ۗ",
+   "textLatin": "Wa iżā ulqū minhā makānan ḍayyiqam muqarranīna da‘au hunālika ṡubūrā(n).",
+   "textEnglish": "and when they are flung, linked [all] together, into a tight space within, they will pray for extinction there and then!"
+  },
+  {
+   "numberInSurah": 14,
+   "textArabic": "لَا تَدْعُوا الْيَوْمَ ثُبُوْرًا وَّاحِدًا وَّادْعُوْا ثُبُوْرًا كَثِيْرًا ",
+   "textLatin": "Lā tad‘ul-yauma ṡubūraw wāḥidaw wad‘ū ṡubūran kaṡīrā(n).",
+   "textEnglish": "[But they will be told:] “Pray not today for one single extinction, but pray for many extinctions!”"
+  },
+  {
+   "numberInSurah": 15,
+   "textArabic": "قُلْ اَذٰلِكَ خَيْرٌ اَمْ جَنَّةُ الْخُلْدِ الَّتِيْ وُعِدَ الْمُتَّقُوْنَۗ  كَانَتْ لَهُمْ جَزَاۤءً وَّمَصِيْرًا ",
+   "textLatin": "Qul ażālika khairun am jannatul-khuldil-latī wu‘idal-muttaqūn(a), kānat lahum jazā'aw wa maṣīrā(n).",
+   "textEnglish": "Say: “Which is better - that, or the paradise of life abiding which has been promised to the God-conscious as their reward and their journey’s end –"
+  },
+  {
+   "numberInSurah": 16,
+   "textArabic": "لَهُمْ فِيْهَا مَا يَشَاۤءُوْنَ خٰلِدِيْنَۗ  كَانَ عَلٰى رَبِّكَ وَعْدًا مَّسْـُٔوْلًا",
+   "textLatin": "Lahum fīhā mā yasyā'ūna khālidīn(a), kāna ‘alā rabbika wa‘dam mas'ūlā(n).",
+   "textEnglish": "a promise given by thy Sustainer, [always] to be prayed for?”"
+  },
+  {
+   "numberInSurah": 17,
+   "textArabic": "وَيَوْمَ يَحْشُرُهُمْ وَمَا يَعْبُدُوْنَ مِنْ دُوْنِ اللّٰهِ فَيَقُوْلُ ءَاَنْتُمْ اَضْلَلْتُمْ عِبَادِيْ هٰٓؤُلَاۤءِ اَمْ هُمْ ضَلُّوا السَّبِيْلَ ۗ",
+   "textLatin": "Wa yauma yaḥsyuruhum wa mā ya‘budūna min dūnillāhi fa yaqūlu a'antum aḍlaltum ‘ibādī hā'ulā'i am hum ḍallus-sabīl(a).",
+   "textEnglish": "BUT [as for people who are oblivious of thy Sus­tainer’s oneness -] one Day He will gather them together with all that they [now] worship instead of God, and will ask [those to whom divinity was falsely ascribed]: “Was it you who led these My creatures astray, or did they by themselves stray from the right path?”"
+  },
+  {
+   "numberInSurah": 18,
+   "textArabic": "قَالُوْا سُبْحٰنَكَ مَا كَانَ يَنْۢبَغِيْ لَنَآ اَنْ نَّتَّخِذَ مِنْ دُوْنِكَ مِنْ اَوْلِيَاۤءَ وَلٰكِنْ مَّتَّعْتَهُمْ وَاٰبَاۤءَهُمْ حَتّٰى نَسُوا الذِّكْرَۚ وَكَانُوْا قَوْمًاۢ بُوْرًا",
+   "textLatin": "Qālū subḥānaka mā kāna yambagī lanā an nattakhiża min dūnika min auliyā'a wa lākim matta‘tahum wa ābā'ahum ḥattā nasuż-żikr(a), wa kānū qaumam būrā(n).",
+   "textEnglish": "They will answer: “Limitless art Thou in Thy glory! It was inconceivable for us to take for our masters anyone but Thyself! But [as for them -] Thou didst allow them and their forefathers to enjoy [the pleasures of] life to such an extent that they forgot all remembrance [of Thee]: for they were people devoid of all good.”"
+  },
+  {
+   "numberInSurah": 19,
+   "textArabic": "فَقَدْ كَذَّبُوْكُمْ بِمَا تَقُوْلُوْنَۙ فَمَا تَسْتَطِيْعُوْنَ صَرْفًا وَّلَا نَصْرًاۚ وَمَنْ يَّظْلِمْ مِّنْكُمْ نُذِقْهُ عَذَابًا كَبِيْرًا",
+   "textLatin": "Faqad każżabūkum bimā taqūlūn(a), famā tastaṭī‘ūna ṣarfaw wa lā naṣrā(n), wa may yaẓlim minkum nużiqhu ‘ażāban kabīrā(n).",
+   "textEnglish": "[Thereupon God will say:] “And now, they [whom you regarded as divine] have given the lie to all your [past] assertions, and you can neither ward off [your punishment] nor obtain any succour! For, whoever of you has committed [such] evil, him shall We cause to taste great suffering!”"
+  },
+  {
+   "numberInSurah": 20,
+   "textArabic": "وَمَآ اَرْسَلْنَا قَبْلَكَ مِنَ الْمُرْسَلِيْنَ اِلَّآ اِنَّهُمْ لَيَأْكُلُوْنَ الطَّعَامَ وَيَمْشُوْنَ فِى الْاَسْوَاقِۗ وَجَعَلْنَا بَعْضَكُمْ لِبَعْضٍ فِتْنَةً  ۗ اَتَصْبِرُوْنَۚ وَكَانَ رَبُّكَ بَصِيْرًا ࣖ   ۔",
+   "textLatin": "Wa mā arsalnā qablaka minal-mursalīna illā innahum laya'kulūnaṭ-ṭa‘āma wa yamsyūna fil aswāq(i), wa ja‘alnā ba‘ḍakum liba‘ḍin fitnah(tan), ataṣbirūn(a), wa kāna rabbuka baṣīrā(n).",
+   "textEnglish": "AND [even] before thee, [O Muhammad,] We never sent as Our message-bearers any but [mortal men] who indeed ate food [like other human beings] and went about in the market places: for [it is thus that] We cause you [human beings] to be a means of testing one another. Are you able to endure [this test] with patience? For [remember, O man,] thy Sustainer is truly all-seeing!"
+  },
+  {
+   "numberInSurah": 21,
+   "textArabic": "۞ وَقَالَ الَّذِيْنَ لَا يَرْجُوْنَ لِقَاۤءَنَا لَوْلَآ اُنْزِلَ عَلَيْنَا الْمَلٰۤىِٕكَةُ اَوْ نَرٰى رَبَّنَا ۗ لَقَدِ اسْتَكْبَرُوْا فِيْٓ اَنْفُسِهِمْ وَعَتَوْ عُتُوًّا كَبِيْرًا",
+   "textLatin": "Wa qālal-lażīna lā yarjūna liqā'anā lau lā unzila ‘alainal-malā'ikata au narā rabbanā, laqadistakbarū fī anfusihim wa ‘atau ‘utuwwan kabīrā(n).",
+   "textEnglish": "But those who do not believe that they are destined to meet Us are wont to say, “Why have no angels been sent down to us?” – or, “Why do we not see our Sustainer?” Indeed, they are far too proud of themselves, hav­ing rebelled [against God’s truth] with utter disdain!"
+  },
+  {
+   "numberInSurah": 22,
+   "textArabic": "يَوْمَ يَرَوْنَ الْمَلٰۤىِٕكَةَ لَا بُشْرٰى يَوْمَىِٕذٍ لِّلْمُجْرِمِيْنَ وَيَقُوْلُوْنَ حِجْرًا مَّحْجُوْرًا ",
+   "textLatin": "Yauma yaraunal-malā'ikata  lā busyrā yauma'iżil lil-mujrimīna wa yaqūlūna ḥijram maḥjūrā(n).",
+   "textEnglish": "[Yet] on that Day - the Day on which they shall see the angels there will be no glad tiding for those who were lost in sin; and they will exclaim, “By a forbidding ban [are we from God’s grace debarred]!” –"
+  },
+  {
+   "numberInSurah": 23,
+   "textArabic": "وَقَدِمْنَآ اِلٰى مَا عَمِلُوْا مِنْ عَمَلٍ فَجَعَلْنٰهُ هَبَاۤءً مَّنْثُوْرًا ",
+   "textLatin": "Wa qadimnā ilā mā ‘amilū min ‘amalin fa ja‘alnāhu habā'am manṡūrā(n).",
+   "textEnglish": "for We shall have turned towards all the [supposedly good] deeds they ever wrought, and shall have transformed them into scattered dust –"
+  },
+  {
+   "numberInSurah": 24,
+   "textArabic": "اَصْحٰبُ الْجَنَّةِ يَوْمَىِٕذٍ خَيْرٌ مُّسْتَقَرًّا وَّاَحْسَنُ مَقِيْلًا ",
+   "textLatin": "Aṣḥābul-jannati yauma'iżin khairum mustaqarraw wa aḥsanu maqīlā(n).",
+   "textEnglish": "[whereas] on that same Day those who are destined for paradise will be graced with the best of abodes and the fairest place of repose."
+  },
+  {
+   "numberInSurah": 25,
+   "textArabic": "وَيَوْمَ تَشَقَّقُ السَّمَاۤءُ بِالْغَمَامِ وَنُزِّلَ الْمَلٰۤىِٕكَةُ تَنْزِيْلًا ",
+   "textLatin": "Wa yauma tasyaqqaqus-samā'u bil-gamāmi wa nuzzilal-malā'ikatu tanzīlā(n).",
+   "textEnglish": "And on the Day on which the skies, together with the clouds, shall burst asunder, and the angels are made to descend in a mighty descent –"
+  },
+  {
+   "numberInSurah": 26,
+   "textArabic": "اَلْمُلْكُ يَوْمَىِٕذِ ِۨالْحَقُّ لِلرَّحْمٰنِۗ وَكَانَ يَوْمًا عَلَى الْكٰفِرِيْنَ عَسِيْرًا ",
+   "textLatin": "Al-mulku yauma'iżinil-ḥaqqu lir-raḥmān(i), wa kāna yauman ‘alal-kāfirīna ‘asīrā(n).",
+   "textEnglish": "on that Day [it will become obvious to all that] true sover­eignty belongs to the Most Gracious [alone]: hence, a Day of distress will it be for all who deny the truth,"
+  },
+  {
+   "numberInSurah": 27,
+   "textArabic": "وَيَوْمَ يَعَضُّ الظَّالِمُ عَلٰى يَدَيْهِ يَقُوْلُ يٰلَيْتَنِى اتَّخَذْتُ مَعَ الرَّسُوْلِ سَبِيْلًا ",
+   "textLatin": "Wa yauma ya‘aḍḍuẓ-ẓālimu ‘alā yadaihi yaqūlu yā laitanittakhażtu ma‘ar-rasūli sabīlā(n).",
+   "textEnglish": "and a Day on which the evildoer will bite his hands [in despair], exclaiming: “Oh, would that I had followed the path shown to me by the apostle!"
+  },
+  {
+   "numberInSurah": 28,
+   "textArabic": "يٰوَيْلَتٰى لَيْتَنِيْ لَمْ اَتَّخِذْ فُلَانًا خَلِيْلًا ",
+   "textLatin": "Yā wailatā laitanī lam attakhiż fulānan khalīlā(n).",
+   "textEnglish": "Oh, woe is me! Would that I had not taken so-and-so for a friend!"
+  },
+  {
+   "numberInSurah": 29,
+   "textArabic": "لَقَدْ اَضَلَّنِيْ عَنِ الذِّكْرِ بَعْدَ اِذْ جَاۤءَنِيْۗ وَكَانَ الشَّيْطٰنُ لِلْاِنْسَانِ خَذُوْلًا ",
+   "textLatin": "Laqad aḍallanī ‘aniż-żikri ba‘da iż jā'anī, wa kānasy-syaiṭānu lil-insāni khażūlā(n).",
+   "textEnglish": "Indeed, he led me astray from the remembrance [of God] after it had come unto me!” For [thus it is:] Satan is ever a betrayer of man."
+  },
+  {
+   "numberInSurah": 30,
+   "textArabic": "وَقَالَ الرَّسُوْلُ يٰرَبِّ اِنَّ قَوْمِى اتَّخَذُوْا هٰذَا الْقُرْاٰنَ مَهْجُوْرًا ",
+   "textLatin": "Wa qālar-rasūlu yā rabbi inna qaumittakhażū hāżal-qur'āna mahjūrā(n).",
+   "textEnglish": "AND [on that Day] the Apostle will say: “O my Sustainer! Behold, [some of] my people have come to regard this Qur’an as something [that ought to be] discarded!”"
+  },
+  {
+   "numberInSurah": 31,
+   "textArabic": "وَكَذٰلِكَ جَعَلْنَا لِكُلِّ نَبِيٍّ عَدُوًّا مِّنَ الْمُجْرِمِيْنَۗ وَكَفٰى بِرَبِّكَ هَادِيًا وَّنَصِيْرًا ",
+   "textLatin": "Wa każālika ja‘alnā likulli nabiyyin ‘aduwwam minal-mujrimīn(a), wa kafā birabbika hādiyaw wa naṣīrā(n).",
+   "textEnglish": "For so it is that against every prophet We have set up enemies from among those who are lost in sin: yet none can guide and give succour as thy Sustainer does!"
+  },
+  {
+   "numberInSurah": 32,
+   "textArabic": "وَقَالَ الَّذِيْنَ كَفَرُوْا لَوْلَا نُزِّلَ عَلَيْهِ الْقُرْاٰنُ جُمْلَةً وَّاحِدَةً ۛ كَذٰلِكَ ۛ لِنُثَبِّتَ بِهٖ فُؤَادَكَ وَرَتَّلْنٰهُ تَرْتِيْلًا ",
+   "textLatin": "Wa qālal-lażīna kafarū lau lā nuzzila ‘alaihil-qur'ānu jumlataw wāḥidatan - każālika - linuṡabbita bihī fu'ādaka wa rattalnāhu tartīlā(n).",
+   "textEnglish": "Now they who are bent on denying the truth are wont to ask. “Why has not the Qur’an been bestowed on him from on high in one single re­velation?” [it has been revealed] in this manner so that We might strengthen thy heart thereby - for We have so arranged its component parts that they form one consistent whole -"
+  },
+  {
+   "numberInSurah": 33,
+   "textArabic": "وَلَا يَأْتُوْنَكَ بِمَثَلٍ اِلَّا جِئْنٰكَ بِالْحَقِّ وَاَحْسَنَ تَفْسِيْرًا ۗ",
+   "textLatin": "Wa lā ya'tūnaka bimaṡalin illā ji'nāka bil-ḥaqqi wa aḥsana tafsīrā(n).",
+   "textEnglish": "and [that] they [who deny the truth] might never taunt thee with any deceptive half-truth without Our conveying to thee the [full] truth and [providing thee] with the best explanation."
+  },
+  {
+   "numberInSurah": 34,
+   "textArabic": "اَلَّذِيْنَ يُحْشَرُوْنَ عَلٰى وُجُوْهِهِمْ اِلٰى جَهَنَّمَۙ اُولٰۤىِٕكَ شَرٌّ مَّكَانًا وَّاَضَلُّ سَبِيْلًا ࣖ ",
+   "textLatin": "Allażīna yuḥsyarūna ‘alā wujūhihim ilā jahannam(a), ulā'ika syarrum makānaw wa aḍallu sabīlā(n).",
+   "textEnglish": "[And so, tell those who are bent on denying the truth that] they who shall be gathered unto hell upon their faces – it is they who [in the life to come] will be worst in station and still farther astray from the path [of truth]!"
+  },
+  {
+   "numberInSurah": 35,
+   "textArabic": "وَلَقَدْ اٰتَيْنَا مُوْسَى الْكِتٰبَ وَجَعَلْنَا مَعَهٗٓ اَخَاهُ هٰرُوْنَ وَزِيْرًا ۚ ",
+   "textLatin": "Wa laqad ātainā mūsal-kitāba wa ja‘alnā ma‘ahū akhāhu hārūna wazīrā(n).",
+   "textEnglish": "AND, INDEED, [long before Muhammad] We vouchsafed revelation unto Moses, and appointed his brother Aaron to help him to bear his burden;"
+  },
+  {
+   "numberInSurah": 36,
+   "textArabic": "فَقُلْنَا اذْهَبَآ اِلَى الْقَوْمِ الَّذِيْنَ كَذَّبُوْا بِاٰيٰتِنَاۗ فَدَمَّرْنٰهُمْ تَدْمِيْرًا ۗ",
+   "textLatin": "Fa qulnażhabā ilal-qaumil-lażīna każżabū bi'āyātinā, fa dammarnāhum tadmīrā(n).",
+   "textEnglish": "and We said, “Go you both unto the people who have given the lie to Our messages!” - and thereupon We broke those [sinners] to smithereens."
+  },
+  {
+   "numberInSurah": 37,
+   "textArabic": "وَقَوْمَ نُوْحٍ لَّمَّا كَذَّبُوا الرُّسُلَ اَغْرَقْنٰهُمْ وَجَعَلْنٰهُمْ لِلنَّاسِ اٰيَةًۗ وَاَعْتَدْنَا لِلظّٰلِمِيْنَ عَذَابًا اَلِيْمًا ۚ ",
+   "textLatin": "Wa qauma nūḥil lammā każżabur-rusula agraqnāhum wa ja‘alnāhum lin-nāsi āyah(tan), wa a‘tadnā liẓ-ẓālimīna ‘ażāban alīmā(n).",
+   "textEnglish": "And [think of] the people of Noah: when they gave the lie to [one of] the apostles, We caused them to drown, and made them a symbol for all mankind: for, grievous suffering have We readied for all who [knowingly] do wrong!"
+  },
+  {
+   "numberInSurah": 38,
+   "textArabic": "وَعَادًا وَّثَمُوْدَا۟ وَاَصْحٰبَ الرَّسِّ وَقُرُوْنًاۢ بَيْنَ ذٰلِكَ كَثِيْرًا ",
+   "textLatin": "Wa ‘ādaw wa ṡamūda wa aṣḥābar-rassi wa qurūnam baina żālika kaṡīrā(n).",
+   "textEnglish": "And [remember how We punished the tribes of] Ad and Thamud and the people of Ar-Rass, and many generations [of sinners] in-between:"
+  },
+  {
+   "numberInSurah": 39,
+   "textArabic": "وَكُلًّا ضَرَبْنَا لَهُ الْاَمْثَالَۖ وَكُلًّا تَبَّرْنَا تَتْبِيْرًا ",
+   "textLatin": "Wa kullan ḍarabnā lahul-amṡāl(a), wa kullan tabbarnā tatbīrā(n).",
+   "textEnglish": "and unto each of them did We proffer lessons and each of them did We destroy with utter destruction."
+  },
+  {
+   "numberInSurah": 40,
+   "textArabic": "وَلَقَدْ اَتَوْا عَلَى الْقَرْيَةِ الَّتِيْٓ اُمْطِرَتْ مَطَرَ السَّوْءِۗ اَفَلَمْ يَكُوْنُوْا يَرَوْنَهَاۚ بَلْ كَانُوْا لَا يَرْجُوْنَ نُشُوْرًا ",
+   "textLatin": "Wa laqad atau ‘alal-qaryatil-latī umṭirat maṭaras-sau'(i), afalam yakūnū yaraunahā, bal kānū lā yarjūna nusyūrā(n).",
+   "textEnglish": "And they [who now deny Our messages] must surely have come across that town which was rained upon by a rain of evil: have they, then, never beheld it [with their minds eye]? But nay, they would not believe in resurrection!"
+  },
+  {
+   "numberInSurah": 41,
+   "textArabic": "وَاِذَا رَاَوْكَ اِنْ يَّتَّخِذُوْنَكَ اِلَّا هُزُوًاۗ اَهٰذَا الَّذِيْ بَعَثَ اللّٰهُ رَسُوْلًا ",
+   "textLatin": "Wa iżā ra'auka iy yattakhiżūnaka illā huzuwā(n), ahāżal-lażī ba‘aṡallāhu rasūlā(n).",
+   "textEnglish": "Hence, whenever they consider thee, [O Muhammad,] they but make thee a target of their mockery, [saying:] “Is this the one whom God has sent as an apostle?"
+  },
+  {
+   "numberInSurah": 42,
+   "textArabic": "اِنْ كَادَ لَيُضِلُّنَا عَنْ اٰلِهَتِنَا لَوْلَآ اَنْ صَبَرْنَا عَلَيْهَاۗ وَسَوْفَ يَعْلَمُوْنَ حِيْنَ يَرَوْنَ الْعَذَابَ مَنْ اَضَلُّ سَبِيْلًا ",
+   "textLatin": "In kāda layuḍillunā ‘an ālihatinā lau lā an ṣabarnā ‘alaihā, wa saufa ya‘lamūna ḥīna yaraunal-‘ażāba man aḍallu sabīlā(n).",
+   "textEnglish": "Indeed, he would well-nigh have led us astray from our deities, had we not been [so] steadfastly attached to them!” But in time, when they see the suffering [that awaits them], they will come to know who it was that went farthest astray from the path [of truth]!"
+  },
+  {
+   "numberInSurah": 43,
+   "textArabic": "اَرَءَيْتَ مَنِ اتَّخَذَ اِلٰهَهٗ هَوٰىهُۗ اَفَاَنْتَ تَكُوْنُ عَلَيْهِ وَكِيْلًا ۙ",
+   "textLatin": "Ara'aita manittakhaża ilāhahū hawāh(u), afa anta takūnu ‘alaihi wakīlā(n).",
+   "textEnglish": "Hast thou ever considered [the kind of man] who makes his own desires his deity? Couldst thou, then, [O Prophet,] be held responsible for him?"
+  },
+  {
+   "numberInSurah": 44,
+   "textArabic": "اَمْ تَحْسَبُ اَنَّ اَكْثَرَهُمْ يَسْمَعُوْنَ اَوْ يَعْقِلُوْنَۗ اِنْ هُمْ اِلَّا كَالْاَنْعَامِ  بَلْ هُمْ اَضَلُّ سَبِيْلًا ࣖ",
+   "textLatin": "Am taḥsabu anna akṡarahum yasma‘ūna au ya‘qilūn(a), in hum illā kal-an‘āmi bal hum aḍallu sabīlā(n).",
+   "textEnglish": "Or dost thou think that most of them listen [to thy message] and use their reason? Nay, they are but like cattle - nay, they are even less conscious of the right way!"
+  },
+  {
+   "numberInSurah": 45,
+   "textArabic": "اَلَمْ تَرَ اِلٰى رَبِّكَ كَيْفَ مَدَّ الظِّلَّۚ وَلَوْ شَاۤءَ لَجَعَلَهٗ سَاكِنًاۚ  ثُمَّ جَعَلْنَا الشَّمْسَ عَلَيْهِ دَلِيْلًا ۙ",
+   "textLatin": "Alam tara ilā rabbika kaifa maddaẓ-ẓill(a), wa lau syā'a laja‘alahū sākinā(n), ṡumma ja‘alnasy-syamsa ‘alaihi dalīlā(n).",
+   "textEnglish": "Art thou not aware of thy Sustainer [through His works]? - how He causes the shadow to lengthen [towards the night] when, had He so willed, He could indeed have made it stand still: but then, We have made the sun its guide;"
+  },
+  {
+   "numberInSurah": 46,
+   "textArabic": "ثُمَّ قَبَضْنٰهُ اِلَيْنَا قَبْضًا يَّسِيْرًا ",
+   "textLatin": "Ṡumma qabaḍnā ilainā qabḍay yasīrā(n).",
+   "textEnglish": "and then, [after having caused it to lengthen,] We draw it in towards Our­selves with a gradual drawing-in."
+  },
+  {
+   "numberInSurah": 47,
+   "textArabic": "وَهُوَ الَّذِيْ جَعَلَ لَكُمُ الَّيْلَ لِبَاسًا وَّالنَّوْمَ سُبَاتًا وَّجَعَلَ النَّهَارَ نُشُوْرًا  ",
+   "textLatin": "Wa huwal-lażī ja‘ala lakumul-laila libāsaw wan-nauma subātaw wa ja‘alan-nahāra nusyūrā(n).",
+   "textEnglish": "And He it is who makes the night a garment for you, and [your] sleep a rest, and causes every [new] day to be a resurrection."
+  },
+  {
+   "numberInSurah": 48,
+   "textArabic": "وَهُوَ الَّذِيْٓ اَرْسَلَ الرِّيَاحَ بُشْرًاۢ بَيْنَ يَدَيْ رَحْمَتِهٖۚ وَاَنْزَلْنَا مِنَ السَّمَاۤءِ مَاۤءً طَهُوْرًا ۙ",
+   "textLatin": "Wa huwal-lażī arsalar-riyāḥa busyram baina yadai raḥmatih(ī), wa anzalnā minas-samā'i mā'an ṭahūrā(n).",
+   "textEnglish": "And He it is who sends forth the winds as a glad tiding of His coming grace; and [thus, too,] We cause pure water to descend from the skies,"
+  },
+  {
+   "numberInSurah": 49,
+   "textArabic": "لِّنُحْيِ َۧ بِهٖ بَلْدَةً مَّيْتًا وَّنُسْقِيَهٗ مِمَّا خَلَقْنَآ اَنْعَامًا وَّاَنَاسِيَّ كَثِيْرًا ",
+   "textLatin": "Linuḥyiya bihī baldatam maitaw wa nusqiyahū mimmā khalaqnā an‘āmaw wa anāsiyya kaṡīrā(n).",
+   "textEnglish": "so that We may bring dead land to life thereby, and give to drink thereof to many [beings] of Our creation, beasts as well as humans."
+  },
+  {
+   "numberInSurah": 50,
+   "textArabic": "وَلَقَدْ صَرَّفْنٰهُ بَيْنَهُمْ لِيَذَّكَّرُوْاۖ فَاَبٰىٓ اَكْثَرُ النَّاسِ اِلَّا كُفُوْرًا ",
+   "textLatin": "Wa laqad ṣarrafnāhu bainahum liyażżakkarū, fa abā akṡarun-nāsi illā kufūrā(n).",
+   "textEnglish": "And, indeed, many times have We repeated [all] this unto men, so that they might take it to heart: but most men refuse to be aught but ingrate."
+  },
+  {
+   "numberInSurah": 51,
+   "textArabic": "وَلَوْ شِئْنَا لَبَعَثْنَا فِيْ كُلِّ قَرْيَةٍ نَّذِيْرًا ۖ",
+   "textLatin": "Wa lau syi'nā laba‘aṡnā fī kulli qaryatin nażīrā(n).",
+   "textEnglish": "Now had We so willed. We could have [con­tinued as before and] raised up a [separate] warner in every single community:"
+  },
+  {
+   "numberInSurah": 52,
+   "textArabic": "فَلَا تُطِعِ الْكٰفِرِيْنَ وَجَاهِدْهُمْ بِهٖ جِهَادًا كَبِيْرًا ",
+   "textLatin": "Falā tuṭi‘il-kāfirīna wa jāhidhum bihī jihādan kabīrā(n).",
+   "textEnglish": "hence, do not defer to [the likes and dislikes of] those who deny the truth, but strive hard against them, by means of this [divine writ], with utmost striving."
+  },
+  {
+   "numberInSurah": 53,
+   "textArabic": "۞ وَهُوَ الَّذِيْ مَرَجَ الْبَحْرَيْنِ هٰذَا عَذْبٌ فُرَاتٌ وَّهٰذَا مِلْحٌ  اُجَاجٌۚ وَجَعَلَ بَيْنَهُمَا بَرْزَخًا وَّحِجْرًا مَّحْجُوْرًا ",
+   "textLatin": "Wa huwal-lażī marajal-baḥraini hāżā ‘ażbun furātuw wa hāżā milḥun ujāj(un), wa ja‘ala bainahumā barzakhaw wa ḥijram maḥjūrā(n).",
+   "textEnglish": "AND HE it is who has given freedom of movement to the two great bodies of water – the one sweet and thirst-allaying, and the other salty and bitter - and yet has wrought between them a barrier and a forbidding ban."
+  },
+  {
+   "numberInSurah": 54,
+   "textArabic": "وَهُوَ الَّذِيْ خَلَقَ مِنَ الْمَاۤءِ بَشَرًا فَجَعَلَهٗ نَسَبًا وَّصِهْرًاۗ وَكَانَ رَبُّكَ قَدِيْرًا ",
+   "textLatin": "Wa huwal-lażī khalaqa minal-mā'i basyaran fa ja‘alahū nasabaw wa ṣihrā(n), wa kāna rabbuka qadīrā(n). ",
+   "textEnglish": "And He it is who out of this [very] water has created man, and has endowed him with [the con­sciousness of] descent and marriage-tie: for thy Sustainer is ever infinite in His power."
+  },
+  {
+   "numberInSurah": 55,
+   "textArabic": "وَيَعْبُدُوْنَ مِنْ دُوْنِ اللّٰهِ مَا لَا يَنْفَعُهُمْ وَلَا يَضُرُّهُمْۗ وَكَانَ الْكَافِرُ عَلٰى رَبِّهٖ ظَهِيْرًا ",
+   "textLatin": "Wa ya‘budūna min dūnillāhi mā lā yanfa‘uhum wa lā yaḍurruhum, wa kānal-kāfiru ‘alā rabbihī ẓahīrā(n).",
+   "textEnglish": "And yet, some people worship, instead of God, things that can neither benefit them nor harm them: thus, he who denies the truth does indeed turn his back on his Sustainer!"
+  },
+  {
+   "numberInSurah": 56,
+   "textArabic": "وَمَآ اَرْسَلْنٰكَ اِلَّا مُبَشِّرًا وَّنَذِيْرًا ",
+   "textLatin": "Wa mā arsalnāka illā mubasysyiraw wa nażīrā(n).",
+   "textEnglish": "Yet [withal, O Prophet,] We have sent thee only as a herald of glad tidings and a warner."
+  },
+  {
+   "numberInSurah": 57,
+   "textArabic": "قُلْ مَآ اَسْـَٔلُكُمْ عَلَيْهِ مِنْ اَجْرٍ اِلَّا مَنْ شَاۤءَ اَنْ يَّتَّخِذَ اِلٰى رَبِّهٖ سَبِيْلًا ",
+   "textLatin": "Qul mā as'alukum ‘alaihi min ajrin illā man syā'a ay yattakhiża ilā rabbihī sabīlā(n).",
+   "textEnglish": "Say: “For this, no reward do I ask of you [- no reward] other than that he who so wills may unto his Sustainer find a way!”"
+  },
+  {
+   "numberInSurah": 58,
+   "textArabic": "وَتَوَكَّلْ عَلَى الْحَيِّ الَّذِيْ لَا يَمُوْتُ وَسَبِّحْ بِحَمْدِهٖۗ وَكَفٰى بِهٖ بِذُنُوْبِ عِبَادِهٖ خَبِيْرًا ۚ",
+   "textLatin": "Wa tawakkal ‘alal-ḥayyil-lażī lā yamūtu wa sabbiḥ biḥamdih(ī), wa kafā bihī biżunūbi ‘ibādihī khabīrā(n).",
+   "textEnglish": "Hence, place thy trust in the Living One who dies not, and extol His limitless glory and praise: for none is as aware as His creatures’ sins as He –"
+  },
+  {
+   "numberInSurah": 59,
+   "textArabic": "اَلَّذِيْ خَلَقَ السَّمٰوٰتِ وَالْاَرْضَ وَمَا بَيْنَهُمَا فِيْ سِتَّةِ اَيَّامٍ ثُمَّ اسْتَوٰى عَلَى الْعَرْشِۚ  اَلرَّحْمٰنُ فَسْـَٔلْ بِهٖ خَبِيْرًا ",
+   "textLatin": "Allażī khalaqas-samāwāti wal-arḍa wa mā bainahumā fī sittati ayyāmin ṡummastawā ‘alal-‘arsy(i), ar-raḥmānu fas'al bihī khabīrā(n).",
+   "textEnglish": "He who has created the heavens and the earth and all that is between them in six aeons, and is established on the throne of His almightiness: the Most Gracious! Ask, then, about Him, [the] One who is [truly] aware."
+  },
+  {
+   "numberInSurah": 60,
+   "textArabic": "وَاِذَا قِيْلَ لَهُمُ اسْجُدُوْا لِلرَّحْمٰنِ قَالُوْا وَمَا الرَّحْمٰنُ اَنَسْجُدُ لِمَا تَأْمُرُنَا وَزَادَهُمْ نُفُوْرًا ۩ ࣖ",
+   "textLatin": "Wa iżā qīla lahumusjudū lir-raḥmāni qālū wa mar-raḥmānu anasjudu limā ta'murunā wa zādahum nufūrā(n).",
+   "textEnglish": "Yet when they [who are bent on denying the truth! are told, “Prostrate yourselves before the Most Gracious.” they are wont to ask, “And [who and] what is the Most Gracious? Are we to prostrate ourselves before whatever thou biddest us [to worship]?” - and so [thy call] but increases their aversion,"
+  },
+  {
+   "numberInSurah": 61,
+   "textArabic": "تَبٰرَكَ الَّذِيْ جَعَلَ فِى السَّمَاۤءِ بُرُوْجًا وَّجَعَلَ فِيْهَا سِرٰجًا وَّقَمَرًا مُّنِيْرًا  ",
+   "textLatin": "Tabārakal-lażī ja‘ala fis-samā'i burūjaw wa ja‘ala fīhā sirājaw wa qamaram munīrā(n).",
+   "textEnglish": "HALLOWED is He who has set up in the skies great constellations, and has placed among them a [radiant] lamp and a light-giving moon."
+  },
+  {
+   "numberInSurah": 62,
+   "textArabic": "وَهُوَ الَّذِيْ جَعَلَ الَّيْلَ وَالنَّهَارَ خِلْفَةً لِّمَنْ اَرَادَ اَنْ يَّذَّكَّرَ اَوْ اَرَادَ شُكُوْرًا ",
+   "textLatin": "Wa huwal-lażī ja‘alal-laila wan-nahāra khilfatal liman arāda ay yażżakkara au arāda syukūrā(n).",
+   "textEnglish": "And He it is who causes the night and the day to succeed one another, [revealing Himself in His works] unto him who has the will to take thought - that is has the will to be grateful."
+  },
+  {
+   "numberInSurah": 63,
+   "textArabic": "وَعِبَادُ الرَّحْمٰنِ الَّذِيْنَ يَمْشُوْنَ عَلَى الْاَرْضِ هَوْنًا وَّاِذَا خَاطَبَهُمُ الْجٰهِلُوْنَ قَالُوْا سَلٰمًا  ",
+   "textLatin": "Wa ‘ibādur-raḥmānil-lażīna yamsyūna ‘alal-arḍi haunaw wa iżā khāṭabahumul-jāhilūna qālū salāmā(n).",
+   "textEnglish": "For, [true] servants of the Most Gracious are [only] they who walk gently on earth, and who, whenever the foolish address them, reply with [words of] peace;"
+  },
+  {
+   "numberInSurah": 64,
+   "textArabic": "وَالَّذِيْنَ يَبِيْتُوْنَ لِرَبِّهِمْ سُجَّدًا وَّقِيَامًا ",
+   "textLatin": "Wal-lażīna yabītūna lirabbihim sujjadaw wa qiyāmā(n).",
+   "textEnglish": "and who remember their Sustainer far into the night, prostrating themselves and standing;"
+  },
+  {
+   "numberInSurah": 65,
+   "textArabic": "وَالَّذِيْنَ يَقُوْلُوْنَ رَبَّنَا اصْرِفْ عَنَّا عَذَابَ جَهَنَّمَۖ اِنَّ عَذَابَهَا كَانَ غَرَامًا ۖ",
+   "textLatin": "Wal-lażīna yaqūlūna rabbanaṣrif ‘annā ‘ażāba jahannam(a), inna ‘ażābahā kāna garāmā(n).",
+   "textEnglish": "and who pray: “O our Sustainer, avert from us the suffering of hell - for, verily, the suffering caused by it is bound to be a torment dire:"
+  },
+  {
+   "numberInSurah": 66,
+   "textArabic": "اِنَّهَا سَاۤءَتْ مُسْتَقَرًّا وَّمُقَامًا ",
+   "textLatin": "Innahā sā'at mustaqarraw wa muqāmā(n).",
+   "textEnglish": "verily, how evil an abode and a station!” -;"
+  },
+  {
+   "numberInSurah": 67,
+   "textArabic": "وَالَّذِيْنَ اِذَآ اَنْفَقُوْا لَمْ يُسْرِفُوْا وَلَمْ يَقْتُرُوْا وَكَانَ بَيْنَ ذٰلِكَ قَوَامًا ",
+   "textLatin": "Wal-lażīna iżā anfaqū lam yusrifū wa lam yaqturū wa kāna baina żālika qawāmā(n).",
+   "textEnglish": "and who, whenever they spend on others, are neither wasteful nor niggardly but [remember that] there is always a just mean between those [two extremes];"
+  },
+  {
+   "numberInSurah": 68,
+   "textArabic": "وَالَّذِيْنَ لَا يَدْعُوْنَ مَعَ اللّٰهِ اِلٰهًا اٰخَرَ وَلَا يَقْتُلُوْنَ النَّفْسَ الَّتِيْ حَرَّمَ اللّٰهُ اِلَّا بِالْحَقِّ وَلَا يَزْنُوْنَۚ وَمَنْ يَّفْعَلْ ذٰلِكَ يَلْقَ اَثَامًا ۙ",
+   "textLatin": "Wal-lażīna lā yad‘ūna ma‘allāhi ilāhan ākhara wa lā yaqtulūnan nafsal-latī ḥarramallāhu illā bil-ḥaqqi wa lā yaznūn(a), wa may yaf‘al żālika yalqa aṡāmā(n).",
+   "textEnglish": "and who never invoke any [imaginary] deity side by side with God, and do not take any human beings life - [the life] which God has willed to be sacred - otherwise than in [the pursuit of] justice, and do not commit adultery. And [know that] he who commits aught thereof shall [not only] meet with a full requital"
+  },
+  {
+   "numberInSurah": 69,
+   "textArabic": "يُّضٰعَفْ لَهُ الْعَذَابُ يَوْمَ الْقِيٰمَةِ وَيَخْلُدْ فِيْهٖ مُهَانًا ۙ",
+   "textLatin": "Yuḍā‘af lahul-‘ażābu yaumal-qiyāmati wa yakhlud fīhī muhānā(n).",
+   "textEnglish": "[but] shall have his suffering doubled on Resurrection Day: for on that [Day] he shall abide in ignominy."
+  },
+  {
+   "numberInSurah": 70,
+   "textArabic": "اِلَّا مَنْ تَابَ وَاٰمَنَ وَعَمِلَ عَمَلًا صَالِحًا فَاُولٰۤىِٕكَ يُبَدِّلُ اللّٰهُ سَيِّاٰتِهِمْ حَسَنٰتٍۗ وَكَانَ اللّٰهُ غَفُوْرًا رَّحِيْمًا ",
+   "textLatin": "Illā man tāba wa āmana wa ‘amila ‘amalan ṣāliḥan fa ulā'ika yubaddilullāhu sayyi'ātihim ḥasanāt(in), wa kānallāhu gafūrar raḥīmā(n).",
+   "textEnglish": "Excepted, however, shall be they who repent and attain to faith and do righteous deeds: for it is they whose [erstwhile] bad deeds God will transform into good ones - seeing that God is indeed much-forgiving, a dispenser of grace,"
+  },
+  {
+   "numberInSurah": 71,
+   "textArabic": "وَمَنْ تَابَ وَعَمِلَ صَالِحًا فَاِنَّهٗ يَتُوْبُ اِلَى اللّٰهِ مَتَابًا ",
+   "textLatin": "Wa man tāba wa ‘amila ṣāliḥan fa innahū yatūbu ilallāhi matābā(n).",
+   "textEnglish": "and seeing that he who repents and [thenceforth] does what is right has truly turned unto God by [this very act of] repent­ance."
+  },
+  {
+   "numberInSurah": 72,
+   "textArabic": "وَالَّذِيْنَ لَا يَشْهَدُوْنَ الزُّوْرَۙ وَاِذَا مَرُّوْا بِاللَّغْوِ مَرُّوْا كِرَامًا ",
+   "textLatin": "Wal-lażīna yasyhadūnaz-zūr(a), wa iżā marrū bil-lagwi marrū kirāmā(n).",
+   "textEnglish": "And [know that true servants of God are only] those who never bear witness to what is false, and [who], whenever they pass by [people engaged in] frivolity, pass on with dignity;"
+  },
+  {
+   "numberInSurah": 73,
+   "textArabic": "وَالَّذِيْنَ اِذَا ذُكِّرُوْا بِاٰيٰتِ رَبِّهِمْ لَمْ يَخِرُّوْا عَلَيْهَا صُمًّا وَّعُمْيَانًا ",
+   "textLatin": "Wal-lażīna iżā żukkirū bi'āyāti rabbihim lam yakhirrū ‘alaihā ṣummaw wa ‘umyānā(n).",
+   "textEnglish": "and who, whenever they are reminded of their Sustainer’s messages, do not throw themselves upon them [as if] deaf and blind;"
+  },
+  {
+   "numberInSurah": 74,
+   "textArabic": "وَالَّذِيْنَ يَقُوْلُوْنَ رَبَّنَا هَبْ لَنَا مِنْ اَزْوَاجِنَا وَذُرِّيّٰتِنَا قُرَّةَ اَعْيُنٍ وَّاجْعَلْنَا لِلْمُتَّقِيْنَ اِمَامًا ",
+   "textLatin": "Wal-lażīna yaqūlūna rabbanā hab lanā min azwājinā wa żurriyyātinā qurrata a‘yuniw waj‘alnā lil-muttaqīna imāmā(n).",
+   "textEnglish": "and who pray “O our Sustainer! Grant that our spouses and our offspring be a joy to our eyes, and cause us to be foremost among those who are conscious of Thee!”"
+  },
+  {
+   "numberInSurah": 75,
+   "textArabic": "اُولٰۤىِٕكَ يُجْزَوْنَ الْغُرْفَةَ بِمَا صَبَرُوْا وَيُلَقَّوْنَ فِيْهَا تَحِيَّةً وَّسَلٰمًا ۙ",
+   "textLatin": "Ulā'ika yujzaunal-gurfata bimā ṣabarū wa yulaqqauna fīhā taḥiyyataw wa salāmā(n).",
+   "textEnglish": "[Such as] these will be rewarded for all their patient endurance [in life] with a high station [in paradise], and will be met therein with a greeting of welcome and peace,"
+  },
+  {
+   "numberInSurah": 76,
+   "textArabic": "خٰلِدِيْنَ فِيْهَاۗ حَسُنَتْ مُسْتَقَرًّا وَّمُقَامًا ",
+   "textLatin": "Khālidīna fīhā, ḥasunat mustaqarraw wa muqāmā(n).",
+   "textEnglish": "therein to abide: [and] how goodly an abode and [how high] a station!"
+  },
+  {
+   "numberInSurah": 77,
+   "textArabic": "قُلْ مَا يَعْبَؤُا بِكُمْ رَبِّيْ لَوْلَا دُعَاۤؤُكُمْۚ فَقَدْ كَذَّبْتُمْ فَسَوْفَ يَكُوْنُ لِزَامًا ࣖ",
+   "textLatin": "Qul mā ya‘ba'u bikum rabbī lau lā du‘ā'ukum, faqad każżabtum fa saufa yakūnu lizāmā(n).",
+   "textEnglish": "SAY [unto those who believe]: “No weight or value would my Sustainer attach to you were it not for your faith [in Him]!” And say unto those who deny the truth:] “You have indeed given the lie [to God’s message], and in time this [sin] will cleave unto you!”"
+  }
+ ],
+ "nextSurah": {
+  "number": 26,
+  "name": "الشعراۤء",
+  "englishName": "Ash-Shu'araa",
+  "numberOfAyahs": 227
+ },
+ "previousSurah": {
+  "number": 24,
+  "name": "النّور",
+  "englishName": "An-Noor",
+  "numberOfAyahs": 64
+ }
+}

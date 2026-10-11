@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ThemeControls from '../../components/ThemeControls';
+import { locales, labels, localeNames, type Locale } from '../../lib/content';
+import { interfaceLabels } from '../../lib/interface-labels';
+import { ChevronRight } from 'lucide-react';
+export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
+const locale = Astro.params.locale as Locale;
+const t = labels(locale), ui = interfaceLabels[locale];
+---
+<BaseLayout title={ui.settings} locale={locale}>
+  <h1>{ui.settings}</h1>
+  <div class="settings-list">
+    <a href={`/${locale}/bahasa/`} data-language-settings><span>{t.language}</span><span class="text-muted-foreground ml-auto">{localeNames[locale]}</span><ChevronRight size={20} aria-hidden="true" /></a>
+    <ThemeControls locale={locale} client:load />
+    <a href={`/${locale}/surat/1/`} data-reading-settings><span>{ui.reading}</span><ChevronRight size={20} aria-hidden="true" /></a>
+  </div>
+  <p class="intro mt-4">{ui.readingHelp}</p>
+</BaseLayout>

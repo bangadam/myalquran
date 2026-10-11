@@ -1,0 +1,70 @@
+{
+ "number": 94,
+ "name": "الشرح",
+ "englishName": "Ash-Sharh",
+ "numberOfAyahs": 8,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "The Consolation",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "اَلَمْ نَشْرَحْ لَكَ صَدْرَكَۙ",
+   "textLatin": "Alam nasyraḥ laka ṣadrak(a).",
+   "textEnglish": "HAVE WE NOT opened up thy heart,"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "وَوَضَعْنَا عَنْكَ وِزْرَكَۙ",
+   "textLatin": "Wa waḍa‘nā ‘anka wizrak(a).",
+   "textEnglish": "and lifted from thee the burden"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "الَّذِيْٓ اَنْقَضَ ظَهْرَكَۙ",
+   "textLatin": "Allażī anqaḍa ẓahrak(a).",
+   "textEnglish": "that had weighed so heavily on thy back?"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "وَرَفَعْنَا لَكَ ذِكْرَكَۗ",
+   "textLatin": "Wa rafa‘nā laka żikrak(a).",
+   "textEnglish": "And [have We not] raised thee high in dignity?"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "فَاِنَّ مَعَ الْعُسْرِ يُسْرًاۙ",
+   "textLatin": "Fa'inna ma‘al-‘usri yusrā(n).",
+   "textEnglish": "And, behold, with every hardship comes ease:"
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "اِنَّ مَعَ الْعُسْرِ يُسْرًاۗ",
+   "textLatin": "Inna ma‘al-‘usri yusrā(n).",
+   "textEnglish": "verily, with every hardship comes ease!"
+  },
+  {
+   "numberInSurah": 7,
+   "textArabic": "فَاِذَا فَرَغْتَ فَانْصَبْۙ",
+   "textLatin": "Fa iżā faragta fanṣab.",
+   "textEnglish": "Hence, when thou art freed [from distress], remain steadfast,"
+  },
+  {
+   "numberInSurah": 8,
+   "textArabic": "وَاِلٰى رَبِّكَ فَارْغَبْ ࣖ",
+   "textLatin": "Wa ilā rabbika fargab.",
+   "textEnglish": "and unto thy Sustainer turn with love."
+  }
+ ],
+ "nextSurah": {
+  "number": 95,
+  "name": "التين",
+  "englishName": "At-Tin",
+  "numberOfAyahs": 8
+ },
+ "previousSurah": {
+  "number": 93,
+  "name": "الضحى",
+  "englishName": "Ad-Dhuhaa",
+  "numberOfAyahs": 11
+ }
+}

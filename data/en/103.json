@@ -1,0 +1,40 @@
+{
+ "number": 103,
+ "name": "العصر",
+ "englishName": "Al-Asr",
+ "numberOfAyahs": 3,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "The Declining Day, Epoch",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "وَالْعَصْرِۙ",
+   "textLatin": "Wal-‘aṣr(i).",
+   "textEnglish": "CONSIDER the flight of time!"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "اِنَّ الْاِنْسَانَ لَفِيْ خُسْرٍۙ",
+   "textLatin": "Innal-insāna lafī khusr(in).",
+   "textEnglish": "Verily, man is bound to lose himself"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "اِلَّا الَّذِيْنَ اٰمَنُوْا وَعَمِلُوا الصّٰلِحٰتِ وَتَوَاصَوْا بِالْحَقِّ ەۙ وَتَوَاصَوْا بِالصَّبْرِ ࣖ",
+   "textLatin": "Illal-lażīna āmanū wa ‘amiluṣ-ṣāliḥāti wa tawāṣau bil-ḥaqq(i), wa tawāṣau biṣ-ṣabr(i).",
+   "textEnglish": "unless he be of those who attain to faith, and do good works, and enjoin upon one another the keeping to truth, and enjoin upon one another patience in adversity."
+  }
+ ],
+ "nextSurah": {
+  "number": 104,
+  "name": "الهمزة",
+  "englishName": "Al-Humaza",
+  "numberOfAyahs": 9
+ },
+ "previousSurah": {
+  "number": 102,
+  "name": "التكاثر",
+  "englishName": "At-Takaathur",
+  "numberOfAyahs": 8
+ }
+}

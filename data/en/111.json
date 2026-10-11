@@ -1,0 +1,52 @@
+{
+ "number": 111,
+ "name": "اللهب",
+ "englishName": "Al-Masad",
+ "numberOfAyahs": 5,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "The Palm Fibre",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "تَبَّتْ يَدَآ اَبِيْ لَهَبٍ وَّتَبَّۗ",
+   "textLatin": "Tabbat yadā abī lahabiw wa tabb(a).",
+   "textEnglish": "DOOMED are the hands of him of the glowing countence: and doomed is he!"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "مَآ اَغْنٰى عَنْهُ مَالُهٗ وَمَا كَسَبَۗ",
+   "textLatin": "Mā agnā ‘anhu māluhū wa mā kasab(a).",
+   "textEnglish": "What will his wealth avail him, and all that he has gained?"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "سَيَصْلٰى نَارًا ذَاتَ لَهَبٍۙ",
+   "textLatin": "Sayaṣlā nāran żāta lahab(in).",
+   "textEnglish": "[In the life to come] he shall have to endure a fire fiercely glowing;"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "وَّامْرَاَتُهٗ ۗحَمَّالَةَ الْحَطَبِۚ",
+   "textLatin": "Wamra'atuh(ū), ḥammālatal-ḥaṭab(i).",
+   "textEnglish": "together with his wife, that carrier of evil tales,"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "فِيْ جِيْدِهَا حَبْلٌ مِّنْ مَّسَدٍ ࣖ",
+   "textLatin": "Fī jīdihā ḥablum mim masad(in).",
+   "textEnglish": "[who bears] around her neck a rope of twisted strands!"
+  }
+ ],
+ "nextSurah": {
+  "number": 112,
+  "name": "الاخلاص",
+  "englishName": "Al-Ikhlaas",
+  "numberOfAyahs": 4
+ },
+ "previousSurah": {
+  "number": 110,
+  "name": "النصر",
+  "englishName": "An-Nasr",
+  "numberOfAyahs": 3
+ }
+}

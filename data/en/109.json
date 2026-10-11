@@ -1,0 +1,58 @@
+{
+ "number": 109,
+ "name": "الكٰفرون",
+ "englishName": "Al-Kaafiroon",
+ "numberOfAyahs": 6,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "The Disbelievers",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "قُلْ يٰٓاَيُّهَا الْكٰفِرُوْنَۙ",
+   "textLatin": "Qul yā ayyuhal-kāfirūn(a).",
+   "textEnglish": "SAY: \"O you who deny the truth!"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "لَآ اَعْبُدُ مَا تَعْبُدُوْنَۙ",
+   "textLatin": "Lā a‘budu mā ta‘budūn(a).",
+   "textEnglish": "\"I do not worship that which you worship,"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "وَلَآ اَنْتُمْ عٰبِدُوْنَ مَآ اَعْبُدُۚ",
+   "textLatin": "Wa lā antum ‘ābidūna mā a‘bud(u).",
+   "textEnglish": "and neither do you worship that which I worship!"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "وَلَآ اَنَا۠ عَابِدٌ مَّا عَبَدْتُّمْۙ",
+   "textLatin": "Wa lā ana ‘ābidum mā ‘abattum.",
+   "textEnglish": "\"And I will not worship ~hat which you have [ever] worshipped,"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "وَلَآ اَنْتُمْ عٰبِدُوْنَ مَآ اَعْبُدُۗ",
+   "textLatin": "Wa lā antum ‘ābidūna mā a‘bud(u).",
+   "textEnglish": "and neither will you [ever] worship that which I worship."
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "لَكُمْ دِيْنُكُمْ وَلِيَ دِيْنِ ࣖ",
+   "textLatin": "Lakum dīnukum wa liya dīn(i).",
+   "textEnglish": "Unto you, your moral law, and unto me, mine!\""
+  }
+ ],
+ "nextSurah": {
+  "number": 110,
+  "name": "النصر",
+  "englishName": "An-Nasr",
+  "numberOfAyahs": 3
+ },
+ "previousSurah": {
+  "number": 108,
+  "name": "الكوثر",
+  "englishName": "Al-Kawthar",
+  "numberOfAyahs": 3
+ }
+}

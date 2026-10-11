@@ -1,0 +1,262 @@
+{
+ "number": 78,
+ "name": "النبأ",
+ "englishName": "An-Naba",
+ "numberOfAyahs": 40,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "The Announcement",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "عَمَّ يَتَسَاۤءَلُوْنَۚ ",
+   "textLatin": "‘Amma yatasā'alūn(a).",
+   "textEnglish": "ABOUT WHAT do they [most often] ask one another?"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "عَنِ النَّبَاِ الْعَظِيْمِۙ ",
+   "textLatin": "‘Anin naba'il-‘aẓīm(i).",
+   "textEnglish": "About the awesome tiding [of resurrection],"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "الَّذِيْ هُمْ فِيْهِ مُخْتَلِفُوْنَۗ ",
+   "textLatin": "Allażī hum fīhi mukhtalifūn(a).",
+   "textEnglish": "on which they [so utterly] disagree."
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "كَلَّا سَيَعْلَمُوْنَۙ ",
+   "textLatin": "Kallā saya‘lamūn(a).",
+   "textEnglish": "Nay, but in time they will come to understand [it]!"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "ثُمَّ كَلَّا سَيَعْلَمُوْنَ",
+   "textLatin": "Ṡumma kallā saya‘lamūn(a).",
+   "textEnglish": "And once again: Nay, but in time they will come to understand!"
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "اَلَمْ نَجْعَلِ الْاَرْضَ مِهٰدًاۙ",
+   "textLatin": "Alam naj‘alil-arḍa mihādā(n).",
+   "textEnglish": "HAVE WE NOT made the earth a resting-place [for you],"
+  },
+  {
+   "numberInSurah": 7,
+   "textArabic": "وَّالْجِبَالَ اَوْتَادًاۖ",
+   "textLatin": "Wal-jibāla autādā(n).",
+   "textEnglish": "and the mountains [its] pegs?"
+  },
+  {
+   "numberInSurah": 8,
+   "textArabic": "وَّخَلَقْنٰكُمْ اَزْوَاجًاۙ ",
+   "textLatin": "Wa khalaqnākum azwājā(n).",
+   "textEnglish": "And We have created you in pairs;"
+  },
+  {
+   "numberInSurah": 9,
+   "textArabic": "وَّجَعَلْنَا نَوْمَكُمْ سُبَاتًاۙ ",
+   "textLatin": "Wa ja‘alnā naumakum subātā(n).",
+   "textEnglish": "and We have made your sleep [a symbol of] death"
+  },
+  {
+   "numberInSurah": 10,
+   "textArabic": "وَّجَعَلْنَا الَّيْلَ لِبَاسًاۙ ",
+   "textLatin": "Wa ja‘alnal-laila libāsā(n).",
+   "textEnglish": "and made the night [its] cloak"
+  },
+  {
+   "numberInSurah": 11,
+   "textArabic": "وَّجَعَلْنَا النَّهَارَ مَعَاشًاۚ",
+   "textLatin": "Wa ja‘alnan-nahāra ma‘āsyā(n).",
+   "textEnglish": "and made the day [a symbol of] life."
+  },
+  {
+   "numberInSurah": 12,
+   "textArabic": "وَبَنَيْنَا فَوْقَكُمْ سَبْعًا شِدَادًاۙ ",
+   "textLatin": "Wa banainā fauqakum sab‘an syidādā(n).",
+   "textEnglish": "And We have built above you seven firmaments,"
+  },
+  {
+   "numberInSurah": 13,
+   "textArabic": "وَّجَعَلْنَا سِرَاجًا وَّهَّاجًاۖ",
+   "textLatin": "Wa ja‘alnā sirājaw wahhājā(n).",
+   "textEnglish": "and have placed [therein the sun,] a lamp full of blazing splendour."
+  },
+  {
+   "numberInSurah": 14,
+   "textArabic": "وَّاَنْزَلْنَا مِنَ الْمُعْصِرٰتِ مَاۤءً ثَجَّاجًاۙ",
+   "textLatin": "Wa anzalnā minal-mu‘ṣirāti mā'an ṡajjājā(n).",
+   "textEnglish": "And from the wind-driven clouds We send down waters pouring in abundance,"
+  },
+  {
+   "numberInSurah": 15,
+   "textArabic": "لِّنُخْرِجَ بِهٖ حَبًّا وَّنَبَاتًاۙ",
+   "textLatin": "Linukhrija bihī ḥabbaw wa nabātā(n).",
+   "textEnglish": "so that We might bring forth thereby grain, and herbs,"
+  },
+  {
+   "numberInSurah": 16,
+   "textArabic": "وَّجَنّٰتٍ اَلْفَافًاۗ",
+   "textLatin": "Wa jannātin alfāfā(n).",
+   "textEnglish": "and gardens dense with follage."
+  },
+  {
+   "numberInSurah": 17,
+   "textArabic": "اِنَّ يَوْمَ الْفَصْلِ كَانَ مِيْقَاتًاۙ",
+   "textLatin": "Inna yaumal-faṣli kāna mīqātā(n).",
+   "textEnglish": "VERILY, the Day of Distinction [between the true and the false] has indeed its appointed time:"
+  },
+  {
+   "numberInSurah": 18,
+   "textArabic": "يَّوْمَ يُنْفَخُ فِى الصُّوْرِ فَتَأْتُوْنَ اَفْوَاجًاۙ",
+   "textLatin": "Yauma yunfakhu fiṣ-ṣūri fa ta'tūna afwājā(n).",
+   "textEnglish": "the Day when the trumpet [of resurrection] is sounded and you all come forward in multitudes;"
+  },
+  {
+   "numberInSurah": 19,
+   "textArabic": "وَّفُتِحَتِ السَّمَاۤءُ فَكَانَتْ اَبْوَابًاۙ",
+   "textLatin": "Wa futiḥatis-samā'u fa kānat abwābā(n).",
+   "textEnglish": "and when the skies are opened and become [as wide-flung] gates;"
+  },
+  {
+   "numberInSurah": 20,
+   "textArabic": "وَّسُيِّرَتِ الْجِبَالُ فَكَانَتْ سَرَابًاۗ",
+   "textLatin": "Wa suyyiratil-jibālu fa kānat sarābā(n).",
+   "textEnglish": "and when the mountains are made to vanish as if they had been a mirage."
+  },
+  {
+   "numberInSurah": 21,
+   "textArabic": "اِنَّ جَهَنَّمَ كَانَتْ مِرْصَادًاۙ",
+   "textLatin": "Inna jahannama kānat mirṣādā(n).",
+   "textEnglish": "[On that Day,] verily, hell will lie in wait [for those who deny the truth] –"
+  },
+  {
+   "numberInSurah": 22,
+   "textArabic": "لِّلطّٰغِيْنَ مَاٰبًاۙ",
+   "textLatin": "Liṭ-ṭāgīna ma'ābā(n).",
+   "textEnglish": "a goal for all who are wont to transgress the bounds of what is right!"
+  },
+  {
+   "numberInSurah": 23,
+   "textArabic": "لّٰبِثِيْنَ فِيْهَآ اَحْقَابًاۚ",
+   "textLatin": "Lābiṡīna fīhā aḥqābā(n).",
+   "textEnglish": "In it shall they remain for a long time."
+  },
+  {
+   "numberInSurah": 24,
+   "textArabic": "لَا يَذُوْقُوْنَ فِيْهَا بَرْدًا وَّلَا شَرَابًاۙ",
+   "textLatin": "Lā yażūqūna fīhā bardaw wa lā syarābā(n).",
+   "textEnglish": "Neither coolness shall they taste therein nor any [thirst-quenching] drink –"
+  },
+  {
+   "numberInSurah": 25,
+   "textArabic": "اِلَّا حَمِيْمًا وَّغَسَّاقًاۙ",
+   "textLatin": "Illā ḥamīmaw wa gassāqā(n).",
+   "textEnglish": "only burning despair and ice-cold darkness:"
+  },
+  {
+   "numberInSurah": 26,
+   "textArabic": "جَزَاۤءً وِّفَاقًاۗ",
+   "textLatin": "Jazā'aw wifāqā(n).",
+   "textEnglish": "a meet requital [for their sins]!"
+  },
+  {
+   "numberInSurah": 27,
+   "textArabic": "اِنَّهُمْ كَانُوْا لَا يَرْجُوْنَ حِسَابًاۙ",
+   "textLatin": "Innahum kānū lā yarjūna ḥisābā(n).",
+   "textEnglish": "Behold, they were not expecting to be called to account,"
+  },
+  {
+   "numberInSurah": 28,
+   "textArabic": "وَّكَذَّبُوْا بِاٰيٰتِنَا كِذَّابًاۗ",
+   "textLatin": "Wa każżabū bi'āyātinā kiżżābā(n).",
+   "textEnglish": "having given the lie to Our messages one and all:"
+  },
+  {
+   "numberInSurah": 29,
+   "textArabic": "وَكُلَّ شَيْءٍ اَحْصَيْنٰهُ كِتٰبًاۙ",
+   "textLatin": "Wa kulla syai'in aḥṣaināhu kitābā(n).",
+   "textEnglish": "but We have placed on record every single thing [of what they did]."
+  },
+  {
+   "numberInSurah": 30,
+   "textArabic": "فَذُوْقُوْا فَلَنْ نَّزِيْدَكُمْ اِلَّا عَذَابًا ࣖ",
+   "textLatin": "Fa żūqū falan nazīdakum illā ‘ażābā(n)",
+   "textEnglish": "[And so We shall say:] \"Taste, then, [the fruit of your evil doings,] for now We shall bestow on you nothing but more and more suffering!\""
+  },
+  {
+   "numberInSurah": 31,
+   "textArabic": "اِنَّ لِلْمُتَّقِيْنَ مَفَازًاۙ",
+   "textLatin": "Inna lil-muttaqīna mafāzā(n).",
+   "textEnglish": "[But,] verily for the God-conscious there is supreme fulfilment in store:"
+  },
+  {
+   "numberInSurah": 32,
+   "textArabic": "حَدَاۤىِٕقَ وَاَعْنَابًاۙ",
+   "textLatin": "Ḥadā'iqa wa a‘nābā(n).",
+   "textEnglish": "luxuriant gardens and vinyards,"
+  },
+  {
+   "numberInSurah": 33,
+   "textArabic": "وَّكَوَاعِبَ اَتْرَابًاۙ",
+   "textLatin": "Wa kawā‘iba atrābā(n).",
+   "textEnglish": "and splendid companions well matched,"
+  },
+  {
+   "numberInSurah": 34,
+   "textArabic": "وَّكَأْسًا دِهَاقًاۗ",
+   "textLatin": "Wa ka'san dihāqā(n).",
+   "textEnglish": "and a cup [of happiness] overflowing."
+  },
+  {
+   "numberInSurah": 35,
+   "textArabic": "لَا يَسْمَعُوْنَ فِيْهَا لَغْوًا وَّلَا كِذّٰبًا",
+   "textLatin": "Lā yasma‘ūna fīhā lagwaw wa lā kiżżābā(n).",
+   "textEnglish": "No empty talk will they hear in that [paradise], nor any lie."
+  },
+  {
+   "numberInSurah": 36,
+   "textArabic": "جَزَاۤءً مِّنْ رَّبِّكَ عَطَاۤءً حِسَابًاۙ",
+   "textLatin": "Jazā'am mir rabbika ‘aṭā'an ḥisābā(n).",
+   "textEnglish": "[All this will be] a reward from thy Sustainer, a gift in accordance with [His Own] reckoning –"
+  },
+  {
+   "numberInSurah": 37,
+   "textArabic": "رَّبِّ السَّمٰوٰتِ وَالْاَرْضِ وَمَا بَيْنَهُمَا الرَّحْمٰنِ لَا يَمْلِكُوْنَ مِنْهُ خِطَابًاۚ ",
+   "textLatin": "Rabbis-samāwāti wal-arḍi wa mā bainahumar-raḥmāni lā yamlikūna minhu khiṭābā(n).",
+   "textEnglish": "[a reward from] the Sustainer of the heavens and the earth and all that is between them, the Most Gracious! [And] none shall have it in their power to raise their voices unto Him"
+  },
+  {
+   "numberInSurah": 38,
+   "textArabic": "يَوْمَ يَقُوْمُ الرُّوْحُ وَالْمَلٰۤىِٕكَةُ صَفًّاۙ  لَّا يَتَكَلَّمُوْنَ اِلَّا مَنْ اَذِنَ لَهُ الرَّحْمٰنُ وَقَالَ صَوَابًا",
+   "textLatin": "Yauma yaqūmur-rūḥu wal-malā'ikatu ṣaffā(n), lā yatakallamūna illā man ażina lahur-raḥmānu wa qāla ṣawābā(n).",
+   "textEnglish": "on the Day when all [human] souls and all the angels will stand up in ranks: none will speak but he to whom the Most Gracious will have given leave; and [everyone] will say [only] what is right."
+  },
+  {
+   "numberInSurah": 39,
+   "textArabic": "ذٰلِكَ الْيَوْمُ الْحَقُّۚ فَمَنْ شَاۤءَ اتَّخَذَ اِلٰى رَبِّهٖ مَاٰبًا",
+   "textLatin": "Żālikal-yaumul-ḥaqq(u), faman syā'attakhaża ilā rabbihī ma'ābā(n).",
+   "textEnglish": "That will be the Day of Ultimate Truth: whoever wills, then, let him take the path that leads towards his Sustainer!"
+  },
+  {
+   "numberInSurah": 40,
+   "textArabic": "اِنَّآ اَنْذَرْنٰكُمْ عَذَابًا قَرِيْبًا ەۙ يَّوْمَ يَنْظُرُ الْمَرْءُ مَا قَدَّمَتْ يَدَاهُ وَيَقُوْلُ الْكٰفِرُ يٰلَيْتَنِيْ كُنْتُ تُرٰبًا ࣖ",
+   "textLatin": "Innā anżarnākum ‘ażāban qarībā(n), yauma yanẓurul-mar'u mā qaddamat yadāhu wa yaqūlul-kāfiru yā laitanī kuntu turābā(n).",
+   "textEnglish": "Verily, We have warned you of suffering near at hand - [suffering] on the Day when man shall [clearly] see what his hands have sent ahead, and when he who has denied the truth shall say, \"Oh, would that I were mere dust...!\""
+  }
+ ],
+ "nextSurah": {
+  "number": 79,
+  "name": "النّٰزعٰت",
+  "englishName": "An-Naazi'aat",
+  "numberOfAyahs": 46
+ },
+ "previousSurah": {
+  "number": 77,
+  "name": "المرسلٰت",
+  "englishName": "Al-Mursalaat",
+  "numberOfAyahs": 50
+ }
+}

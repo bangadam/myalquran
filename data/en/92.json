@@ -1,0 +1,148 @@
+{
+ "number": 92,
+ "name": "الّيل",
+ "englishName": "Al-Lail",
+ "numberOfAyahs": 21,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "The Night",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "وَالَّيْلِ اِذَا يَغْشٰىۙ",
+   "textLatin": "Wal-laili iżā yagsyā.",
+   "textEnglish": "CONSIDER the night as it veils [the earth] in darkness,"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "وَالنَّهَارِ اِذَا تَجَلّٰىۙ",
+   "textLatin": "Wan-nahāri iżā tajallā.",
+   "textEnglish": "and the day as it rises bright!"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "وَمَا خَلَقَ الذَّكَرَ وَالْاُنْثٰىٓ ۙ",
+   "textLatin": "Wa mā khalaqaż-żakara wal-unṡā.",
+   "textEnglish": "Consider the creation of the male and the female!"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "اِنَّ سَعْيَكُمْ لَشَتّٰىۗ",
+   "textLatin": "Inna sa‘yakum lasyattā.",
+   "textEnglish": "Verily, [O men,] you aim at most divergent ends!"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "فَاَمَّا مَنْ اَعْطٰى وَاتَّقٰىۙ",
+   "textLatin": "Fa ammā man a‘ṭā wattaqā.",
+   "textEnglish": "Thus, as for him who gives [to others] and is conscious of God,"
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "وَصَدَّقَ بِالْحُسْنٰىۙ",
+   "textLatin": "Wa ṣaddaqa bil-ḥusnā.",
+   "textEnglish": "and believes in the truth of the ultimate good"
+  },
+  {
+   "numberInSurah": 7,
+   "textArabic": "فَسَنُيَسِّرُهٗ لِلْيُسْرٰىۗ",
+   "textLatin": "Fa sanuyassiruhū lil-yusrā.",
+   "textEnglish": "for him shall We make easy the path towards [ultimate] ease."
+  },
+  {
+   "numberInSurah": 8,
+   "textArabic": "وَاَمَّا مَنْۢ بَخِلَ وَاسْتَغْنٰىۙ",
+   "textLatin": "Wa ammā man bakhila wastagnā.",
+   "textEnglish": "But as for him who is niggardly, and thinks that he is self-sufficient,"
+  },
+  {
+   "numberInSurah": 9,
+   "textArabic": "وَكَذَّبَ بِالْحُسْنٰىۙ",
+   "textLatin": "Wa każżaba bil-ḥusnā.",
+   "textEnglish": "and calls the ultimate good a lie –"
+  },
+  {
+   "numberInSurah": 10,
+   "textArabic": "فَسَنُيَسِّرُهٗ لِلْعُسْرٰىۗ",
+   "textLatin": "Fa sanuyassiruhū lil-‘usrā.   ",
+   "textEnglish": "for him shall We make easy the path towards hardship:"
+  },
+  {
+   "numberInSurah": 11,
+   "textArabic": "وَمَا يُغْنِيْ عَنْهُ مَالُهٗٓ اِذَا تَرَدّٰىٓۙ",
+   "textLatin": "Wa mā yugnī ‘anhu māluhū iżā taraddā.",
+   "textEnglish": "and what will his wealth avail him when he goes down [to his grave]?"
+  },
+  {
+   "numberInSurah": 12,
+   "textArabic": "اِنَّ عَلَيْنَا لَلْهُدٰىۖ",
+   "textLatin": "Inna ‘alainā lal-hudā.",
+   "textEnglish": "BEHOLD, it is indeed for Us to grace [you] with guidance;"
+  },
+  {
+   "numberInSurah": 13,
+   "textArabic": "وَاِنَّ لَنَا لَلْاٰخِرَةَ وَالْاُوْلٰىۗ",
+   "textLatin": "Wa inna lanā lal-ākhirata wal-ūlā.",
+   "textEnglish": "and, behold, Ours is [the dominion over] the life to come as well as [over] this earlier part [of your life]:"
+  },
+  {
+   "numberInSurah": 14,
+   "textArabic": "فَاَنْذَرْتُكُمْ نَارًا تَلَظّٰىۚ",
+   "textLatin": "Fa anżartukum nāran talaẓẓā.",
+   "textEnglish": "and so I warn you of the raging fire -"
+  },
+  {
+   "numberInSurah": 15,
+   "textArabic": "لَا يَصْلٰىهَآ اِلَّا الْاَشْقَىۙ",
+   "textLatin": "Lā yaṣlāhā illal-asyqā.",
+   "textEnglish": "[the fire] which none shall have to endure but that most hapless wretch"
+  },
+  {
+   "numberInSurah": 16,
+   "textArabic": "الَّذِيْ كَذَّبَ وَتَوَلّٰىۗ",
+   "textLatin": "Allażī każżaba wa tawallā.",
+   "textEnglish": "who gives the lie to the truth and turns away [from it]."
+  },
+  {
+   "numberInSurah": 17,
+   "textArabic": "وَسَيُجَنَّبُهَا الْاَتْقَىۙ",
+   "textLatin": "Wa sayujannabuhal-atqā.",
+   "textEnglish": "For, distant from it shall remain he who is truly conscious of God:"
+  },
+  {
+   "numberInSurah": 18,
+   "textArabic": "الَّذِيْ يُؤْتِيْ مَالَهٗ يَتَزَكّٰىۚ",
+   "textLatin": "Allażī yu'tī mālahū yatazakkā.",
+   "textEnglish": "he that spends his possessions [on others] so that he might grow in purity –"
+  },
+  {
+   "numberInSurah": 19,
+   "textArabic": "وَمَا لِاَحَدٍ عِنْدَهٗ مِنْ نِّعْمَةٍ تُجْزٰىٓۙ",
+   "textLatin": "Wa mā li'aḥadin ‘indahū min ni‘matin tujzā.",
+   "textEnglish": "not as payment for favours received,"
+  },
+  {
+   "numberInSurah": 20,
+   "textArabic": "اِلَّا ابْتِغَاۤءَ وَجْهِ رَبِّهِ الْاَعْلٰىۚ",
+   "textLatin": "Illabtigā'a wajhi rabbihil-a‘lā.",
+   "textEnglish": "but only out of a longing for the countenance of his Sustainer, the All-Highest:"
+  },
+  {
+   "numberInSurah": 21,
+   "textArabic": "وَلَسَوْفَ يَرْضٰى ࣖ",
+   "textLatin": "Wa lasaufa yarḍā.",
+   "textEnglish": "and such, indeed, shall in time be well-pleased."
+  }
+ ],
+ "nextSurah": {
+  "number": 93,
+  "name": "الضحى",
+  "englishName": "Ad-Dhuhaa",
+  "numberOfAyahs": 11
+ },
+ "previousSurah": {
+  "number": 91,
+  "name": "الشمس",
+  "englishName": "Ash-Shams",
+  "numberOfAyahs": 15
+ }
+}

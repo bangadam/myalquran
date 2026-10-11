@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { locales, labels, prayers, type Locale } from '../../../lib/content';
+import ContentAvailability from '../../../components/ContentAvailability.astro';
+import { Search } from 'lucide-react';
+import { interfaceLabels } from '../../../lib/interface-labels';
+
+export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
+const locale = Astro.params.locale as Locale;
+const t = labels(locale);
+const entries = prayers(locale);
+const groups = Array.from(new Set(entries.map(prayer => prayer.group))).map(name => ({
+  name,
+  items: entries.filter(prayer => prayer.group === name)
+}));
+---
+<BaseLayout title={t.prayerDirectory} locale={locale} section="prayers">
+  <header class="border-b border-[var(--divider)] pb-5 mb-2">
+    <h1 class="mb-0">{t.prayers}</h1>
+  </header>
+
+  {entries.some(prayer => prayer.language !== locale) && <aside class="availability"><p>{t.missingTranslation}</p><ContentAvailability locale={locale} /></aside>}
+  <label class="search-field" data-prayer-search-field hidden><span class="sr-only">{interfaceLabels[locale].searchPrayer}</span><Search size={20} aria-hidden="true" /><input type="search" data-prayer-search placeholder={interfaceLabels[locale].searchPrayer} /></label>
+  <p data-prayer-empty class="availability" role="status" hidden>{t.searchEmpty}</p>
+
+  {groups.map((group, index) => <section aria-labelledby={`prayer-group-${index}`} class="pt-2" data-prayer-group>
+    <div class="section-meta"><h2 id={`prayer-group-${index}`} lang={group.items[0].language}>{group.name}</h2><span class="tabular-nums">{group.items.length} {t.prayers}</span></div>
+    <ol class="prayer-list">{group.items.map(prayer => <li data-prayer-row>
+      <a class="gap-3 no-underline" href={`/${locale}/doa/${prayer.id}/`}>
+        <span class="surah-number shrink-0 tabular-nums" aria-hidden="true">{prayer.id}</span>
+        <span class="min-w-0 flex-1 font-medium" lang={prayer.language}>{prayer.name}</span>
+        <span class="text-primary" aria-hidden="true">→</span>
+      </a>
+    </li>)}</ol>
+  </section>)}
+</BaseLayout>
+<script>
+  const input = document.querySelector<HTMLInputElement>('[data-prayer-search]');
+  const field = document.querySelector<HTMLElement>('[data-prayer-search-field]');
+  if (input && field) {
+    field.hidden = false;
+    input.addEventListener('input', () => {
+      const query = input.value.normalize('NFKD').toLocaleLowerCase().trim();
+      let matches = 0;
+      for (const group of document.querySelectorAll<HTMLElement>('[data-prayer-group]')) {
+        let visible = false;
+        for (const row of group.querySelectorAll<HTMLElement>('[data-prayer-row]')) {
+          row.hidden = !`${group.querySelector('h2')?.textContent} ${row.textContent}`.normalize('NFKD').toLocaleLowerCase().includes(query);
+          if (!row.hidden) { visible = true; matches++; }
+        }
+        group.hidden = !visible;
+      }
+      const empty = document.querySelector<HTMLElement>('[data-prayer-empty]');
+      if (empty) empty.hidden = matches > 0;
+    });
+  }
+</script>

@@ -1,0 +1,106 @@
+{
+ "number": 61,
+ "name": "الصّفّ",
+ "englishName": "As-Saff",
+ "numberOfAyahs": 14,
+ "revelationType": "Medinan",
+ "englishNameTranslation": "The Ranks",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "سَبَّحَ لِلّٰهِ مَا فِى السَّمٰوٰتِ وَمَا فِى الْاَرْضِۚ وَهُوَ الْعَزِيْزُ الْحَكِيْمُ ",
+   "textLatin": "Sabbaḥa lillāhi mā fis-samāwāti wa mā fil-arḍ(i), wa huwal-‘azīzul-ḥakīm(u).",
+   "textEnglish": "ALL THAT IS in the heavens and all that is on earth extols God's limitless glory: for He alone is almighty, truly wise!"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "يٰٓاَيُّهَا الَّذِيْنَ اٰمَنُوْا لِمَ تَقُوْلُوْنَ مَا لَا تَفْعَلُوْنَ ",
+   "textLatin": "Yā ayyuhal-lażīna āmanū lima taqūlūna mā lā taf‘alūn(a).",
+   "textEnglish": "O YOU who have attained to faith! Why do you say one thing and do another?"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "كَبُرَ مَقْتًا عِنْدَ اللّٰهِ اَنْ تَقُوْلُوْا مَا لَا تَفْعَلُوْنَ ",
+   "textLatin": "Kabura maqtan ‘indallāhi an taqūlū mā lā taf‘alūn(a).",
+   "textEnglish": "Most loathsome is it in the sight of God that you say what you do not do!"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "اِنَّ اللّٰهَ يُحِبُّ الَّذِيْنَ يُقَاتِلُوْنَ فِيْ سَبِيْلِهٖ صَفًّا كَاَنَّهُمْ بُنْيَانٌ مَّرْصُوْصٌ",
+   "textLatin": "Innallāha yuḥibbul-lażīna yuqātilūna fī sabīlihī ṣaffan ka'annahum bun-yānum marṣūṣ(un).",
+   "textEnglish": "Verily, God loves [only] those who fight in His cause in [solid] ranks, as though they were a building firm and compact."
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "وَاِذْ قَالَ مُوْسٰى لِقَوْمِهٖ يٰقَوْمِ لِمَ تُؤْذُوْنَنِيْ وَقَدْ تَّعْلَمُوْنَ اَنِّيْ رَسُوْلُ اللّٰهِ اِلَيْكُمْۗ فَلَمَّا زَاغُوْٓا اَزَاغَ اللّٰهُ قُلُوْبَهُمْۗ وَاللّٰهُ لَا يَهْدِى الْقَوْمَ الْفٰسِقِيْنَ ",
+   "textLatin": "Wa iż qāla mūsā liqaumihī yā qaumi lima tu'żūnanī wa qad ta‘lamūna annī rasūlullāhi ilaikum, falammā zāgū azāgallāhu qulūbahum, wallāhu lā yahdil-qaumal-fāsiqīn(a).",
+   "textEnglish": "Now when Moses spoke to his people, [it was this same truth that he had in mind:] \"O my people! Why do you cause me grief, the while you know that I am an apostle of God sent unto you?\" And so, when they swerved from the right way, God let their hearts swerve from the truth: for God does not bestow His guidance upon iniquitous folk."
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "وَاِذْ قَالَ عِيْسَى ابْنُ مَرْيَمَ يٰبَنِيْٓ اِسْرَاۤءِيْلَ اِنِّيْ رَسُوْلُ اللّٰهِ اِلَيْكُمْ مُّصَدِّقًا لِّمَا بَيْنَ يَدَيَّ مِنَ التَّوْرٰىةِ وَمُبَشِّرًاۢ بِرَسُوْلٍ يَّأْتِيْ مِنْۢ بَعْدِى اسْمُهٗٓ اَحْمَدُۗ فَلَمَّا جَاۤءَهُمْ بِالْبَيِّنٰتِ قَالُوْا هٰذَا سِحْرٌ مُّبِيْنٌ ",
+   "textLatin": "Wa iż qāla ‘īsabnu maryama yā banī isrā'īla innī rasūlullāhi ilaikum muṣaddiqal limā baina yadayya minat-taurāti wa mubasysyiram birasūliy ya'tī mim ba‘dismuhū aḥmad(u), falammā jā'ahum bil-bayyināti qālū hāżā siḥrum mubīn(un).",
+   "textEnglish": "And [this happened, too,] when Jesus, the son of Mary, said: \"O children of Israel! Behold, I am an apostle of God unto you, [sent] to confirm the truth of whatever there still remains of the Torah, and to give [you] the glad tiding of an apostle who shall come after me, whose name shall be Ahmad.\" But when he [whose coming Jesus had foretold] came unto them with all evidence of the truth, they said: \"This [alleged message of his] is [nothing but] spellbinding eloquence!\""
+  },
+  {
+   "numberInSurah": 7,
+   "textArabic": "وَمَنْ اَظْلَمُ مِمَّنِ افْتَرٰى عَلَى اللّٰهِ الْكَذِبَ وَهُوَ يُدْعٰىٓ اِلَى الْاِسْلَامِۗ وَاللّٰهُ لَا يَهْدِى الْقَوْمَ الظّٰلِمِيْنَ ",
+   "textLatin": "Wa man aẓlamu mimmaniftarā ‘alallāhil-każiba wa huwa yud‘ā ilal-islām(i), wallāhu lā yahdil-qaumaẓ-ẓālimīn(a).",
+   "textEnglish": "And who could be more wicked than one who invents [such] a lie about [a message from] God, seeing that he is [but] being called to self-surrender unto Him? But God does not bestow His guidance upon evil-doing folk."
+  },
+  {
+   "numberInSurah": 8,
+   "textArabic": "يُرِيْدُوْنَ لِيُطْفِـُٔوْا نُوْرَ اللّٰهِ بِاَفْوَاهِهِمْۗ وَاللّٰهُ مُتِمُّ نُوْرِهٖ وَلَوْ كَرِهَ الْكٰفِرُوْنَ ",
+   "textLatin": "Yurīdūna liyuṭfi'ū nūrallāhi bi'afwāhihim, wallāhu mutimmu nūrihī wa lau karihal-kāfirūn(a).",
+   "textEnglish": "They aim to extinguish God's light with their utterances: but God has willed to spread His light in all its fullness, however hateful this may be to all who deny the truth"
+  },
+  {
+   "numberInSurah": 9,
+   "textArabic": "هُوَ الَّذِيْٓ اَرْسَلَ رَسُوْلَهٗ بِالْهُدٰى وَدِيْنِ الْحَقِّ لِيُظْهِرَهٗ عَلَى الدِّيْنِ كُلِّهٖۙ وَلَوْ كَرِهَ الْمُشْرِكُوْنَ ࣖ ",
+   "textLatin": "Wa huwal-lażī arsala rasūlahū bil-hudā wa dīnil-ḥaqqi  liyuẓhirahū ‘alad-dīni kullih(ī), wa lau karihal-musyrikūn(a).",
+   "textEnglish": "He it is who has sent forth His Apostle with [the task of] spreading guidance and the religion of truth, to the end that He make it prevail over all [false] religion, however hateful this may be to those who ascribe divinity to aught but God."
+  },
+  {
+   "numberInSurah": 10,
+   "textArabic": "يٰٓاَيُّهَا الَّذِيْنَ اٰمَنُوْا هَلْ اَدُلُّكُمْ عَلٰى تِجَارَةٍ تُنْجِيْكُمْ مِّنْ عَذَابٍ اَلِيْمٍ ",
+   "textLatin": "Yā ayyuhal-lażīna āmanū hal adullukum ‘alā tijāratin tunjīkum min ‘ażābin alīm(in).",
+   "textEnglish": "O YOU who have attained to faith! Shall I point out to you a bargain that will save you from grievous suffering [in this world and in the life to come]?"
+  },
+  {
+   "numberInSurah": 11,
+   "textArabic": "تُؤْمِنُوْنَ بِاللّٰهِ وَرَسُوْلِهٖ وَتُجَاهِدُوْنَ فِيْ سَبِيْلِ اللّٰهِ بِاَمْوَالِكُمْ وَاَنْفُسِكُمْۗ ذٰلِكُمْ خَيْرٌ لَّكُمْ اِنْ كُنْتُمْ تَعْلَمُوْنَۙ ",
+   "textLatin": "Tu'minūna billāhi wa rasūlihī wa tujāhidūna fī sabīlillāhi bi'amwālikum wa anfusikum, żālikum khairul lakum in kuntum ta‘lamūn(a).",
+   "textEnglish": "You are to believe in God and His Apostle, and to strive hard in God's cause with your possessions and your lives: this is for your own good - if you but knew it!"
+  },
+  {
+   "numberInSurah": 12,
+   "textArabic": "يَغْفِرْ لَكُمْ ذُنُوْبَكُمْ وَيُدْخِلْكُمْ جَنّٰتٍ تَجْرِيْ مِنْ تَحْتِهَا الْاَنْهٰرُ وَمَسٰكِنَ طَيِّبَةً فِيْ جَنّٰتِ عَدْنٍۗ ذٰلِكَ الْفَوْزُ الْعَظِيْمُۙ ",
+   "textLatin": "Yagfir lakum żunūbakum wa yudkhilkum jannātin tajrī min taḥtihal-anhāru wa masākina ṭayyibatan fī jannāti ‘adn(in), żālikal-fauzul-‘aẓīm(u).",
+   "textEnglish": "[If you do so,] He will forgive you your sins, and [in the life to come] will admit you into gardens through which running waters flow, and into goodly mansions in [those] gardens of perpetual bliss: that [will be] the triumph supreme!"
+  },
+  {
+   "numberInSurah": 13,
+   "textArabic": "وَاُخْرٰى تُحِبُّوْنَهَاۗ نَصْرٌ مِّنَ اللّٰهِ وَفَتْحٌ قَرِيْبٌۗ وَبَشِّرِ الْمُؤْمِنِيْنَ ",
+   "textLatin": "Wa ukhrā tuḥibbūnahā, naṣrum minallāhi wa fatḥun qarīb(un), wa basysyiril-mu'minīn(a).",
+   "textEnglish": "And [withal, He will grant you] yet another thing that you dearly love: succour from God [in this world], and a victory soon to come: and [thereof, O Prophet,] give thou a glad tiding to all who believe."
+  },
+  {
+   "numberInSurah": 14,
+   "textArabic": "يٰٓاَيُّهَا الَّذِيْنَ اٰمَنُوْا كُوْنُوْٓا اَنْصَارَ اللّٰهِ كَمَا قَالَ عِيْسَى ابْنُ مَرْيَمَ لِلْحَوَارِيّٖنَ مَنْ اَنْصَارِيْٓ اِلَى اللّٰهِ ۗقَالَ الْحَوَارِيُّوْنَ نَحْنُ اَنْصَارُ اللّٰهِ فَاٰمَنَتْ طَّاۤىِٕفَةٌ مِّنْۢ بَنِيْٓ اِسْرَاۤءِيْلَ وَكَفَرَتْ طَّاۤىِٕفَةٌ ۚفَاَيَّدْنَا الَّذِيْنَ اٰمَنُوْا عَلٰى عَدُوِّهِمْ فَاَصْبَحُوْا ظٰهِرِيْنَ ࣖ ",
+   "textLatin": "Yā ayyuhal-lażīna āmanū kūnū anṣārallāhi kamā qāla ‘īsabnu maryama lil-ḥawāriyyīna man anṣārī ilallāh(i), qālal-ḥawāriyyūna naḥnu anṣārullāhi fa'āmanaṭ-ṭā'ifatum mim banī isrā'īla wa kafaraṭ-ṭā'ifah(tun), fa'ayyadnal-lażīna āmanū ‘alā ‘aduwwihim fa'aṣbaḥū ẓāhirīn(a).",
+   "textEnglish": "O YOU who have attained to faith! Be helpers [in the cause of God - even as Jesus, the son of Mary, said unto the white-garbed ones, \"Who will be my helpers in God's cause?\" - whereupon the white-garbed [disciples] replied, \"We shall be [thy] helpers [in the cause] of God!\" And so [it happened that] some of the children of Israel came to believe [in the apostleship of Jesus], whereas others denied the truth. But [now] We have given strength against their foes unto those who have [truly] attained to faith: and they have become the ones that shall prevail."
+  }
+ ],
+ "nextSurah": {
+  "number": 62,
+  "name": "الجمعة",
+  "englishName": "Al-Jumu'a",
+  "numberOfAyahs": 11
+ },
+ "previousSurah": {
+  "number": 60,
+  "name": "الممتحنة",
+  "englishName": "Al-Mumtahana",
+  "numberOfAyahs": 13
+ }
+}

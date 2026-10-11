@@ -1,0 +1,52 @@
+{
+ "number": 97,
+ "name": "القدر",
+ "englishName": "Al-Qadr",
+ "numberOfAyahs": 5,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "The Power, Fate",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "اِنَّآ اَنْزَلْنٰهُ فِيْ لَيْلَةِ الْقَدْرِ ",
+   "textLatin": "Innā anzalnāhu fī lailatil-qadr(i).",
+   "textEnglish": "BEHOLD, from on high have We bestowed this [divine writ] on Night of Destiny."
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "وَمَآ اَدْرٰىكَ مَا لَيْلَةُ الْقَدْرِۗ",
+   "textLatin": "Wa mā adrāka mā lailatul-qadr(i).",
+   "textEnglish": "And what could make thee conceive what it is, that Night of Destiny?"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "لَيْلَةُ الْقَدْرِ ەۙ خَيْرٌ مِّنْ اَلْفِ شَهْرٍۗ",
+   "textLatin": "Lailatul-qadri khairum min alfi syahr(in).",
+   "textEnglish": "The Night of Destiny is better than a thousand months:"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "تَنَزَّلُ الْمَلٰۤىِٕكَةُ وَالرُّوْحُ فِيْهَا بِاِذْنِ رَبِّهِمْۚ مِنْ كُلِّ اَمْرٍۛ",
+   "textLatin": "Tanazzalul-malā'ikatu war rūḥu fīhā bi'iżni rabbihim min kulli amr(in).",
+   "textEnglish": "in hosts descend in it the angels, bearing divine inspiration by their Sustainer's leave; from all [evil] that may happen"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "سَلٰمٌ ۛهِيَ حَتّٰى مَطْلَعِ الْفَجْرِ ࣖ",
+   "textLatin": "Salāmun hiya ḥattā maṭla‘il-fajr(i). ",
+   "textEnglish": "does it make secure, until the rise of dawn."
+  }
+ ],
+ "nextSurah": {
+  "number": 98,
+  "name": "البيّنة",
+  "englishName": "Al-Bayyina",
+  "numberOfAyahs": 8
+ },
+ "previousSurah": {
+  "number": 96,
+  "name": "العلق",
+  "englishName": "Al-Alaq",
+  "numberOfAyahs": 19
+ }
+}

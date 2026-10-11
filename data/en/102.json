@@ -1,0 +1,70 @@
+{
+ "number": 102,
+ "name": "التكاثر",
+ "englishName": "At-Takaathur",
+ "numberOfAyahs": 8,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "Competition",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "اَلْهٰىكُمُ التَّكَاثُرُۙ",
+   "textLatin": "Alhākumut-takāṡur(u). ",
+   "textEnglish": "YOU ARE OBSESSED by greed for more and more"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "حَتّٰى زُرْتُمُ الْمَقَابِرَۗ",
+   "textLatin": "Ḥattā zurtumul-maqābir(a).",
+   "textEnglish": "until you go down to your graves."
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "كَلَّا سَوْفَ تَعْلَمُوْنَۙ",
+   "textLatin": "Kallā saufa ta‘lamūn(a).",
+   "textEnglish": "Nay, in time you will come to understand!"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُوْنَ ",
+   "textLatin": "Ṡumma kallā saufa ta‘lamūn(a).",
+   "textEnglish": "And once again: Nay, in time you will come to understand!"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "كَلَّا لَوْ تَعْلَمُوْنَ عِلْمَ الْيَقِيْنِۗ",
+   "textLatin": "Kallā lau ta‘lamūna ‘ilmal-yaqīn(i).",
+   "textEnglish": "Nay, if you could but understand [it] with an understanding [born] of certainty,"
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "لَتَرَوُنَّ الْجَحِيْمَۙ",
+   "textLatin": "Latarawunnal-jaḥīm(a).",
+   "textEnglish": "you would indeed, most surely, behold the blazing fire [of hell]!"
+  },
+  {
+   "numberInSurah": 7,
+   "textArabic": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَقِيْنِۙ",
+   "textLatin": "Ṡumma latarawunnahā ‘ainal-yaqīn(i).",
+   "textEnglish": "In the end you will indeed, most surely, behold it with the eye of certainty:"
+  },
+  {
+   "numberInSurah": 8,
+   "textArabic": "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَىِٕذٍ عَنِ النَّعِيْمِ ࣖ",
+   "textLatin": "Ṡumma latus'alunna yauma'iżin ‘anin-na‘īm(i).",
+   "textEnglish": "and on that Day you will most surely be called to account for [what you did with] the boon of life!"
+  }
+ ],
+ "nextSurah": {
+  "number": 103,
+  "name": "العصر",
+  "englishName": "Al-Asr",
+  "numberOfAyahs": 3
+ },
+ "previousSurah": {
+  "number": 101,
+  "name": "القارعة",
+  "englishName": "Al-Qaari'a",
+  "numberOfAyahs": 11
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "number": 112,
+ "name": "الاخلاص",
+ "englishName": "Al-Ikhlaas",
+ "numberOfAyahs": 4,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "Sincerity",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "قُلْ هُوَ اللّٰهُ اَحَدٌۚ",
+   "textLatin": "Qul huwallāhu aḥad(un).",
+   "textEnglish": "SAY: \"He is the One God:"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "اَللّٰهُ الصَّمَدُۚ",
+   "textLatin": "Allāhuṣ-ṣamad(u).",
+   "textEnglish": "\"God the Eternal, the Uncaused Cause of All Being."
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "لَمْ يَلِدْ وَلَمْ يُوْلَدْۙ",
+   "textLatin": "Lam yalid wa lam yūlad.",
+   "textEnglish": "\"He begets not, and neither is He begotten;"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "وَلَمْ يَكُنْ لَّهٗ كُفُوًا اَحَدٌ ࣖ",
+   "textLatin": "Wa lam yakul lahū kufuwan aḥad(un).",
+   "textEnglish": "\"and there is nothing that could be compared with Him."
+  }
+ ],
+ "nextSurah": {
+  "number": 113,
+  "name": "الفلق",
+  "englishName": "Al-Falaq",
+  "numberOfAyahs": 5
+ },
+ "previousSurah": {
+  "number": 111,
+  "name": "اللهب",
+  "englishName": "Al-Masad",
+  "numberOfAyahs": 5
+ }
+}

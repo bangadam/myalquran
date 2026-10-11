@@ -1,0 +1,53 @@
+{
+ "number": 114,
+ "name": "الناس",
+ "englishName": "An-Naas",
+ "numberOfAyahs": 6,
+ "revelationType": "Medinan",
+ "englishNameTranslation": "Mankind",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "قُلْ اَعُوْذُ بِرَبِّ النَّاسِۙ",
+   "textLatin": "Qul a‘ūżu birabbin-nās(i).",
+   "textEnglish": "SAY: \"I seek refuge with the Sustainer of men,"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "مَلِكِ النَّاسِۙ",
+   "textLatin": "Malikin-nās(i).",
+   "textEnglish": "\"the Sovereign of men,"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "اِلٰهِ النَّاسِۙ",
+   "textLatin": "Ilāhin-nās(i).",
+   "textEnglish": "\"the God of men,"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "مِنْ شَرِّ الْوَسْوَاسِ ەۙ الْخَنَّاسِۖ",
+   "textLatin": "Min syarril-waswāsil-khannās(i).",
+   "textEnglish": "\"from the evil of the whispering, elusive tempter"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "الَّذِيْ يُوَسْوِسُ فِيْ صُدُوْرِ النَّاسِۙ",
+   "textLatin": "Allażī yuwaswisu fī ṣudūrin-nās(i).",
+   "textEnglish": "\"who whispers in the hearts of men"
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "مِنَ الْجِنَّةِ وَالنَّاسِ ࣖ ",
+   "textLatin": "Minal jinnati wan-nās(i).",
+   "textEnglish": "\"from all [temptation to evil by] invisible forces as well as men,\""
+  }
+ ],
+ "nextSurah": null,
+ "previousSurah": {
+  "number": 113,
+  "name": "الفلق",
+  "englishName": "Al-Falaq",
+  "numberOfAyahs": 5
+ }
+}

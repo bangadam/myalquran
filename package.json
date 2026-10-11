@@ -1,0 +1,43 @@
+{
+  "name": "myalquran",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "check": "astro check",
+    "test": "node --experimental-strip-types scripts/selfcheck.ts && node scripts/offline-selfcheck.mjs && node scripts/offline-client-selfcheck.mjs && node scripts/translation-selfcheck.mjs && python3 json_to_sqlite.py --selftest && python3 scripts/import-translations-selfcheck.py && python3 scripts/import-tafsir-selfcheck.py",
+    "check:release": "node --experimental-strip-types scripts/release-check.ts",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@astrojs/react": "7.0.1",
+    "@tailwindcss/vite": "^4.0.0",
+    "astro": "7.3.8",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.468.0",
+    "lottie-react": "^2.4.1",
+    "oxc-transform-react": "^0.145.0",
+    "radix-ui": "^1.7.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.0",
+    "tailwindcss": "^4.0.0",
+    "vite-plugin-pwa": "^1.2.0",
+    "workbox-core": "^7.4.0",
+    "workbox-precaching": "^7.4.0",
+    "workbox-window": "^7.4.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.0.0",
+    "zod": "^3.25.76"
+  }
+}

@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { locales, labels, localeNames, type Locale } from '../../lib/content';
+import { interfaceLabels } from '../../lib/interface-labels';
+import { Check } from 'lucide-react';
+export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
+const locale = Astro.params.locale as Locale;
+const t = labels(locale), ui = interfaceLabels[locale];
+---
+<BaseLayout title={t.language} locale={locale}>
+  <h1>{t.language}</h1><p class="intro">{ui.languageHelp}</p>
+  <ul class="prayer-list">{locales.map(language => <li><a href={`/${language}/`} lang={language} data-language-link data-locale-choice={language} aria-current={language === locale ? 'true' : undefined}>{localeNames[language]}{language === locale && <Check size={20} aria-hidden="true" />}</a></li>)}</ul>
+</BaseLayout>

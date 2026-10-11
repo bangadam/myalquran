@@ -1,0 +1,490 @@
+{
+ "number": 55,
+ "name": "الرحمن",
+ "englishName": "Ar-Rahmaan",
+ "numberOfAyahs": 78,
+ "revelationType": "Medinan",
+ "englishNameTranslation": "The Beneficent",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "اَلرَّحْمٰنُۙ  ",
+   "textLatin": "Ar-raḥmān(u).",
+   "textEnglish": "THE MOST GRACIOUS"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "عَلَّمَ الْقُرْاٰنَۗ ",
+   "textLatin": "‘Allamal-qur'ān(a).",
+   "textEnglish": "has imparted this Qur’an [unto man]."
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "خَلَقَ الْاِنْسَانَۙ ",
+   "textLatin": "Khalaqal-insān(a).",
+   "textEnglish": "He has created man:"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "عَلَّمَهُ الْبَيَانَ ",
+   "textLatin": "‘Allamahul-bayān(a).",
+   "textEnglish": "He has imparted unto him articulate thought and speech."
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "اَلشَّمْسُ وَالْقَمَرُ بِحُسْبَانٍۙ ",
+   "textLatin": "Asy-syamsu wal-qamaru biḥusbān(in).",
+   "textEnglish": "[At His behest] the sun and the moon run their appointed courses;"
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "وَّالنَّجْمُ وَالشَّجَرُ يَسْجُدَانِ ",
+   "textLatin": "Wan-najmu wasy-syajaru yasjudān(i).",
+   "textEnglish": "[before Him] prostrate them­selves the stars and the trees."
+  },
+  {
+   "numberInSurah": 7,
+   "textArabic": "وَالسَّمَاۤءَ رَفَعَهَا وَوَضَعَ الْمِيْزَانَۙ  ",
+   "textLatin": "Was-samā'a rafa‘ahā wa waḍa‘al-mīzān(a).",
+   "textEnglish": "And the skies has He raised high, and has devised [for all things] a measure,"
+  },
+  {
+   "numberInSurah": 8,
+   "textArabic": "اَلَّا تَطْغَوْا فِى الْمِيْزَانِ ",
+   "textLatin": "Allā taṭgau fil-mīzān(i).",
+   "textEnglish": "so that you [too, O men,] might never transgress the measure [of what is right]:"
+  },
+  {
+   "numberInSurah": 9,
+   "textArabic": "وَاَقِيْمُوا الْوَزْنَ بِالْقِسْطِ وَلَا تُخْسِرُوا الْمِيْزَانَ ",
+   "textLatin": "Wa aqīmul-wazna  bil-qisṭi wa lā tukhsirul-mīzān(a).",
+   "textEnglish": "weigh, therefore, [your deeds] with equity, and cut not the measure short!"
+  },
+  {
+   "numberInSurah": 10,
+   "textArabic": "وَالْاَرْضَ وَضَعَهَا لِلْاَنَامِۙ  ",
+   "textLatin": "Wal-arḍa waḍa‘ahā lil-anām(i). ",
+   "textEnglish": "And the earth has He spread out for all living beings,"
+  },
+  {
+   "numberInSurah": 11,
+   "textArabic": "فِيْهَا فَاكِهَةٌ وَّالنَّخْلُ ذَاتُ الْاَكْمَامِۖ  ",
+   "textLatin": "Fīhā fākihatuw wan-nakhlu żātul-akmām(i).",
+   "textEnglish": "with fruit thereon, and palm trees with sheathed clusters [of dates],"
+  },
+  {
+   "numberInSurah": 12,
+   "textArabic": "وَالْحَبُّ ذُو الْعَصْفِ وَالرَّيْحَانُۚ  ",
+   "textLatin": "Wal-ḥabbu żul-‘aṣfi war-raiḥān(u).",
+   "textEnglish": "and grain growing tall on its stalks, and sweet-smelling plants."
+  },
+  {
+   "numberInSurah": 13,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 14,
+   "textArabic": "خَلَقَ الْاِنْسَانَ مِنْ صَلْصَالٍ كَالْفَخَّارِ ",
+   "textLatin": "Khalaqal-insāna min ṣalṣālin kal-fakhkhār(i).",
+   "textEnglish": "He has created man out of sounding clay, like pottery,"
+  },
+  {
+   "numberInSurah": 15,
+   "textArabic": "وَخَلَقَ الْجَاۤنَّ مِنْ مَّارِجٍ مِّنْ نَّارٍۚ  ",
+   "textLatin": "Wa khalaqal-jānna mim mārijim min nār(in).",
+   "textEnglish": "whereas the invisible beings He has created out of a confusing flame of fire."
+  },
+  {
+   "numberInSurah": 16,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 17,
+   "textArabic": "رَبُّ الْمَشْرِقَيْنِ وَرَبُّ الْمَغْرِبَيْنِۚ ",
+   "textLatin": "Rabbul-masyriqaini wa rabbul-magribain(i).",
+   "textEnglish": "[He is] the Sustainer of the two farthest points of sunrise, and the Sustainer of the two farthest points of sunset."
+  },
+  {
+   "numberInSurah": 18,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustain­er’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 19,
+   "textArabic": "مَرَجَ الْبَحْرَيْنِ يَلْتَقِيٰنِۙ",
+   "textLatin": "Marajal-baḥraini yaltaqiyān(i).",
+   "textEnglish": "He has given freedom to the two great bodies of water, so that they might meet:"
+  },
+  {
+   "numberInSurah": 20,
+   "textArabic": "بَيْنَهُمَا بَرْزَخٌ لَّا يَبْغِيٰنِۚ",
+   "textLatin": "Bainahumā barzakhul lā yabgiyān(i).",
+   "textEnglish": "[yet] between them is a barrier which they may not transgress."
+  },
+  {
+   "numberInSurah": 21,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 22,
+   "textArabic": "يَخْرُجُ مِنْهُمَا اللُّؤْلُؤُ وَالْمَرْجَانُۚ",
+   "textLatin": "Yakhruju minhumal-lu'lu'u wal-marjān(u).",
+   "textEnglish": "Out of these two [bodies of water] come forth pearls, both great and small."
+  },
+  {
+   "numberInSurah": 23,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 24,
+   "textArabic": "وَلَهُ الْجَوَارِ الْمُنْشَاٰتُ فِى الْبَحْرِ كَالْاَعْلَامِۚ  ",
+   "textLatin": "Wa lahul-jawāril-munsya'ātu fil-baḥri kal-a‘lām(i).",
+   "textEnglish": "And His are the lofty ships that sail like [floating] mountains through the seas."
+  },
+  {
+   "numberInSurah": 25,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ࣖ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 26,
+   "textArabic": "كُلُّ مَنْ عَلَيْهَا فَانٍۖ  ",
+   "textLatin": "Kullu man ‘alaihā fān(in).",
+   "textEnglish": "All that lives on earth or in the heavens is bound to pass away:"
+  },
+  {
+   "numberInSurah": 27,
+   "textArabic": "وَّيَبْقٰى وَجْهُ رَبِّكَ ذُو الْجَلٰلِ وَالْاِكْرَامِۚ  ",
+   "textLatin": "Wa yabqā wajhu rabbika żul-jalāli wal-ikrām(i).",
+   "textEnglish": "but forever will abide thy Sustainer’s Self, full of majesty and glory."
+  },
+  {
+   "numberInSurah": 28,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 29,
+   "textArabic": "يَسْـَٔلُهٗ مَنْ فِى السَّمٰوٰتِ وَالْاَرْضِۗ  كُلَّ يَوْمٍ هُوَ فِيْ شَأْنٍۚ",
+   "textLatin": "Yas'aluhū man fis-samāwāti wal-arḍ(i), kulla yaumin huwa fī sya'n(in).",
+   "textEnglish": "On Him depends all creatures in the heavens and on earth; [and] every day He manifests Himself in yet another [wondrous] way."
+  },
+  {
+   "numberInSurah": 30,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 31,
+   "textArabic": "سَنَفْرُغُ لَكُمْ اَيُّهَ الثَّقَلٰنِۚ  ",
+   "textLatin": "Sanafrugu lakum ayyuhaṡ-ṡaqalān(i).",
+   "textEnglish": "[ONE DAY] We shall take you to task, O you sin-laden two!"
+  },
+  {
+   "numberInSurah": 32,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 33,
+   "textArabic": "يٰمَعْشَرَ الْجِنِّ وَالْاِنْسِ اِنِ اسْتَطَعْتُمْ اَنْ تَنْفُذُوْا مِنْ اَقْطَارِ السَّمٰوٰتِ وَالْاَرْضِ فَانْفُذُوْاۗ  لَا تَنْفُذُوْنَ اِلَّا بِسُلْطٰنٍۚ ",
+   "textLatin": "Yā ma‘syaral-jinni wal-insi inistaṭa‘tum an tanfużū min aqṭāris-samāwāti wal-arḍi fanfużū, lā tanfużūna illā bisulṭān(in).",
+   "textEnglish": "O you who live in close communion with [evil] invisible beings and humans! If you [think that you] can pass beyond the regions of the heavens and the earth, pass beyond them! [But] you cannot pass beyond them, save by a sanction [from God]!"
+  },
+  {
+   "numberInSurah": 34,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 35,
+   "textArabic": "يُرْسَلُ عَلَيْكُمَا شُوَاظٌ مِّنْ نَّارٍۙ وَّنُحَاسٌ فَلَا تَنْتَصِرَانِۚ ",
+   "textLatin": "Yursalu ‘alaikumā syuwāẓum min nār(in), wa nuḥāsun falā tantaṣirān(i).",
+   "textEnglish": "A flash of fire will be let loose upon you, and smoke, and you will be left without succour!"
+  },
+  {
+   "numberInSurah": 36,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 37,
+   "textArabic": "فَاِذَا انْشَقَّتِ السَّمَاۤءُ فَكَانَتْ وَرْدَةً كَالدِّهَانِۚ ",
+   "textLatin": "Fa iżansyaqqatis-samā'u fa kānat wardatan kad-dihān(i).",
+   "textEnglish": "And when the sky is rent asunder and becomes red like [burning] oil"
+  },
+  {
+   "numberInSurah": 38,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 39,
+   "textArabic": "فَيَوْمَئِذٍ لَّا يُسْـَٔلُ عَنْ ذَنْۢبِهٖٓ اِنْسٌ وَّلَا جَاۤنٌّۚ  ",
+   "textLatin": "Fa yauma'iżil lā yus'alu ‘an żambihī insuw wa lā jānn(un).",
+   "textEnglish": "For on that Day neither man nor invisible being will be asked about his sins."
+  },
+  {
+   "numberInSurah": 40,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ  ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 41,
+   "textArabic": "يُعْرَفُ الْمُجْرِمُوْنَ بِسِيْمٰهُمْ فَيُؤْخَذُ بِالنَّوَاصِيْ وَالْاَقْدَامِۚ  ",
+   "textLatin": "Yu‘raful-mujrimūna bisīmāhum fa yu'khażu bin-nawāṣī wal-aqdām(i).",
+   "textEnglish": "All who were lost in sin shall by their marks be known, and shall by their forelocks and their feet be seized!"
+  },
+  {
+   "numberInSurah": 42,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 43,
+   "textArabic": "هٰذِهٖ جَهَنَّمُ الَّتِيْ يُكَذِّبُ بِهَا الْمُجْرِمُوْنَۘ ",
+   "textLatin": "Hāżihī jahannamul-latī yukażżibu bihal-mujrimūn(a).",
+   "textEnglish": "This will be the hell which those who are lost in sin [now] call a lie:"
+  },
+  {
+   "numberInSurah": 44,
+   "textArabic": "يَطُوْفُوْنَ بَيْنَهَا وَبَيْنَ حَمِيْمٍ اٰنٍۚ  ",
+   "textLatin": "Yaṭūfūna bainahā wa baina ḥamīmin ān(in).",
+   "textEnglish": "between it and [their own] burning-hot despair will they wander to and fro!"
+  },
+  {
+   "numberInSurah": 45,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ࣖ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 46,
+   "textArabic": "وَلِمَنْ خَافَ مَقَامَ رَبِّهٖ جَنَّتٰنِۚ",
+   "textLatin": "Wa liman khāfa maqāma rabbihī jannatān(i).",
+   "textEnglish": "BUT FOR THOSE who of their Sustainer’s Presence stand in fear, two gardens [of paradise are readied] -"
+  },
+  {
+   "numberInSurah": 47,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۙ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "which, then, of your Sustainer’s powers can you disavow? –"
+  },
+  {
+   "numberInSurah": 48,
+   "textArabic": "ذَوَاتَآ اَفْنَانٍۚ ",
+   "textLatin": "Żawātā afnān(in).",
+   "textEnglish": "[two gardens] of many wondrous hues."
+  },
+  {
+   "numberInSurah": 49,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fabi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 50,
+   "textArabic": "فِيْهِمَا عَيْنٰنِ تَجْرِيٰنِۚ ",
+   "textLatin": "Fīhimā ‘aināni tajriyān(i).",
+   "textEnglish": "In [each of] these two [gardens] two springs will flow."
+  },
+  {
+   "numberInSurah": 51,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 52,
+   "textArabic": "فِيْهِمَا مِنْ كُلِّ فَاكِهَةٍ زَوْجٰنِۚ ",
+   "textLatin": "Fīhimā min kulli fākihatin zaujān(i).",
+   "textEnglish": "In [each of] these two will two kinds of every fruit be [found]."
+  },
+  {
+   "numberInSurah": 53,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 54,
+   "textArabic": "مُتَّكِـِٕيْنَ عَلٰى فُرُشٍۢ بَطَاۤىِٕنُهَا مِنْ اِسْتَبْرَقٍۗ وَجَنَا الْجَنَّتَيْنِ دَانٍۚ ",
+   "textLatin": "Muttaki'īna ‘alā furusyim baṭā'inuhā min istabraq(in), wa janal-jannataini  dān(in).",
+   "textEnglish": "[In such a paradise the blest will dwell,] reclin­ing upon carpets lined with rich brocade; and the fruit of both these gardens will be within easy reach."
+  },
+  {
+   "numberInSurah": 55,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 56,
+   "textArabic": "فِيْهِنَّ قٰصِرٰتُ الطَّرْفِۙ لَمْ يَطْمِثْهُنَّ اِنْسٌ قَبْلَهُمْ وَلَا جَاۤنٌّۚ  ",
+   "textLatin": "Fīhinna qāṣirātuṭ-ṭarf(i), lam yaṭmiṡhunna insun qablahum wa lā jānn(un).",
+   "textEnglish": "In these [gardens] will be mates of modest gaze, whom neither man nor invisible being will have touched ere then."
+  },
+  {
+   "numberInSurah": 57,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sus­tainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 58,
+   "textArabic": "كَاَنَّهُنَّ الْيَاقُوْتُ وَالْمَرْجَانُۚ ",
+   "textLatin": "Ka'annahunnal-yāqūtu wal-marjān(u).",
+   "textEnglish": "[When you are promised splendours] as though [of] rubies and [of] pearls –"
+  },
+  {
+   "numberInSurah": 59,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 60,
+   "textArabic": "هَلْ جَزَاۤءُ الْاِحْسَانِ اِلَّا الْاِحْسَانُۚ ",
+   "textLatin": "Hal jazā'ul-iḥsāni illal-iḥsān(u).",
+   "textEnglish": "Could the reward of good be aught but good?"
+  },
+  {
+   "numberInSurah": 61,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 62,
+   "textArabic": "وَمِنْ دُوْنِهِمَا جَنَّتٰنِۚ ",
+   "textLatin": "Wa min dūnihimā jannatān(i).",
+   "textEnglish": "And besides those two will be yet two [other] gardens -"
+  },
+  {
+   "numberInSurah": 63,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۙ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "which, then, of your Sustainer’s powers can you disavow? –"
+  },
+  {
+   "numberInSurah": 64,
+   "textArabic": "مُدْهَاۤمَّتٰنِۚ  ",
+   "textLatin": "Mudhāmmatān(i).",
+   "textEnglish": "two [gardens] of the deepest green."
+  },
+  {
+   "numberInSurah": 65,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 66,
+   "textArabic": "فِيْهِمَا عَيْنٰنِ نَضَّاخَتٰنِۚ ",
+   "textLatin": "Fīhimā ‘aināni naḍḍākhatān(i).",
+   "textEnglish": "In [each of] these two [gardens] will two springs gush forth."
+  },
+  {
+   "numberInSurah": 67,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ  ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sus­tainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 68,
+   "textArabic": "فِيْهِمَا فَاكِهَةٌ وَّنَخْلٌ وَّرُمَّانٌۚ  ",
+   "textLatin": "Fīhimā fākihatuw wa nakhluw wa rummān(un).",
+   "textEnglish": "In both of them will be [all kinds of] fruit, and date-palms and pomegranates."
+  },
+  {
+   "numberInSurah": 69,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 70,
+   "textArabic": "فِيْهِنَّ خَيْرٰتٌ حِسَانٌۚ  ",
+   "textLatin": "Fīhinna khairātun ḥisān(un).",
+   "textEnglish": "In these [gardens] will be [all] things most excellent and beautiful."
+  },
+  {
+   "numberInSurah": 71,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 72,
+   "textArabic": "حُوْرٌ مَّقْصُوْرٰتٌ فِى الْخِيَامِۚ  ",
+   "textLatin": "Ḥūrum maqṣūrātun fil-khiyām(i).",
+   "textEnglish": "[There the blest will live with their] companions pure and modest, in pavilions [splendid] -"
+  },
+  {
+   "numberInSurah": 73,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ  ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "which, then, of your Sustainer’s powers can you disavow? –"
+  },
+  {
+   "numberInSurah": 74,
+   "textArabic": "لَمْ يَطْمِثْهُنَّ اِنْسٌ قَبْلَهُمْ وَلَا جَاۤنٌّۚ  ",
+   "textLatin": "Lam yaṭmiṡhunna insun qablahum wa lā jānn(un).",
+   "textEnglish": "[companions] whom neither man nor invisible being will have touched ere then."
+  },
+  {
+   "numberInSurah": 75,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ  ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 76,
+   "textArabic": "مُتَّكِـِٕيْنَ عَلٰى رَفْرَفٍ خُضْرٍ وَّعَبْقَرِيٍّ حِسَانٍۚ  ",
+   "textLatin": "Muttaki'īna ‘alā rafrafin khuḍriw wa ‘abqariyyin ḥisān(in).",
+   "textEnglish": "[In such a paradise will they dwell,] reclining upon meadows green and carpets rich in beauty."
+  },
+  {
+   "numberInSurah": 77,
+   "textArabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ ",
+   "textLatin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).",
+   "textEnglish": "Which, then, of your Sustainer’s powers can you disavow?"
+  },
+  {
+   "numberInSurah": 78,
+   "textArabic": "تَبٰرَكَ اسْمُ رَبِّكَ ذِى الْجَلٰلِ وَالْاِكْرَامِ ࣖ ",
+   "textLatin": "Tabārakasmu rabbika żil-jalāli wal-ikrām(i).",
+   "textEnglish": "HALLOWED be thy Sustainer’s name, full of majesty and glory!"
+  }
+ ],
+ "nextSurah": {
+  "number": 56,
+  "name": "الواقعة",
+  "englishName": "Al-Waaqia",
+  "numberOfAyahs": 96
+ },
+ "previousSurah": {
+  "number": 54,
+  "name": "القمر",
+  "englishName": "Al-Qamar",
+  "numberOfAyahs": 55
+ }
+}

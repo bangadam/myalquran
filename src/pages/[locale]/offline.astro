@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import OfflinePanel from '../../components/OfflinePanel';
+import { locales, labels, localeNames, type Locale } from '../../lib/content';
+import ContentAvailability from '../../components/ContentAvailability.astro';
+import { interfaceLabels } from '../../lib/interface-labels';
+
+export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
+const locale = Astro.params.locale as Locale;
+const t = labels(locale);
+---
+<BaseLayout title={t.offlineTitle} locale={locale} section="offline">
+  <header class="border-b border-[var(--divider)] pb-5 mb-6">
+    <h1>{interfaceLabels[locale].downloads}</h1>
+    <p class="metadata mb-0" lang={locale}>{localeNames[locale]}</p>
+  </header>
+
+  <section aria-labelledby="coverage-heading" class="mb-7">
+    <h2 id="coverage-heading">{t.availability}</h2>
+    <div class="bg-secondary px-4 py-3">
+      <ContentAvailability locale={locale} headingLevel={3} />
+    </div>
+  </section>
+
+  <OfflinePanel locale={locale} labels={t} client:load />
+  <noscript><p class="availability">{t.unsupported}</p></noscript>
+</BaseLayout>

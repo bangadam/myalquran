@@ -1,0 +1,88 @@
+{
+ "number": 93,
+ "name": "الضحى",
+ "englishName": "Ad-Dhuhaa",
+ "numberOfAyahs": 11,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "The Morning Hours",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "وَالضُّحٰىۙ",
+   "textLatin": "Waḍ-ḍuḥā.",
+   "textEnglish": "CONSIDER the bright morning hours,"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "وَالَّيْلِ اِذَا سَجٰىۙ",
+   "textLatin": "Wal-laili iżā sajā.",
+   "textEnglish": "and the night when it grows still and dark."
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلٰىۗ",
+   "textLatin": "Mā wadda‘aka rabbuka wa mā qalā.",
+   "textEnglish": "Thy Sustainer has not forsaken thee, nor does He scorn thee:"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "وَلَلْاٰخِرَةُ خَيْرٌ لَّكَ مِنَ الْاُوْلٰىۗ",
+   "textLatin": "Wa lal-ākhiratu khairul laka minal-ūlā.",
+   "textEnglish": "for, indeed, the life to come will be better for thee than this earlier part [of thy life]!"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "وَلَسَوْفَ يُعْطِيْكَ رَبُّكَ فَتَرْضٰىۗ",
+   "textLatin": "Wa lasaufa yu‘ṭīka rabbuka fa tarḍā.",
+   "textEnglish": "And, indeed, in time will thy Sustainer grant thee [what thy heart desires], and thou shalt be well-pleased."
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "اَلَمْ يَجِدْكَ يَتِيْمًا فَاٰوٰىۖ",
+   "textLatin": "Alam yajidka yatīman fa āwā.",
+   "textEnglish": "Has He not found thee an orphan, and given thee shelter?"
+  },
+  {
+   "numberInSurah": 7,
+   "textArabic": "وَوَجَدَكَ ضَاۤلًّا فَهَدٰىۖ",
+   "textLatin": "Wa wajadaka ḍāllan fa hadā.",
+   "textEnglish": "And found thee lost on thy way, and guided thee?"
+  },
+  {
+   "numberInSurah": 8,
+   "textArabic": "وَوَجَدَكَ عَاۤىِٕلًا فَاَغْنٰىۗ",
+   "textLatin": "Wa wajadaka ‘ā'ilan fa agnā.",
+   "textEnglish": "And found thee in want, and given thee sufficiency?"
+  },
+  {
+   "numberInSurah": 9,
+   "textArabic": "فَاَمَّا الْيَتِيْمَ فَلَا تَقْهَرْۗ",
+   "textLatin": "Fa ammal-yatīma falā taqhar.",
+   "textEnglish": "Therefore, the orphan shalt thou never wrong,"
+  },
+  {
+   "numberInSurah": 10,
+   "textArabic": "وَاَمَّا السَّاۤىِٕلَ فَلَا تَنْهَرْ",
+   "textLatin": "Wa ammas-sā'ila falā tanhar.",
+   "textEnglish": "and him that seeks [thy] help shalt thou never chide,"
+  },
+  {
+   "numberInSurah": 11,
+   "textArabic": "وَاَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ ࣖ",
+   "textLatin": "Wa ammā bini‘mati rabbika fa ḥaddiṡ.",
+   "textEnglish": "and of thy Sustainer's blessings shalt thou [ever] speak."
+  }
+ ],
+ "nextSurah": {
+  "number": 94,
+  "name": "الشرح",
+  "englishName": "Ash-Sharh",
+  "numberOfAyahs": 8
+ },
+ "previousSurah": {
+  "number": 92,
+  "name": "الّيل",
+  "englishName": "Al-Lail",
+  "numberOfAyahs": 21
+ }
+}

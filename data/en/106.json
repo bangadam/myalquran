@@ -1,0 +1,46 @@
+{
+ "number": 106,
+ "name": "قريش",
+ "englishName": "Quraish",
+ "numberOfAyahs": 4,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "Quraysh",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "لِاِيْلٰفِ قُرَيْشٍۙ",
+   "textLatin": "Li'īlāfi quraisy(in).",
+   "textEnglish": "SO THAT the Quraysh might remain secure,"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "اٖلٰفِهِمْ رِحْلَةَ الشِّتَاۤءِ وَالصَّيْفِۚ",
+   "textLatin": "´lāfihim riḥlatasy-syitā'i waṣ-ṣaif(i).",
+   "textEnglish": "secure in their winter and summer journeys,"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "فَلْيَعْبُدُوْا رَبَّ هٰذَا الْبَيْتِۙ",
+   "textLatin": "Falya‘budū rabba hāżal-bait(i).",
+   "textEnglish": "Let them, therefore, worship the Sustainer of this Temple;"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "الَّذِيْٓ اَطْعَمَهُمْ مِّنْ جُوْعٍ ەۙ وَّاٰمَنَهُمْ مِّنْ خَوْفٍ ࣖ",
+   "textLatin": "Allażī aṭ‘amahum min jū‘(in), wa āmanahum min khauf(in).",
+   "textEnglish": "who has given them food against hunger, and made them safe from danger."
+  }
+ ],
+ "nextSurah": {
+  "number": 107,
+  "name": "الماعون",
+  "englishName": "Al-Maa'un",
+  "numberOfAyahs": 7
+ },
+ "previousSurah": {
+  "number": 105,
+  "name": "الفيل",
+  "englishName": "Al-Fil",
+  "numberOfAyahs": 5
+ }
+}

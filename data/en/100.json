@@ -1,0 +1,88 @@
+{
+ "number": 100,
+ "name": "العٰديٰت",
+ "englishName": "Al-Aadiyaat",
+ "numberOfAyahs": 11,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "The Chargers",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "وَالْعٰدِيٰتِ ضَبْحًاۙ ",
+   "textLatin": "Wal-‘ādiyāti ḍabḥā(n). ",
+   "textEnglish": "Oh, the chargers that run panting,"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "فَالْمُوْرِيٰتِ قَدْحًاۙ",
+   "textLatin": "Fal-mūriyāti qadḥā(n).",
+   "textEnglish": "sparks of fire striking,"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "فَالْمُغِيْرٰتِ صُبْحًاۙ",
+   "textLatin": "Fal-mugīrāti ṣubḥā(n).",
+   "textEnglish": "rushing to assault at morn,"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "فَاَثَرْنَ بِهٖ نَقْعًاۙ",
+   "textLatin": "Fa'aṡarna bihī naq‘ā(n).",
+   "textEnglish": "thereby raising clouds of dust,"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "فَوَسَطْنَ بِهٖ جَمْعًاۙ",
+   "textLatin": "Fawasaṭna bihī jam‘ā(n).",
+   "textEnglish": "thereby storming [blindly] into any host!"
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "اِنَّ الْاِنْسَانَ لِرَبِّهٖ لَكَنُوْدٌ ۚ",
+   "textLatin": "Innal-insāna lirabbihī lakanūd(un).",
+   "textEnglish": "VERILY, towards his Sustainer man is most ungrateful"
+  },
+  {
+   "numberInSurah": 7,
+   "textArabic": "وَاِنَّهٗ عَلٰى ذٰلِكَ لَشَهِيْدٌۚ",
+   "textLatin": "Wa innahū ‘alā żālika lasyahīd(un).",
+   "textEnglish": "and to this, behold, he [himself] bears witness indeed:"
+  },
+  {
+   "numberInSurah": 8,
+   "textArabic": "وَاِنَّهٗ لِحُبِّ الْخَيْرِ لَشَدِيْدٌ ۗ",
+   "textLatin": "Wa innahū liḥubbil-khairi lasyadīd(un).",
+   "textEnglish": "for, verily, to the love of wealth is he most ardently devoted."
+  },
+  {
+   "numberInSurah": 9,
+   "textArabic": "۞ اَفَلَا يَعْلَمُ اِذَا بُعْثِرَ مَا فِى الْقُبُوْرِۙ",
+   "textLatin": "Afalā ya‘lamu iżā bu‘ṡira mā fil-qubūr(i).",
+   "textEnglish": "But does he not know that [on the Last Day,] when all that is in the graves is raised and brought out,"
+  },
+  {
+   "numberInSurah": 10,
+   "textArabic": "وَحُصِّلَ مَا فِى الصُّدُوْرِۙ",
+   "textLatin": "Wa ḥuṣṣila mā fiṣ-ṣudūr(i).",
+   "textEnglish": "and all that is [hidden] in men's hearts is bared"
+  },
+  {
+   "numberInSurah": 11,
+   "textArabic": "اِنَّ رَبَّهُمْ بِهِمْ يَوْمَىِٕذٍ لَّخَبِيْرٌ ࣖ",
+   "textLatin": "Inna rabbahum bihim yauma'iżil lakhabīr(un).",
+   "textEnglish": "that on that Day their Sustainer [will show that He] has always been fully aware of them?"
+  }
+ ],
+ "nextSurah": {
+  "number": 101,
+  "name": "القارعة",
+  "englishName": "Al-Qaari'a",
+  "numberOfAyahs": 11
+ },
+ "previousSurah": {
+  "number": 99,
+  "name": "الزلزلة",
+  "englishName": "Az-Zalzala",
+  "numberOfAyahs": 8
+ }
+}

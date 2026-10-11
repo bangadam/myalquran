@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ReaderControls from '../../../components/ReaderControls';
+import { locales, labels, prayers, prayerIds, type Locale } from '../../../lib/content';
+
+export function getStaticPaths() {
+  return locales.flatMap(locale => prayerIds.map(id => ({ params: { locale, id: String(id) } })));
+}
+const locale = Astro.params.locale as Locale;
+const t = labels(locale);
+const prayer = prayers(locale).find(entry => entry.id === Number(Astro.params.id))!;
+const arabic = prayer.textLanguage === 'ar';
+---
+<BaseLayout title={prayer.name} locale={locale} section="prayers">
+  <a class="back-link" href={`/${locale}/doa/`}>← {t.prayerDirectory}</a>
+  <header class="border-b border-[var(--divider)] pb-5 mb-6">
+    <p class="eyebrow" lang={prayer.language}>{prayer.group}</p>
+    <h1 class="mb-0" lang={prayer.language}>{prayer.name}</h1>
+  </header>
+
+  {locale !== 'id' && prayer.language === 'id' && <aside class="availability"><p>{t.missingTranslation}</p><a class="text-link" href={`/id/doa/${prayer.id}/`}>{t.readIndonesian} →</a></aside>}
+  <ReaderControls labels={t} locale={locale} client:load />
+
+  <div class="border-y border-[var(--divider)] py-5 my-5">
+    <p class:list={[arabic ? 'arabic' : 'reader-text prose', 'mb-0']} lang={prayer.textLanguage} dir={arabic ? 'rtl' : 'ltr'}>{prayer.text}</p>
+  </div>
+  {prayer.latin && <section class="prayer-transliteration border-b border-[var(--divider)] pb-3"><h2>{t.transliteration}</h2><p class="reader-text latin" lang="id">{prayer.latin}</p></section>}
+  {prayer.translation && <section class="prayer-translation border-b border-[var(--divider)] pb-3"><h2>{t.translation}</h2><p class="reader-text prose" lang={prayer.language}>{prayer.translation}</p></section>}
+  <section class="border-b border-[var(--divider)] pb-3"><h2>{t.notes}</h2><p class="reader-text prose" lang={prayer.notes ? prayer.notesLanguage : locale}>{prayer.notes || t.noSource}</p></section>
+
+  <nav class="page-pagination" aria-label={t.prayerDirectory}><a class="text-link" href={`/${locale}/doa/`}>← {t.prayerDirectory}</a></nav>
+</BaseLayout>

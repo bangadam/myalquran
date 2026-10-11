@@ -1,0 +1,59 @@
+{
+ "number": 1,
+ "name": "الفاتحة",
+ "englishName": "Al-Faatiha",
+ "numberOfAyahs": 7,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "The Opening",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ",
+   "textLatin": "Bismillāhir-raḥmānir-raḥīm(i). ",
+   "textEnglish": "In the name of God, The Most Gracious, The Dispenser of Grace:"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ",
+   "textLatin": "Al-ḥamdu lillāhi rabbil-‘ālamīn(a). ",
+   "textEnglish": "All praise is due to God alone, the Sustainer of all the worlds,"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "الرَّحْمٰنِ الرَّحِيْمِۙ",
+   "textLatin": "Ar-raḥmānir-raḥīm(i). ",
+   "textEnglish": "The Most Gracious, the Dispenser of Grace,"
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "مٰلِكِ يَوْمِ الدِّيْنِۗ",
+   "textLatin": "Māliki yaumid-dīn(i). ",
+   "textEnglish": "Lord of the Day of Judgment!"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِيْنُۗ",
+   "textLatin": "Iyyāka na‘budu wa iyyāka nasta‘īn(u), ",
+   "textEnglish": "Thee alone do we worship; and unto Thee alone do we turn for aid."
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيْمَۙ",
+   "textLatin": "Ihdinaṣ-ṣirāṭal-mustaqīm(a). ",
+   "textEnglish": "Guide us the straight way."
+  },
+  {
+   "numberInSurah": 7,
+   "textArabic": "صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ ەۙ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ ࣖ",
+   "textLatin": "Ṣirāṭal-lażīna an‘amta ‘alaihim, gairil-magḍūbi ‘alaihim wa laḍ-ḍāllīn(a). ",
+   "textEnglish": "The way of those upon whom Thou hast bestowed Thy blessings, not of those who have been condemned [by Thee], nor of those who go astray!"
+  }
+ ],
+ "nextSurah": {
+  "number": 2,
+  "name": "البقرة",
+  "englishName": "Al-Baqara",
+  "numberOfAyahs": 286
+ },
+ "previousSurah": false
+}

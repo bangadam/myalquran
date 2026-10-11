@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ReaderControls from '../../../components/ReaderControls';
+import { locales, labels, surahNumbers, localizedSurah, commentary, commentarySource, type Locale } from '../../../lib/content';
+import TranslationCredit from '../../../components/TranslationCredit.astro';
+
+export function getStaticPaths() {
+  return locales.flatMap(locale => surahNumbers.map(nomor => ({ params: { locale, nomor: String(nomor) } })));
+}
+const locale = Astro.params.locale as Locale;
+const number = Number(Astro.params.nomor);
+const t = labels(locale);
+const surah = localizedSurah(number, locale);
+const entries = commentary(number, locale);
+const source = entries ? commentarySource(locale) : null;
+---
+<BaseLayout title={`${t.tafsir} · ${surah.latin}`} locale={locale} section="quran">
+  <a class="back-link" href={`/${locale}/surat/${number}/`}>← {surah.latin}</a>
+  <header class="surah-heading">
+    <p class="eyebrow">{t.tafsir} · {number} / 114</p>
+    <p class="arabic-title" lang="ar" dir="rtl">{surah.name}</p>
+    <h1>{surah.latin}</h1>
+    <p class="metadata mb-0">{surah.count} {t.verses}</p>
+  </header>
+
+  <ReaderControls labels={t} locale={locale} verseCount={surah.count} client:load />
+  {surah.translationSource && <div><p class="eyebrow">{t.translation}</p><TranslationCredit source={surah.translationSource} /></div>}
+  {source && <div><p class="eyebrow">{t.tafsir}</p><TranslationCredit source={source} /></div>}
+  {!entries && <aside class="availability"><p>{t.missingTafsir}</p><a class="text-link" href={`/id/tafsir/${number}/`} data-language-link>{t.readIndonesian} →</a></aside>}
+  {!surah.verses[0].translation && <aside class="availability"><p>{t.missingTranslation}</p><p class="mb-0">{t.arabicOnly}</p></aside>}
+
+  <div aria-label={`${t.tafsir} · ${surah.latin}`}>
+    {surah.verses.map(verse => <section class="verse" id={`ayat-${verse.number}`} aria-label={`${t.verse} ${verse.number}`}>
+      <div class="verse-label"><a href={`#ayat-${verse.number}`} aria-label={`${t.verse} ${verse.number} · ${surah.latin}`}>{t.verse} <span class="ml-1 font-semibold text-primary tabular-nums">{verse.number}</span></a></div>
+      <p class="arabic" lang="ar" dir="rtl">{verse.arabic}</p>
+      {verse.translation && <p class="reader-text verse-translation" lang={locale}>{verse.translation}</p>}
+      {verse.translationNotes && <details class="translation-notes"><summary>{t.notes}</summary><p class="reader-text prose" lang={locale}>{verse.translationNotes}</p></details>}
+      {entries && <div class="mt-5 border-s-2 border-primary ps-4"><p class="eyebrow">{t.tafsir}</p><p class="reader-text prose mb-2" lang={locale}>{entries[verse.number - 1].text}</p></div>}
+      <a class="text-link" href={`/${locale}/surat/${number}/#ayat-${verse.number}`}>← {t.backVerse} {verse.number}</a>
+    </section>)}
+  </div>
+  <nav class="page-pagination border-t border-[var(--divider)] pt-4" aria-label={t.directory}>
+    <a class="text-link" href={`/${locale}/surat/${number}/`}>← {surah.latin}</a>
+  </nav>
+</BaseLayout>

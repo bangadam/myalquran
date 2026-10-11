@@ -1,0 +1,71 @@
+{
+ "nomor": 94,
+ "nama": "الشرح",
+ "namaLatin": "Al-Insyirah",
+ "jumlahAyat": 8,
+ "tempatTurun": "Mekah",
+ "arti": "Lapang",
+ "deskripsi": "Surat ini terdiri atas 8 ayat, termasuk golongan surat-surat Makkiyah dan diturunkan sesudah surat Adh Dhuhaa. Nama <i>Alam Nasyrah</i> diambil dari kata <i>Alam Nasyrah</i> yang terdapat pada ayat pertama, yang berarti: bukankah Kami telah melapangkan.",
+ "ayat": [
+  {
+   "nomorAyat": 1,
+   "teksArab": "اَلَمْ نَشْرَحْ لَكَ صَدْرَكَۙ",
+   "teksLatin": "Alam nasyraḥ laka ṣadrak(a).",
+   "teksIndonesia": "Bukankah Kami telah melapangkan dadamu (Nabi Muhammad),"
+  },
+  {
+   "nomorAyat": 2,
+   "teksArab": "وَوَضَعْنَا عَنْكَ وِزْرَكَۙ",
+   "teksLatin": "Wa waḍa‘nā ‘anka wizrak(a).",
+   "teksIndonesia": "meringankan beban (tugas-tugas kenabian) darimu"
+  },
+  {
+   "nomorAyat": 3,
+   "teksArab": "الَّذِيْٓ اَنْقَضَ ظَهْرَكَۙ",
+   "teksLatin": "Allażī anqaḍa ẓahrak(a).",
+   "teksIndonesia": "yang memberatkan punggungmu,"
+  },
+  {
+   "nomorAyat": 4,
+   "teksArab": "وَرَفَعْنَا لَكَ ذِكْرَكَۗ",
+   "teksLatin": "Wa rafa‘nā laka żikrak(a).",
+   "teksIndonesia": "dan meninggikan (derajat)-mu (dengan selalu) menyebut-nyebut (nama)-mu?"
+  },
+  {
+   "nomorAyat": 5,
+   "teksArab": "فَاِنَّ مَعَ الْعُسْرِ يُسْرًاۙ",
+   "teksLatin": "Fa'inna ma‘al-‘usri yusrā(n).",
+   "teksIndonesia": "Maka, sesungguhnya beserta kesulitan ada kemudahan."
+  },
+  {
+   "nomorAyat": 6,
+   "teksArab": "اِنَّ مَعَ الْعُسْرِ يُسْرًاۗ",
+   "teksLatin": "Inna ma‘al-‘usri yusrā(n).",
+   "teksIndonesia": "Sesungguhnya beserta kesulitan ada kemudahan."
+  },
+  {
+   "nomorAyat": 7,
+   "teksArab": "فَاِذَا فَرَغْتَ فَانْصَبْۙ",
+   "teksLatin": "Fa iżā faragta fanṣab.",
+   "teksIndonesia": "Apabila engkau telah selesai (dengan suatu kebajikan), teruslah bekerja keras (untuk kebajikan yang lain)"
+  },
+  {
+   "nomorAyat": 8,
+   "teksArab": "وَاِلٰى رَبِّكَ فَارْغَبْ ࣖ",
+   "teksLatin": "Wa ilā rabbika fargab.",
+   "teksIndonesia": "dan hanya kepada Tuhanmu berharaplah!"
+  }
+ ],
+ "suratSelanjutnya": {
+  "nomor": 95,
+  "nama": "التين",
+  "namaLatin": "At-Tin",
+  "jumlahAyat": 8
+ },
+ "suratSebelumnya": {
+  "nomor": 93,
+  "nama": "الضحى",
+  "namaLatin": "Ad-Duha",
+  "jumlahAyat": 11
+ }
+}

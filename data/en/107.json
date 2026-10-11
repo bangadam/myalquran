@@ -1,0 +1,64 @@
+{
+ "number": 107,
+ "name": "الماعون",
+ "englishName": "Al-Maa'un",
+ "numberOfAyahs": 7,
+ "revelationType": "Meccan",
+ "englishNameTranslation": "Almsgiving",
+ "ayahs": [
+  {
+   "numberInSurah": 1,
+   "textArabic": "اَرَءَيْتَ الَّذِيْ يُكَذِّبُ بِالدِّيْنِۗ",
+   "textLatin": "Ara'aital-lażī yukażżibu bid-dīn(i).",
+   "textEnglish": "HAST THOU ever considered [the kind of man] who gives the lie to all moral law?"
+  },
+  {
+   "numberInSurah": 2,
+   "textArabic": "فَذٰلِكَ الَّذِيْ يَدُعُّ الْيَتِيْمَۙ",
+   "textLatin": "Fa żālikal-lażī yadu‘‘ul-yatīm(a).",
+   "textEnglish": "Behold, it is this [kind of man] that thrusts the orphan away,"
+  },
+  {
+   "numberInSurah": 3,
+   "textArabic": "وَلَا يَحُضُّ عَلٰى طَعَامِ الْمِسْكِيْنِۗ",
+   "textLatin": "Wa lā yaḥuḍḍu ‘alā ṭa‘āmil-miskīn(i).",
+   "textEnglish": "and feels no urge to feed the needy."
+  },
+  {
+   "numberInSurah": 4,
+   "textArabic": "فَوَيْلٌ لِّلْمُصَلِّيْنَۙ",
+   "textLatin": "Fawailul lil-muṣallīn(a).",
+   "textEnglish": "Woe, then, unto those praying ones"
+  },
+  {
+   "numberInSurah": 5,
+   "textArabic": "الَّذِيْنَ هُمْ عَنْ صَلَاتِهِمْ سَاهُوْنَۙ",
+   "textLatin": "Allażīna hum ‘an ṣalātihim sāhūn(a).",
+   "textEnglish": "whose hearts from their prayer are remote"
+  },
+  {
+   "numberInSurah": 6,
+   "textArabic": "الَّذِيْنَ هُمْ يُرَاۤءُوْنَۙ",
+   "textLatin": "Allażīna hum yurā'ūn(a).",
+   "textEnglish": "those who want only to be seen and praised,"
+  },
+  {
+   "numberInSurah": 7,
+   "textArabic": "وَيَمْنَعُوْنَ الْمَاعُوْنَ ࣖ",
+   "textLatin": "Wa yamna‘ūnal-mā‘ūn(a).",
+   "textEnglish": "and, withal, deny all assistance [to their fellow-men]!"
+  }
+ ],
+ "nextSurah": {
+  "number": 108,
+  "name": "الكوثر",
+  "englishName": "Al-Kawthar",
+  "numberOfAyahs": 3
+ },
+ "previousSurah": {
+  "number": 106,
+  "name": "قريش",
+  "englishName": "Quraish",
+  "numberOfAyahs": 4
+ }
+}

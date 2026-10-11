@@ -1,0 +1,88 @@
+---
+import '../styles/global.css';
+import { labels, locales, type Locale } from '../lib/content';
+import { Menu, Settings, Download, Info, BookOpen } from 'lucide-react';
+import { interfaceLabels } from '../lib/interface-labels';
+interface Props { title: string; locale?: Locale; section?: string; description?: string; }
+const { title, locale = 'id', section = '', description } = Astro.props;
+const t = labels(locale);
+const ui = interfaceLabels[locale];
+const route = Astro.url.pathname.replace(/^\/(id|en|ja|zh-Hans)(?=\/)/, '') || '/';
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site) : null;
+const secondaryNavigation = [
+  { label: ui.settings, route: 'pengaturan/', icon: Settings },
+  { label: ui.downloads, route: 'offline/', icon: Download },
+  { label: t.about, route: 'tentang/', icon: Info },
+  { label: t.prayers, route: 'doa/', icon: BookOpen }
+];
+---
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <script is:inline>
+      try {
+        const scale = Number(localStorage.getItem('reading-scale'));
+        if ([1, 1.25, 1.5].includes(scale)) document.documentElement.style.setProperty('--reading-scale', String(scale));
+        const theme = localStorage.getItem('myalquran:theme:v1');
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+        const preferences = JSON.parse(localStorage.getItem('myalquran:reading-display:v1') || '{}');
+        for (const [key, variable, min, max] of [['arabic', '--arabic-size', 26, 60], ['translation', '--translation-size', 15, 30], ['line', '--reading-line', 1.5, 2.3]]) {
+          const value = preferences[key];
+          if (typeof value === 'number' && value >= min && value <= max) document.documentElement.style.setProperty(variable, String(value) + (key === 'line' ? '' : 'px'));
+        }
+        document.documentElement.dataset.hideLatin = String(preferences.latin !== true);
+        document.documentElement.dataset.hideTranslation = String(preferences.translationVisible === false);
+      } catch { /* Default reading size and system theme remain available when storage is blocked. */ }
+    </script>
+    <title>{title} · MyAlQuran</title>
+    <meta name="description" content={description ?? t.intro} />
+    <meta name="theme-color" content="#1e5546" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    {canonical && <link rel="canonical" href={canonical} />}
+    {Astro.site && locales.map(language => <link rel="alternate" hreflang={language} href={new URL(`/${language}${route}`, Astro.site)} />)}
+    <script>
+      import { registerSW } from 'virtual:pwa-register';
+      import '../scripts/library';
+      const update = registerSW({ immediate: true, onNeedRefresh() { window.dispatchEvent(new Event('pwa-update')); }, onRegisterError(error) { console.error('Offline registration failed', error); } });
+      window.addEventListener('apply-pwa-update', () => update(true));
+      const syncLanguageLinks = () => {
+        const requested = new URLSearchParams(location.search).get('from');
+        const from = requested && /^\/(id|en|ja|zh-Hans)\/(?:surat\/\d+\/|tafsir\/\d+\/|doa\/(?:\d+\/)?)?(?:#ayat-\d+)?$/.test(requested) ? requested : location.pathname + location.hash;
+        for (const link of document.querySelectorAll<HTMLAnchorElement>('[data-settings-link], [data-language-settings]')) {
+          const target = new URL(link.href); target.searchParams.set('from', from); link.href = target.href;
+        }
+        for (const link of document.querySelectorAll<HTMLAnchorElement>('[data-locale-choice]')) {
+          link.href = requested && from === requested ? from.replace(/^\/(id|en|ja|zh-Hans)\//, `/${link.dataset.localeChoice}/`) : `/${link.dataset.localeChoice}/`;
+        }
+        const reading = document.querySelector<HTMLAnchorElement>('[data-reading-settings]');
+        if (reading && requested && from === requested && /\/(surat|tafsir)\//.test(from)) reading.href = from;
+        for (const link of document.querySelectorAll<HTMLAnchorElement>('a[data-language-link]:not([data-locale-choice])')) link.hash = location.hash;
+      };
+      syncLanguageLinks();
+      window.addEventListener('hashchange', syncLanguageLinks);
+      window.addEventListener('pageshow', syncLanguageLinks);
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t.skip}</a>
+    <div class="app-shell">
+      <header class="site-header">
+        <div class="header-top"><a class="brand" href={`/${locale}/`}>MyAlQuran</a></div>
+        <nav class="main-nav" aria-label={t.directory}>
+          <a class:list={{ active: section === 'quran' }} href={`/${locale}/`} aria-current={Astro.url.pathname === `/${locale}/` ? 'page' : undefined}>{t.quran}</a>
+          {section === 'prayers' && <a class="active" href={`/${locale}/doa/`} aria-current={Astro.url.pathname === `/${locale}/doa/` ? 'page' : undefined}>{t.prayers}</a>}
+        </nav>
+        <details class="site-menu">
+          <summary><Menu size={20} aria-hidden="true" />{t.menu}</summary>
+          <div class="menu-panel"><nav aria-label={t.menu}>{secondaryNavigation.map(({ label, route, icon: Icon }) => <a href={`/${locale}/${route}`} data-settings-link={route === 'pengaturan/' ? '' : undefined} aria-current={Astro.url.pathname === `/${locale}/${route}` ? 'page' : undefined}><Icon size={20} aria-hidden="true" />{label}</a>)}</nav></div>
+        </details>
+      </header>
+      <main id="main" class="page-content" tabindex="-1"><slot /></main>
+      <footer class="site-footer"><p class="mb-2">MyAlQuran</p><a class="text-primary" href={`/${locale}/tentang/`}>{t.about} · {ui.sources}</a></footer>
+    </div>
+  </body>
+</html>

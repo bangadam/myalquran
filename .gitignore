@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+.wrangler/
+.ruff_cache/
+__pycache__/
+*.pyc
+.claude/
+.superconductor/
+.super.engineering/
