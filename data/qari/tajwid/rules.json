@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/index-eBmjwcpA.js",
+      "sha256": "6393b49d9484f06f3d560c5e38408443bf48f4dd43e083a34bf56f2e444e74ed",
+      "binding": "ah",
+      "range": {
+        "start": 311790,
+        "end": 320469,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "id": "h",
+      "name": "Hamzah Wasl",
+      "nameArabic": "هَمْزَةُ الوَصْل",
+      "nameId": "Hamzah Wasl",
+      "color": "#9ca3af",
+      "className": "tajweed-hamzah",
+      "description": "Hamzah Wasl adalah hamzah yang dibaca di awal kata saat memulai bacaan, tetapi tidak dibaca ketika menyambung dari kata sebelumnya.",
+      "howTo": "Jika memulai bacaan dari hamzah wasl, baca dengan harakat yang sesuai. Jika menyambung dari kata sebelumnya, hamzah ini tidak dibaca.",
+      "example": "ٱلْحَمْدُ - Alif-lam di awal tidak dibaca jika menyambung",
+      "category": "other"
+    },
+    {
+      "id": "l",
+      "name": "Lam Shamsiyah",
+      "nameArabic": "لَامٌ شَمْسِيَّة",
+      "nameId": "Idgham Syamsiyah",
+      "color": "#3b82f6",
+      "className": "tajweed-idgham",
+      "description": "Lam Shamsiyah terjadi ketika huruf lam pada \"ال\" bertemu dengan salah satu dari 14 huruf syamsiyah (ت ث د ذ ر ز س ش ص ض ط ظ ل ن). Lam tidak dibaca dan huruf setelahnya dibaca dengan tasydid.",
+      "howTo": "Tidak membunyikan huruf lam, langsung membaca huruf setelahnya dengan tasydid (penekanan ganda).",
+      "example": "الشَّمْس dibaca \"asy-syams\" bukan \"al-syams\"",
+      "category": "lam"
+    },
+    {
+      "id": "n",
+      "name": "Ghunnah",
+      "nameArabic": "غُنَّة",
+      "nameId": "Ghunnah (Dengung)",
+      "color": "#f97316",
+      "className": "tajweed-ghunnah",
+      "description": "Ghunnah adalah dengung yang keluar dari pangkal hidung. Panjangnya sekitar 2 harakat (ketukan). Ghunnah muncul pada nun dan mim yang bertasydid, serta pada beberapa hukum nun mati/tanwin.",
+      "howTo": "Keluarkan suara dengung dari hidung selama 2 harakat sambil mulut tertutup untuk mim atau terbuka sesuai harakat untuk nun.",
+      "example": "إِنَّ - nun bertasydid, dengungkan selama 2 ketukan",
+      "category": "nun-tanwin"
+    },
+    {
+      "id": "g",
+      "name": "Ghunnah",
+      "nameArabic": "غُنَّة",
+      "nameId": "Ghunnah (Dengung)",
+      "color": "#f97316",
+      "className": "tajweed-ghunnah",
+      "description": "Ghunnah adalah dengung yang keluar dari pangkal hidung. Panjangnya sekitar 2 harakat (ketukan). Ghunnah muncul pada nun dan mim yang bertasydid, serta pada beberapa hukum nun mati/tanwin.",
+      "howTo": "Keluarkan suara dengung dari hidung selama 2 harakat sambil mulut tertutup untuk mim atau terbuka sesuai harakat untuk nun.",
+      "example": "مِمَّا - mim bertasydid, dengungkan selama 2 ketukan",
+      "category": "mim"
+    },
+    {
+      "id": "p",
+      "name": "Ikhfa Haqiqi",
+      "nameArabic": "إِخْفَاء حَقِيقِي",
+      "nameId": "Ikhfa",
+      "color": "#ec4899",
+      "className": "tajweed-ikhfa",
+      "description": "Ikhfa Haqiqi terjadi ketika nun mati atau tanwin bertemu dengan 15 huruf ikhfa (ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك). Bacaannya disamarkan antara izhar dan idgham dengan disertai ghunnah.",
+      "howTo": "Bacaan nun/tanwin disamarkan (tidak jelas) dengan disertai dengung 2 harakat. Lidah diposisikan mendekati makhraj huruf setelahnya.",
+      "example": "مِنْ قَبْلُ - nun mati bertemu qaf, samarkan dengan ghunnah",
+      "category": "nun-tanwin"
+    },
+    {
+      "id": "a",
+      "name": "Ikhfa Haqiqi",
+      "nameArabic": "إِخْفَاء حَقِيقِي",
+      "nameId": "Ikhfa",
+      "color": "#ec4899",
+      "className": "tajweed-ikhfa",
+      "description": "Ikhfa Haqiqi terjadi ketika nun mati atau tanwin bertemu dengan 15 huruf ikhfa (ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك). Bacaannya disamarkan antara izhar dan idgham dengan disertai ghunnah.",
+      "howTo": "Bacaan nun/tanwin disamarkan (tidak jelas) dengan disertai dengung 2 harakat. Lidah diposisikan mendekati makhraj huruf setelahnya.",
+      "example": "عَلِيمًا حَكِيمًا - tanwin bertemu huruf ikhfa",
+      "category": "nun-tanwin"
+    },
+    {
+      "id": "m",
+      "name": "Madd",
+      "nameArabic": "مَدّ",
+      "nameId": "Madd (Panjang)",
+      "color": "#ef4444",
+      "className": "tajweed-madd",
+      "description": "Madd adalah pemanjangan suara pada huruf mad (ا و ي). Panjangnya bervariasi dari 2 hingga 6 harakat tergantung jenis madd-nya (Thabi`i, Wajib, Jaiz, Lazim, dll).",
+      "howTo": "Panjangkan suara pada huruf mad sesuai dengan jenis madd-nya. Madd Thabi'i = 2 harakat, Madd Wajib/Jaiz = 4-5 harakat, Madd Lazim = 6 harakat.",
+      "example": "قَالُوا - alif setelah qaf, panjangkan 2 harakat",
+      "category": "madd"
+    },
+    {
+      "id": "o",
+      "name": "Madd Lazim",
+      "nameArabic": "مَدّ لَازِم",
+      "nameId": "Madd Lazim",
+      "color": "#ef4444",
+      "className": "tajweed-madd",
+      "description": "Madd Lazim adalah pemanjangan wajib 6 harakat yang terjadi ketika huruf mad bertemu dengan huruf mati atau tasydid dalam satu kata. Ini adalah madd yang paling panjang.",
+      "howTo": "Panjangkan suara huruf mad selama 6 harakat penuh. Wajib dipanjangkan, tidak boleh dikurangi.",
+      "example": "الضَّآلِّين - alif sebelum lam bertasydid, panjangkan 6 harakat",
+      "category": "madd"
+    },
+    {
+      "id": "q",
+      "name": "Qalqalah",
+      "nameArabic": "قَلْقَلَة",
+      "nameId": "Qalqalah",
+      "color": "#22c55e",
+      "className": "tajweed-qalqalah",
+      "description": "Qalqalah adalah pantulan suara yang terjadi pada 5 huruf qalqalah (ق ط ب ج د) ketika huruf tersebut mati atau berhenti. Ada 3 tingkatan: Sughra (tengah kata), Kubra (akhir ayat), dan Akbar (akhir ayat dengan tasydid).",
+      "howTo": "Bunyikan huruf dengan pantulan atau getaran pendek dari makhrajnya. Qalqalah di akhir ayat (Kubra) lebih kuat dari di tengah kata (Sughra).",
+      "example": "يَخْلُقْ - qaf mati di akhir, beri pantulan \"qo\"",
+      "category": "qalqalah"
+    },
+    {
+      "id": "u",
+      "name": "Iqlab",
+      "nameArabic": "إِقْلَاب",
+      "nameId": "Iqlab",
+      "color": "#8b5cf6",
+      "className": "tajweed-iqlab",
+      "description": "Iqlab terjadi ketika nun mati atau tanwin bertemu dengan huruf ba (ب). Nun/tanwin diubah menjadi bunyi mim dan dibaca ikhfa (samar) dengan ghunnah.",
+      "howTo": "Ubah bunyi nun/tanwin menjadi mim, lalu samarkan bacaannya dengan dengung 2 harakat sebelum huruf ba.",
+      "example": "مِنْ بَعْدِ dibaca \"mim ba'di\" dengan ghunnah",
+      "category": "nun-tanwin"
+    },
+    {
+      "id": "i",
+      "name": "Idgham",
+      "nameArabic": "إِدْغَام",
+      "nameId": "Idgham",
+      "color": "#06b6d4",
+      "className": "tajweed-idgham-full",
+      "description": "Idgham adalah memasukkan bunyi nun mati atau tanwin ke dalam huruf setelahnya sehingga menjadi satu bunyi. Ada Idgham Bi Ghunnah (dengan dengung) untuk ي ن م و dan Idgham Bila Ghunnah (tanpa dengung) untuk ل ر.",
+      "howTo": "Untuk Idgham Bi Ghunnah: masukkan nun/tanwin ke huruf berikutnya dengan dengung 2 harakat. Untuk Bila Ghunnah: langsung bunyikan huruf berikutnya tanpa dengung.",
+      "example": "مِنْ يَّعْمَلْ - nun masuk ke ya dengan ghunnah",
+      "category": "nun-tanwin"
+    },
+    {
+      "id": "f",
+      "name": "Ikhfa Syafawi",
+      "nameArabic": "إِخْفَاء شَفَوِي",
+      "nameId": "Ikhfa Syafawi",
+      "color": "#d946ef",
+      "className": "tajweed-ikhfa-syafawi",
+      "description": "Ikhfa Syafawi terjadi ketika mim mati (مْ) bertemu dengan huruf ba (ب). Mim disembunyikan (disamarkan) dengan bibir hampir tertutup disertai ghunnah.",
+      "howTo": "Rapatkan bibir tapi jangan sampai menempel sempurna, keluarkan suara dengung dari hidung selama 2 harakat.",
+      "example": "تَرْمِيهِم بِحِجَارَة - mim mati bertemu ba, samarkan dengan ghunnah",
+      "category": "mim"
+    },
+    {
+      "id": "s",
+      "name": "Saktah",
+      "nameArabic": "سَكْتَة",
+      "nameId": "Saktah (Berhenti Sejenak)",
+      "color": "#64748b",
+      "className": "tajweed-saktah",
+      "description": "Saktah adalah berhenti sejenak tanpa bernapas (sekitar 2 harakat) di tempat-tempat tertentu dalam Al-Quran. Ada 4 tempat saktah wajib dalam riwayat Hafs.",
+      "howTo": "Berhenti sejenak tanpa mengambil napas, cukup potong suara sesaat kemudian lanjutkan bacaan.",
+      "example": "عِوَجًا ۜ قَيِّمًا - berhenti sejenak sebelum melanjutkan ke \"qayyima\"",
+      "category": "other"
+    },
+    {
+      "id": "w",
+      "name": "Idgham Mutamatsilain",
+      "nameArabic": "إِدْغَام مُتَمَاثِلَيْن",
+      "nameId": "Idgham Mutamatsilain",
+      "color": "#0ea5e9",
+      "className": "tajweed-idgham-mimi",
+      "description": "Idgham Mutamatsilain (Idgham Mimi) terjadi ketika mim mati bertemu dengan mim berharakat. Mim pertama dimasukkan ke mim kedua dengan sempurna disertai ghunnah.",
+      "howTo": "Masukkan mim pertama ke mim kedua secara sempurna, lalu dengungkan selama 2 harakat.",
+      "example": "لَهُمْ مَا - mim mati bertemu mim, idgham dengan ghunnah",
+      "category": "mim"
+    },
+    {
+      "id": "c",
+      "name": "Idgham Mutaqaribain",
+      "nameArabic": "إِدْغَام مُتَقَارِبَيْن",
+      "nameId": "Idgham Mutaqaribain",
+      "color": "#14b8a6",
+      "className": "tajweed-idgham-mutaqaribain",
+      "description": "Idgham Mutaqaribain terjadi ketika dua huruf yang berdekatan makhrajnya bertemu, sehingga huruf pertama dimasukkan ke huruf kedua. Contoh: ق+ك, ل+ر.",
+      "howTo": "Masukkan huruf pertama ke huruf kedua karena makhraj keduanya berdekatan.",
+      "example": "أَلَمْ نَخْلُقْكُم - qaf masuk ke kaf",
+      "category": "other"
+    },
+    {
+      "id": "d",
+      "name": "Idgham Mutajanisain",
+      "nameArabic": "إِدْغَام مُتَجَانِسَيْن",
+      "nameId": "Idgham Mutajanisain",
+      "color": "#a855f7",
+      "className": "tajweed-idgham-mutajanisain",
+      "description": "Idgham Mutajanisain terjadi ketika dua huruf yang sama makhrajnya tetapi berbeda sifatnya bertemu. Contoh: ت+ط, ت+د, ط+ت, ذ+ظ.",
+      "howTo": "Masukkan huruf pertama ke huruf kedua secara sempurna karena makhraj keduanya sama.",
+      "example": "قَدْ تَبَيَّنَ - dal masuk ke ta",
+      "category": "other"
+    },
+    {
+      "id": "b",
+      "name": "Izhar Halqi",
+      "nameArabic": "إِظْهَار حَلْقِي",
+      "nameId": "Izhar (Jelas)",
+      "color": "#facc15",
+      "className": "tajweed-izhar",
+      "description": "Izhar Halqi terjadi ketika nun mati atau tanwin bertemu dengan salah satu dari 6 huruf halqi (ء ه ع ح غ خ). Nun/tanwin dibaca dengan jelas tanpa ghunnah.",
+      "howTo": "Baca nun mati atau tanwin dengan jelas tanpa dengung. Langsung bunyikan huruf halqi yang ada setelahnya dengan jelas.",
+      "example": "مِنْ عِنْدِ - nun mati bertemu ain (huruf halqi), baca jelas tanpa ghunnah",
+      "category": "nun-tanwin"
+    }
+  ]
+}

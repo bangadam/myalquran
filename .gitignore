@@ -13,3 +13,10 @@ __pycache__/
 .claude/
 .superconductor/
 .super.engineering/
+
+# Keep build inputs and provenance indexes tracked; rights-unresolved, unconsumed payloads stay local.
+data/qari/audio/*.json
+!data/qari/audio/reciters.json
+data/qari/translations/
+data/qari/quran/ayah-metadata-tajwid.json
+data/qari/prayer/snapshot-2026-10.json

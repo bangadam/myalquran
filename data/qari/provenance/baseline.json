@@ -1,0 +1,1407 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [],
+  "notes": [
+    "Hash seluruh file data sebelum ekstraksi; file baseline tidak diubah."
+  ],
+  "data": [
+    {
+      "file": "data/quran.sqlite",
+      "sha256": "b2232d57acae3a07d1b51cc20e67e08a7ac134be698158f64a60ce1e2881faca"
+    },
+    {
+      "file": "data/shalat_kabkota.json",
+      "sha256": "5e499efb8c413f3c05a6930741732b817ba660b454a7386d9ba13e3af97252d7"
+    },
+    {
+      "file": "data/doa.json",
+      "sha256": "0851ce5111a4453377b1b054ec5cdca0386067f805252e681b43244b705d6e25"
+    },
+    {
+      "file": "data/kajian.json",
+      "sha256": "a562208697540cd5b685fb5ddbff36da0c25a9fb62b8823be4e554e4a8510e00"
+    },
+    {
+      "file": "data/surat/103.json",
+      "sha256": "2cb34db99b71a62cf661ba54d092bbd6db5e5c900b2d61fc85f64c7907fa5395"
+    },
+    {
+      "file": "data/surat/20.json",
+      "sha256": "785818e3d7058bb3b132f97c369137dd5f6131057698cb4f9817d8c3cc623a97"
+    },
+    {
+      "file": "data/surat/98.json",
+      "sha256": "9e98f294985932b875e8a128849e8c0690f93c5a8f71d00103f54ef5536561a0"
+    },
+    {
+      "file": "data/surat/77.json",
+      "sha256": "bd1f58a4d046a606ed067a719873c799a5386f761262c78dfac995598df67378"
+    },
+    {
+      "file": "data/surat/61.json",
+      "sha256": "3b7f298a94d1d5b44e4210b69fc8e3af88e2d7029beafda4497f9986997f3e68"
+    },
+    {
+      "file": "data/surat/36.json",
+      "sha256": "83c96c20f3d9328b3a2d04f4d14a507b131bdd6c86e8d9c7ea6d49699f639cd6"
+    },
+    {
+      "file": "data/surat/41.json",
+      "sha256": "1cc3db0b481f9dc7f3a860dd92d533f8584700e033ec1074dd6d6228a6be1231"
+    },
+    {
+      "file": "data/surat/16.json",
+      "sha256": "a0f1c2e7ea495a555e53093ff2399b58e8cee887f1a432fd26b46b6f41e98b9a"
+    },
+    {
+      "file": "data/surat/57.json",
+      "sha256": "1ea3eeb9b395350ef95b17bec92323c28d1cfb318e8e8d3c8f11491da595428c"
+    },
+    {
+      "file": "data/surat/94.json",
+      "sha256": "b24b287da5504e2a7fb0701d40e3889a57dc1b07f058e55fa41708d6abf04f87"
+    },
+    {
+      "file": "data/surat/82.json",
+      "sha256": "6eb601ac947c486ca544994e460642bd4e55a38e93a6540261ca6ee19ff3406d"
+    },
+    {
+      "file": "data/surat/6.json",
+      "sha256": "5d4757cfcae691de8ac12d3eb016dee5ea394320b7dc28471df503e37163f601"
+    },
+    {
+      "file": "data/surat/7.json",
+      "sha256": "e0000cb661b4cf2d79ee447da51122159ec3a3da6f7143809478490585779532"
+    },
+    {
+      "file": "data/surat/83.json",
+      "sha256": "2bf752fc85fdd1489862cc096faf6095483e33e7db55c8961b0a012e03a00cec"
+    },
+    {
+      "file": "data/surat/95.json",
+      "sha256": "85b46a6298199c7141a0ca7fb7da3a524adde4ee06e0677cd3b2fa68c8b48aaf"
+    },
+    {
+      "file": "data/surat/56.json",
+      "sha256": "e882ca56f466c3d8a65150bc370e1e0e91ca646f038b98515793ff68e97e576d"
+    },
+    {
+      "file": "data/surat/17.json",
+      "sha256": "69bac4e3ec28475ab5c13de1ba64cf001839493be8c15023d38b6ad92c4d57af"
+    },
+    {
+      "file": "data/surat/40.json",
+      "sha256": "4abc0ad3927e1f7a7e2bccfe428a510cc10c922286df63a54c77853070ee0a97"
+    },
+    {
+      "file": "data/surat/37.json",
+      "sha256": "d53505f6a9e0a5c71801239979bbf96eebcb73d4ddbfac59412f44a5c6863e74"
+    },
+    {
+      "file": "data/surat/60.json",
+      "sha256": "ed3c039434846a62f7f9d79c29abcdfa56aaa6e3d257b47b0e44965ee2207a2a"
+    },
+    {
+      "file": "data/surat/99.json",
+      "sha256": "aab00b4106e81a15abcad73f67d56d024da708c402e4f463d9a1899f73f811b1"
+    },
+    {
+      "file": "data/surat/76.json",
+      "sha256": "af80d553e7da618b6cebbc4aa4bda3b2520bb226fd60104779decde36a9ee660"
+    },
+    {
+      "file": "data/surat/21.json",
+      "sha256": "c741bb0ee8ef7adf7ffaf3f7c6921f9f900e2377bd0d52e24cb1bf5dca026502"
+    },
+    {
+      "file": "data/surat/102.json",
+      "sha256": "0d300cd203f8c988fc71273b94f8693c7c5c8a310d635b65f0d1b77a15aa2aba"
+    },
+    {
+      "file": "data/surat/114.json",
+      "sha256": "48686fcf2384e3c6d4f4c1dc6cbbd4c0d16e8d6818d10e51e64137d88f506b1d"
+    },
+    {
+      "file": "data/surat/47.json",
+      "sha256": "e0de34a6603bbc04e7d330b97ebd218e91d68a1bee56162ad94eef30c1f450ee"
+    },
+    {
+      "file": "data/surat/10.json",
+      "sha256": "69a14514720071d814e88695674c203cdba2bc25ad13d64bd60e4391165760de"
+    },
+    {
+      "file": "data/surat/109.json",
+      "sha256": "7c43b2dc47b05689b828e84a522ff59c0f56199f5b308875f1381799572f4356"
+    },
+    {
+      "file": "data/surat/51.json",
+      "sha256": "80e386aa23fd39f0f120cfd71100920eb6691f444952d5548c9ec043392ca14f"
+    },
+    {
+      "file": "data/surat/92.json",
+      "sha256": "aae57b42908a7e3073cce37017e999dc882e612f23c938272b9df23badde8f98"
+    },
+    {
+      "file": "data/surat/84.json",
+      "sha256": "ee51698cb9fa1b4d7629f807f181e6f69a6dc3cbb066d8ed6cc9be37e6dd66df"
+    },
+    {
+      "file": "data/surat/113.json",
+      "sha256": "4b741fa9108ae7ff83d896708c5f2a407afa7e9c3ea2718df7af6c9f84364eff"
+    },
+    {
+      "file": "data/surat/105.json",
+      "sha256": "fdc96ab54838f4b881dfcac764f799a7e10304305d71506329a8b2133ce59ceb"
+    },
+    {
+      "file": "data/surat/26.json",
+      "sha256": "b32914787870a8bf29a25eadfa39839bdae5e376277749b19ef7d9e5c6103edb"
+    },
+    {
+      "file": "data/surat/71.json",
+      "sha256": "44dd3fd43bb5e9797c4d8078e1c51b5cc839ab96f1900e5ffcfeef9a1acdbe88"
+    },
+    {
+      "file": "data/surat/88.json",
+      "sha256": "fc2efca20d3dcd81a140a457663b5e6fbc63e2b3ad9a5845b0dd4b025bf056fc"
+    },
+    {
+      "file": "data/surat/67.json",
+      "sha256": "47520f91d07e609cd5702ff77a7cf20796757657bdcd960862b6ada2a0aedad9"
+    },
+    {
+      "file": "data/surat/30.json",
+      "sha256": "3d2d82cfed6f00aea6d553d2aa85b95a71fdd28c86503b19bd74e9779eb0b70d"
+    },
+    {
+      "file": "data/surat/31.json",
+      "sha256": "efa6893b5eac34c4aa995624abe4a8746e04230485bbf5c3a000ab340223a8ac"
+    },
+    {
+      "file": "data/surat/89.json",
+      "sha256": "d6c811413839fd76603a46371fa2faeb8db739669068843867745961ae2084b4"
+    },
+    {
+      "file": "data/surat/66.json",
+      "sha256": "be1d4a6080627c4cc0057337e8a3896e69d3f0bd3938aa95e8ea147a67869b5a"
+    },
+    {
+      "file": "data/surat/70.json",
+      "sha256": "6d0082fde5dd03a7e43d8115a5fd5d76c54df1fec0c4e09c9278acccdfbd86c5"
+    },
+    {
+      "file": "data/surat/27.json",
+      "sha256": "d29003ad59650a06d8f2e95b8bb6660e75782fb59576b703b729f3d6c7f32127"
+    },
+    {
+      "file": "data/surat/104.json",
+      "sha256": "0dc20498b02c655fb623b390178a589b3a680b1cf6c26acf4a2be674b546f643"
+    },
+    {
+      "file": "data/surat/112.json",
+      "sha256": "c498cb14b9b2661adf6465f48885d8a3a3a451906b164130ce05309f520aac0d"
+    },
+    {
+      "file": "data/surat/1.json",
+      "sha256": "69724063b569cb96a49501a786b4f7571471e877fb054b84e464e163773f08e8"
+    },
+    {
+      "file": "data/surat/85.json",
+      "sha256": "1f6e0ea942c127aaa1336f58302d3bad49a11f569c30baa288ba1a6922925a15"
+    },
+    {
+      "file": "data/surat/93.json",
+      "sha256": "5d652737e66bba5472aa64bf1c62978ec4a22e8c68beaef9040e07e4f41b0723"
+    },
+    {
+      "file": "data/surat/108.json",
+      "sha256": "d656054fdf9e4074eee17ee79e3225c788110758526c8b96ebc056c376d5e073"
+    },
+    {
+      "file": "data/surat/50.json",
+      "sha256": "fc93212368450b354d7b8975b7ad5670ab6dc40e098495ea9d0ccb33c527a26b"
+    },
+    {
+      "file": "data/surat/11.json",
+      "sha256": "d3f60352b50dfee3eb840ae26bb53d3c5d6776fa76b661b6bc24e18038d7d1fb"
+    },
+    {
+      "file": "data/surat/46.json",
+      "sha256": "d79876822ab7a3b44e3a5a8247e5637b13d0b5fb4454bd8aa9f7cef1b56bac4e"
+    },
+    {
+      "file": "data/surat/69.json",
+      "sha256": "9ef2dc5d2887b78b9e122935713230ed9bdd15f00c81a6e59570a6e6f653aceb"
+    },
+    {
+      "file": "data/surat/2.json",
+      "sha256": "f7735b6552b04c5b78a595eec19955a1bc23919a2024310aacc726f286ffc9e4"
+    },
+    {
+      "file": "data/surat/86.json",
+      "sha256": "a0df297649aa588bcfc70c139c5aa216cc1b974884fd5729511fc04841c4da99"
+    },
+    {
+      "file": "data/surat/90.json",
+      "sha256": "bd84e1db2412f0bd1e96c204c086bf9421f161ebcbd2b6ee3864abc41a38f981"
+    },
+    {
+      "file": "data/surat/28.json",
+      "sha256": "ebd52f67e5a9f8634bc7bca01768272a1ff7e7c34862d0321eb170ab2f1accd2"
+    },
+    {
+      "file": "data/surat/53.json",
+      "sha256": "d4e1935911d0ebf854b863498c668d6f36060f5eb18e57beb79e4068a6745ddc"
+    },
+    {
+      "file": "data/surat/12.json",
+      "sha256": "c97222faf8233305d6d5dd3b416823e0845c026bd44dbc99d71a58ee6ba277cd"
+    },
+    {
+      "file": "data/surat/45.json",
+      "sha256": "912ae079ca19af323920b87e1a2a14e2f042da7946b79784370e9cf946929e63"
+    },
+    {
+      "file": "data/surat/32.json",
+      "sha256": "b0f48e57cc959673a73203848db33742f67ef687b4e00d2fe0916353952b2d3f"
+    },
+    {
+      "file": "data/surat/65.json",
+      "sha256": "56587059e2f1cb31674b6cafedf6e81c89c2b69a9fe0e51fd888f529463b2370"
+    },
+    {
+      "file": "data/surat/73.json",
+      "sha256": "7ceb212d09bd6bf29c7e90465c722b1f31b9ce48a59f52c670a0f3bfe32710f5"
+    },
+    {
+      "file": "data/surat/24.json",
+      "sha256": "0f518552b62ccd9060a7823f314d667aa8ec10034c2fa0caa6cf1ec04884e664"
+    },
+    {
+      "file": "data/surat/107.json",
+      "sha256": "0192a022dbdce0b2643de921b154de2e2411eb1f3b814dad0ab47bfc46468193"
+    },
+    {
+      "file": "data/surat/49.json",
+      "sha256": "f3c3c2b4f66032f4e127796c91834b298acffed9dd49ec67b52c327cac5cbb2c"
+    },
+    {
+      "file": "data/surat/111.json",
+      "sha256": "21a2a76cfb606575ce871f4a501bb19e4e6b799c96f9527bd14585b495c30453"
+    },
+    {
+      "file": "data/surat/48.json",
+      "sha256": "e2b937039efc609c42a238a249f9ce656c9f590677ba1ed2160b1ddf3a315e2a"
+    },
+    {
+      "file": "data/surat/110.json",
+      "sha256": "a9031d11f9ab841986ffe67de080db1e3c63736bd96a13f100c6eb3710967f28"
+    },
+    {
+      "file": "data/surat/106.json",
+      "sha256": "9ec3d3f42f70c824da08fe439604f991d6e07c2fd50a4ca64626bb9c37d6d61b"
+    },
+    {
+      "file": "data/surat/25.json",
+      "sha256": "c20f045044091c154b9bead7b513c4dae4cdd5c78b5cefdf1aef9f8ffeeb9818"
+    },
+    {
+      "file": "data/surat/72.json",
+      "sha256": "4d1dedc930c594e59a4f0b940d622584a8ddab4b8e7bee7ab8db0374598a4bf8"
+    },
+    {
+      "file": "data/surat/64.json",
+      "sha256": "485e122b7e3dfefd7bc7eb3bda32016c948356562d70033c259d6434dd2de2c0"
+    },
+    {
+      "file": "data/surat/33.json",
+      "sha256": "86f7fb6c903318d9cb566f85b399b5ba002504d522e3bae82dd6325f37192fd4"
+    },
+    {
+      "file": "data/surat/44.json",
+      "sha256": "2869e5954cba2532a5fa467a7729fc9bfbe2d5a37a06df86e2c7f3bd2ef62564"
+    },
+    {
+      "file": "data/surat/13.json",
+      "sha256": "52f6f75d3d090a325aab479d4f0a85c0f6723cf328a4681db87227f9e0562d0e"
+    },
+    {
+      "file": "data/surat/52.json",
+      "sha256": "39fba32a4539865cfecad1b316f832ddeb1391f7441cfe2739cf111e780c12e2"
+    },
+    {
+      "file": "data/surat/29.json",
+      "sha256": "cf0555bab512f66633bb69ef097e988f4e72297f813c5e4ea71e9add4109e055"
+    },
+    {
+      "file": "data/surat/91.json",
+      "sha256": "f41ab48d17ec1c3d4369247eb97c343243e9c230be32e342230f294572f35c93"
+    },
+    {
+      "file": "data/surat/68.json",
+      "sha256": "862a9ad0add9d0a6fe5eb9b5a9c1c704e38ad3d5a399a2f05f4cb882c1d3a0ec"
+    },
+    {
+      "file": "data/surat/87.json",
+      "sha256": "7d355e04792b98b861ec2de472ff07f2d7c25a1cb3268f098fed62c59c2800b4"
+    },
+    {
+      "file": "data/surat/3.json",
+      "sha256": "bb603079f1be963ccc1f353dcde4b303048740882f4e5506fde57167933c6f03"
+    },
+    {
+      "file": "data/surat/34.json",
+      "sha256": "f913bc84d2c6234e64a6f796069bb463144346d4febce3f24d1f76b3a0436712"
+    },
+    {
+      "file": "data/surat/63.json",
+      "sha256": "a8e52f171a648d36826b6313ff4bc23dedade47c2db73ae9112fabe8fc15947d"
+    },
+    {
+      "file": "data/surat/8.json",
+      "sha256": "0fbb6ebd33cf5a8d3a1bd873747c072fafc82e2415b795d10358891d850e727c"
+    },
+    {
+      "file": "data/surat/75.json",
+      "sha256": "45060ca3441882821ddc90cc6ac0cfbe1e8713dc1cb16afee98ed23ed46f5118"
+    },
+    {
+      "file": "data/surat/22.json",
+      "sha256": "b8051028d8e0df3fcc0f389f5945297d217598cbe1a24a247499031c479887bd"
+    },
+    {
+      "file": "data/surat/59.json",
+      "sha256": "9e5f4f676d7ad8f9ad053f1e8ecf2c3039de91adc31f83183cf52bde35fb4fc5"
+    },
+    {
+      "file": "data/surat/101.json",
+      "sha256": "731ee9c8be963f5c14b8a4af25ee9c0ac67d730c45aff553feaab6f12b4dfbcf"
+    },
+    {
+      "file": "data/surat/18.json",
+      "sha256": "7ff8d48251450a6b56d1bfcd9579408f4b5f2c88ad5d59a795b67e18503ad5c0"
+    },
+    {
+      "file": "data/surat/38.json",
+      "sha256": "88f68024e095b54e61f510ab8b16b33d70e6b0d440a46f5612561ae94a171f19"
+    },
+    {
+      "file": "data/surat/4.json",
+      "sha256": "76682e8c90d1767a9468de468dbe67906f00408e4d19e024d77b40f7898c7d84"
+    },
+    {
+      "file": "data/surat/80.json",
+      "sha256": "930d51f8e1eb8bc40210725421154238daa597bfc1907ae8c510bdb55c36f0a2"
+    },
+    {
+      "file": "data/surat/79.json",
+      "sha256": "7ba9d79f93326613baad46b011f061c731a051862e229e0b29b00f960f0bb743"
+    },
+    {
+      "file": "data/surat/96.json",
+      "sha256": "64de3c9c618b4a75d349308ba038be292ff543b8fafab62d7d2159833ee66224"
+    },
+    {
+      "file": "data/surat/55.json",
+      "sha256": "0375d51068c148e696e9768ff02d232cfda969dc5885de8b5f2a89e70a88fe6d"
+    },
+    {
+      "file": "data/surat/14.json",
+      "sha256": "9868d2e63241c31db2fc8901feec124f62554fd3b074899eebf96ea9dcdde5f7"
+    },
+    {
+      "file": "data/surat/43.json",
+      "sha256": "7ca6fa2501a31ca9e957991c979ce64bcf9f1db10f7ba1983a6d1a266ef5d182"
+    },
+    {
+      "file": "data/surat/42.json",
+      "sha256": "730306aeca90d94ea5135bed26bf7862c40282aa9946d4490f4f70ad199b0faf"
+    },
+    {
+      "file": "data/surat/15.json",
+      "sha256": "54fd7d6fae3b92cafbba4183a58d82e4bebc93250a5389fa0319438ae7fcbf65"
+    },
+    {
+      "file": "data/surat/54.json",
+      "sha256": "c9b9f4cfab4a8ee075b06b175b5115c1dfb8e61a1b1088896d3eb889c154c406"
+    },
+    {
+      "file": "data/surat/78.json",
+      "sha256": "4fe91e4fa05d6d45b92c73221dc8b33d627772702af2b1863f53fa6386a7870d"
+    },
+    {
+      "file": "data/surat/97.json",
+      "sha256": "1e723fea92988902383978bfb2539028669cf6c1e1b3da663d44287c75cb9d95"
+    },
+    {
+      "file": "data/surat/81.json",
+      "sha256": "105057743897931806c9397db46b83fc0beee68367ce9ad5ce0907c8fd8888a9"
+    },
+    {
+      "file": "data/surat/5.json",
+      "sha256": "b37e98ac3672bd4578a3f60ccda33edc35464621b00e0920fd763e6423155f45"
+    },
+    {
+      "file": "data/surat/39.json",
+      "sha256": "bddb63114f5bf8c579c3f77e35d01f7c253bd4a860f393056a8e52f4f787a192"
+    },
+    {
+      "file": "data/surat/19.json",
+      "sha256": "9daa3222c201217dd5dbb945605d7e438f3b485fddf51f6ad68bb1fb2bbfaac6"
+    },
+    {
+      "file": "data/surat/58.json",
+      "sha256": "6ea9b39805e47d3f66c5575e083c34744df8e0d0c6db185c3f4883bc971ac898"
+    },
+    {
+      "file": "data/surat/100.json",
+      "sha256": "bc72b626fb86ee002e763f2cbe1b06ef509549b0cc167a07896e0386b67af71f"
+    },
+    {
+      "file": "data/surat/23.json",
+      "sha256": "e380f2f77c79de9985aba60a9c3cb04df26169f5d130884143fe05f421cfc2ea"
+    },
+    {
+      "file": "data/surat/74.json",
+      "sha256": "41efd2a97be6957bcfe54b1d357a1ad731b1f3dcf4373b973cd4344039ba4a0d"
+    },
+    {
+      "file": "data/surat/62.json",
+      "sha256": "5cb100995246e1a9c992360c646fb03910304706d4c76b9c319c734c3bb7b4ee"
+    },
+    {
+      "file": "data/surat/9.json",
+      "sha256": "7ea9c1046d284de6de95fcbdeb0f1a66c8325bfb451e6d1b5b3d1c2ba559abd7"
+    },
+    {
+      "file": "data/surat/35.json",
+      "sha256": "1fd73198a5834fe63fa326835e905f86309aaee6ddcc63c5dfd0f7be920d3299"
+    },
+    {
+      "file": "data/bookmarks.json",
+      "sha256": "768c53d64c03589a6d855cc3bebb8cf8e05af6f69a81a8c328cc8bc58738e925"
+    },
+    {
+      "file": "data/surat.json",
+      "sha256": "46610dba5eadeb76434b9e63e6ad965a2e4530cef2102bcd24942bfe5778b5aa"
+    },
+    {
+      "file": "data/en/103.json",
+      "sha256": "5e077528a4898d121968cfde5e0eb2a86105430e1a51eaa9ea04c522b3fb5762"
+    },
+    {
+      "file": "data/en/20.json",
+      "sha256": "6cebccdf4a262814475b81c35f2e5d046c0f46fee14cc6ee9b5e9770b1378941"
+    },
+    {
+      "file": "data/en/98.json",
+      "sha256": "95e1fa3226cd9e80525a971d0bcf5c48397ec6f22c7069278a37df132b814d7f"
+    },
+    {
+      "file": "data/en/77.json",
+      "sha256": "09535c91f6360da49886769ffa761b87b49a02e8c29f622c4d3963d90e0a8f4f"
+    },
+    {
+      "file": "data/en/61.json",
+      "sha256": "7fdc1cc6ad895cf8e7ad6d05702fb1e457bc081bf51a697c882cce8bf747b583"
+    },
+    {
+      "file": "data/en/36.json",
+      "sha256": "95d62fd478d7fdff998f72782e8cf6d6be38a6bafad0bb76ba2b0f52feb51bf4"
+    },
+    {
+      "file": "data/en/41.json",
+      "sha256": "a15741ec7585a7883e51e48b3b15c140a8ce946552ec929ccc94ae3596c84da5"
+    },
+    {
+      "file": "data/en/16.json",
+      "sha256": "2d0deeb2380001802dcdff025a4f16700742433eb27b717150b8af1cbe6dab00"
+    },
+    {
+      "file": "data/en/57.json",
+      "sha256": "ce00142cd69220182a09faccb4495d35cc3da0f947527e12f7770ada61fc3643"
+    },
+    {
+      "file": "data/en/94.json",
+      "sha256": "63de3d98c3e01521028c3297d09e5d9b5c195d81cd0cc1d4ae6a29ba55223c76"
+    },
+    {
+      "file": "data/en/82.json",
+      "sha256": "987847d81f4b0c1fba871698081b260a897dd9a2d7f97499a0a6a49004a95d05"
+    },
+    {
+      "file": "data/en/6.json",
+      "sha256": "5be4ffe53d792853451ecb95363bf6a1e1002c5a4d59cd70d96d151fffb2c396"
+    },
+    {
+      "file": "data/en/7.json",
+      "sha256": "d172f9b06eada900f3f162e056f8f50a0dfe82e30c6f13d4908c6c36fca435c4"
+    },
+    {
+      "file": "data/en/83.json",
+      "sha256": "26286db6a5360b8603b57cc6acc1b2910510ba41980ad6a4a5d3c00c85a614d2"
+    },
+    {
+      "file": "data/en/95.json",
+      "sha256": "5d917addf5c946ee35757a16f3b261f5111ea493dad3fdd2e9be0f57b17c7d91"
+    },
+    {
+      "file": "data/en/56.json",
+      "sha256": "562146df00d6a92a02fb48a89b908d51f2a09ff068f623429ec43e002f13eb10"
+    },
+    {
+      "file": "data/en/17.json",
+      "sha256": "507915ccfec1de33ba1dfde365f2c63fffb29289bc2a570f43b957a67b5a209d"
+    },
+    {
+      "file": "data/en/40.json",
+      "sha256": "d6bb8c747d386ce718f6caeff5f87b8b3932e655e10146cfb67ecef8abd4279e"
+    },
+    {
+      "file": "data/en/37.json",
+      "sha256": "7626a4d71c8a2719062db0b0ab0640dea5032c44aa7369a7aa37916ee92b5b06"
+    },
+    {
+      "file": "data/en/60.json",
+      "sha256": "5c310524eddc6db11689bd236eac0742758ddf6b1e1724601ec87be10498d2b0"
+    },
+    {
+      "file": "data/en/99.json",
+      "sha256": "1f36b22b313ebde9a675de81c47472a67bd0bc0d33ef71655023fea3d8d324e4"
+    },
+    {
+      "file": "data/en/76.json",
+      "sha256": "2bf63d9e4823c9c3f10082ea5646e087917aacf330e6fede95a7fc17fed085df"
+    },
+    {
+      "file": "data/en/21.json",
+      "sha256": "d77bf3e847747d14948e97f183a6e4cc36adcbdaaacf9607704dbfaef5099af2"
+    },
+    {
+      "file": "data/en/102.json",
+      "sha256": "c7b870412d5120bffef29179878329f44c1e0bd5e5cd2244856369e053f879ea"
+    },
+    {
+      "file": "data/en/114.json",
+      "sha256": "f7ee617932cec2072197ee827e002c5e41d388862f8212961afe76ba42c9d21f"
+    },
+    {
+      "file": "data/en/47.json",
+      "sha256": "b3f7b9645c6cddc5e5eee6bddab4ac17f7c5e9f3f43d5f25e9039e63c7171a7d"
+    },
+    {
+      "file": "data/en/10.json",
+      "sha256": "beb2754f8a35e9ec39cbd801677669f562ac89c1c643ab5b28dd5652263f4d92"
+    },
+    {
+      "file": "data/en/109.json",
+      "sha256": "493b1b8974133aa85bbcc514c5dcb3247c231a5441d56235b9f97aa4dd09dd58"
+    },
+    {
+      "file": "data/en/51.json",
+      "sha256": "afc93707570a3da809aed8f7e05ff5cb62e51ab30bae2b7586608d5feb8a028e"
+    },
+    {
+      "file": "data/en/92.json",
+      "sha256": "c5456d0dc82fcecc0de70612c25dbc839a0fa1e2fbe25fdac5ccee63231f6b81"
+    },
+    {
+      "file": "data/en/84.json",
+      "sha256": "35aa95b8b2bdfeec20a5d2bf112e3a4eb7cd45b1b6f21ccc959d3891be26aa22"
+    },
+    {
+      "file": "data/en/113.json",
+      "sha256": "e295fafc436d6dbae82a4f17b4e8e77790095fdf00156b58fe11ef728b02c67b"
+    },
+    {
+      "file": "data/en/105.json",
+      "sha256": "1fc7ce525f99e9be5fff8ca1e5ae40bcf120f35e3bc65b51bacf0626c062cb9c"
+    },
+    {
+      "file": "data/en/26.json",
+      "sha256": "d80d4ec656b74333d1eb3317027d88fc4cdacb4591e69afe17de604a5548fca1"
+    },
+    {
+      "file": "data/en/71.json",
+      "sha256": "e861c5854e521325fbb935b587c581c395f9e0e8dd5e40470ecd20c1939ea9a6"
+    },
+    {
+      "file": "data/en/88.json",
+      "sha256": "299523842472acf6a9940466f54fdadb9a3343e3fc3d5ed56b31af289d85ba85"
+    },
+    {
+      "file": "data/en/67.json",
+      "sha256": "7fe1cf7784e78ebe74e0c3d59df4c8bca8f7c21d1c1fc4ec54cec83e5e32491c"
+    },
+    {
+      "file": "data/en/30.json",
+      "sha256": "aaead46022086e6195034aa59a30fd71cb58c1842dbf82e4d145aa48d6aa95e9"
+    },
+    {
+      "file": "data/en/31.json",
+      "sha256": "fbf1bf24609f30b57cd1339e2db58664b550615a186026baaa3e37b3dcb7ad69"
+    },
+    {
+      "file": "data/en/89.json",
+      "sha256": "91aed81b35bdb264b98914377d125bf6f7f1ad874b1a4f86a39e09044ad0e259"
+    },
+    {
+      "file": "data/en/66.json",
+      "sha256": "8e775a709ec8bdeae9609ba3e38d42b310396e748a2e8b0ff8c35cbfa5818bdd"
+    },
+    {
+      "file": "data/en/70.json",
+      "sha256": "31162ee2841828ffb0599acc36b801f3d3f1af83a3998a17ad89b5040a328bf6"
+    },
+    {
+      "file": "data/en/27.json",
+      "sha256": "e83f7dc71210203322b6d5a48ce242cecefd0a1aa7155c76d8e71dbab36c2936"
+    },
+    {
+      "file": "data/en/104.json",
+      "sha256": "9fd20d5b9edf9b3ae7877c6297cd188c3c5f35b93422db6362698fa65efc032d"
+    },
+    {
+      "file": "data/en/112.json",
+      "sha256": "6d2fc5b89362fca2af5cf048d7f1319337b5a36d7aa1d02c591b9458b4804061"
+    },
+    {
+      "file": "data/en/1.json",
+      "sha256": "a2dba8b8f2890f93abf4c48edee72ccffe29737c8526f0ece9774d678ba2dfbb"
+    },
+    {
+      "file": "data/en/85.json",
+      "sha256": "a45ca303182c02901fd1a102cad0d323b2dec3a4bab487a0dffe6f23bcc56528"
+    },
+    {
+      "file": "data/en/93.json",
+      "sha256": "d437ed17898934739ae061fec64092f33e209422d356b36f70251ad578ebdf5a"
+    },
+    {
+      "file": "data/en/108.json",
+      "sha256": "8373e7dd2fa3ad90ff3d47eb834a4547d00635886b80b6acbe79b48352964d28"
+    },
+    {
+      "file": "data/en/50.json",
+      "sha256": "5a88be1d1e5fd62731f4161af5f8dd9d4724be918092272ee3c35a14b7a817f5"
+    },
+    {
+      "file": "data/en/11.json",
+      "sha256": "c8fc2937e2f49f98368d9cadf40b9936db9cc7853d54494e8a342cd498819b60"
+    },
+    {
+      "file": "data/en/46.json",
+      "sha256": "566d8d55d141194bcf09d6c0776b45cd5dc060d4641dbd827e478590d56c965d"
+    },
+    {
+      "file": "data/en/69.json",
+      "sha256": "3d86d67aadca8d1d09b88434c37002875ce38cf392584951c9e759775647d871"
+    },
+    {
+      "file": "data/en/2.json",
+      "sha256": "a17fda3485f3481531cce7b23b3a4d5af6ded86b410e59a6f4a2e7583f2417df"
+    },
+    {
+      "file": "data/en/86.json",
+      "sha256": "43b967a5724b8558e322536eea4a2d4ecb0210b0820630f2ee7c504357c365f2"
+    },
+    {
+      "file": "data/en/90.json",
+      "sha256": "88ba2657c0f3bbd89ba4a9703b088e687694ea690f0935d56bfbba80446fbb75"
+    },
+    {
+      "file": "data/en/28.json",
+      "sha256": "e1bebf1d467fcfbdc220732ecb6273f8ec8315d0d696d1498d4e9ec5781ff81a"
+    },
+    {
+      "file": "data/en/53.json",
+      "sha256": "4e610bad42540033644b328e0964246f8453d0125cb8854af6399d5c164f73a7"
+    },
+    {
+      "file": "data/en/12.json",
+      "sha256": "6b6152f58b46eaae4678e10e411e9872137d610d0588342d3a15aae9e7649085"
+    },
+    {
+      "file": "data/en/45.json",
+      "sha256": "a4281fb157fe6d1349b31ff53d7012dbf17ec3b34fddba0aab187cb32a479aed"
+    },
+    {
+      "file": "data/en/32.json",
+      "sha256": "2f36fc60c4272e86b864f41754f6037f7c636d8f1424ce6ca0436ba4cdc4e9c9"
+    },
+    {
+      "file": "data/en/65.json",
+      "sha256": "a9e5f63b120316c0c18e7e7e3927bd5a017725613379800d364125b3202a2315"
+    },
+    {
+      "file": "data/en/73.json",
+      "sha256": "0b928aa21a5810ed327227fb2ad26b305f9716d6679947046102f7ed19839dac"
+    },
+    {
+      "file": "data/en/24.json",
+      "sha256": "ce2c40ae1d456748c78a55ab811ad8d9db2b629b043f709126d9bb9f01d1a3e9"
+    },
+    {
+      "file": "data/en/107.json",
+      "sha256": "b56772951508e09dcd46b42ab6cd9588c198145007fb41bcd42bd48f7110eb93"
+    },
+    {
+      "file": "data/en/49.json",
+      "sha256": "1a82a21cb7ec72ac8c80077e49275379d018c47589d60c0e1f11b23a6b35b05b"
+    },
+    {
+      "file": "data/en/111.json",
+      "sha256": "608748f5701928db05302770cce0b6d50c520c0fd53bdde382a85d51aadf5a31"
+    },
+    {
+      "file": "data/en/48.json",
+      "sha256": "a8d06d3bde00e9e26ed129993db0cdef0f0f0af4dc0bfc75a1c8cdad9c426b1a"
+    },
+    {
+      "file": "data/en/110.json",
+      "sha256": "ca3d9272fddc1fde2c3dc770a0b261a5b7044af23825cb7e6fb22435ba63b00a"
+    },
+    {
+      "file": "data/en/106.json",
+      "sha256": "43d16a6ce6669330fab2ccc0822704613a92831430fccad31f70ddaa044e2804"
+    },
+    {
+      "file": "data/en/25.json",
+      "sha256": "a4f2f816893e0b0affba5f15fd688359114da84955d165fb2c3f612e9472ec21"
+    },
+    {
+      "file": "data/en/72.json",
+      "sha256": "836e0c047b5ae7aa844e7f57e538669493884fb1d116789c5c7651a99d001a22"
+    },
+    {
+      "file": "data/en/64.json",
+      "sha256": "72312e6be4d5fdc7b437f69c21f1a5ec4cc946b12685ebb09a657ccef839d303"
+    },
+    {
+      "file": "data/en/33.json",
+      "sha256": "f3c8156b4ae31759aaa0c1464c6541627d69246025930c6831eb9575e8994771"
+    },
+    {
+      "file": "data/en/44.json",
+      "sha256": "3757e61c28fdec734e82d2dfcb21384edf312f273fbe5abfc70347c16e17c7ee"
+    },
+    {
+      "file": "data/en/13.json",
+      "sha256": "c3f056b70d9055ed411f86f740a7918e414b3724164aebfc9bcc437e68e1b99a"
+    },
+    {
+      "file": "data/en/52.json",
+      "sha256": "2ded9211812c6b2e8622085ce6774d98646f846d7385d2a6d3da4ab439cda739"
+    },
+    {
+      "file": "data/en/29.json",
+      "sha256": "542fe7cbc7179a9fd952bb60bc608bf3776d8137d70d4026377a45797fcd68b6"
+    },
+    {
+      "file": "data/en/91.json",
+      "sha256": "fd9abf0e81eb1e5a42c130f1b122d91b1796eaf29cbf57e9d37ef9e46806bcce"
+    },
+    {
+      "file": "data/en/68.json",
+      "sha256": "41af8167360b1ae74cd408626d367c97cf98310894c32748a368e150c9a563b8"
+    },
+    {
+      "file": "data/en/87.json",
+      "sha256": "7fd2ae5ff4c5bfb93b41ee3724af0c3142ea7b4689ec55cf5b53e7f112c4e40e"
+    },
+    {
+      "file": "data/en/3.json",
+      "sha256": "9c9081a79f76ea307ce745fd657026acbb9b779cad986e6d81a5f954e89815f0"
+    },
+    {
+      "file": "data/en/34.json",
+      "sha256": "c46b424a21f5143966bd1f15710e6ccc5f3f8522e01559765d337cd769d072a8"
+    },
+    {
+      "file": "data/en/63.json",
+      "sha256": "93d1c2f15018e21960880c6e65a56307776149c753c7f0c90613dca5af5468a9"
+    },
+    {
+      "file": "data/en/8.json",
+      "sha256": "e24ab1d1003903ca3dd5115e5e2ad27d5073a7c88c25edca093dd6d416eec76b"
+    },
+    {
+      "file": "data/en/75.json",
+      "sha256": "d635045bcb6335ae998a35908090dbd3dcacb7f224fbaf07947fecc9a956495e"
+    },
+    {
+      "file": "data/en/22.json",
+      "sha256": "e8c37bc407454457d3a75249b220ef1ea7e0348baf1847dbfa263fc4bc03b5ea"
+    },
+    {
+      "file": "data/en/59.json",
+      "sha256": "250148f99ad6696613f123cb6a56c60c1e5dfd6e817757d4fa46209b712ae94a"
+    },
+    {
+      "file": "data/en/101.json",
+      "sha256": "f1633aa5fdfde83b30313b2140f12ef048c74cc77b411656a3831583b6d96eb3"
+    },
+    {
+      "file": "data/en/18.json",
+      "sha256": "7c6370d3f9facd2c9a894df109cc1f1f9a8506fdc751e14c3e339b63da1d4a53"
+    },
+    {
+      "file": "data/en/38.json",
+      "sha256": "bd6bb46d4c107d7cc458840936c2502a1e151d869c6f0391f98b80947d86b82b"
+    },
+    {
+      "file": "data/en/4.json",
+      "sha256": "4d3f33b6e8eef3c2118d665546e83c9bc92db67280971284c6253ce61f7b676a"
+    },
+    {
+      "file": "data/en/80.json",
+      "sha256": "153a592d9905136d67af390839bb3d8739ff78aa09066052580d0bc7d02c1afe"
+    },
+    {
+      "file": "data/en/79.json",
+      "sha256": "261ae7780008ca0562d80275a2e73df5e73f9eb9b2942287e3ee1acbfd200294"
+    },
+    {
+      "file": "data/en/96.json",
+      "sha256": "82b976502b1321801fbb6def35ba94aa3b279872e3b06a0f8ffc971f44d8bece"
+    },
+    {
+      "file": "data/en/55.json",
+      "sha256": "d0d7884fd3e922db3f4f2450d8afbed7b1e7db8a91f5586e5e48eb67910f82dc"
+    },
+    {
+      "file": "data/en/14.json",
+      "sha256": "fdc8fbcf973f4557ebde08b52b53f73bf69535ff92c5aa874562ac21ba56fc19"
+    },
+    {
+      "file": "data/en/43.json",
+      "sha256": "87f5a3bd1fa060055919e086c3d680bd4076b5559b43198957d6023a45ace26b"
+    },
+    {
+      "file": "data/en/42.json",
+      "sha256": "a4f4e336fcf9b22a11e961f3e27c567ccc15f59c21933d56e570b9860eb56502"
+    },
+    {
+      "file": "data/en/15.json",
+      "sha256": "1e847ed9df881f793ba03bb6e0447d1d92367b3516930989ada6c85375ccc754"
+    },
+    {
+      "file": "data/en/54.json",
+      "sha256": "848bea2e28ed082b39d52fc1095bb653dc28babe7c776d6626a804ca978764cc"
+    },
+    {
+      "file": "data/en/78.json",
+      "sha256": "6520e794ab9a8a9bfc5ac6d13bc1925d06799ace25dfd7aaacfe00c45b9b5595"
+    },
+    {
+      "file": "data/en/97.json",
+      "sha256": "e41827b18184ef4903fd0b16a2cb14e26b613df4c7216c8d43e26551bc0ff7a2"
+    },
+    {
+      "file": "data/en/81.json",
+      "sha256": "c4d32f2bd83bc834b3b9feb6a2bc7cf70ca77a1543a692a0fe555484ccdedb42"
+    },
+    {
+      "file": "data/en/5.json",
+      "sha256": "da1aaab2fd1f4d9a44f2c34ba56992c92997ba2df319108bce33d1031934ea1b"
+    },
+    {
+      "file": "data/en/39.json",
+      "sha256": "3d3c893b660c1f5fbdb180e7c975ea1d56f9731f6f6dbc696f29f1eba77743af"
+    },
+    {
+      "file": "data/en/19.json",
+      "sha256": "3683700fa4ea449fa8ece944bff0c4cf7d9c345469be007c90fd8d1bf0413bd8"
+    },
+    {
+      "file": "data/en/58.json",
+      "sha256": "873c577fb89eb4f4ef84c5a0712e08b3852c22336b3d5ac517eaca12df31fc16"
+    },
+    {
+      "file": "data/en/100.json",
+      "sha256": "edd820aae34bbb2a9b19ef859785789cb9b44179c0a1ab35c705c357f035b239"
+    },
+    {
+      "file": "data/en/23.json",
+      "sha256": "25809b84c98fcea1b24a78cb574a173dc6be71a70eb41d23be2233a405ee92f2"
+    },
+    {
+      "file": "data/en/74.json",
+      "sha256": "c1e1979606e819e784d1a53900d6ad02a0d98b908f564d53bb49a318a3033eb1"
+    },
+    {
+      "file": "data/en/62.json",
+      "sha256": "2da4a9192a2d5c48d49970c4e9cb5fac1362f37628a00848bb7ceedbdaaa4f5a"
+    },
+    {
+      "file": "data/en/9.json",
+      "sha256": "3ac83ed5971ec0676e9494216b789ddde5beb526545541b9475de648e9771705"
+    },
+    {
+      "file": "data/en/35.json",
+      "sha256": "41386ccf87a770ce1a1587ea83e626acc5619fe2a139b67c0d026769a3021e84"
+    },
+    {
+      "file": "data/shalat_provinsi.json",
+      "sha256": "9a256951f70d881570268ddd1f5a2bf0535c31338c084c07fafc28596bd33575"
+    },
+    {
+      "file": "data/tafsir/103.json",
+      "sha256": "d2695f4fb2f1e9ae424303eb99c1347f190ed5f701c990f3b0d05b2344d407e1"
+    },
+    {
+      "file": "data/tafsir/20.json",
+      "sha256": "acc5b7eca23e78fde933bf97ec185558da61238a11443f15bec6cda340261263"
+    },
+    {
+      "file": "data/tafsir/98.json",
+      "sha256": "1338cbf9a38488ae42b0c1da22e6378c326f41f3bb2ea97df7af38b0b4ae58f1"
+    },
+    {
+      "file": "data/tafsir/77.json",
+      "sha256": "a1dc61a6ffa7f0dfe1acc1ac07f64cabefa28dde823366cf78c013fed0b244de"
+    },
+    {
+      "file": "data/tafsir/61.json",
+      "sha256": "9ea5c44255c02c1f979ddcd38f1b00b22621805ef3aeb456d9df2e4ec8144361"
+    },
+    {
+      "file": "data/tafsir/36.json",
+      "sha256": "16807a549500721f4a66dc9422ccbe7a277e8142b103a1acbebfe406f29f4a0b"
+    },
+    {
+      "file": "data/tafsir/41.json",
+      "sha256": "182e06b986f39590e9f0115314d53da4a6dfc9e163bdf515acf63b22ea499484"
+    },
+    {
+      "file": "data/tafsir/16.json",
+      "sha256": "31a3b836264dad01676f78a130f087a6365fac5d3de65b90ebe9f7a5393b71e7"
+    },
+    {
+      "file": "data/tafsir/57.json",
+      "sha256": "39e1ea77af0560608ab2d40063b7fa2e258d66e1b0a45756d1f605c73a4a9154"
+    },
+    {
+      "file": "data/tafsir/94.json",
+      "sha256": "4e903c7a0c8d3f7f93793c996c8222e88fc8ce280290b65d78668599e5f740c6"
+    },
+    {
+      "file": "data/tafsir/82.json",
+      "sha256": "9a8535edf1e2bf5d3de843cdfdae0b1d03c46b572377444f0564a465ffcca5f7"
+    },
+    {
+      "file": "data/tafsir/6.json",
+      "sha256": "6cfc2d0f5c7f87aab54fafcad7640d577019c3ea98bc19ee1d54449c7a259a70"
+    },
+    {
+      "file": "data/tafsir/7.json",
+      "sha256": "ad6db1b9fa14770b1c2f138c17233c66f565965a0e7ed206b1641fff46299d8c"
+    },
+    {
+      "file": "data/tafsir/83.json",
+      "sha256": "61f46fd0f408b3ce809ab0e6831a31e07c7e2f3f8324c68d7c2023029ed380a1"
+    },
+    {
+      "file": "data/tafsir/95.json",
+      "sha256": "2b69633defe6df3316bfaf34df59afbf8de7226388a9861c2b2f4032674cd724"
+    },
+    {
+      "file": "data/tafsir/56.json",
+      "sha256": "024aabc1cb319eaec6acf77422af235a24c9caba626138d189aaf8a4f127103a"
+    },
+    {
+      "file": "data/tafsir/17.json",
+      "sha256": "9c88df2a5eec128dfc73bd327e0d5b6727a3c7ffda2dc3d94207014afba30526"
+    },
+    {
+      "file": "data/tafsir/40.json",
+      "sha256": "c50a1ba44228e10e6f6e50d8e0351bcb03d386d1c1407f8283d4dcb702e93f29"
+    },
+    {
+      "file": "data/tafsir/37.json",
+      "sha256": "9a537ec2e2b1e28d6a92c7199415501aa5e9a164ac6dd7bd852f2ff3b49d029f"
+    },
+    {
+      "file": "data/tafsir/60.json",
+      "sha256": "1a8e5a765cdb9ff0d3277dba914b82843be2189ffa4a85fadf28ae7cafb20158"
+    },
+    {
+      "file": "data/tafsir/99.json",
+      "sha256": "1c1440153e9eb23c8d6cdb853808fe7ea7769ddd07de731d97e0a1685ef65fa1"
+    },
+    {
+      "file": "data/tafsir/76.json",
+      "sha256": "ada1f7a80b432815e08bd41e1aa7e9da89406d5e71e18f5033f7ddb1d60b6836"
+    },
+    {
+      "file": "data/tafsir/21.json",
+      "sha256": "c5def392a7502587f6abc86081bcc9d4d6a4bd98c368cafc0bb9f822298e7b4f"
+    },
+    {
+      "file": "data/tafsir/102.json",
+      "sha256": "101a1d335ad96fb06ac29eed32cd1e79db63a1d4ac85de2e83e08fbcafdb4c21"
+    },
+    {
+      "file": "data/tafsir/114.json",
+      "sha256": "48bbf37460a7c54906d72624d76e185a2bceee2b8e863f73440bc6d46d5d862e"
+    },
+    {
+      "file": "data/tafsir/47.json",
+      "sha256": "7baf78aab7f02a4c9af0214d1b07953a8ed87c5f0d40c5077f683a2d6267e32f"
+    },
+    {
+      "file": "data/tafsir/10.json",
+      "sha256": "fb739ca9f90fd83fe2c5438451ccbff6e3c0dfa7f43c6be3bec2d38ff4b2e9ff"
+    },
+    {
+      "file": "data/tafsir/109.json",
+      "sha256": "e3964c45701a130a3d7db1a78fd767487f619aee23988774c1fac9b48a5b8b82"
+    },
+    {
+      "file": "data/tafsir/51.json",
+      "sha256": "1df689504d909052896cbc2a2737936a0a8d181c3ec75eeba8dab362dccfc26d"
+    },
+    {
+      "file": "data/tafsir/92.json",
+      "sha256": "ff188974cc5046ff773310fc98609ad10a3d270a3182be2111459a11e17d39a6"
+    },
+    {
+      "file": "data/tafsir/84.json",
+      "sha256": "b43d8e89f24aab502331a5cd2ee023134cdafc6c9d89a0ad65b86c2bb3a67e76"
+    },
+    {
+      "file": "data/tafsir/113.json",
+      "sha256": "723de5738b656333d43247c67bf8a6c6637bc68aaa0722a19f3137cbf14a4ca2"
+    },
+    {
+      "file": "data/tafsir/105.json",
+      "sha256": "1976f9ef0c90eaca8956b33a142beb7ce2d5a4aad57e6d7e48b358f7251e87d6"
+    },
+    {
+      "file": "data/tafsir/26.json",
+      "sha256": "0154c67850a3f01d5324708c09035d69c816d00ef2230ca6606c2dc6aa576139"
+    },
+    {
+      "file": "data/tafsir/71.json",
+      "sha256": "b837359a331bb56ef6933e35015a7d2fb1e1e36fd013014b9a111ecdc02edf51"
+    },
+    {
+      "file": "data/tafsir/88.json",
+      "sha256": "f149644762aeac827b64200ae93f3d9aee685f3feb525fdd9571f4a0197ea78a"
+    },
+    {
+      "file": "data/tafsir/67.json",
+      "sha256": "b403ebf172732b6ed310e010811632128534e178ac19f8fa8db29d41eb661618"
+    },
+    {
+      "file": "data/tafsir/30.json",
+      "sha256": "cf19ee3459f2153381628091c9f4d96bd524e710ac24ee045b66fa7e70c6ce21"
+    },
+    {
+      "file": "data/tafsir/31.json",
+      "sha256": "5d7ec9c0e9ec1d78ee7d836ba06a7a8dcac274aa4f6c539c681c8a169e08f58b"
+    },
+    {
+      "file": "data/tafsir/89.json",
+      "sha256": "02e3d8c2460150ff2e4765a2f4ef325ce166b8c23475cd68101e8f6a2deb68f0"
+    },
+    {
+      "file": "data/tafsir/66.json",
+      "sha256": "836c1a76d73815334e4acb83e39ca4fb18b82b9219d7529dc98403183a310e8a"
+    },
+    {
+      "file": "data/tafsir/70.json",
+      "sha256": "5268b896703c3b222139d8d33b0fd1549518bc6d7d9369e28000760c6e4a177c"
+    },
+    {
+      "file": "data/tafsir/27.json",
+      "sha256": "ab8bb39c29222bf82f4d98371002251665f79f37c25111d390004ffe6a523150"
+    },
+    {
+      "file": "data/tafsir/104.json",
+      "sha256": "ab2bf3985089a4eae929b890126ce00d1fcb8a1d7751f1f803cd7ac2cfc80a71"
+    },
+    {
+      "file": "data/tafsir/112.json",
+      "sha256": "f7e508a9870d38f8c92a8d82aee98c2c5635b47ac97184c7da79fdb32ae98687"
+    },
+    {
+      "file": "data/tafsir/1.json",
+      "sha256": "fa88fbc8c3be70632710e41c46bd226dd20058424e445e142359f46e88625283"
+    },
+    {
+      "file": "data/tafsir/85.json",
+      "sha256": "2c65c70f6ae29ba7404fdba2ace21fa3c714669d73824ab87e3f1c8326c76b8b"
+    },
+    {
+      "file": "data/tafsir/93.json",
+      "sha256": "379655057408ba941b83a362c62dc25ab609c98068f2049b7167b44a082814b2"
+    },
+    {
+      "file": "data/tafsir/108.json",
+      "sha256": "26d7f9f1b034456513e31d740c3a1a493bca56cc39b2573c9e95caf3f0d3e08e"
+    },
+    {
+      "file": "data/tafsir/50.json",
+      "sha256": "e2b4e6abc3353b06e8b152bfbd7bf801add556ab200d7625e12b95afe5d3567c"
+    },
+    {
+      "file": "data/tafsir/11.json",
+      "sha256": "afbedd0f0e08ed082a3ef3d95ac076595bc94799404df639a5c6db33066a95bf"
+    },
+    {
+      "file": "data/tafsir/46.json",
+      "sha256": "3e5f88a3b322ec139818e54e3594e3ff8c8ffedefc335ed42772191f629b2197"
+    },
+    {
+      "file": "data/tafsir/69.json",
+      "sha256": "fe9ddc4036253414f8b29a5da38467e295340ade9088e59d9f3f19bdc5872f9d"
+    },
+    {
+      "file": "data/tafsir/2.json",
+      "sha256": "2af77253003a980488ce41ff1c564e632b272b12edfc0b9435b195b7f083dd3a"
+    },
+    {
+      "file": "data/tafsir/86.json",
+      "sha256": "f4d3fde1acc59d252088bfa93d76c941ca9dadd2b23116b614f68002f7293430"
+    },
+    {
+      "file": "data/tafsir/90.json",
+      "sha256": "54a5288e215bfaa709b759f69739b3d3241ffb248aa02d85e6914dbae3d6787f"
+    },
+    {
+      "file": "data/tafsir/28.json",
+      "sha256": "64a306abe8bf04853b0c9c97b083b0c6a4329d8be3603b5bf166d601a6c6025e"
+    },
+    {
+      "file": "data/tafsir/53.json",
+      "sha256": "41c809532b6ae8f9427a1459b804457a778bf9fb8d90391b193738ac8834bb4e"
+    },
+    {
+      "file": "data/tafsir/12.json",
+      "sha256": "ff4c98b7cf24d7878b3947b37f55356b95a87ebcd1a983837f68410cbd93f168"
+    },
+    {
+      "file": "data/tafsir/45.json",
+      "sha256": "d758f6baf97c63bd40f0c9ed73a737b50f51e3e2fea28de058e95bd2af6c0362"
+    },
+    {
+      "file": "data/tafsir/32.json",
+      "sha256": "84afc806100aae4adcecd211ac98f547e91631793bc383dd8b8c97beef0d10a1"
+    },
+    {
+      "file": "data/tafsir/65.json",
+      "sha256": "51a432251a4e0f6b803d9ed41b98fdeee13c0e064f617b9cd6cc044fc0f2b29f"
+    },
+    {
+      "file": "data/tafsir/73.json",
+      "sha256": "25e9f6532ea3475d256e2c15a748c67e03ae74e93442dc7a4a8bccad604096b8"
+    },
+    {
+      "file": "data/tafsir/24.json",
+      "sha256": "91ecc76bac9b9ff87d1eceb4ec3beede880774fb2199c21001138c9cf2f5f11c"
+    },
+    {
+      "file": "data/tafsir/107.json",
+      "sha256": "b8f22aeecb412e20ff29eec7fe22f756082d6d8e6410e63c0bc24d34b1128131"
+    },
+    {
+      "file": "data/tafsir/49.json",
+      "sha256": "99d97643c9e40d878e6159fb2ccd56a920ddbc4ce28d6ff9baffb59bdaba6421"
+    },
+    {
+      "file": "data/tafsir/111.json",
+      "sha256": "87670776bbeddeb79ef6be61c58d1223f5c10dbab53f830d0aeba0aa9b4b8d8b"
+    },
+    {
+      "file": "data/tafsir/48.json",
+      "sha256": "69c601de4ed2e9e4bbd1aa52d99c6c445c9f60f98618886bd1ced897754acb09"
+    },
+    {
+      "file": "data/tafsir/110.json",
+      "sha256": "6798bb8b88f04ea7a44d12b3276c78b43521c39aacdfa287bc09e678c6235093"
+    },
+    {
+      "file": "data/tafsir/106.json",
+      "sha256": "dc96a57cc532c05adbc8ca275ed8a7d2a60a329f906d0a28f92c047ae76a2e17"
+    },
+    {
+      "file": "data/tafsir/25.json",
+      "sha256": "8912f7b72604823203abf12794314e2e4cfd3a65c66d8b0bfed8c7e89b63e070"
+    },
+    {
+      "file": "data/tafsir/72.json",
+      "sha256": "b5a87e5a669327b703c4709d9120eb55446c9eb78f2a388d0f850bf61277b1eb"
+    },
+    {
+      "file": "data/tafsir/64.json",
+      "sha256": "f083f4febed5ba1e0bac6a570c561dab22b37913033fa02758033c994c16a9b3"
+    },
+    {
+      "file": "data/tafsir/33.json",
+      "sha256": "a563292963e4f8bfaf6c912464953e00440247ec37d9888f77edf98a9a139648"
+    },
+    {
+      "file": "data/tafsir/44.json",
+      "sha256": "09ad4869ef730bfb4390749a90781877a684c1bb27e67c796144df8cd0cd2f01"
+    },
+    {
+      "file": "data/tafsir/13.json",
+      "sha256": "178ded94e4063de772e791eaf4a90b191f5b8e680f2dbea3932a10953f208108"
+    },
+    {
+      "file": "data/tafsir/52.json",
+      "sha256": "b2b1a3ddbf6523e65d6a2af07b8b8896aa02af4ebd700b04d38cdcd03626b5b6"
+    },
+    {
+      "file": "data/tafsir/29.json",
+      "sha256": "b5cf046d9671011d1ddcc5912664a24e3dd07a2706159e26c5f376faa812c07b"
+    },
+    {
+      "file": "data/tafsir/91.json",
+      "sha256": "ec9d39afd52ff850799c17b8515f33b3fce87b965aca95da7af214f111adf268"
+    },
+    {
+      "file": "data/tafsir/68.json",
+      "sha256": "9a9c0b192c6ef43fb7d1ac19033749cc6611941ff47835e5193143bda7baedab"
+    },
+    {
+      "file": "data/tafsir/87.json",
+      "sha256": "37145134c7af9098796455a90f47900ed15cc2576ce280b26f7f794cd26f0542"
+    },
+    {
+      "file": "data/tafsir/3.json",
+      "sha256": "01434243aff62679c609fad5d2cd8bbb7d25ecaf00ec778820478c1ca5552934"
+    },
+    {
+      "file": "data/tafsir/34.json",
+      "sha256": "b9c271dd35d632580931bf8af8ff9fe0c138accfc7cf9a3fbddb213bfb5bd60a"
+    },
+    {
+      "file": "data/tafsir/63.json",
+      "sha256": "c986c5c8080ae83460a35130b4e5ff5b00620c83137c0e5ce3df1151d1ade676"
+    },
+    {
+      "file": "data/tafsir/8.json",
+      "sha256": "6f7f2d36152177fb9bd670cb69028f82b94ee3db1209762380ef539dd7fd4625"
+    },
+    {
+      "file": "data/tafsir/75.json",
+      "sha256": "653920887d2dd84d0e7be2fab97d1c002747b7342c726df7a47feec2aedf936d"
+    },
+    {
+      "file": "data/tafsir/22.json",
+      "sha256": "5e0c66e43e4b7bc7ebe1830f7dc886dc19445424f5b961a5bfc66dff466156a9"
+    },
+    {
+      "file": "data/tafsir/59.json",
+      "sha256": "e28bc50ae79aae7541f67487153b58c09ca64e20905d7208849ff4bec6041186"
+    },
+    {
+      "file": "data/tafsir/101.json",
+      "sha256": "2db338c52061933bb7e246c9b4c5d607e2b09a208b275c39ee19f62ae20a75b5"
+    },
+    {
+      "file": "data/tafsir/18.json",
+      "sha256": "3db1820911f346fb3fff6600d46a6bdd9190cb775f3043354939ed35095978de"
+    },
+    {
+      "file": "data/tafsir/38.json",
+      "sha256": "3f8f35c19dad6f277cb7bd31aefa99c6a54e21284afb62131262d014573b7512"
+    },
+    {
+      "file": "data/tafsir/4.json",
+      "sha256": "8a2c817db27dd72ed8847f44e5a4ad7bc252c4e33d91606739a9637d633c74ac"
+    },
+    {
+      "file": "data/tafsir/80.json",
+      "sha256": "3db16c72cdeaf9721e6230b3ffb29ffb3ecc00dfaf3ed3410f59dfe70efafe82"
+    },
+    {
+      "file": "data/tafsir/79.json",
+      "sha256": "031fb5fbc76bcfca404bab739161a5b713d517b6aa769a067a2ae84cd89d5e0f"
+    },
+    {
+      "file": "data/tafsir/96.json",
+      "sha256": "262d154a188d311f5f8f4248a3a4b6c83238de85455a875b13e02f38077e200a"
+    },
+    {
+      "file": "data/tafsir/55.json",
+      "sha256": "95fe2378d12054f9b3f84b875b8e29cabb68719ab80bd1a7eda11bd8b747bc71"
+    },
+    {
+      "file": "data/tafsir/14.json",
+      "sha256": "a9140c5cfcbd84db44d410859ae5797f85d4096881f1604af74b75fbce8a913b"
+    },
+    {
+      "file": "data/tafsir/43.json",
+      "sha256": "b9d1bb417bbdf30b69a98519be67cd11590ed1c2dfdde1bb4afd3a270b8a1631"
+    },
+    {
+      "file": "data/tafsir/42.json",
+      "sha256": "70628ceae4d56e81c52133b10d71eeec92c66f4bbb1b945da6411d84b32f9814"
+    },
+    {
+      "file": "data/tafsir/15.json",
+      "sha256": "00cec455c1b511c8d4b5128094ebf8137d97565c570ba5469e255a65136b2541"
+    },
+    {
+      "file": "data/tafsir/54.json",
+      "sha256": "d308cb86f0ef96a6cb3e6b42d750a403645fe9443e8cfe20c1850043cd5cc8ae"
+    },
+    {
+      "file": "data/tafsir/78.json",
+      "sha256": "ff0621546af3a4bc12d5cbbefdc53062baf81bd80632356698cc6d85fb38310a"
+    },
+    {
+      "file": "data/tafsir/97.json",
+      "sha256": "c9bd0f1f14b6c01117fc990e250283f502dfb589fef606cadc18f51995376375"
+    },
+    {
+      "file": "data/tafsir/81.json",
+      "sha256": "2780d5fe378bdd725a022aae5e61233718e408d7334bfe6bfc4b4207dc93b983"
+    },
+    {
+      "file": "data/tafsir/5.json",
+      "sha256": "e24780f4b9fe1d5e9d8ffcaf95c2086d5a5744000252d323eae3ee87e0a6b010"
+    },
+    {
+      "file": "data/tafsir/39.json",
+      "sha256": "e38601a2af83ba3cc3527e523bd6e7f2f6d37565ace9b31d5705de3e784fca2d"
+    },
+    {
+      "file": "data/tafsir/19.json",
+      "sha256": "36e5a69838711c8e5f6468f5694419df610756e02422d625796864492885e6b7"
+    },
+    {
+      "file": "data/tafsir/58.json",
+      "sha256": "4a689a06d5f6683c471d6f1b79bce09f63b6e8f58dfdde6d1123c39ab36c3c94"
+    },
+    {
+      "file": "data/tafsir/100.json",
+      "sha256": "e6c35a8370ac8fd10627a8ebd184716acbb67c85b6aede91d4082afe6f07f6ba"
+    },
+    {
+      "file": "data/tafsir/23.json",
+      "sha256": "fd09125aaeca7cdc7d0fae11f4bf100656f613f3dcb6b68836ed8f730391e995"
+    },
+    {
+      "file": "data/tafsir/74.json",
+      "sha256": "ad9c29714bf4c3724a79b6ee7f8cba4370b26c6b37fd9f26afbdbc8c55b8341a"
+    },
+    {
+      "file": "data/tafsir/62.json",
+      "sha256": "ccd77fe9721ce51871a44639f92103ec907ea7e42a1217e1a103130f6f793dc5"
+    },
+    {
+      "file": "data/tafsir/9.json",
+      "sha256": "e9a4f343b74b323749a10a2d1e05f0e2b61c25aa68149cd1e1508ed39229782c"
+    },
+    {
+      "file": "data/tafsir/35.json",
+      "sha256": "1026c5934f238b0934887f38d8e6d9948484f7b716a606619ad8517a09e83516"
+    }
+  ]
+}

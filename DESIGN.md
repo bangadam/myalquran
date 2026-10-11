@@ -1,6 +1,6 @@
 # DESIGN — MyAlQuran
 
-Status: Implementasi mengikuti `myalquran.pen`, koleksi Preview / Minimal reader dan REVAMP. Data contoh di canvas tidak disalin: teks agama, atribusi, cakupan bahasa, dan status offline tetap berasal dari aplikasi. Kebutuhan di [PRD.md](PRD.md); implementasi SQLite/Astro/PWA di [ARCHITECTURE.md](ARCHITECTURE.md).
+Status: Implementasi shell v2 mengikuti spesifikasi [v2-spec.md](docs/design/v2-spec.md) dari koleksi Pencil 45 layar dan [peta kesenjangannya](docs/design/v2-gap.md); perilaku aktual mengacu kode. Data ilustratif canvas tidak disalin: teks agama, atribusi, cakupan bahasa, dan status offline tetap berasal dari aplikasi. Kebutuhan di [PRD.md](PRD.md); implementasi SQLite/Astro/PWA di [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## 1. Prinsip dan shell
 
@@ -12,28 +12,30 @@ Status: Implementasi mengikuti `myalquran.pen`, koleksi Preview / Minimal reader
 | >480px termasuk desktop | Shell tetap 480px; ruang kosong kiri/kanan tidak menjadi area fitur. |
 | Zoom/teks membesar | Teks/kontrol wrap, satu kolom, tanpa scroll horizontal atau fixed height. |
 
-Scroll mengikuti dokumen browser, bukan scroll container seperti layar ponsel. Header/footer di dalam shell dan tidak fixed/sticky; jangan menutupi ayat atau memaksa pengguna mencari kontrol tersembunyi.
+Scroll mengikuti dokumen browser, bukan scroll container seperti layar ponsel. App bar hijau kontekstual (`72px` minimum) menampilkan wordmark Andada Pro pada Home; pada setiap halaman lain, tautan kembali 44×44 dan judul halaman sebagai satu-satunya `h1` dalam Inter 20px/600. App bar tetap in-flow dan tidak menutupi konten; navigasi bawah empat tautan berada di footer **in-flow**, bukan fixed/sticky. Keduanya mengikuti tinggi konten dan tidak menutupi ayat. Tab atas, menu hamburger, dan footer teks lama telah dihapus.
 
-Pengecualian: satu dock **Kontrol baca** berada di bawah viewport pada halaman bacaan; shell menyisakan 100px agar akhir bacaan tidak tertutup. Panel dapat di-scroll dan ditutup dengan Escape. Menu ayat kontekstual memakai `<details>`; tafsir tetap halaman tersendiri.
+Pengecualian: hanya dock **Kontrol baca** yang fixed di dasar viewport pada halaman bacaan; shell menyisakan sekitar 100px agar akhir bacaan tidak tertutup. Geometri dock terhadap navigasi bawah v2 telah diverifikasi lewat browser: pada 480×900 di akhir `/{locale}/surat/1/`, ayat terakhir berakhir sekitar 550px, dock mulai sekitar 740px, dan footer/navigasi bawah mulai sekitar 823px; ayat terakhir jelas dan navigasi tidak tertutup. Pada 390×844, dock juga tidak menutupi ayat terakhir, dan panel tampilan membuka tepat di tepi ayat tanpa menutupinya. Panel dapat di-scroll dan ditutup dengan Escape. Menu ayat kontekstual memakai `<details>`; tafsir tetap halaman tersendiri.
 
 CSS shell minimum, tetap digunakan bersama Tailwind/shadcn:
 
 ```css
 *, *::before, *::after { box-sizing: border-box; }
-body { margin: 0; background: #eeede8; }
+body { margin: 0; background: var(--outer); }
 .app-shell {
   width: 100%;
   max-width: 480px;
   min-height: 100vh;
   min-height: 100svh;
   margin-inline: auto;
-  background: #faf9f6;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
 }
-.page-content {
-  padding-block: 24px;
-  padding-inline-start: max(16px, env(safe-area-inset-left, 0px));
-  padding-inline-end: max(16px, env(safe-area-inset-right, 0px));
-}
+.site-header { min-height: 72px; background: var(--primary); color: var(--primary-foreground); }
+.page-content { flex: 1; min-width: 0; padding: 20px; }
+.site-footer { border-top: 1px solid var(--divider); }
+.bottom-nav { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.app-shell:has(.reader-dock) { padding-bottom: 100px; }
 .arabic { direction: rtl; text-align: right; line-height: 2; }
 .prose { white-space: pre-wrap; overflow-wrap: anywhere; }
 [id^="ayat-"] { scroll-margin-block-start: 16px; }
@@ -55,27 +57,28 @@ body { margin: 0; background: #eeede8; }
 
 React hanya diperlukan untuk kontrol interaktif. Teks ayat, daftar, dan tautan tetap langsung tampil. Jangan membuat desain kedua berbasis primitive lain atau memasang seluruh katalog shadcn.
 
-Palet awal dipetakan ke token shadcn:
+Token v2 berikut dipakai oleh CSS aplikasi (nilai terang/gelap); palet `$fable-*` dalam spesifikasi Pencil selaras untuk warna isi, sementara batas input dan latar luar adalah nilai aplikasi:
 
-| Peran | Warna |
-| --- | --- |
-| Latar luar shell | `#f2f4f2` |
-| Background bacaan | `#ffffff` |
-| Foreground utama | `#171717` |
-| Muted foreground | `#626966` |
-| Primary/link/ring | `#1e5546` |
-| Primary foreground | `#ffffff` |
-| Border dekoratif | `#e3e7e5` |
-| Batas input | `#8d9993` |
-| Selected surface | `#e7eeeb` |
+| Peran / token CSS | Terang | Gelap |
+| --- | --- | --- |
+| Latar luar `--outer` | `#f2f4f2` | `#101512` |
+| Isi `--background` | `#ffffff` | `#171c19` |
+| Teks `--foreground` | `#171717` | `#edf2ef` |
+| Muted `--muted-foreground` | `#626966` | `#aab8b0` |
+| App bar, link, ring `--primary` | `#1e5546` | `#9bd1b9` |
+| Teks pada primary `--primary-foreground` | `#ffffff` | `#171c19` |
+| Surface terpilih `--secondary` / `--highlight` | `#e7eeeb` | `#283e34` |
+| Divider `--divider` | `#e3e7e5` | `#3a4a41` |
+| Batas input `--border` | `#8d9993` | `#81958a` |
 
-Tema gelap: background `#171c19`, teks `#edf2ef`, muted `#aab8b0`, accent `#9bd1b9`, selected `#283e34`, divider `#3a4a41`. Preferensi mengikuti OS sebelum pengguna memilih Terang/Gelap. Maskot tidak tampil pada halaman bacaan/direktori; wordmark Andada Pro dan ikon Lucide menggantikan header lama.
+Variabel `$primary #a64612` oranye di berkas desain adalah **warisan yang tidak dipakai** pada node v2; bukan primary aplikasi. Tema gelap mengikuti OS sebelum pengguna memilih Terang/Gelap. App bar menampilkan wordmark Andada Pro hanya pada Home, sedangkan halaman lain menampilkan tautan kembali dan judul; ikon tetap memakai Lucide, dan tidak ada maskot pada halaman bacaan/direktori.
 
 ## 3. Tipografi dan kontrol membaca
 
 | Elemen | Default |
 | --- | --- |
-| H1 | Andada Pro 36px/1.2; nama surah 32px/1.25. |
+| H1 judul app bar | Inter 20px/600. |
+| H2 nama surah pada pembaca | Andada Pro 32px/1.25; judul Arab/metadata tetap tampilan bacaan. |
 | Heading bagian | Inter 17–20px. |
 | Arab | Noto Naskh Arabic 38px/1.8; judul 42px/1.6; RTL. |
 | Terjemahan/tafsir | Andada Pro 19px/1.65; fallback sistem untuk JA/ZH. |
@@ -95,13 +98,15 @@ Spasi awal: 8px metadata, 12px antarjenis bacaan, 24px antarayat. Nomor ayat/per
 
 ## 4. Bahasa dan navigasi
 
-Header: wordmark MyAlQuran, tab Al-Qur’an, dan Menu in-flow berisi Pengaturan, Unduhan, Tentang, Doa. Tab Doa tampil dalam bagian doa. Pengaturan berisi pilihan tema, Bahasa, dan akses tampilan bacaan. Halaman `/` tetap pemilih bahasa awal. Padding utama 28px, turun ke 16px pada viewport ≤360px.
+Header in-flow adalah app bar hijau kontekstual: wordmark MyAlQuran (Andada Pro) hanya tampil pada Home bersama salam dan ilustrasi dekoratif lokal dari `src/components/HomeIllustration.astro`; halaman lain menampilkan tautan kembali 44×44 dan judul masing-masing sebagai satu-satunya `h1`. Halaman `/` langsung menampilkan Home bahasa default `id` tanpa redirect atau JavaScript; `/{locale}/` menampilkan Home bahasa tersebut. Keduanya memakai isi bersama `src/components/Home.astro`. Isi utama memakai padding 20px, turun ke 16px pada viewport ≤360px.
 
-Pemilih menampilkan **Bahasa Indonesia**, **English**, **日本語**, **简体中文**; tidak memakai bendera atau singkatan saja. Pilihan bahasa tidak menghapus nomor surat/doa/hash ayat. Locale yang kontennya belum lengkap diberi keterangan terlokalisasi yang jujur selama pengembangan; tidak mengklaim terjemahan tersedia dengan teks fallback tersembunyi.
+Footer in-flow berisi tepat empat tautan berurutan: **Beranda** (`house`, `/{locale}/`), **Al-Qur'an** (`book-open`, `/{locale}/surat/`), **Tersimpan** (`bookmark`, `/{locale}/tersimpan/`), **Pengaturan** (`settings`, `/{locale}/pengaturan/`). Label dilokalisasi untuk empat locale. Direktori 114 surat dengan pencarian berada di `/{locale}/surat/`; reader `/{locale}/surat/{nomor}/` dan tafsir `/{locale}/tafsir/{nomor}/` mengaktifkan Al-Qur'an. Kecocokan tepat target navigasi memakai `aria-current="page"`, termasuk Home `/` dan `/{locale}/`; detail surat/tafsir mengaktifkan Al-Qur'an, sedangkan Bahasa, Unduhan, dan Tentang mengaktifkan Pengaturan dengan `aria-current="true"`. Semua rute fitur tanpa tab tersendiri—Tasbih, Kalender, Kiblat, Masjid, Jadwal Shalat, Pengingat, Ramadan, dan Tajwid—mengaktifkan Beranda sebagai induk fallback dengan `aria-current="true"`. Tepat satu item aktif pada setiap halaman dan satu `h1` per halaman. `/{locale}/beranda/` sudah dihapus dan merespons 404, tanpa alias redirect. Tab atas, hamburger, dan footer teks lama tidak lagi digunakan.
 
-Alur reader → Pengaturan → Bahasa membawa path dan hash melalui query `from` yang divalidasi. Tautan bahasa diperbarui sebelum interaksi dan pada hashchange/pageshow; open-new-tab mempertahankan ayat. Tanpa JavaScript, pemilih tetap menuju direktori setiap bahasa.
+Pemilih bahasa dan tabel ketersediaan konten empat locale berada di `/{locale}/bahasa/`, menampilkan **Bahasa Indonesia**, **English**, **日本語**, **简体中文** tanpa bendera atau singkatan saja. Home hanya menampilkan keterangan ketersediaan locale saat cakupannya belum lengkap. Pilihan bahasa tidak menghapus nomor surat/doa/hash ayat. Locale yang kontennya belum lengkap diberi keterangan terlokalisasi yang jujur selama pengembangan; tidak mengklaim terjemahan tersedia dengan teks fallback tersembunyi.
 
-Navigasi halaman adalah tautan, bukan tombol JavaScript. `aria-current="page"` hanya pada halaman yang sedang dibuka; detail menandai bagian induk secara visual tanpa mengklaim indeks sedang terbuka.
+Alur reader → Pengaturan → Bahasa membawa path dan hash melalui query `from` yang divalidasi. Tautan bahasa diperbarui sebelum interaksi dan pada hashchange/pageshow; open-new-tab mempertahankan ayat. Tanpa JavaScript, tautan pemilih menuju Home setiap bahasa di `/{locale}/`; direktori surat tetap tersedia melalui tab Al-Qur'an di `/{locale}/surat/`.
+
+Navigasi halaman adalah tautan, bukan tombol JavaScript. Target sentuh minimal 44px dan sasaran WCAG 2.2 AA tetap berlaku; bacaan/navigasi HTML tidak tergantung JavaScript. Pemeriksaan screen reader penuh dan perangkat mobile belum dilakukan.
 
 ### Daftar dan halaman surat
 
@@ -144,13 +149,9 @@ Jika prompt install tidak didukung, tampilkan instruksi platform yang akurat, mi
 ```text
 Mobile dan desktop memakai struktur yang sama; desktop terpusat, max 480px.
 ┌──────────────────────────────────┐
-│ MyAlQuran                        │
-│ Al-Qur'an · Doa · Tentang · Offline│
-│ Bahasa [Bahasa Indonesia ▾]      │
+│ ← Al-Qur'an (ke /{locale}/surat/) │
 ├──────────────────────────────────┤
-│ ← Daftar surat                   │
 │ Al-Fatihah · 7 ayat              │
-│ Ukuran bacaan [100% 125% 150%]    │
 │                                  │
 │ Ayat 1 · tautan                  │
 │ [Arab RTL]                       │
@@ -159,7 +160,13 @@ Mobile dan desktop memakai struktur yang sama; desktop terpusat, max 480px.
 │ Baca tafsir ayat 1               │
 │                                  │
 │ [Ayat berikutnya]                │
+├──────────────────────────────────┤
+│ Beranda → /{locale}/             │
+│ Al-Qur'an → /{locale}/surat/      │
+│ Tersimpan → /{locale}/tersimpan/  │
+│ Pengaturan → /{locale}/pengaturan/│
 └──────────────────────────────────┘
+Dock Kontrol baca fixed di viewport pembaca; ruang ~100px disisihkan.
 ```
 
 Label contoh bukan teks dummy untuk diterbitkan; struktur menyesuaikan label lokal yang panjang. Tinggi mengikuti isi, bukan perangkat palsu.
@@ -184,4 +191,4 @@ Uji keempat locale pada daftar, surat pendek, Al-Baqarah, tafsir panjang, doa pa
 - Selesaikan paket, putus jaringan, tutup/buka PWA, buka halaman yang belum dikunjungi; deep link dan perpindahan ke locale yang telah diunduh tetap bekerja.
 - Ganggu unduhan, simulasikan quota/cache eviction dan update; status jujur, versi lama tetap terbaca, tidak ada reload paksa.
 
-Bukti visual desktop, kontrol bacaan dan offline telah dikumpulkan; pengujian perangkat mobile, reduced-motion OS, screen reader penuh, dan edge case storage masih diperlukan. Lihat README untuk cakupan cek aktual.
+Bukti visual desktop, kontrol bacaan dan offline pada shell sebelum v2 telah dikumpulkan; geometri dock bersama navigasi bawah v2 telah diverifikasi lewat browser pada 480×900 dan 390×844 seperti dijelaskan di §1. Pengujian perangkat mobile, reduced-motion OS, forced-colors, screen reader penuh, dan edge case storage masih diperlukan. Lihat README dan catatan implementasi untuk cakupan cek aktual.

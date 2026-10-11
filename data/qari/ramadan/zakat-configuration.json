@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/RamadanPage-D5oWvCfN.js",
+      "bindings": [
+        "He",
+        "Te",
+        "G",
+        "J"
+      ]
+    }
+  ],
+  "notes": [
+    "Parameter dan fallback dari kode sumber, bukan harga emas terverifikasi atau nasihat zakat."
+  ],
+  "data": {
+    "nisabGoldGrams": 85,
+    "maalRate": 0.025,
+    "fitrahKgPerPerson": 2.5,
+    "defaultRicePriceIDR": 15000,
+    "goldCacheTtlMs": 3600000,
+    "fallbackPricePerGramIDR": 1450000,
+    "fallbackFormula": "round(88 * USD_IDR)",
+    "fallbackUsdIdr": 16000,
+    "troyOunceGrams": 31.1035
+  }
+}

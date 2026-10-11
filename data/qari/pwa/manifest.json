@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/manifest.webmanifest",
+      "fetchedAt": "2026-10-11T13:58:58.045Z",
+      "status": 200,
+      "sha256": "e89144eb2b8f400411926c34d638b36e7db726868b0877ca7e1dd1e9696bccee"
+    }
+  ],
+  "notes": [],
+  "data": {
+    "name": "Qari - Al-Quran Digital",
+    "short_name": "Qari",
+    "description": "Baca dan dengarkan Al-Quran dengan audio murottal qari, jadwal sholat, arah kiblat, dan tasbih digital.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0b101b",
+    "theme_color": "#059669",
+    "lang": "id",
+    "scope": "/",
+    "orientation": "portrait-primary",
+    "id": "/?source=pwa",
+    "categories": [
+      "education",
+      "lifestyle",
+      "books"
+    ],
+    "dir": "ltr",
+    "icons": [
+      {
+        "src": "/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Al-Quran",
+        "short_name": "Quran",
+        "description": "Buka dan baca surat Al-Quran",
+        "url": "/?view=home",
+        "icons": [
+          {
+            "src": "/icon-192.png",
+            "sizes": "192x192"
+          }
+        ]
+      },
+      {
+        "name": "Jadwal Sholat",
+        "short_name": "Sholat",
+        "description": "Lihat waktu sholat dan adzan hari ini",
+        "url": "/?view=prayer",
+        "icons": [
+          {
+            "src": "/icon-192.png",
+            "sizes": "192x192"
+          }
+        ]
+      },
+      {
+        "name": "Arah Kiblat",
+        "short_name": "Kiblat",
+        "description": "Kompas penunjuk arah Ka'bah",
+        "url": "/?view=qibla",
+        "icons": [
+          {
+            "src": "/icon-192.png",
+            "sizes": "192x192"
+          }
+        ]
+      },
+      {
+        "name": "Tasbih Digital",
+        "short_name": "Tasbih",
+        "description": "Hitung wirid dan dzikir harian",
+        "url": "/?view=tasbih",
+        "icons": [
+          {
+            "src": "/icon-192.png",
+            "sizes": "192x192"
+          }
+        ]
+      },
+      {
+        "name": "Panduan Tajwid",
+        "short_name": "Tajwid",
+        "description": "Hukum tajwid dan contoh audio",
+        "url": "/?view=tajweed",
+        "icons": [
+          {
+            "src": "/icon-192.png",
+            "sizes": "192x192"
+          }
+        ]
+      }
+    ]
+  }
+}

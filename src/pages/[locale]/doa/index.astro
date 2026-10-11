@@ -14,10 +14,7 @@ const groups = Array.from(new Set(entries.map(prayer => prayer.group))).map(name
   items: entries.filter(prayer => prayer.group === name)
 }));
 ---
-<BaseLayout title={t.prayerDirectory} locale={locale} section="prayers">
-  <header class="border-b border-[var(--divider)] pb-5 mb-2">
-    <h1 class="mb-0">{t.prayers}</h1>
-  </header>
+<BaseLayout title={t.prayerDirectory} barTitle={t.prayers} locale={locale} section="prayers">
 
   {entries.some(prayer => prayer.language !== locale) && <aside class="availability"><p>{t.missingTranslation}</p><ContentAvailability locale={locale} /></aside>}
   <label class="search-field" data-prayer-search-field hidden><span class="sr-only">{interfaceLabels[locale].searchPrayer}</span><Search size={20} aria-hidden="true" /><input type="search" data-prayer-search placeholder={interfaceLabels[locale].searchPrayer} /></label>

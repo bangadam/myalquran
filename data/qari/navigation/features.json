@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/index-eBmjwcpA.js",
+      "binding": "A1"
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "id": "home",
+      "label": "Al-Quran"
+    },
+    {
+      "id": "tarteel",
+      "label": "Studio Tarteel",
+      "badge": "Baru"
+    },
+    {
+      "id": "search",
+      "label": "Cari Ayat"
+    },
+    {
+      "id": "tajweed",
+      "label": "Panduan Tajwid"
+    },
+    {
+      "id": "ramadan",
+      "label": "Spesial Ramadan",
+      "badge": "Hub"
+    },
+    {
+      "id": "prayer",
+      "label": "Jadwal Sholat"
+    },
+    {
+      "id": "calendar",
+      "label": "Kalender Hijri"
+    },
+    {
+      "id": "qibla",
+      "label": "Arah Kiblat"
+    },
+    {
+      "id": "mosque",
+      "label": "Masjid Sekitar"
+    },
+    {
+      "id": "tasbih",
+      "label": "Tasbih Digital"
+    },
+    {
+      "id": "history",
+      "label": "Riwayat"
+    },
+    {
+      "id": "bookmarks",
+      "label": "Tersimpan"
+    },
+    {
+      "id": "settings",
+      "label": "Pengaturan"
+    }
+  ]
+}

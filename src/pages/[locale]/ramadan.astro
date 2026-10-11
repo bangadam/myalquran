@@ -1,0 +1,176 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { locales, prayers, prayerIds, type Locale } from '../../lib/content';
+import { archivedPrayers, ramadanPrayers, amalTasks, khatamDefaults, khatamMilestones } from '../../lib/ramadan';
+import { interfaceLabels } from '../../lib/interface-labels';
+
+export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
+const locale = Astro.params.locale as Locale;
+const t = interfaceLabels[locale].ramadan;
+const entries = ramadanPrayers();
+const newPrayers = entries.filter(entry => entry.kind === 'new');
+const existingPrayers = entries.filter(entry => entry.kind === 'existing-prayer');
+const excerpts = entries.filter(entry => entry.kind === 'quran-excerpt');
+const appPrayers = prayers(locale);
+for (const entry of existingPrayers) {
+  if (!prayerIds.includes(entry.prayerId)) throw new Error(`Missing existing prayer ${entry.prayerId}`);
+}
+const target = khatamDefaults.totalPages * khatamDefaults.targetKhatam;
+if (archivedPrayers.length !== newPrayers.length || amalTasks.length !== 9 || target <= 0) throw new Error('Incomplete Ramadan archive');
+---
+<BaseLayout title={t.title} locale={locale} section="prayers">
+  <header class="border-b border-[var(--divider)] pb-5 mb-6">
+    <p class="mb-0">{t.intro}</p>
+  </header>
+  <aside class="availability mb-6"><p>{t.editorial}</p></aside>
+
+  <section aria-labelledby="ramadan-new" class="mb-8">
+    <h2 id="ramadan-new">{t.newPrayers}</h2>
+    <ol class="space-y-5">{newPrayers.map(entry => <li class="border-b border-[var(--divider)] pb-5" data-ramadan-new={entry.usage.id}>
+      <h3 lang="id">{entry.prayer.title}</h3>
+      <p class="text-sm"><span>{t.sourceTiming}:</span> <span lang="id">{entry.usage.when}</span></p>
+      <p class="arabic" lang="ar" dir="rtl">{entry.prayer.arabic}</p>
+      <p><span>{t.sourceLatin}:</span> <span lang="id">{entry.prayer.latin}</span></p>
+      <p><span>{t.sourceTranslation}:</span> <span lang="id">{entry.prayer.translation}</span></p>
+    </li>)}</ol>
+  </section>
+
+  <section aria-labelledby="ramadan-existing" class="mb-8">
+    <h2 id="ramadan-existing">{t.existingPrayers}</h2>
+    <ul class="prayer-list">{existingPrayers.map(entry => {
+      const prayer = appPrayers.find(item => item.id === entry.prayerId)!;
+      return <li data-existing-prayer={entry.prayerId}>
+        <a class="gap-3" href={`/${locale}/doa/${entry.prayerId}/`}>
+          <span lang={prayer.language}>{prayer.name}</span><span aria-hidden="true"> →</span>
+        </a>
+        <p class="text-sm"><span lang="id">{entry.usage.title}</span> · {t.sourceTiming}: <span lang="id">{entry.usage.when}</span></p>
+        <p class="text-sm">{t.openPrayer}</p>
+      </li>;
+    })}</ul>
+  </section>
+
+  <section aria-labelledby="ramadan-excerpt" class="mb-8">
+    <h2 id="ramadan-excerpt">{t.quranExcerpt}</h2>
+    <ul class="prayer-list">{excerpts.map(entry => <li>
+      <a href={`/${locale}/surat/${entry.surah}/#ayat-${entry.ayah}`} lang="id">{entry.usage.title} · {entry.surah}:{entry.ayah} →</a>
+      <p class="text-sm"><span>{t.sourceTiming}:</span> <span lang="id">{entry.usage.when}</span></p>
+      <p class="text-sm">{t.openVerse}</p>
+    </li>)}</ul>
+  </section>
+
+  <section id="amal-checklist" aria-labelledby="ramadan-amal" class="mb-8" data-ramadan-amal data-storage-error={t.storageUnavailable}>
+    <h2 id="ramadan-amal">{t.checklist}</h2>
+    <p>{t.checklistIntro}</p>
+    <p data-amal-date class="text-sm"></p>
+    <p role="status" aria-live="polite" data-amal-status>{t.noSaved}</p>
+    <ul class="divide-y divide-[var(--divider)]">{amalTasks.map(task => <li class="py-2" data-amal-task={task.id}>
+      <label class="flex min-h-11 items-center gap-3 cursor-pointer">
+        <input class="size-5 shrink-0 accent-[var(--primary)]" type="checkbox" data-amal-checkbox={task.id} disabled />
+        <span lang="id">{task.label}</span>
+      </label>
+    </li>)}</ul>
+    <p class="text-sm" data-amal-js-note>{t.noJavaScript}</p>
+  </section>
+
+  <section aria-labelledby="ramadan-khatam" class="mb-8" data-ramadan-khatam data-target={target} data-progress-label={t.progress} data-pages-label={t.pagesRead} data-storage-error={t.storageUnavailable} data-saved-label={t.saved}>
+    <h2 id="ramadan-khatam">{t.khatam}</h2>
+    <p>{t.khatamIntro}</p>
+    <p>{t.target}: <strong>{target}</strong></p>
+    <form data-khatam-form>
+      <label for="ramadan-pages" class="block mb-2">{t.pagesRead}</label>
+      <input id="ramadan-pages" class="min-h-11 w-full rounded-md border border-[var(--divider)] bg-transparent px-3" name="pages" type="number" inputmode="numeric" min="0" max={target} step="1" required disabled />
+      <button class="min-h-11 px-4 my-3 rounded-md bg-[var(--primary)] text-white" type="submit" disabled>{t.savePages}</button>
+    </form>
+    <p role="status" aria-live="polite" data-khatam-status>{t.noSaved}</p>
+    <label for="ramadan-progress" data-khatam-progress-label>{t.progress}: {t.noSaved}</label>
+    <progress id="ramadan-progress" class="block w-full" value="0" max={target}></progress>
+    <h3>{t.milestones}</h3>
+    <ul>{khatamMilestones.map(milestone => <li><span lang="id">{milestone.label}</span> · {milestone.pages}</li>)}</ul>
+    <p class="text-sm" data-khatam-js-note>{t.noJavaScript}</p>
+  </section>
+</BaseLayout>
+<script>
+  const amal = document.querySelector<HTMLElement>('[data-ramadan-amal]');
+  const khatam = document.querySelector<HTMLElement>('[data-ramadan-khatam]');
+  const day = new Date();
+  const date = `${day.getFullYear()}-${String(day.getMonth() + 1).padStart(2, '0')}-${String(day.getDate()).padStart(2, '0')}`;
+  const amalKey = `myalquran:ramadan:amal:v1:${date}`;
+  const khatamKey = 'myalquran:ramadan:khatam:v1';
+  const checkboxes = [...(amal?.querySelectorAll<HTMLInputElement>('[data-amal-checkbox]') ?? [])];
+  const amalStatus = amal?.querySelector<HTMLElement>('[data-amal-status]');
+  const amalDate = amal?.querySelector<HTMLElement>('[data-amal-date]');
+  if (amalDate) amalDate.textContent = date;
+  const form = khatam?.querySelector<HTMLFormElement>('[data-khatam-form]');
+  const input = form?.querySelector<HTMLInputElement>('[name="pages"]');
+  const status = khatam?.querySelector<HTMLElement>('[data-khatam-status]');
+  const progress = khatam?.querySelector<HTMLProgressElement>('progress');
+  const progressLabel = khatam?.querySelector<HTMLElement>('[data-khatam-progress-label]');
+  const target = Number(khatam?.dataset.target);
+  const validPages = (value: unknown): value is number => typeof value === 'number' && Number.isInteger(value) && value >= 0 && value <= target;
+  let storageAvailable = false;
+  let completed: string[] = [];
+  let pages: number | null = null;
+  try {
+    const probe = 'myalquran:storage-probe';
+    localStorage.setItem(probe, '1'); localStorage.removeItem(probe);
+    const savedAmal = localStorage.getItem(amalKey);
+    const tasks: unknown = savedAmal === null ? [] : JSON.parse(savedAmal);
+    const savedPages = localStorage.getItem(khatamKey);
+    const storedPages: unknown = savedPages === null ? null : JSON.parse(savedPages);
+    if (!Array.isArray(tasks) || !tasks.every(id => typeof id === 'string' && checkboxes.some(box => box.dataset.amalCheckbox === id)) || new Set(tasks).size !== tasks.length || (storedPages !== null && !validPages(storedPages))) throw new Error('Invalid Ramadan local state');
+    completed = tasks;
+    pages = storedPages;
+    storageAvailable = true;
+  } catch {
+    if (amalStatus) amalStatus.textContent = amal?.dataset.storageError ?? '';
+    if (status) status.textContent = khatam?.dataset.storageError ?? '';
+  }
+  const updateProgress = (value: number) => {
+    if (progress) progress.value = value;
+    if (progressLabel) progressLabel.textContent = `${khatam?.dataset.progressLabel}: ${value} / ${target}`;
+  };
+  if (storageAvailable) {
+    const amalNote = amal?.querySelector<HTMLElement>('[data-amal-js-note]');
+    const khatamNote = khatam?.querySelector<HTMLElement>('[data-khatam-js-note]');
+    if (amalNote) amalNote.hidden = true;
+    if (khatamNote) khatamNote.hidden = true;
+    if (input) input.disabled = false;
+    const submit = form?.querySelector<HTMLButtonElement>('button');
+    if (submit) submit.disabled = false;
+    for (const box of checkboxes) { box.checked = completed.includes(box.dataset.amalCheckbox ?? ''); box.disabled = false; }
+    if (amalStatus) amalStatus.textContent = `${completed.length} / ${checkboxes.length}`;
+    if (pages !== null) {
+      if (input) input.value = String(pages);
+      updateProgress(pages);
+      if (status) status.textContent = `${khatam?.dataset.pagesLabel}: ${pages} / ${target}`;
+    }
+    for (const box of checkboxes) box.addEventListener('change', () => {
+      const id = box.dataset.amalCheckbox!;
+      const next = box.checked ? [...completed, id] : completed.filter(value => value !== id);
+      try {
+        localStorage.setItem(amalKey, JSON.stringify(next));
+        completed = next;
+        if (amalStatus) amalStatus.textContent = `${completed.length} / ${checkboxes.length}`;
+      } catch {
+        box.checked = !box.checked;
+        if (amalStatus) amalStatus.textContent = amal?.dataset.storageError ?? '';
+      }
+    });
+    form?.addEventListener('submit', event => {
+      event.preventDefault();
+      const value = Number(input?.value);
+      if (!input?.value || !validPages(value)) { input?.reportValidity(); return; }
+      try {
+        localStorage.setItem(khatamKey, JSON.stringify(value));
+        pages = value;
+        updateProgress(value);
+        if (status) status.textContent = `${khatam?.dataset.savedLabel} ${khatam?.dataset.pagesLabel}: ${value} / ${target}`;
+      } catch { if (status) status.textContent = khatam?.dataset.storageError ?? ''; }
+    });
+  } else {
+    for (const box of checkboxes) box.disabled = true;
+    if (input) input.disabled = true;
+    const submit = form?.querySelector<HTMLButtonElement>('button');
+    if (submit) submit.disabled = true;
+  }
+</script>

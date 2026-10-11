@@ -15,11 +15,10 @@ const entries = commentary(number, locale);
 const source = entries ? commentarySource(locale) : null;
 ---
 <BaseLayout title={`${t.tafsir} · ${surah.latin}`} locale={locale} section="quran">
-  <a class="back-link" href={`/${locale}/surat/${number}/`}>← {surah.latin}</a>
   <header class="surah-heading">
     <p class="eyebrow">{t.tafsir} · {number} / 114</p>
     <p class="arabic-title" lang="ar" dir="rtl">{surah.name}</p>
-    <h1>{surah.latin}</h1>
+    <h2>{surah.latin}</h2>
     <p class="metadata mb-0">{surah.count} {t.verses}</p>
   </header>
 

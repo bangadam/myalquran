@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/TasbihPage-BWGmIzIr.js",
+      "sha256": "0664894d2324013fb030c6b9554e8d44877b873f86c63f000be7c55cf2dc5fc1",
+      "binding": "i",
+      "range": {
+        "start": 516,
+        "end": 2763,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [
+    "Lima teks identik setelah normalisasi dirujuk ke data/doa.json. Fadhilah adalah klaim sumber, belum divalidasi sanadnya."
+  ],
+  "data": [
+    {
+      "id": "subhanallah",
+      "name": "Subhanallah",
+      "target": 33,
+      "fadhilah": "Menumbuhkan pohon kurma di surga dan menghapus dosa-dosa kecil (HR. Muslim).",
+      "existingRef": {
+        "file": "data/doa.json",
+        "id": 183
+      }
+    },
+    {
+      "id": "alhamdulillah",
+      "name": "Alhamdulillah",
+      "target": 33,
+      "fadhilah": "Memenuhi timbangan amal kebaikan (mizan) pada hari kiamat (HR. Muslim).",
+      "existingRef": {
+        "file": "data/doa.json",
+        "id": 189
+      }
+    },
+    {
+      "id": "allahuakbar",
+      "name": "Allahu Akbar",
+      "target": 33,
+      "fadhilah": "Kalimat pengagungan yang mengisi ruang antara langit dan bumi (HR. Muslim).",
+      "existingRef": {
+        "file": "data/doa.json",
+        "id": 184
+      }
+    },
+    {
+      "id": "tasbih_lengkap",
+      "name": "Subhanallahi wa Bihamdih",
+      "target": 100,
+      "fadhilah": "Dua kalimat yang ringan diucapkan lisan, berat di timbangan amal, dicintai Ar-Rahman (HR. Bukhari & Muslim).",
+      "existingRef": {
+        "file": "data/doa.json",
+        "id": 206
+      }
+    },
+    {
+      "id": "lailahaillallah",
+      "name": "La ilaha illallah",
+      "target": 100,
+      "fadhilah": "Sebaik-baik dzikir dan kunci pembuka surga (HR. Tirmidzi & Ahmad).",
+      "existingRef": {
+        "file": "data/doa.json",
+        "id": 29
+      }
+    },
+    {
+      "id": "istighfar",
+      "name": "Astaghfirullahal 'Adzim",
+      "arabic": "أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ",
+      "latin": "Astaghfirullāhal ‘aẓīm",
+      "translation": "Aku Memohon Ampun kepada Allah Yang Maha Agung",
+      "target": 100,
+      "fadhilah": "Mendatangkan kelapangan dari setiap kesempitan dan rezeki dari arah tak disangka (HR. Abu Dawud)."
+    },
+    {
+      "id": "hauqalah",
+      "name": "Hauqalah",
+      "arabic": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+      "latin": "Lā ḥawla wa lā quwwata illā billāh",
+      "translation": "Tiada daya dan kekuatan kecuali dengan pertolongan Allah",
+      "target": 100,
+      "fadhilah": "Salah satu perbendaharaan dan simpanan istimewa di surga (HR. Bukhari & Muslim)."
+    },
+    {
+      "id": "salawat",
+      "name": "Shalawat Nabi",
+      "arabic": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ",
+      "latin": "Allāhumma ṣalli ‘alā Muḥammad wa ‘alā āli Muḥammad",
+      "translation": "Ya Allah, limpahkanlah rahmat kepada Nabi Muhammad dan keluarganya",
+      "target": 100,
+      "fadhilah": "Barangsiapa bershalawat sekali, Allah bershalawat kepadanya 10 kali dan menghapus 10 dosa (HR. An-Nasa'i)."
+    }
+  ]
+}

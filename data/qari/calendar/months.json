@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/HijriCalendarPage-BkK1hjZ5.js",
+      "sha256": "1ec4c2af1e54f190bc57e5c0e264dc8b9042dab26859ea03294236fe29c121d5",
+      "binding": "b",
+      "range": {
+        "start": 428,
+        "end": 910,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "number": 1,
+      "en": "Muharram",
+      "ar": "محرم"
+    },
+    {
+      "number": 2,
+      "en": "Safar",
+      "ar": "صفر"
+    },
+    {
+      "number": 3,
+      "en": "Rabi al-Awwal",
+      "ar": "ربيع الأول"
+    },
+    {
+      "number": 4,
+      "en": "Rabi al-Thani",
+      "ar": "ربيع الآخر"
+    },
+    {
+      "number": 5,
+      "en": "Jumada al-Ula",
+      "ar": "جمادى الأولى"
+    },
+    {
+      "number": 6,
+      "en": "Jumada al-Thani",
+      "ar": "جمادى الآخرة"
+    },
+    {
+      "number": 7,
+      "en": "Rajab",
+      "ar": "رجب"
+    },
+    {
+      "number": 8,
+      "en": "Shaban",
+      "ar": "شعبان"
+    },
+    {
+      "number": 9,
+      "en": "Ramadan",
+      "ar": "رمضان"
+    },
+    {
+      "number": 10,
+      "en": "Shawwal",
+      "ar": "شوال"
+    },
+    {
+      "number": 11,
+      "en": "Dhu al-Qadah",
+      "ar": "ذو القعدة"
+    },
+    {
+      "number": 12,
+      "en": "Dhu al-Hijjah",
+      "ar": "ذو الحجة"
+    }
+  ]
+}

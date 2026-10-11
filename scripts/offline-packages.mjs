@@ -21,7 +21,7 @@ export default function offlinePackages() {
         const resources = [];
         for (const file of files) {
           const relative = path.relative(root, file).split(path.sep).join('/');
-          if (!/\.(html|css|js|woff2|ttf|png|svg)$/.test(relative) || relative === 'sw.js') continue;
+          if (!/\.(html|css|js|woff2|ttf|png|svg|webp)$/.test(relative) || relative === 'sw.js') continue;
           const bytes = await readFile(file);
           const url = relative.endsWith('/index.html') ? `/${relative.slice(0, -10)}` : relative === 'index.html' ? '/' : `/${relative}`;
           resources.push({ url, bytes: bytes.length, hash: createHash('sha256').update(bytes).digest('hex') });

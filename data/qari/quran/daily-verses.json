@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/index-eBmjwcpA.js",
+      "sha256": "6393b49d9484f06f3d560c5e38408443bf48f4dd43e083a34bf56f2e444e74ed",
+      "binding": "bm",
+      "range": {
+        "start": 282226,
+        "end": 286633,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [
+    "Teks Arab dan terjemahan dibuang karena ayat sudah dimiliki; tema dan referensi pilihan harian dipertahankan."
+  ],
+  "data": [
+    {
+      "surahNumber": 2,
+      "surahName": "Al-Baqarah",
+      "ayahNumber": 152,
+      "theme": "Mengingat Allah & Syukur",
+      "audioAyahGlobal": 159,
+      "existingRef": {
+        "file": "data/surat/2.json",
+        "ayah": 152
+      }
+    },
+    {
+      "surahNumber": 94,
+      "surahName": "Asy-Syarh",
+      "ayahNumber": 5,
+      "theme": "Harapan & Ketabahan",
+      "audioAyahGlobal": 6095,
+      "existingRef": {
+        "file": "data/surat/94.json",
+        "ayah": 5
+      }
+    },
+    {
+      "surahNumber": 94,
+      "surahName": "Asy-Syarh",
+      "ayahNumber": 6,
+      "theme": "Kemudahan Setelah Kesulitan",
+      "audioAyahGlobal": 6096,
+      "existingRef": {
+        "file": "data/surat/94.json",
+        "ayah": 6
+      }
+    },
+    {
+      "surahNumber": 3,
+      "surahName": "Ali 'Imran",
+      "ayahNumber": 139,
+      "theme": "Optimisme & Iman",
+      "audioAyahGlobal": 432,
+      "existingRef": {
+        "file": "data/surat/3.json",
+        "ayah": 139
+      }
+    },
+    {
+      "surahNumber": 2,
+      "surahName": "Al-Baqarah",
+      "ayahNumber": 286,
+      "theme": "Kekuatan & Ujian",
+      "audioAyahGlobal": 293,
+      "existingRef": {
+        "file": "data/surat/2.json",
+        "ayah": 286
+      }
+    },
+    {
+      "surahNumber": 65,
+      "surahName": "At-Talaq",
+      "ayahNumber": 3,
+      "theme": "Tawakal & Rezeki",
+      "audioAyahGlobal": 5218,
+      "existingRef": {
+        "file": "data/surat/65.json",
+        "ayah": 3
+      }
+    },
+    {
+      "surahNumber": 13,
+      "surahName": "Ar-Ra'd",
+      "ayahNumber": 28,
+      "theme": "Ketenangan Hati",
+      "audioAyahGlobal": 1735,
+      "existingRef": {
+        "file": "data/surat/13.json",
+        "ayah": 28
+      }
+    },
+    {
+      "surahNumber": 2,
+      "surahName": "Al-Baqarah",
+      "ayahNumber": 186,
+      "theme": "Kedekatan Allah & Doa",
+      "audioAyahGlobal": 193,
+      "existingRef": {
+        "file": "data/surat/2.json",
+        "ayah": 186
+      }
+    },
+    {
+      "surahNumber": 14,
+      "surahName": "Ibrahim",
+      "ayahNumber": 7,
+      "theme": "Keutamaan Bersyukur",
+      "audioAyahGlobal": 1757,
+      "existingRef": {
+        "file": "data/surat/14.json",
+        "ayah": 7
+      }
+    },
+    {
+      "surahNumber": 39,
+      "surahName": "Az-Zumar",
+      "ayahNumber": 53,
+      "theme": "Rahmat & Ampunan",
+      "audioAyahGlobal": 4111,
+      "existingRef": {
+        "file": "data/surat/39.json",
+        "ayah": 53
+      }
+    },
+    {
+      "surahNumber": 18,
+      "surahName": "Al-Kahf",
+      "ayahNumber": 10,
+      "theme": "Doa Petunjuk & Rahmat",
+      "audioAyahGlobal": 2150,
+      "existingRef": {
+        "file": "data/surat/18.json",
+        "ayah": 10
+      }
+    },
+    {
+      "surahNumber": 21,
+      "surahName": "Al-Anbiya",
+      "ayahNumber": 87,
+      "theme": "Doa Nabi Yunus (Pelepas Kesulitan)",
+      "audioAyahGlobal": 2570,
+      "existingRef": {
+        "file": "data/surat/21.json",
+        "ayah": 87
+      }
+    },
+    {
+      "surahNumber": 67,
+      "surahName": "Al-Mulk",
+      "ayahNumber": 2,
+      "theme": "Tujuan Kehidupan",
+      "audioAyahGlobal": 5243,
+      "existingRef": {
+        "file": "data/surat/67.json",
+        "ayah": 2
+      }
+    },
+    {
+      "surahNumber": 55,
+      "surahName": "Ar-Rahman",
+      "ayahNumber": 13,
+      "theme": "Merenungi Karunia Allah",
+      "audioAyahGlobal": 4914,
+      "existingRef": {
+        "file": "data/surat/55.json",
+        "ayah": 13
+      }
+    },
+    {
+      "surahNumber": 1,
+      "surahName": "Al-Fatihah",
+      "ayahNumber": 5,
+      "theme": "Tauhid & Ibadah",
+      "audioAyahGlobal": 5,
+      "existingRef": {
+        "file": "data/surat/1.json",
+        "ayah": 5
+      }
+    }
+  ]
+}

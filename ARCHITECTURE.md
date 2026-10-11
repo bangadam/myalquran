@@ -11,7 +11,7 @@ Status: implementasi Astro/SQLite/shadcn/PWA berjalan untuk verifikasi lokal; ko
 - React untuk islands kontrol interaktif, bukan seluruh halaman bacaan. Markup bacaan dan navigasi utama tetap HTML Astro.
 - PWA: `vite-plugin-pwa`/Workbox melalui hook Astro lokal `scripts/pwa.mjs`, memakai `injectManifest`. Wrapper lama hanya mendukung Astro 5; integrasi langsung memungkinkan Astro 7 yang telah diperbarui keamanan.
 - Tidak ada scraping, pengambilan konten dari API, ORM, SPA router, database client/WASM, backend, atau CMS.
-- `lottie-react` hanya pada island maskot beranda, aset lokal; reduced motion menampilkan SVG statis dan runtime animasi tidak diperlukan untuk bacaan.
+- Shell v2 tidak memakai maskot Lottie; dependency `lottie-react` dan aset animasi lama telah dihapus.
 
 Penambahan React/Tailwind/PWA adalah konsekuensi kebutuhan shadcn dan offline yang diminta, bukan mengganti Astro menjadi SPA.
 

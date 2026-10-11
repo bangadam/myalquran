@@ -1,41 +1,42 @@
 # MyAlQuran
 
-A focused, multilingual Quran reader with translations, tafsir, personal bookmarks, and offline reading. Built with Astro, React islands, and a local SQLite content archive.
+A focused, multilingual Quran reader with translations, tafsir, prayers, devotional tools, personal bookmarks, and offline reading. Built with Astro, React islands, and a local SQLite content archive.
 
-[Open the Cloudflare preview](https://preview.myalquran-4c7.pages.dev) · [GitHub repository](https://github.com/bangadam/myalquran)
+[Open the earlier Cloudflare preview](https://preview.myalquran-4c7.pages.dev) · [GitHub repository](https://github.com/bangadam/myalquran)
 
 **Preview release:** Quran translations and tafsir are available in four languages. The prayer collection is currently available in Indonesian; other locales explicitly disclose this limitation. Content rights and editorial review remain release requirements.
 
 ## App preview
 
-Screenshots below show the running application, not design mockups. The reader keeps a centered, single-column layout with a maximum width of 480px on larger screens.
+These screenshots show the running v2 shell in Indonesian at a 480px-wide Chromium viewport (device pixel ratio 1). The reader remains a centered, single-column layout with a maximum width of 480px on larger screens.
 
-| Surah directory | Quran reader | Reading preferences |
+| Home | Surah directory | Quran reader |
 | --- | --- | --- |
-| ![Surah directory with search and saved verses](docs/screenshots/directory.png) | ![Quran reader with Arabic text and translation](docs/screenshots/reader.png) | ![Reading preferences for Arabic, translation, and theme](docs/screenshots/preferences.png) |
+| ![Home with green MyAlQuran app bar, greeting, illustration, and service grid](docs/screenshots/home.png) | ![Surah directory with search field, 114-surah count, and first several surah rows](docs/screenshots/directory.png) | ![Al-Fatihah reader with contextual back link, Arabic verses, transliteration, and translation](docs/screenshots/reader.png) |
 
 ## Features
 
-- **Read without an account.** All 114 surahs, with Arabic text and verse-level navigation.
-- **Four interface languages.** Bahasa Indonesia, English, 日本語, and 简体中文.
-- **Translations and tafsir.** Edition credits, source links, and available translator footnotes remain visible.
-- **Personal reading preferences.** Independent Arabic and translation sizes, line spacing, transliteration visibility, and light/dark themes.
-- **Pick up where you left off.** Last reading position and bookmarks stay in the browser on your device.
-- **Find a passage quickly.** Search surahs by name or number, browse prayers, or jump to a verse.
-- **Download for offline reading.** Explicit per-language downloads, resource integrity checks, recoverable failures, and user-controlled updates.
-- **Content-first rendering.** Reading content and ordinary navigation render as HTML; JavaScript enhances preferences, bookmarks, search, and offline support.
+- **Read without an account.** All 114 surahs and 6,236 verses, with Arabic text, translations and tafsir in each of four locales; publisher/edition credits, source links and available translator footnotes remain visible.
+- **Four interface languages.** Bahasa Indonesia, English, 日本語, and 简体中文. The prayer collection has 227 Indonesian entries; English, Japanese and Chinese prayer pages explicitly disclose their Indonesian fallback rather than presenting it as localized content.
+- **Home (`/` for Indonesian, `/{locale}/` for each locale).** The landing page renders directly without a redirect or JavaScript. Service links, last-reading position from device storage, and a daily-verse block are shared across the entry routes. Its 15 archived references resolve Arabic and locale translations from the validated local corpus; JavaScript rotates the selection by UTC date, while a verse remains available without JavaScript.
+- **Read and study.** Open the searchable 114-surah directory at `/{locale}/surat/`, search by name or number, jump to a verse, browse grouped prayers, and consult a tajwid-rule reference. Tajwid rule names and explanations are Indonesian/Arabic source material, not verified translations into the other languages; editorial review remains outstanding.
+- **Personal reading and devotional controls.** Independent Arabic/translation sizes, line spacing, transliteration visibility and light/dark themes; locally stored last position and saved verses. Digital tasbih counts eight archived dhikr presets with device-local progress and a confirmed reset.
+- **Hijri calendar and qibla.** Browse only the archived 1448 AH calendar snapshot, not a live/current calendar. Qibla shows a locally computed bearing from manual coordinates (Jakarta is the disclosed default); device geolocation and orientation sensor are optional, on request.
+- **Mosques and prayer times.** Mosque listings are a dated OpenStreetMap snapshot of 959 objects within 5 km of central Jakarta, not a live nearby search; data © OpenStreetMap contributors, ODbL ([attribution](https://www.openstreetmap.org/copyright)). Prayer times are locally approximated for selectable archived cities and calculation methods, not a local religious authority's ruling.
+- **Prayer reminders and Ramadan.** Choose prayer reminders and before/after offsets; notification delivery runs only while the reminder page remains open, with no background scheduling. Ramadan combines archived prayers and links to existing prayer/verse records with a device-local daily nine-item amal checklist and khatam progress.
+- **Download for offline reading.** Explicit per-language packages, resource integrity checks, recoverable failures and user-controlled updates. Ordinary reading content and navigation render as HTML; JavaScript enhances preferences, bookmarks, search and offline support.
 
 ## Language coverage
 
 | Content | Indonesian | English | Japanese | Simplified Chinese |
 | --- | --- | --- | --- | --- |
 | Interface | Available | Available | Available | Available |
-| Arabic Quran | 114 surahs | 114 surahs | 114 surahs | 114 surahs |
-| Verse translations | 6,236 verses | 6,236 verses | 6,236 verses | 6,236 verses |
-| Tafsir | Available | Available | Available | Available |
-| Prayers | 227 entries | Indonesian fallback disclosed | Indonesian fallback disclosed | Indonesian fallback disclosed |
+| Arabic Quran | 114 surahs / 6,236 verses | 114 / 6,236 | 114 / 6,236 | 114 / 6,236 |
+| Verse translations | 114 surahs / 6,236 verses | 114 / 6,236 | 114 / 6,236 | 114 / 6,236 |
+| Tafsir | 114 surahs / 6,236 verses | 114 / 6,236 | 114 / 6,236 | 114 / 6,236 |
+| Prayers | 227 Indonesian entries | No localized document; 227 Indonesian fallback entries disclosed | No localized document; 227 Indonesian fallback entries disclosed | No localized document; 227 Indonesian fallback entries disclosed |
 
-Availability is calculated from the validated database. Missing translations are never silently presented as translated content.
+Availability is calculated from the validated database. Missing translations are never silently presented as translated content. Feature-only labels may be localized while archived devotional/religious text remains Indonesian or Arabic with its source language indicated.
 
 ## Run locally
 
@@ -50,7 +51,7 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by Astro. The app reads `data/quran.sqlite` at development/build time; no database server or API key is required.
+Open the local URL printed by Astro: `/` is the Indonesian Home, `/{locale}/` is localized Home, `/{locale}/surat/` is the surah directory, and `/{locale}/bahasa/` has the four-language picker and content-availability table. The app reads `data/quran.sqlite` at development/build time; no database server or API key is required.
 
 ### Commands
 
@@ -93,9 +94,9 @@ The SQLite archive is **not shipped to the browser**. Reading does not fetch rel
 
 ```text
 data/                  Content database and maintenance archives
-src/pages/             Localized directories, readers, settings, and fallbacks
+src/pages/             Localized Quran, prayers, Home, devotional tools, settings, and fallbacks
 src/components/        Reader controls, theme controls, and offline UI
-src/lib/               Content validation, localization, and offline client
+src/lib/               Content validation, localization, prayer calculations, devotional data, and offline client
 src/scripts/           Bookmark, reading-position, and search behavior
 src/styles/            Shared typography, tokens, and responsive layout
 src/sw.ts              Offline package validation and request handling
@@ -105,7 +106,7 @@ docs/screenshots/      Screenshots of the running application
 
 ## Offline reading and privacy
 
-Installing the app and downloading a language are separate actions. Open **Menu → Downloads** and explicitly save a language before relying on offline access.
+Installing the app and downloading a language are separate actions. Open **Unduhan** from Home (or visit `/{locale}/offline/`) and explicitly save a language before relying on offline access.
 
 Each resource is checked against its manifest before a complete package becomes active. Failed updates preserve the previous package, and missing/corrupted resources can be repaired. Browser storage can be evicted; verify download status before travelling.
 
@@ -139,9 +140,9 @@ Detailed edition records, importer behavior, source research, and historical ver
 
 ## Quality and limitations
 
-The automated suite covers verse numbering, Arabic consistency, translation contracts, optional prayer fields, atomic imports, resource integrity, cancellation, and offline recovery. Browser smoke checks exercise search, reader controls, verse jumps, bookmarks, theme selection, and language links.
+The automated suite covers verse numbering, Arabic consistency, translation contracts, optional prayer fields, atomic imports, resource integrity, cancellation, and offline recovery. The prayer calculation self-check compares 4,650 prayer times with one archived provider/month; it does not establish religious-authority equivalence. The v2 dev-server route smoke covered the four locales, Home, the reader, settings, tajwid, tasbih, calendar, qibla, mosque listings, schedule, reminders and Ramadan; see [implementation notes](docs/implementation-notes.md) for the recorded scope.
 
-Remaining work includes full screen-reader testing, physical-device installation, mobile viewport verification, storage-pressure scenarios, outstanding content permissions, and the missing prayer translations. Desktop screenshots are not evidence of mobile-device testing.
+The v2 reader-dock geometry was browser-verified in Chromium/Playwright at 480×900 and 390×844: at the end of `/{locale}/surat/1/`, the last verse ends around 550px, the fixed dock starts around 740px, and the bottom navigation around 823px, leaving the verse clear and the navigation uncovered. Still unverified: geolocation/orientation/notification permission paths, full screen-reader use, physical mobile devices, reduced-motion/forced-colors and storage-pressure scenarios. Content rights and religious-editorial review remain open, as do localized prayers and background reminder delivery. A production build and preview deployment for v2 are being performed as part of this release; their outcomes are not asserted here.
 
 ## Project documentation
 

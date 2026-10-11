@@ -41,7 +41,7 @@ import { labels, locales, localeNames } from '../lib/content';
       </header>
       <main>
         <div class="lead">
-          <p class="eyebrow">MyAlQuran / {labels('id').offline}</p>
+          <nav aria-label="Jejak navigasi"><p class="eyebrow">MyAlQuran / <span aria-current="page">{labels('id').offline}</span></p></nav>
           <h1 aria-label={`503 · ${labels('id').notCached}`}>503</h1>
           <p>{labels('id').notCached}</p>
         </div>
@@ -52,7 +52,7 @@ import { labels, locales, localeNames } from '../lib/content';
             <div>
               <p class="language">{localeNames[locale]}</p>
               <h2>{labels(locale).notCached}</h2>
-              <a href={`/${locale}/`}>{labels(locale).backReading} <span aria-hidden="true">→</span></a>
+              <a href={`/${locale}/surat/`}>{labels(locale).backReading} <span aria-hidden="true">→</span></a>
             </div>
           </section>
         ))}

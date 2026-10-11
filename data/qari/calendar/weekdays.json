@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/HijriCalendarPage-BkK1hjZ5.js",
+      "sha256": "1ec4c2af1e54f190bc57e5c0e264dc8b9042dab26859ea03294236fe29c121d5",
+      "binding": "me",
+      "range": {
+        "start": 2003,
+        "end": 2243,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "name": "Min",
+      "full": "Ahad",
+      "isWeekend": true
+    },
+    {
+      "name": "Sen",
+      "full": "Senin",
+      "isSunnahFast": true
+    },
+    {
+      "name": "Sel",
+      "full": "Selasa"
+    },
+    {
+      "name": "Rab",
+      "full": "Rabu"
+    },
+    {
+      "name": "Kam",
+      "full": "Kamis",
+      "isSunnahFast": true
+    },
+    {
+      "name": "Jum",
+      "full": "Jumat",
+      "isBlessed": true
+    },
+    {
+      "name": "Sab",
+      "full": "Sabtu"
+    }
+  ]
+}

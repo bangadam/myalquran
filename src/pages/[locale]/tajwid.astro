@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { locales, type Locale } from '../../lib/content';
+import { tajwidCategories, tajwidRules } from '../../lib/tajwid';
+import { interfaceLabels } from '../../lib/interface-labels';
+
+export function getStaticPaths() {
+  return locales.map(locale => ({ params: { locale } }));
+}
+const locale = Astro.params.locale as Locale;
+const ui = interfaceLabels[locale].tajwid;
+const groups = tajwidCategories.filter(category => category.id !== 'all').map(category => ({
+  category, rules: tajwidRules.filter(rule => rule.category === category.id),
+}));
+---
+<BaseLayout title={ui.title} locale={locale} section="quran" description={ui.intro}>
+  <header class="border-b border-[var(--divider)] pb-5 mb-6">
+    <p class="text-muted-foreground">{ui.intro}</p>
+  </header>
+  <aside class="availability"><p>{ui.source}</p>{locale !== 'id' && <p>{ui.note}</p>}</aside>
+  <h2>{ui.groups}</h2>
+  {groups.map(({ category, rules }) => <section aria-labelledby={`category-${category.id}`} class="border-t border-[var(--divider)] pt-5 pb-3">
+    <h3 id={`category-${category.id}`} lang="id">{category.label}</h3>
+    <ul class="list-none p-0 m-0">
+      {rules.map(rule => <li class="border-b border-[var(--divider)] py-4" id={`rule-${rule.id}`}>
+        <div class="flex items-center gap-3">
+          <span class="inline-block size-4 shrink-0 rounded-sm border border-[var(--divider)]" style={`background-color: ${rule.color}`} aria-hidden="true"></span>
+          <h4 class="m-0 text-base"><span lang="ar" dir="rtl">{rule.nameArabic}</span><span aria-hidden="true"> · </span><span lang="id">{rule.nameId}</span></h4>
+        </div>
+        <p class="mt-2 mb-0 text-sm leading-relaxed text-muted-foreground" lang="id">{rule.description}</p>
+      </li>)}
+    </ul>
+  </section>)}
+</BaseLayout>

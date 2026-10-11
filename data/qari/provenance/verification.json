@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [],
+  "notes": [
+    "Checks parse JSON, hashes, coverage and keys; not religious validation, not all MP3 playback, not full app E2E."
+  ],
+  "data": {
+    "checkedAt": "2026-10-11T14:01:21.790Z",
+    "checks": [
+      {
+        "name": "JSON/hash tajwid/rules.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash tajwid/audio-examples.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash tajwid/categories.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash search/topics.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash search/surah-aliases.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash calendar/months.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash calendar/events.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash prayer/calculation-methods.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash prayer/city-coordinates.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash prayer/names.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/reciters.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash tarteel/presets.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash settings/preferences.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash calendar/weekdays.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash settings/arabic-fonts.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash navigation/routes.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash tarteel/recording-formats.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash qibla/cardinal-directions.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash qibla/compass-labels.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash qibla/calculation.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash quran/ayah-metadata-tajwid.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.alafasy.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.abdulbasitmurattal.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.abdulsamad.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.husary.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.husarymujawwad.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.minshawi.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.minshawimujawwad.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.shaatree.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.hanirifai.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.mahermuaiqly.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.hudhaify.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.ahmedajamy.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.abdurrahmaansudais.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.saoodshuraym.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.muhammadayyoub.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash audio/ar.muhammadjibreel.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash translations/id.indonesian.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash translations/en.sahih.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash quran/daily-verses.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash ramadan/prayers-new.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash ramadan/prayer-usage.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash ramadan/amal-tasks.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash ramadan/khatam-defaults.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash ramadan/khatam-milestones.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash tasbih/dhikr.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash prayer/snapshot-2026-10.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash calendar/snapshot-1448.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash ramadan/zakat-configuration.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash ramadan/gold-price-snapshot.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash mosques/snapshot-jakarta-5km.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash mosques/query.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash provenance/rea-evidence-summary.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash provenance/baseline.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash provenance/source-assets.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash provenance/deduplication.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash navigation/features.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash quran/featured-surahs.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash personal-state/contracts.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash pwa/manifest.json",
+        "result": "pass"
+      },
+      {
+        "name": "JSON/hash prayer/notification-templates.json",
+        "result": "pass"
+      },
+      {
+        "name": "baseline files unchanged",
+        "result": "pass",
+        "detail": 349
+      },
+      {
+        "name": "complete tajwid Quran",
+        "result": "pass",
+        "detail": {
+          "surahs": 114,
+          "ayahs": 6236
+        }
+      },
+      {
+        "name": "complete audio ar.alafasy",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.abdulbasitmurattal",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.abdulsamad",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.husary",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.husarymujawwad",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.minshawi",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.minshawimujawwad",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.shaatree",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.hanirifai",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.mahermuaiqly",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.hudhaify",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.ahmedajamy",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.abdurrahmaansudais",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.saoodshuraym",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.muhammadayyoub",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "complete audio ar.muhammadjibreel",
+        "result": "pass",
+        "detail": 6236
+      },
+      {
+        "name": "snapshot prayer coverage",
+        "result": "pass",
+        "detail": 775
+      },
+      {
+        "name": "snapshot Hijri coverage",
+        "result": "pass",
+        "detail": 355
+      },
+      {
+        "name": "mosque identity and coordinates",
+        "result": "pass",
+        "detail": 959
+      },
+      {
+        "name": "prayer reference doa_berbuka_2",
+        "result": "pass"
+      },
+      {
+        "name": "prayer reference doa_10_pertama",
+        "result": "pass"
+      },
+      {
+        "name": "prayer reference doa_10_akhir",
+        "result": "pass"
+      },
+      {
+        "name": "new prayers exclude duplicate Arabic",
+        "result": "pass",
+        "detail": 5
+      },
+      {
+        "name": "REA route traversal",
+        "result": "pass",
+        "detail": [
+          "prayer",
+          "qibla",
+          "mosque",
+          "bookmarks",
+          "history",
+          "settings",
+          "tajweed",
+          "tasbih",
+          "calendar",
+          "juz",
+          "ramadan",
+          "tarteel",
+          "search"
+        ]
+      }
+    ]
+  }
+}

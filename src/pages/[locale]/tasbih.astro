@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { locales, type Locale } from '../../lib/content';
+import { dhikr } from '../../lib/devotional';
+import { interfaceLabels } from '../../lib/interface-labels';
+
+export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
+const locale = Astro.params.locale as Locale;
+const t = interfaceLabels[locale].devotional;
+---
+<BaseLayout title={t.tasbih} locale={locale}>
+  <header class="border-b border-[var(--divider)] pb-5"><p class="text-muted-foreground">{t.tasbihIntro}</p></header>
+  <p class="availability">{t.sourceReview}</p>
+  <p class="availability" role="status" data-tasbih-error hidden>{t.storageError}</p>
+  <ul class="list-none p-0 space-y-5" data-tasbih-list data-storage-error={t.storageError} data-reset-confirm={t.confirmReset}>
+    {dhikr.map(item => <li data-dhikr={item.id} data-target={item.target} class="rounded-lg border border-[var(--divider)] p-4 space-y-2">
+      <h2 class="font-semibold">{item.name}</h2>
+      <p class="arabic !text-center" lang="ar" dir="rtl">{item.arabic}</p>
+      <p lang="id">{item.latin}</p>
+      <p lang="id">{item.translation}</p>
+      <p class="text-sm text-muted-foreground"><span>{t.virtue}: </span><span lang="id">{item.virtue}</span></p>
+      <p class="tabular-nums" aria-live="polite"><span>{t.count}: </span><strong data-count>0</strong> / <span>{t.target} {item.target}</span></p>
+      <p data-reached hidden role="status" class="text-primary font-semibold">{t.reached}</p>
+      <div class="flex flex-wrap gap-2" data-controls hidden>
+        <button type="button" data-minus aria-label={`${t.subtract}: ${item.name}`} class="min-h-11 min-w-11 rounded-md border border-input px-3">−</button>
+        <button type="button" data-plus aria-label={`${t.add}: ${item.name}`} class="min-h-11 rounded-md bg-primary px-4 text-primary-foreground">{t.add}</button>
+        <button type="button" data-reset aria-label={`${t.reset}: ${item.name}`} class="min-h-11 rounded-md border border-input px-3">{t.reset}</button>
+      </div>
+    </li>)}
+  </ul>
+</BaseLayout>
+<script>
+  const root = document.querySelector<HTMLElement>('[data-tasbih-list]');
+  if (root) {
+    const key = 'myalquran:tasbih-counts:v1';
+    const rows = [...root.querySelectorAll<HTMLElement>('[data-dhikr]')];
+    const ids = new Set(rows.map(row => row.dataset.dhikr));
+    const counts: Record<string, number> = {};
+    const warning = document.querySelector<HTMLElement>('[data-tasbih-error]');
+    let persistent = true;
+    try {
+      const probe = 'myalquran:tasbih-probe';
+      localStorage.setItem(probe, '1'); localStorage.removeItem(probe);
+      const raw: unknown = JSON.parse(localStorage.getItem(key) ?? '{}');
+      if (!raw || typeof raw !== 'object' || Array.isArray(raw) || Object.entries(raw).some(([id, n]) => !ids.has(id) || !Number.isSafeInteger(n) || Number(n) < 0)) throw new Error('Invalid tasbih data');
+      Object.assign(counts, raw);
+    } catch { persistent = false; if (warning) warning.hidden = false; }
+    const paint = (row: HTMLElement) => {
+      const id = row.dataset.dhikr!;
+      const value = counts[id] ?? 0;
+      const output = row.querySelector<HTMLElement>('[data-count]');
+      const reached = row.querySelector<HTMLElement>('[data-reached]');
+      if (output) output.textContent = String(value);
+      if (reached) reached.hidden = value < Number(row.dataset.target);
+    };
+    const update = (row: HTMLElement, value: number) => {
+      const id = row.dataset.dhikr!;
+      counts[id] = value;
+      if (persistent) {
+        try { localStorage.setItem(key, JSON.stringify(counts)); }
+        catch { persistent = false; if (warning) warning.hidden = false; }
+      }
+      paint(row);
+    };
+    for (const row of rows) {
+      paint(row);
+      const controls = row.querySelector<HTMLElement>('[data-controls]');
+      if (controls) controls.hidden = false;
+      row.querySelector('[data-plus]')?.addEventListener('click', () => {
+        const current = counts[row.dataset.dhikr!] ?? 0;
+        if (current < Number.MAX_SAFE_INTEGER) update(row, current + 1);
+      });
+      row.querySelector('[data-minus]')?.addEventListener('click', () => update(row, Math.max(0, (counts[row.dataset.dhikr!] ?? 0) - 1)));
+      row.querySelector('[data-reset]')?.addEventListener('click', () => {
+        if (window.confirm(root.dataset.resetConfirm ?? '')) update(row, 0);
+      });
+    }
+  }
+</script>

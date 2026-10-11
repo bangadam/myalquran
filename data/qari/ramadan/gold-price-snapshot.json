@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://api.coingecko.com/api/v3/simple/price?ids=pax-gold,tether-gold&vs_currencies=idr",
+      "fetchedAt": "2026-10-11T13:57:07.642Z",
+      "status": 200,
+      "sha256": "6d6148609ea68b3f7c71c97bcae3cd1c0daeea4a3d75d2947d55f459ccaa7791"
+    }
+  ],
+  "notes": [],
+  "data": {
+    "status": "captured",
+    "data": {
+      "pax-gold": {
+        "idr": 74916079
+      },
+      "tether-gold": {
+        "idr": 74851441
+      }
+    }
+  }
+}

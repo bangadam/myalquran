@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "coverage": {
+    "static": {
+      "assets": 26,
+      "featureDocuments": 18,
+      "status": "captured public shipped domain catalogs"
+    },
+    "quran": {
+      "surahs": 114,
+      "ayahs": 6236,
+      "tajweed": true,
+      "audioReciters": 16,
+      "audioReferences": 99776,
+      "translationDeltas": {
+        "id.indonesian": 6195,
+        "en.sahih": 6235
+      }
+    },
+    "dynamic": {
+      "prayer": {
+        "month": "2026-10",
+        "cities": 25,
+        "days": 775,
+        "method": 20
+      },
+      "hijri": {
+        "year": 1448,
+        "months": 12,
+        "days": 355
+      },
+      "mosques": {
+        "center": "Jakarta default",
+        "radiusMeters": 5000,
+        "osmObjects": 959
+      },
+      "gold": "timestamped CoinGecko snapshot"
+    },
+    "exclusions": [
+      "Existing plain Quran, transliteration, tafsir, matching prayer texts",
+      "Private user state and recordings",
+      "Binary MP3/fonts and application/vendor source code"
+    ],
+    "limitations": [
+      "Not all dates/locations of dynamic services; parameters are unbounded.",
+      "Audio metadata catalog is complete for 16 shipped reciters; binary availability not exhaustively verified.",
+      "Source content rights and religious editorial validation unresolved.",
+      "Data-only archive; no SQLite/UI import or production build."
+    ]
+  },
+  "files": [
+    {
+      "file": "tajwid/rules.json",
+      "sha256": "f5f4e6550f2db73055f42beb6e2cd7095a66123f98138556224c0af35e8634f9",
+      "bytes": 11531,
+      "records": 17
+    },
+    {
+      "file": "tajwid/audio-examples.json",
+      "sha256": "f83e4ae8fc45ce5f7ae580672215243bb637d5f66eadb18543b6d2fafe34519f",
+      "bytes": 3895,
+      "records": null
+    },
+    {
+      "file": "tajwid/categories.json",
+      "sha256": "d0070db542bc8c6233c57309d0f3189cebaa462907b46515222e37ef54f7d938",
+      "bytes": 902,
+      "records": 7
+    },
+    {
+      "file": "search/topics.json",
+      "sha256": "6dfd19ac6e32a3ed59bf6e556509193ca78aed39b29e1e4dc0c6503b6260f4ce",
+      "bytes": 2311,
+      "records": 10
+    },
+    {
+      "file": "search/surah-aliases.json",
+      "sha256": "111d93e876c61df4027e347ee47a531592f0d0f389076d5309224ab9456688d1",
+      "bytes": 3081,
+      "records": null
+    },
+    {
+      "file": "calendar/months.json",
+      "sha256": "af7a403cceeb5b1b54210d4485891566a3d1ea44d37fbe5727b936f17627b370",
+      "bytes": 1530,
+      "records": 12
+    },
+    {
+      "file": "calendar/events.json",
+      "sha256": "03f47bd564cf7aa1514bc2bafbcb4460cec7cb90fe72dd373c1b7f884ec0f2f2",
+      "bytes": 2271,
+      "records": 12
+    },
+    {
+      "file": "prayer/calculation-methods.json",
+      "sha256": "318b01fec36d18d82c2e27e90506a522a79f0b87dbc431500ca55b9c6f71596a",
+      "bytes": 1382,
+      "records": 8
+    },
+    {
+      "file": "prayer/city-coordinates.json",
+      "sha256": "e484a9cdf87285a107ea8730436b3fe7b68da1f00d427d891d55ffd95a3b0d2c",
+      "bytes": 4263,
+      "records": 25
+    },
+    {
+      "file": "prayer/names.json",
+      "sha256": "bee2450ff4ed36d8b2dcb21ef71dfc01dbdfd17b707be46cd85d2901c9cb591c",
+      "bytes": 643,
+      "records": null
+    },
+    {
+      "file": "audio/reciters.json",
+      "sha256": "f5d54944a2ce9e48a9205994c74a7cf3a21b6bc00096971be07e6883e6fb0472",
+      "bytes": 2596,
+      "records": 16
+    },
+    {
+      "file": "tarteel/presets.json",
+      "sha256": "cf7b1cf2606879029b851fc073b6284d19c6646e94cebff5156b875e944416a0",
+      "bytes": 3645,
+      "records": 5
+    },
+    {
+      "file": "settings/preferences.json",
+      "sha256": "1cc1d541e0bac49aec5dfe94d7ac476041b744a32953d75b84ae84e4cd996669",
+      "bytes": 1290,
+      "records": null
+    },
+    {
+      "file": "calendar/weekdays.json",
+      "sha256": "80cee7e3d06bbd7a19aa08740e98da79a7fd2be9068b0a61729c46d85b04fef1",
+      "bytes": 990,
+      "records": 7
+    },
+    {
+      "file": "settings/arabic-fonts.json",
+      "sha256": "2af37ea5759bed0eb0307bead22d2fe15bf072007a744344ccf7626df89b1c8e",
+      "bytes": 838,
+      "records": 3
+    },
+    {
+      "file": "navigation/routes.json",
+      "sha256": "fb0188cf06cf655c693b71851abcee7dedbcf9c253597e0958c1dcd21258479d",
+      "bytes": 1153,
+      "records": null
+    },
+    {
+      "file": "tarteel/recording-formats.json",
+      "sha256": "3820133736aecb455bd5cb37f7d5b2393b9ca50f0f59cc7bd11b600086988725",
+      "bytes": 603,
+      "records": 5
+    },
+    {
+      "file": "qibla/cardinal-directions.json",
+      "sha256": "ddadfeb3c84e10272dcd4a40edc8da0bd5872c8e16e7604c081c08d6a51c4c73",
+      "bytes": 907,
+      "records": 4
+    },
+    {
+      "file": "qibla/compass-labels.json",
+      "sha256": "71174364e1b7261c8e7d189171cc0f73c9aabeeb59f5d3fc147b79bc4ba991e1",
+      "bytes": 656,
+      "records": 16
+    },
+    {
+      "file": "qibla/calculation.json",
+      "sha256": "fa752d855461248f10ff86fb7960e03d8e0a6e79742eadac06b79fdb2c94c2fc",
+      "bytes": 680,
+      "records": null
+    },
+    {
+      "file": "quran/ayah-metadata-tajwid.json",
+      "sha256": "2380a0a74c8306819e3879c7bc8ff128f7b28ffcd73fd0711b4dc80085f0e9a9",
+      "bytes": 3087298,
+      "records": 6236
+    },
+    {
+      "file": "audio/ar.alafasy.json",
+      "sha256": "189c0b49a24bf523829e48b7f2b29c7180ce022fd74950e8086459b413e80200",
+      "bytes": 1736057,
+      "records": null
+    },
+    {
+      "file": "audio/ar.abdulbasitmurattal.json",
+      "sha256": "017346eb951732b3a53c68e2a1ee8d0fcbcfccbc6e5a81506fe8837a3435fa39",
+      "bytes": 1873310,
+      "records": null
+    },
+    {
+      "file": "audio/ar.abdulsamad.json",
+      "sha256": "07609ae80471c6ad8e5e556b86357bc4f500234e5eea57d61bd195fcb1ea6780",
+      "bytes": 1225835,
+      "records": null
+    },
+    {
+      "file": "audio/ar.husary.json",
+      "sha256": "679648763ba81f6f6c625e55810e81cf0b0acbb0e1b5785839453394953f067e",
+      "bytes": 1723588,
+      "records": null
+    },
+    {
+      "file": "audio/ar.husarymujawwad.json",
+      "sha256": "fd29fcc1ba413c743cf9a04764da4f25dcfc5f6cafb206bd3fd95849cc5faf84",
+      "bytes": 1823414,
+      "records": null
+    },
+    {
+      "file": "audio/ar.minshawi.json",
+      "sha256": "ee5a1692d1ec31e59c13336c4f2b08677bfbde4c208640b57ba211508eba2f30",
+      "bytes": 1219588,
+      "records": null
+    },
+    {
+      "file": "audio/ar.minshawimujawwad.json",
+      "sha256": "9fd06ee99f96612b696b72732b13e85aea4576be84850ff68aa79b272bbf96c7",
+      "bytes": 1263290,
+      "records": null
+    },
+    {
+      "file": "audio/ar.shaatree.json",
+      "sha256": "b3c315ac23483adeae764e54a3a128be6eda999e38c208d35e03c77b311dd1ca",
+      "bytes": 1748549,
+      "records": null
+    },
+    {
+      "file": "audio/ar.hanirifai.json",
+      "sha256": "ed678b88d22464617aab5661629d8f19a9e62f847cc8bb8f573ea8e3380f4f7d",
+      "bytes": 1761008,
+      "records": null
+    },
+    {
+      "file": "audio/ar.mahermuaiqly.json",
+      "sha256": "1253dec84fbde63d73e1d9e1277ea8802a7d30633bf2682381efb46949f96cd1",
+      "bytes": 1798441,
+      "records": null
+    },
+    {
+      "file": "audio/ar.hudhaify.json",
+      "sha256": "b7052d219af0f4a9d0a57109aa6648aceff238008f9d4e5362ad13886f078071",
+      "bytes": 2227618,
+      "records": null
+    },
+    {
+      "file": "audio/ar.ahmedajamy.json",
+      "sha256": "e95a2ce727e2caf292ec2d6fdd25b218050c55a272631acf31d0c6f97b749685",
+      "bytes": 1773505,
+      "records": null
+    },
+    {
+      "file": "audio/ar.abdurrahmaansudais.json",
+      "sha256": "e73ae915f67b8b3b2d2b5d5c85dbc168d4c51752d9ada66feebe6ddf0c92bec0",
+      "bytes": 1873303,
+      "records": null
+    },
+    {
+      "file": "audio/ar.saoodshuraym.json",
+      "sha256": "f2e303488892f189bffc23111816d7ca335b4bbe7c7eace52871b7bf69c5db38",
+      "bytes": 1238319,
+      "records": null
+    },
+    {
+      "file": "audio/ar.muhammadayyoub.json",
+      "sha256": "257a86fe9644f7319df6c1ea1ea175c5a690818d1d2dbb7310bb875abe9cd39d",
+      "bytes": 1257013,
+      "records": null
+    },
+    {
+      "file": "audio/ar.muhammadjibreel.json",
+      "sha256": "5ce73ba22f79e47567c6ed69ca9340473947e8cf60fc3cab351dde3e2eb639be",
+      "bytes": 1263255,
+      "records": null
+    },
+    {
+      "file": "translations/id.indonesian.json",
+      "sha256": "a76a7afdceea936b1b5761341bb15d870d170393dc6141d149f64c4e8c1e186d",
+      "bytes": 1594501,
+      "records": null
+    },
+    {
+      "file": "translations/en.sahih.json",
+      "sha256": "01b08385f6eea6223badfbf5da1d1c887b91858fb694266bf7994e866e144f17",
+      "bytes": 1338351,
+      "records": null
+    },
+    {
+      "file": "quran/daily-verses.json",
+      "sha256": "0a6c9e8aec76468a245412b22af7acd76fe20033de60386315a57267bac19015",
+      "bytes": 4356,
+      "records": 15
+    },
+    {
+      "file": "ramadan/prayers-new.json",
+      "sha256": "32a6ba0520db17fbec78c071e4983bfa2cec21a86a8beda83e10ea367f2c18c6",
+      "bytes": 3197,
+      "records": 5
+    },
+    {
+      "file": "ramadan/prayer-usage.json",
+      "sha256": "e2f3e5abc0f1c52d4a3ad2f1cf447dd3985adb30eb7ed6e3c3f1eb3fda8f9ef3",
+      "bytes": 2248,
+      "records": 8
+    },
+    {
+      "file": "ramadan/amal-tasks.json",
+      "sha256": "835ff797ff23ce97e1c52dafc54a507dd2ad1c00565bd6ffa6f0b5c2158848f6",
+      "bytes": 1385,
+      "records": 9
+    },
+    {
+      "file": "ramadan/khatam-defaults.json",
+      "sha256": "af7ef81cf3ed71f0de4fa9d0fece2777eb09fe4142494bd32f0b05366d98012c",
+      "bytes": 643,
+      "records": null
+    },
+    {
+      "file": "ramadan/khatam-milestones.json",
+      "sha256": "82c1cfa76fc566c06eed0c8cf1cb91bb6ff5f0b38bb131888e61d3fca50ace89",
+      "bytes": 564,
+      "records": 5
+    },
+    {
+      "file": "tasbih/dhikr.json",
+      "sha256": "b23c6f4ea766e9311667c7055617d93d57a6aaa579aaa63b4a0f66eb341778ce",
+      "bytes": 3356,
+      "records": 8
+    },
+    {
+      "file": "prayer/snapshot-2026-10.json",
+      "sha256": "ce38d634c8af6c503fb7398de4d9cad24b34d2ffe3d88ac015c3d25da1bb8d5a",
+      "bytes": 2100295,
+      "records": 25
+    },
+    {
+      "file": "calendar/snapshot-1448.json",
+      "sha256": "a80a96ef99c3be4966b4e064f71bc5d7e98559787f3b2ea0c8328ee26593451d",
+      "bytes": 416843,
+      "records": 12
+    },
+    {
+      "file": "ramadan/zakat-configuration.json",
+      "sha256": "f6e934709467d95c7da9d68bf2b6b8b072eb3855f7e8a89cdb4b6f8a21906225",
+      "bytes": 732,
+      "records": null
+    },
+    {
+      "file": "ramadan/gold-price-snapshot.json",
+      "sha256": "bf6116dd5b8c226742333deb697cfaa91c50d6cb7c80683f1e68e68b20cf4f2c",
+      "bytes": 594,
+      "records": null
+    },
+    {
+      "file": "mosques/snapshot-jakarta-5km.json",
+      "sha256": "1c195632920d1a9996b9d8adf0a223ea0d88962c83c582d01168a4bddf95cbba",
+      "bytes": 776045,
+      "records": null
+    },
+    {
+      "file": "mosques/query.json",
+      "sha256": "35da8b0cdfec6188970da857db1568b70c656b94e8125a7ec11cf36f4c57717c",
+      "bytes": 1729,
+      "records": null
+    },
+    {
+      "file": "provenance/rea-evidence-summary.json",
+      "sha256": "2f1afe772096269deba9e71555e3844edd1d06d4e0fa354984db43a371d84714",
+      "bytes": 91875,
+      "records": 7
+    },
+    {
+      "file": "provenance/baseline.json",
+      "sha256": "c1b1988e2eb4096de27c2f0e6a0ce745cf6fee02a669b6a2caad248c9a9cf5ed",
+      "bytes": 46108,
+      "records": 349
+    },
+    {
+      "file": "provenance/source-assets.json",
+      "sha256": "e87764a28fa14e4ccf4c3990660c701e70db7a32fb511985eecc1d419afc96fe",
+      "bytes": 5336,
+      "records": 26
+    },
+    {
+      "file": "provenance/deduplication.json",
+      "sha256": "6d9b76892651a4240d29af4c1057d8e7f9771ea6d0901b6f25b648c226332791",
+      "bytes": 3271,
+      "records": null
+    },
+    {
+      "file": "navigation/features.json",
+      "sha256": "9390bfcf845061b892efa1cfacf1375be0752db0373c3b6d52490dde6b5768a1",
+      "bytes": 1170,
+      "records": 13
+    },
+    {
+      "file": "quran/featured-surahs.json",
+      "sha256": "1777a79603546b60aa7565f87de532f7b1ad77ea853d03db0dbb8a8e6d5f68d2",
+      "bytes": 330,
+      "records": 7
+    },
+    {
+      "file": "personal-state/contracts.json",
+      "sha256": "2cdbeb9cf562ada24e7b98d86e19db8fc02bb94468f36799de336538e437c440",
+      "bytes": 1248,
+      "records": null
+    },
+    {
+      "file": "pwa/manifest.json",
+      "sha256": "d32fb3f7825229e78eab6df54543dcf1b25f9f9bf5e53003aaf6f56b66779499",
+      "bytes": 2934,
+      "records": null
+    },
+    {
+      "file": "prayer/notification-templates.json",
+      "sha256": "71dffc569e5d183183dd5bf1dc8cb9e8530d0ec78fd0db08e0e15696d6e7a144",
+      "bytes": 1211,
+      "records": null
+    },
+    {
+      "file": "provenance/verification.json",
+      "sha256": "94f251e32e2ccaf614be6e0b3bd0106cc9d1f64bebec353049bd8230a8f38e83",
+      "bytes": 9525,
+      "records": null
+    }
+  ]
+}

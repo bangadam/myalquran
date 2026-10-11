@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/index-eBmjwcpA.js",
+      "sha256": "6393b49d9484f06f3d560c5e38408443bf48f4dd43e083a34bf56f2e444e74ed",
+      "binding": "sb",
+      "range": {
+        "start": 196913,
+        "end": 197380,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": {
+    "darkMode": false,
+    "fontSize": 28,
+    "autoplay": true,
+    "showTajweed": true,
+    "showTranslation": true,
+    "showAyahControls": true,
+    "translationLanguage": "id",
+    "reciter": "ar.alafasy",
+    "arabicFontFamily": "amiri",
+    "readingMode": "verse",
+    "showLatin": true,
+    "audioSpeed": 1,
+    "audioRepeat": "none",
+    "prayerSettings": {
+      "enabled": false,
+      "notificationBefore": 5,
+      "notificationAfter": 5,
+      "reminderBeforeNext": 15,
+      "enabledPrayers": {
+        "fajr": true,
+        "dhuhr": true,
+        "asr": true,
+        "maghrib": true,
+        "isha": true
+      },
+      "enabledNotifications": {
+        "before": true,
+        "after": true,
+        "reminder": true
+      },
+      "location": null,
+      "calculationMethod": 20
+    }
+  }
+}

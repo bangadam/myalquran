@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { locales, labels, surahDirectory, contentAvailability, type Locale } from '../../../lib/content';
+import { Search, Bookmark } from 'lucide-react';
+import { interfaceLabels } from '../../../lib/interface-labels';
+export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
+const locale = Astro.params.locale as Locale;
+const t = labels(locale), surahs = surahDirectory(locale), availability = contentAvailability(locale);
+const ui = interfaceLabels[locale];
+---
+<BaseLayout title={t.directory} barTitle={t.quran} locale={locale} section="quran">
+  <label class="search-field" data-search-field hidden><span class="sr-only">{ui.search}</span><Search size={20} aria-hidden="true" /><input data-surah-search type="search" placeholder={ui.search} autocomplete="off" /></label>
+  {availability.surahs < availability.totalSurahs && <aside class="availability"><p>{t.translation}: {availability.surahs} / {availability.totalSurahs} {t.surahs}</p><p class="mb-0">{t.arabicOnly}</p></aside>}
+  <section class="library" data-library data-locale={locale} data-verse-label={t.verse} data-unavailable={t.savedUnavailable} hidden>
+    <a class="text-link" data-resume data-resume-label={t.resume} hidden></a>
+    <a class="text-link flex gap-3" href={`/${locale}/tersimpan/`}><Bookmark size={20} aria-hidden="true" />{t.saved}<span data-saved-count></span></a>
+    <p data-saved-empty hidden>{t.savedEmpty}</p>
+  </section>
+  <p class="availability" data-search-empty hidden>{t.searchEmpty}</p>
+  <div class="section-meta"><h2>{ui.directory}</h2><span>{surahs.length} {ui.surahs}</span></div>
+  <ol class="surah-list">{surahs.map(s => <li data-surah-row data-number={s.number} data-count={s.count} data-title={s.latin}><a class="surah-link" href={`/${locale}/surat/${s.number}/`} aria-label={`${t.readSurah} ${s.latin}`}>
+    <span class="surah-number" aria-hidden="true">{s.number}</span>
+    <div><div class="surah-latin">{s.latin}</div><div class="surah-meta">{s.meaning && <>{s.meaning} · </>}{s.count} {t.verses}</div></div>
+    <span class="surah-arabic" lang="ar" dir="rtl">{s.name}</span>
+  </a></li>)}</ol>
+</BaseLayout>

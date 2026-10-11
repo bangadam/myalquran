@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/index-eBmjwcpA.js",
+      "bindings": [
+        "am",
+        "fb",
+        "Av",
+        "gb"
+      ]
+    }
+  ],
+  "notes": [],
+  "data": {
+    "storagePrefix": "eziqro_",
+    "keys": {
+      "browserId": "eziqro_browser_id",
+      "lastRead": "eziqro_last_read",
+      "bookmarks": "eziqro_bookmarks",
+      "history": "eziqro_history",
+      "progress": "eziqro_progress",
+      "preferences": "eziqro_preferences",
+      "lastLocation": "eziqro_last_location"
+    },
+    "bookmark": {
+      "fields": [
+        "surahNumber",
+        "surahName",
+        "ayahNumber",
+        "note",
+        "id",
+        "createdAt"
+      ],
+      "id": "generated UUID",
+      "createdAt": "Date.now()"
+    },
+    "history": {
+      "fields": [
+        "surahNumber",
+        "surahName",
+        "ayahNumber",
+        "id",
+        "timestamp"
+      ],
+      "limit": 100
+    },
+    "backup": {
+      "version": "2026.1",
+      "fields": [
+        "version",
+        "exportedAt",
+        "state"
+      ]
+    },
+    "status": "schema_only_no_private_records"
+  }
+}

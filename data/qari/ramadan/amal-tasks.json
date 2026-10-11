@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/RamadanPage-D5oWvCfN.js",
+      "sha256": "7dc88036705c7fe07cf8ac42a388ce9f7d65866a653d266b28660f7978740ebe",
+      "binding": "Ie",
+      "range": {
+        "start": 13038,
+        "end": 13565,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "id": "puasa",
+      "label": "Puasa Ramadan",
+      "category": "wajib",
+      "labelAlt": "Puasa Sunnah / Qadha"
+    },
+    {
+      "id": "sholat_fardhu",
+      "label": "Sholat 5 Waktu",
+      "category": "wajib"
+    },
+    {
+      "id": "tarawih",
+      "label": "Sholat Tarawih",
+      "category": "sunnah"
+    },
+    {
+      "id": "witir",
+      "label": "Sholat Witir",
+      "category": "sunnah"
+    },
+    {
+      "id": "tahajjud",
+      "label": "Sholat Tahajjud",
+      "category": "sunnah"
+    },
+    {
+      "id": "dhuha",
+      "label": "Sholat Dhuha",
+      "category": "sunnah"
+    },
+    {
+      "id": "tilawah",
+      "label": "Tilawah Quran",
+      "category": "sunnah"
+    },
+    {
+      "id": "sedekah",
+      "label": "Sedekah",
+      "category": "sunnah"
+    },
+    {
+      "id": "dzikir",
+      "label": "Dzikir Pagi Petang",
+      "category": "sunnah"
+    }
+  ]
+}

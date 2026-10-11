@@ -1,19 +1,21 @@
 ---
 import '../styles/global.css';
 import { labels, locales, type Locale } from '../lib/content';
-import { Menu, Settings, Download, Info, BookOpen } from 'lucide-react';
+import { House, Settings, Bookmark, BookOpen, ArrowLeft } from 'lucide-react';
 import { interfaceLabels } from '../lib/interface-labels';
-interface Props { title: string; locale?: Locale; section?: string; description?: string; }
-const { title, locale = 'id', section = '', description } = Astro.props;
+import HomeIllustration from '../components/HomeIllustration.astro';
+interface Props { title: string; locale?: Locale; section?: string; description?: string; barTitle?: string; titleLang?: string; }
+const { title, locale = 'id', section = '', description, barTitle = title, titleLang } = Astro.props;
 const t = labels(locale);
 const ui = interfaceLabels[locale];
 const route = Astro.url.pathname.replace(/^\/(id|en|ja|zh-Hans)(?=\/)/, '') || '/';
 const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site) : null;
-const secondaryNavigation = [
-  { label: ui.settings, route: 'pengaturan/', icon: Settings },
-  { label: ui.downloads, route: 'offline/', icon: Download },
-  { label: t.about, route: 'tentang/', icon: Info },
-  { label: t.prayers, route: 'doa/', icon: BookOpen }
+const backHref = route.startsWith('/tafsir/') ? `/${locale}/surat/${route.split('/')[2]}/` : route.startsWith('/doa/') && route !== '/doa/' ? `/${locale}/doa/` : /^\/surat\/\d+\/$/.test(route) ? `/${locale}/surat/` : `/${locale}/`;
+const bottomNavigation = [
+  { label: ui.home, route: '', icon: House },
+  { label: ui.quranNav, route: 'surat/', icon: BookOpen },
+  { label: ui.savedNav, route: 'tersimpan/', icon: Bookmark },
+  { label: ui.settings, route: 'pengaturan/', icon: Settings }
 ];
 ---
 <!doctype html>
@@ -70,19 +72,29 @@ const secondaryNavigation = [
   <body>
     <a class="skip-link" href="#main">{t.skip}</a>
     <div class="app-shell">
-      <header class="site-header">
-        <div class="header-top"><a class="brand" href={`/${locale}/`}>MyAlQuran</a></div>
-        <nav class="main-nav" aria-label={t.directory}>
-          <a class:list={{ active: section === 'quran' }} href={`/${locale}/`} aria-current={Astro.url.pathname === `/${locale}/` ? 'page' : undefined}>{t.quran}</a>
-          {section === 'prayers' && <a class="active" href={`/${locale}/doa/`} aria-current={Astro.url.pathname === `/${locale}/doa/` ? 'page' : undefined}>{t.prayers}</a>}
-        </nav>
-        <details class="site-menu">
-          <summary><Menu size={20} aria-hidden="true" />{t.menu}</summary>
-          <div class="menu-panel"><nav aria-label={t.menu}>{secondaryNavigation.map(({ label, route, icon: Icon }) => <a href={`/${locale}/${route}`} data-settings-link={route === 'pengaturan/' ? '' : undefined} aria-current={Astro.url.pathname === `/${locale}/${route}` ? 'page' : undefined}><Icon size={20} aria-hidden="true" />{label}</a>)}</nav></div>
-        </details>
+      <header class:list={['site-header', { 'site-header-home': section === 'home' }]}>
+        {section === 'home' ? <>
+          <a class="brand" href={`/${locale}/`}>MyAlQuran</a>
+          <div class="home-greeting">
+            <div><h1>{ui.greeting}</h1><p>{ui.encouragement}</p></div>
+            <HomeIllustration />
+          </div>
+        </> : <div class="app-bar-title-row">
+          <a class="app-bar-back" href={backHref} aria-label={t.back}><ArrowLeft size={20} aria-hidden="true" /></a>
+          <h1 lang={titleLang} class="app-bar-title">{barTitle}</h1>
+        </div>}
       </header>
       <main id="main" class="page-content" tabindex="-1"><slot /></main>
-      <footer class="site-footer"><p class="mb-2">MyAlQuran</p><a class="text-primary" href={`/${locale}/tentang/`}>{t.about} · {ui.sources}</a></footer>
+      <footer class="site-footer">
+        <nav class="bottom-nav" aria-label={ui.bottomNav}>{bottomNavigation.map(({ label, route, icon: Icon }) => {
+          const href = `/${locale}/${route}`;
+          const exact = Astro.url.pathname === href || route === '' && Astro.url.pathname === '/';
+          const currentSection = route === 'surat/' && /^\/(surat|tafsir)\/\d+\/$/.test(Astro.url.pathname.replace(`/${locale}`, '')) ||
+            route === 'pengaturan/' && /^\/(bahasa|offline|tentang)\/$/.test(Astro.url.pathname.replace(`/${locale}`, '')) ||
+            route === '' && Astro.url.pathname !== '/' && !bottomNavigation.some(item => Astro.url.pathname === `/${locale}/${item.route}`) && !/^\/(surat|tafsir)\/\d+\/$/.test(Astro.url.pathname.replace(`/${locale}`, '')) && !/^\/(bahasa|offline|tentang)\/$/.test(Astro.url.pathname.replace(`/${locale}`, ''));
+          return <a class:list={{ active: exact || currentSection }} href={href} data-settings-link={route === 'pengaturan/' ? '' : undefined} aria-current={exact ? 'page' : currentSection ? 'true' : undefined}><Icon size={20} aria-hidden="true" /> <span>{label}</span></a>;
+        })}</nav>
+      </footer>
     </div>
   </body>
 </html>

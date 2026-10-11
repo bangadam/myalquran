@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [],
+  "notes": [
+    "Arabic matching: NFKD, remove marks/punctuation/numbers/spacing/tatweel, normalize alif and ya. Exact matches only for automatic religious-text removal; reviewed Quran excerpt 23:118 handled explicitly."
+  ],
+  "data": {
+    "baselineSurahs": 114,
+    "baselineAyahs": 6236,
+    "baselinePrayers": 227,
+    "baselineKajian": 3694,
+    "prayerDecisions": [
+      {
+        "id": "niat_puasa",
+        "existing": null
+      },
+      {
+        "id": "doa_sahur",
+        "existing": null
+      },
+      {
+        "id": "doa_berbuka",
+        "existing": null
+      },
+      {
+        "id": "doa_berbuka_2",
+        "existing": {
+          "file": "data/doa.json",
+          "id": 141
+        }
+      },
+      {
+        "id": "doa_10_pertama",
+        "existing": {
+          "file": "data/surat/23.json",
+          "ayah": 118,
+          "relation": "prayer excerpt of verse; source omits wa-qul"
+        }
+      },
+      {
+        "id": "doa_10_tengah",
+        "existing": null
+      },
+      {
+        "id": "doa_10_akhir",
+        "existing": {
+          "file": "data/doa.json",
+          "id": 143
+        }
+      },
+      {
+        "id": "doa_lailatul_qadr",
+        "existing": null
+      }
+    ],
+    "dhikrExistingReferences": [
+      {
+        "id": "subhanallah",
+        "existingRef": {
+          "file": "data/doa.json",
+          "id": 183
+        }
+      },
+      {
+        "id": "alhamdulillah",
+        "existingRef": {
+          "file": "data/doa.json",
+          "id": 189
+        }
+      },
+      {
+        "id": "allahuakbar",
+        "existingRef": {
+          "file": "data/doa.json",
+          "id": 184
+        }
+      },
+      {
+        "id": "tasbih_lengkap",
+        "existingRef": {
+          "file": "data/doa.json",
+          "id": 206
+        }
+      },
+      {
+        "id": "lailahaillallah",
+        "existingRef": {
+          "file": "data/doa.json",
+          "id": 29
+        }
+      }
+    ],
+    "translations": {
+      "id.indonesian": {
+        "retained": 6195,
+        "excludedIdentical": 41
+      },
+      "en.sahih": {
+        "retained": 6235,
+        "excludedIdentical": 1
+      }
+    },
+    "excluded": [
+      {
+        "feature": "Quran plain Arabic, Latin, surah directory",
+        "reason": "Existing 114 surahs / 6236 ayahs. Supplemental marked edition and layout metadata retained."
+      },
+      {
+        "feature": "Tafsir equran.id/api/v2",
+        "reason": "Already present in data/tafsir and SQLite archive."
+      },
+      {
+        "feature": "Daily verse Arabic and translation",
+        "reason": "All 15 references already available locally."
+      },
+      {
+        "feature": "Province and city-name directories",
+        "reason": "Already present; only new coordinates retained with identifying labels."
+      },
+      {
+        "feature": "Private bookmarks/history/recordings/custom tasks",
+        "reason": "Per-device private user state, not a public corpus."
+      },
+      {
+        "feature": "Vendor code, UI markup, fonts and binary audio",
+        "reason": "Not domain JSON; audio URLs and metadata retained."
+      }
+    ]
+  }
+}

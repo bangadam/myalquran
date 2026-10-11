@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { locales, type Locale } from '../../lib/content';
+import { calculationMethods } from '../../lib/prayer';
+import { interfaceLabels } from '../../lib/interface-labels';
+
+export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
+const locale = Astro.params.locale as Locale;
+const t = interfaceLabels[locale].prayer;
+const names = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'] as const;
+---
+<BaseLayout title={t.reminders} locale={locale}>
+  <div class="reminder-screen" data-reminders data-locale={locale}>
+    <header class="reminder-heading"><p>{t.openOnly}</p></header>
+    <p class="reminder-disclosure"><span data-reminder-disclosure>{t.localDisclosure.replace('{method}', calculationMethods[20].name)}</span> <a href={`/${locale}/jadwal-shalat/`}>{t.scheduleLink} →</a></p>
+    <p data-choice>{t.city}: Jakarta · {t.method}: {calculationMethods[20].name}</p>
+    <section class="permission-panel" aria-labelledby="permission-heading">
+      <h2 id="permission-heading">{t.notification}</h2>
+      <p role="status" aria-live="polite" data-permission>{t.permission.unknown}</p>
+      <button type="button" data-request-permission hidden>{t.requestPermission}</button>
+    </section>
+    <form data-reminder-form>
+      <div class="reminder-control"><label for="reminder-before">{t.before} ({t.minutes})</label><input id="reminder-before" type="number" name="before" min="0" max="120" step="1" value="5" required /></div>
+      <div class="reminder-control"><label for="reminder-after">{t.after} ({t.minutes})</label><input id="reminder-after" type="number" name="after" min="0" max="120" step="1" value="5" required /></div>
+      <fieldset><legend>{t.prayersToRemind}</legend>{names.map(name => <label class="reminder-row"><span>{t.names[name]}</span><input type="checkbox" name={name} /></label>)}</fieldset>
+      <p class="reminder-disclosure">{t.sunriseNote}</p>
+      <button type="submit">{t.save}</button>
+      <p role="status" aria-live="polite" data-save-status></p>
+    </form>
+    <p>{t.openOnly}</p>
+    <a href={`/${locale}/jadwal-shalat/`}>{t.scheduleLink} →</a>
+  </div>
+</BaseLayout>
+<script>
+  import cities from '../../../data/qari/prayer/city-coordinates.json';
+  import { calculationMethods, computePrayerTimes, formatPrayerTime, type CalculationMethod, type PrayerName } from '../../lib/prayer';
+  import { interfaceLabels } from '../../lib/interface-labels';
+  const root = document.querySelector<HTMLElement>('[data-reminders]');
+  if (root) {
+    const copy = interfaceLabels[root.dataset.locale as keyof typeof interfaceLabels].prayer;
+    const form = root.querySelector<HTMLFormElement>('[data-reminder-form]')!;
+    const permission = root.querySelector<HTMLElement>('[data-permission]')!;
+    const request = root.querySelector<HTMLButtonElement>('[data-request-permission]')!;
+    const status = root.querySelector<HTMLElement>('[data-save-status]')!;
+    const names: PrayerName[] = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
+    const key = 'myalquran:prayer-reminders:v1';
+    const choiceKey = 'myalquran:prayer-choice:v1';
+    type Settings = { before: number; after: number; enabled: PrayerName[] };
+    let settings: Settings | null = null;
+    const supportsNotifications = 'Notification' in window && window.isSecureContext;
+    const paintPermission = () => {
+      const state = supportsNotifications ? Notification.permission : 'unsupported';
+      permission.textContent = copy.permission[state];
+      request.hidden = state !== 'default';
+    };
+    paintPermission();
+    request.addEventListener('click', async () => {
+      if (!supportsNotifications || Notification.permission !== 'default') return;
+      try { await Notification.requestPermission(); }
+      catch { /* Permission remains at its current browser state. */ }
+      paintPermission();
+    });
+    try {
+      const value: unknown = JSON.parse(localStorage.getItem(key) || 'null');
+      if (value && typeof value === 'object' && !Array.isArray(value)) {
+        const saved = value as Partial<Settings>;
+        if (Number.isInteger(saved.before) && saved.before! >= 0 && saved.before! <= 120 &&
+            Number.isInteger(saved.after) && saved.after! >= 0 && saved.after! <= 120 &&
+            Array.isArray(saved.enabled) && saved.enabled.every(name => names.includes(name))) {
+          settings = saved as Settings;
+          (form.elements.namedItem('before') as HTMLInputElement).value = String(settings.before);
+          (form.elements.namedItem('after') as HTMLInputElement).value = String(settings.after);
+          for (const name of names) (form.elements.namedItem(name) as HTMLInputElement).checked = settings.enabled.includes(name);
+        }
+      }
+    } catch { status.textContent = copy.storageError; }
+    const delivered = new Set<string>();
+    // Timers run only while this document lives; the worker has no scheduled notification capability.
+    const tick = () => {
+      let choice = { cityId: 'jakarta', method: 20 };
+      try {
+        const stored = JSON.parse(localStorage.getItem(choiceKey) || 'null');
+        if (stored && cities.data.some(city => city.id === stored.cityId) && Object.hasOwn(calculationMethods, stored.method)) choice = stored;
+      } catch { /* Jakarta/method 20 is the disclosed schedule default. */ }
+      const city = cities.data.find(item => item.id === choice.cityId)!;
+      root.querySelector<HTMLElement>('[data-choice]')!.textContent = `${copy.city}: ${city.name} · ${copy.method}: ${calculationMethods[choice.method as CalculationMethod].name}`;
+      root.querySelector<HTMLElement>('[data-reminder-disclosure]')!.textContent = copy.localDisclosure.replace('{method}', calculationMethods[choice.method as CalculationMethod].name);
+      if (!settings || !supportsNotifications || Notification.permission !== 'granted') return;
+      const zoneHours = city.id === 'ambon' || city.id === 'jayapura' ? 9 :
+        ['makassar', 'denpasar', 'banjarmasin', 'samarinda', 'balikpapan', 'manado', 'mataram', 'kupang'].includes(city.id) ? 8 : 7;
+      const now = Date.now();
+      const localDay = new Date(now + zoneHours * 3600000);
+      const today = Date.UTC(localDay.getUTCFullYear(), localDay.getUTCMonth(), localDay.getUTCDate());
+      for (const day of [today - 86400000, today, today + 86400000]) {
+        const date = new Date(day).toISOString().slice(0, 10);
+        let times;
+        try { times = computePrayerTimes({ latitude: city.latitude, longitude: city.longitude, date, timeZoneOffsetOrIanaZone: zoneHours, method: choice.method as CalculationMethod }); }
+        catch { continue; }
+        for (const name of settings.enabled) for (const [phase, minutes] of [['before', -settings.before], ['after', settings.after]] as const) {
+          const when = day + times[name] * 60000 - zoneHours * 3600000 + minutes * 60000;
+          const eventId = `${date}/${choice.cityId}/${choice.method}/${name}/${phase}/${when}`;
+          if (when <= now && now - when < 60000 && !delivered.has(eventId)) {
+            delivered.add(eventId);
+            const label = phase === 'before' ? copy.notificationBefore : copy.notificationAfter;
+            try { new Notification(`${copy.names[name]} · ${label.replace('{minutes}', String(Math.abs(minutes)))}`, {
+              body: copy.notificationBody.replace('{prayer}', copy.names[name]).replace('{city}', city.name).replace('{time}', formatPrayerTime(times[name])),
+              tag: `prayer-${eventId}`,
+            }); } catch { /* Browser may still decline delivery while permission reads granted. */ }
+          }
+        }
+      }
+    };
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const before = Number((form.elements.namedItem('before') as HTMLInputElement).value);
+      const after = Number((form.elements.namedItem('after') as HTMLInputElement).value);
+      if (!Number.isInteger(before) || before < 0 || before > 120 || !Number.isInteger(after) || after < 0 || after > 120) return;
+      const selected = names.filter(name => (form.elements.namedItem(name) as HTMLInputElement).checked);
+      const next = { before, after, enabled: selected };
+      try { localStorage.setItem(key, JSON.stringify(next)); settings = next; status.textContent = copy.saved; tick(); }
+      catch { status.textContent = copy.storageError; }
+    });
+    tick();
+    window.setInterval(tick, 15000);
+    document.addEventListener('visibilitychange', () => { paintPermission(); if (!document.hidden) tick(); });
+    window.addEventListener('pageshow', tick);
+    window.addEventListener('storage', tick);
+  }
+</script>
+<style>
+  .reminder-screen { display: grid; gap: 22px; }
+  .reminder-heading { background: var(--primary); color: var(--primary-foreground); margin: -20px -20px 0; padding: 22px 20px; }
+  .reminder-heading h1 { margin: 0 0 10px; font-size: 1.55rem; }
+  .reminder-heading p { margin: 0; line-height: 1.6; }
+  .reminder-disclosure { color: var(--muted-foreground); line-height: 1.6; }
+  .reminder-disclosure a { color: var(--primary); text-decoration: underline; }
+  .permission-panel { padding: 20px; background: var(--secondary); border-radius: 8px; }
+  .permission-panel h2, form h2 { font-size: 1.35rem; margin: 0 0 12px; }
+  .permission-panel button, form button { min-height: 48px; border-radius: 6px; padding: 10px 16px; background: var(--primary); color: var(--primary-foreground); font-weight: 600; }
+  form { display: grid; gap: 18px; }
+  .reminder-control { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 55px; border-bottom: 1px solid var(--divider); }
+  .reminder-control input { width: 80px; min-height: 44px; padding: 5px; border: 1px solid var(--border); border-radius: 6px; background: var(--background); color: var(--foreground); }
+  fieldset { border: 0; padding: 0; margin: 0; }
+  legend { font-size: 1.35rem; font-weight: 600; margin-bottom: 8px; }
+  .reminder-row { display: flex; justify-content: space-between; align-items: center; min-height: 58px; border-bottom: 1px solid var(--divider); }
+  .reminder-row input { width: 22px; height: 22px; accent-color: var(--primary); }
+  :global(.reminder-screen :focus-visible) { outline: 2px solid var(--primary); outline-offset: 3px; }
+  @media (max-width: 360px) { .reminder-heading { margin-inline: -16px; padding-inline: 16px; } }
+</style>

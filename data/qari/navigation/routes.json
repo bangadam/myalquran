@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/index-eBmjwcpA.js",
+      "sha256": "6393b49d9484f06f3d560c5e38408443bf48f4dd43e083a34bf56f2e444e74ed",
+      "binding": "Ai",
+      "range": {
+        "start": 203680,
+        "end": 204137,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": {
+    "": "home",
+    "home": "home",
+    "quran": "home",
+    "juz": "juz",
+    "bookmarks": "bookmarks",
+    "simpan": "bookmarks",
+    "history": "history",
+    "riwayat": "history",
+    "settings": "settings",
+    "pengaturan": "settings",
+    "prayer": "prayer",
+    "jadwal-shalat": "prayer",
+    "qibla": "qibla",
+    "kiblat": "qibla",
+    "mosque": "mosque",
+    "masjid": "mosque",
+    "tasbih": "tasbih",
+    "search": "search",
+    "cari": "search",
+    "calendar": "calendar",
+    "kalender": "calendar",
+    "ramadan": "ramadan",
+    "tajweed": "tajweed",
+    "tajwid": "tajweed",
+    "tarteel": "tarteel",
+    "studio": "tarteel",
+    "rekam": "tarteel"
+  }
+}

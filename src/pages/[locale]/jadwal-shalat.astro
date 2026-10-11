@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { locales, type Locale } from '../../lib/content';
+import cities from '../../../data/qari/prayer/city-coordinates.json';
+import { calculationMethods, computePrayerTimes, formatPrayerTime, type PrayerName } from '../../lib/prayer';
+import { interfaceLabels } from '../../lib/interface-labels';
+
+export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
+const locale = Astro.params.locale as Locale;
+const t = interfaceLabels[locale].prayer;
+const names: PrayerName[] = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
+const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Jakarta', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+const methods = Object.entries(calculationMethods);
+const selected = calculationMethods[20];
+const times = computePrayerTimes({ latitude: -6.2088, longitude: 106.8456, date: today, timeZoneOffsetOrIanaZone: 'Asia/Jakarta', method: 20 });
+---
+<BaseLayout title={t.schedule} locale={locale}>
+  <script is:inline>
+    try {
+      const value = JSON.parse(localStorage.getItem('myalquran:prayer-choice:v1') || 'null');
+      if (value && value.cityId && value.method && (value.cityId !== 'jakarta' || Number(value.method) !== 20)) { document.documentElement.dataset.prayerPending = ''; setTimeout(() => { delete document.documentElement.dataset.prayerPending; }, 3000); }
+    } catch { /* Default schedule remains visible. */ }
+  </script>
+  <div class="prayer-screen" data-prayer-schedule data-locale={locale} data-unavailable={t.unavailable} data-default-city="jakarta">
+    <header class="prayer-heading"><p>{t.intro}</p></header>
+    <div class="prayer-controls">
+      <label for="prayer-city">{t.city}</label>
+      <select id="prayer-city" data-city>{cities.data.map(city => <option value={city.id} selected={city.id === 'jakarta'}>{city.name}</option>)}</select>
+      <label for="prayer-method">{t.method}</label>
+      <select id="prayer-method" data-method>{methods.map(([id, method]) => <option value={id} selected={id === '20'}>{method.name}</option>)}</select>
+    </div>
+    <p class="prayer-meta"><span>{t.date}: </span><time data-date datetime={today}>{new Intl.DateTimeFormat(locale, { dateStyle: 'full', timeZone: 'UTC' }).format(new Date(`${today}T12:00:00Z`))}</time><span> · {t.timezone}: </span><span data-zone>WIB (UTC+7)</span></p>
+    <p class="prayer-warning" role="status" data-error hidden>{t.unavailable}</p>
+    <ul class="prayer-times">{names.map(name => <li><span>{t.names[name]}</span><time data-prayer={name} datetime={formatPrayerTime(times[name])}>{formatPrayerTime(times[name])}</time></li>)}</ul>
+    <p class="prayer-disclosure" data-disclosure>{t.localDisclosure.replace('{method}', selected.name)}</p>
+    <noscript><p class="prayer-disclosure">{t.defaultDate}</p></noscript>
+    <a class="prayer-action" href={`/${locale}/pengingat/`}>{t.reminderLink} →</a>
+    <p class="prayer-warning" role="status" data-storage-error hidden>{t.storageError}</p>
+  </div>
+</BaseLayout>
+<script>
+  import cities from '../../../data/qari/prayer/city-coordinates.json';
+  import { calculationMethods, computePrayerTimes, formatPrayerTime, type CalculationMethod, type PrayerName } from '../../lib/prayer';
+  import { interfaceLabels } from '../../lib/interface-labels';
+  const root = document.querySelector<HTMLElement>('[data-prayer-schedule]');
+  if (root) {
+    const key = 'myalquran:prayer-choice:v1';
+    const locale = root.dataset.locale as keyof typeof interfaceLabels;
+    const copy = interfaceLabels[locale].prayer;
+    const cityField = root.querySelector<HTMLSelectElement>('[data-city]')!;
+    const methodField = root.querySelector<HTMLSelectElement>('[data-method]')!;
+    const cityById = new Map(cities.data.map(city => [city.id, city]));
+    const names: PrayerName[] = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
+    const zoneByCity = new Map<string, string>();
+    for (const city of cities.data) {
+      const zone = city.id === 'ambon' || city.id === 'jayapura' ? 'Asia/Jayapura' :
+        ['makassar', 'denpasar', 'banjarmasin', 'samarinda', 'balikpapan', 'manado', 'mataram', 'kupang'].includes(city.id) ? 'Asia/Makassar' :
+        city.id === 'pontianak' ? 'Asia/Pontianak' : 'Asia/Jakarta';
+      zoneByCity.set(city.id, zone);
+    }
+    const error = root.querySelector<HTMLElement>('[data-error]')!;
+    const storageError = root.querySelector<HTMLElement>('[data-storage-error]')!;
+    const render = () => {
+      const city = cityById.get(cityField.value);
+      const method = Number(methodField.value) as CalculationMethod;
+      if (!city || !Object.hasOwn(calculationMethods, method)) return;
+      const zone = zoneByCity.get(city.id)!;
+      const date = new Intl.DateTimeFormat('en-CA', { timeZone: zone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+      try {
+        const times = computePrayerTimes({ latitude: city.latitude, longitude: city.longitude, date, timeZoneOffsetOrIanaZone: zone, method });
+        for (const name of names) {
+          const field = root.querySelector<HTMLTimeElement>(`[data-prayer="${name}"]`)!;
+          field.textContent = formatPrayerTime(times[name]);
+          field.dateTime = formatPrayerTime(times[name]);
+        }
+        const field = root.querySelector<HTMLTimeElement>('[data-date]')!;
+        field.dateTime = date;
+        field.textContent = new Intl.DateTimeFormat(locale, { dateStyle: 'full', timeZone: 'UTC' }).format(new Date(`${date}T12:00:00Z`));
+        root.querySelector<HTMLElement>('[data-zone]')!.textContent = `${zone} (UTC+${zone === 'Asia/Jayapura' ? 9 : zone === 'Asia/Makassar' ? 8 : 7})`;
+        root.querySelector<HTMLElement>('[data-disclosure]')!.textContent = copy.localDisclosure.replace('{method}', calculationMethods[method].name);
+        error.hidden = true;
+      } catch { error.hidden = false; }
+    };
+    try {
+      const saved = JSON.parse(localStorage.getItem(key) || 'null');
+      if (saved && cityById.has(saved.cityId) && Object.hasOwn(calculationMethods, saved.method)) {
+        cityField.value = saved.cityId;
+        methodField.value = String(saved.method);
+      }
+    } catch { storageError.hidden = false; }
+    render();
+    delete document.documentElement.dataset.prayerPending;
+    const update = () => {
+      render();
+      try { localStorage.setItem(key, JSON.stringify({ cityId: cityField.value, method: Number(methodField.value) })); storageError.hidden = true; }
+      catch { storageError.hidden = false; }
+    };
+    cityField.addEventListener('change', update);
+    methodField.addEventListener('change', update);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) render(); });
+  }
+</script>
+<style>
+  :global(html[data-prayer-pending] .prayer-screen) { visibility: hidden; }
+  .prayer-screen { display: grid; gap: 18px; }
+  .prayer-heading { background: var(--primary); color: var(--primary-foreground); margin: -20px -20px 0; padding: 22px 20px; }
+  .prayer-heading h1 { margin: 0 0 6px; font-size: 1.55rem; }
+  .prayer-heading p { margin: 0; }
+  .prayer-controls { display: grid; gap: 8px; }
+  .prayer-controls label { font-weight: 600; }
+  .prayer-controls select { width: 100%; min-height: 44px; border: 1px solid var(--border); background: var(--background); color: var(--foreground); border-radius: 6px; padding: 8px; }
+  .prayer-meta, .prayer-disclosure { color: var(--muted-foreground); line-height: 1.6; }
+  .prayer-times { margin: 0; padding: 0; list-style: none; }
+  .prayer-times li { display: flex; justify-content: space-between; align-items: center; min-height: 62px; gap: 16px; border-bottom: 1px solid var(--divider); }
+  .prayer-times time { color: var(--primary); font-variant-numeric: tabular-nums; font-weight: 650; font-size: 1.15rem; }
+  .prayer-action { min-height: 48px; padding: 12px; text-align: center; border-radius: 6px; background: var(--secondary); color: var(--primary); font-weight: 600; }
+  .prayer-warning { color: var(--foreground); }
+  :global(.prayer-screen :focus-visible) { outline: 2px solid var(--primary); outline-offset: 3px; }
+  @media (max-width: 360px) { .prayer-heading { margin-inline: -16px; padding-inline: 16px; } }
+</style>

@@ -42,7 +42,7 @@ import { labels, locales, localeNames } from '../lib/content';
       </header>
       <main>
         <div class="lead">
-          <p class="eyebrow">MyAlQuran / 404</p>
+          <nav aria-label="Jejak navigasi"><p class="eyebrow">MyAlQuran / <span aria-current="page">404</span></p></nav>
           <h1 aria-label={`404 · ${labels('id').notFound}`}>404</h1>
           <p>{labels('id').notFound}</p>
         </div>
@@ -54,7 +54,7 @@ import { labels, locales, localeNames } from '../lib/content';
               <p class="language">{localeNames[locale]}</p>
               <h2>{labels(locale).notFound}</h2>
               <p class="detail">{labels(locale).notFoundText}</p>
-              <a href={`/${locale}/`}>{labels(locale).backReading} <span aria-hidden="true">→</span></a>
+              <a href={`/${locale}/surat/`}>{labels(locale).backReading} <span aria-hidden="true">→</span></a>
             </div>
           </section>
         ))}

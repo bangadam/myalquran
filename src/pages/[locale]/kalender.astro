@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { locales, type Locale } from '../../lib/content';
+import { gregorianDate, hijriEvents, hijriMonth, monthNames, weekdayNames } from '../../lib/devotional';
+import { interfaceLabels } from '../../lib/interface-labels';
+
+export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
+const locale = Astro.params.locale as Locale;
+const t = interfaceLabels[locale].devotional;
+const weekdays = [...weekdayNames.slice(1), weekdayNames[0]];
+const months = monthNames.map(name => {
+  const archive = hijriMonth(name.number);
+  if (!archive) return { name, dates: [], padding: 0, events: [] };
+  const dates = archive.data.map(entry => ({ day: entry.hijri.day, iso: gregorianDate(entry.gregorian.date) }));
+  const first = new Date(`${dates[0].iso}T00:00:00Z`).getUTCDay();
+  return { name, dates, padding: (first + 6) % 7, events: hijriEvents.flatMap(event => event.month === name.number ? (Array.isArray(event.day) ? event.day : [event.day]).filter(day => dates.some(date => date.day === day)).map(day => ({ day, name: locale === 'id' ? event.nameId : event.name })) : []) };
+});
+const format = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+---
+<BaseLayout title={t.calendar} locale={locale}>
+  <header class="border-b border-[var(--divider)] pb-5"><p class="text-muted-foreground">{t.calendarIntro}</p></header>
+  <p class="availability">{t.calendarCoverage}</p>
+  <nav aria-label={t.hijri} class="flex flex-wrap gap-2 my-5">
+    {months.map(month => <a class="min-h-11 rounded-md border border-input px-3 inline-flex items-center" href={`#month-${month.name.number}`} lang="en">{month.name.en}</a>)}
+  </nav>
+  {months.map(month => <section class="py-5 border-t border-[var(--divider)]" id={`month-${month.name.number}`} aria-labelledby={`month-heading-${month.name.number}`}>
+    <h2 id={`month-heading-${month.name.number}`}><span lang="en">{month.name.en}</span> <span lang="ar" dir="rtl">{month.name.ar}</span> · 1448 H</h2>
+    {month.dates.length === 0 ? <p class="availability">{t.calendarUnavailable}</p> : <>
+      <p class="text-sm text-muted-foreground">{t.gregorian}: <time datetime={month.dates[0].iso}>{format.format(new Date(`${month.dates[0].iso}T00:00:00Z`))}</time> – <time datetime={month.dates.at(-1)!.iso}>{format.format(new Date(`${month.dates.at(-1)!.iso}T00:00:00Z`))}</time></p>
+      <div class="grid grid-cols-7 gap-1 text-center mt-3" role="group" aria-label={`${month.name.en} 1448 H`}>
+        {weekdays.map(weekday => <span class="text-xs text-muted-foreground" lang="id" title={weekday.full}>{weekday.name}</span>)}
+        {Array.from({ length: month.padding }, () => <span aria-hidden="true"></span>)}
+        {month.dates.map(date => {
+          const events = month.events.filter(event => event.day === date.day);
+          return <div class="min-w-0 min-h-14 rounded-md border border-[var(--divider)] p-1 flex flex-col items-center justify-center" title={`${t.hijri} ${date.day} ${month.name.en} 1448 H · ${t.gregorian} ${date.iso}${events.length ? ` · ${events.map(event => event.name).join(', ')}` : ''}`}>
+            <strong class="tabular-nums">{date.day}</strong><small class="tabular-nums text-muted-foreground">{date.iso.slice(8, 10)}/{date.iso.slice(5, 7)}</small>{events.length > 0 && <span class="text-primary" aria-label={t.sourceEvents}>•</span>}
+          </div>;
+        })}
+      </div>
+      <p class="text-sm text-muted-foreground mt-3">{t.sourceEvents}</p>
+      {month.events.length ? <ul class="list-disc ps-5">{month.events.map(event => <li><span>{event.day} <span lang="en">{month.name.en}</span> · </span><span lang={locale === 'id' ? 'id' : 'en'}>{event.name}</span></li>)}</ul> : <p class="text-sm text-muted-foreground">{t.noEvents}</p>}
+    </>}
+  </section>)}
+</BaseLayout>

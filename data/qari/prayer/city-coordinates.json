@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/index-eBmjwcpA.js",
+      "sha256": "6393b49d9484f06f3d560c5e38408443bf48f4dd43e083a34bf56f2e444e74ed",
+      "binding": "rm",
+      "range": {
+        "start": 213780,
+        "end": 216055,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "id": "jakarta",
+      "name": "Jakarta",
+      "province": "DKI Jakarta",
+      "latitude": -6.2088,
+      "longitude": 106.8456
+    },
+    {
+      "id": "surabaya",
+      "name": "Surabaya",
+      "province": "Jawa Timur",
+      "latitude": -7.2575,
+      "longitude": 112.7521
+    },
+    {
+      "id": "bandung",
+      "name": "Bandung",
+      "province": "Jawa Barat",
+      "latitude": -6.9175,
+      "longitude": 107.6191
+    },
+    {
+      "id": "medan",
+      "name": "Medan",
+      "province": "Sumatera Utara",
+      "latitude": 3.5952,
+      "longitude": 98.6722
+    },
+    {
+      "id": "semarang",
+      "name": "Semarang",
+      "province": "Jawa Tengah",
+      "latitude": -6.9667,
+      "longitude": 110.4167
+    },
+    {
+      "id": "makassar",
+      "name": "Makassar",
+      "province": "Sulawesi Selatan",
+      "latitude": -5.1477,
+      "longitude": 119.4327
+    },
+    {
+      "id": "palembang",
+      "name": "Palembang",
+      "province": "Sumatera Selatan",
+      "latitude": -2.9761,
+      "longitude": 104.7754
+    },
+    {
+      "id": "tangerang",
+      "name": "Tangerang",
+      "province": "Banten",
+      "latitude": -6.1783,
+      "longitude": 106.6319
+    },
+    {
+      "id": "depok",
+      "name": "Depok",
+      "province": "Jawa Barat",
+      "latitude": -6.4025,
+      "longitude": 106.7942
+    },
+    {
+      "id": "bekasi",
+      "name": "Bekasi",
+      "province": "Jawa Barat",
+      "latitude": -6.2383,
+      "longitude": 106.9756
+    },
+    {
+      "id": "yogyakarta",
+      "name": "Yogyakarta",
+      "province": "DI Yogyakarta",
+      "latitude": -7.7956,
+      "longitude": 110.3695
+    },
+    {
+      "id": "malang",
+      "name": "Malang",
+      "province": "Jawa Timur",
+      "latitude": -7.9797,
+      "longitude": 112.6304
+    },
+    {
+      "id": "denpasar",
+      "name": "Denpasar",
+      "province": "Bali",
+      "latitude": -8.6705,
+      "longitude": 115.2126
+    },
+    {
+      "id": "banda-aceh",
+      "name": "Banda Aceh",
+      "province": "Aceh",
+      "latitude": 5.5483,
+      "longitude": 95.3238
+    },
+    {
+      "id": "padang",
+      "name": "Padang",
+      "province": "Sumatera Barat",
+      "latitude": -0.9471,
+      "longitude": 100.4172
+    },
+    {
+      "id": "pekanbaru",
+      "name": "Pekanbaru",
+      "province": "Riau",
+      "latitude": 0.5071,
+      "longitude": 101.4478
+    },
+    {
+      "id": "banjarmasin",
+      "name": "Banjarmasin",
+      "province": "Kalimantan Selatan",
+      "latitude": -3.3194,
+      "longitude": 114.5908
+    },
+    {
+      "id": "pontianak",
+      "name": "Pontianak",
+      "province": "Kalimantan Barat",
+      "latitude": -0.0263,
+      "longitude": 109.3425
+    },
+    {
+      "id": "samarinda",
+      "name": "Samarinda",
+      "province": "Kalimantan Timur",
+      "latitude": -0.5022,
+      "longitude": 117.1536
+    },
+    {
+      "id": "balikpapan",
+      "name": "Balikpapan",
+      "province": "Kalimantan Timur",
+      "latitude": -1.2379,
+      "longitude": 116.8529
+    },
+    {
+      "id": "manado",
+      "name": "Manado",
+      "province": "Sulawesi Utara",
+      "latitude": 1.4748,
+      "longitude": 124.8421
+    },
+    {
+      "id": "mataram",
+      "name": "Mataram (Lombok)",
+      "province": "Nusa Tenggara Barat",
+      "latitude": -8.5833,
+      "longitude": 116.1167
+    },
+    {
+      "id": "kupang",
+      "name": "Kupang",
+      "province": "Nusa Tenggara Timur",
+      "latitude": -10.1772,
+      "longitude": 123.607
+    },
+    {
+      "id": "ambon",
+      "name": "Ambon",
+      "province": "Maluku",
+      "latitude": -3.6554,
+      "longitude": 128.1906
+    },
+    {
+      "id": "jayapura",
+      "name": "Jayapura",
+      "province": "Papua",
+      "latitude": -2.5916,
+      "longitude": 140.669
+    }
+  ]
+}

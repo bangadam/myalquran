@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [],
+  "notes": [
+    "Semua import JS relatif literal ditelusuri rekursif: 26 modul. Vendor/UI code tidak disalin ke folder data."
+  ],
+  "data": [
+    {
+      "url": "https://qari.solusikoding.com/assets/index-eBmjwcpA.js",
+      "sha256": "6393b49d9484f06f3d560c5e38408443bf48f4dd43e083a34bf56f2e444e74ed",
+      "bytes": 396553
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/workbox-window.prod.es5-BIl4cyR9.js",
+      "sha256": "ef75dc538a74d630094d7453bce980f4e7c78096700d40489d8ead191131d8ba",
+      "bytes": 5761
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/BookmarksPage-9AQoQpv0.js",
+      "sha256": "dabe101d768b5ced63b39b1bed44e949699a5126e5a32b04079d70ae776040fb",
+      "bytes": 6899
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/HistoryPage-Dsk1IK3r.js",
+      "sha256": "f81255c097161adae56b2b16009634c7e2e57abc5904bc4d5d1dc494fbdbc6c4",
+      "bytes": 4502
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/SettingsPage-Sw0YBdqT.js",
+      "sha256": "f34cb07f88c1d7b6f6fe822c7acd4a357259e98104637aff0e435f2128840905",
+      "bytes": 27476
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/PrayerTimePage-B6GE7Lvr.js",
+      "sha256": "c6469fa6cf97f4b6405050b29aaeb1666bd68b8af6d9c2a090471d0b43f19bc1",
+      "bytes": 24911
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/QiblaPage-FvCyQS4k.js",
+      "sha256": "6e558144195f8715d13d2ef35d9b914a76907698ab00b93982f9105f0f6fefc2",
+      "bytes": 20353
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/MosquePage-rF5ItnzA.js",
+      "sha256": "133525ce5ecc5b9f7663557e7292dce0662e67b39482cf67dd0edd2268077611",
+      "bytes": 202615
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/TasbihPage-BWGmIzIr.js",
+      "sha256": "0664894d2324013fb030c6b9554e8d44877b873f86c63f000be7c55cf2dc5fc1",
+      "bytes": 17930
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/SearchPage-B7YUcBL_.js",
+      "sha256": "e4c2a9800856157808d72c6897cfcf43542fb96ebd5a02dd225624e5381236a4",
+      "bytes": 6738
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/HijriCalendarPage-BkK1hjZ5.js",
+      "sha256": "1ec4c2af1e54f190bc57e5c0e264dc8b9042dab26859ea03294236fe29c121d5",
+      "bytes": 15127
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/RamadanPage-D5oWvCfN.js",
+      "sha256": "7dc88036705c7fe07cf8ac42a388ce9f7d65866a653d266b28660f7978740ebe",
+      "bytes": 68119
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/TajweedGuidePage-DYkYuBcm.js",
+      "sha256": "1d2c46c0d2268f94a64b6fdfafca6c5e7c806ab920f3f13c93513f6a8ceecc46",
+      "bytes": 10603
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/TarteelStudioPage-BG4z_1-z.js",
+      "sha256": "3394299e454c75bbf69647b941a086f26982aa59ff4db6b6a7587bf25f95287b",
+      "bytes": 50964
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/trash-2-QZTrgru5.js",
+      "sha256": "92a0c8a6cd01f1470f20f82dc4b76e1565814b9d7da0bf1c5820303e13bb7239",
+      "bytes": 329
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/circle-alert-QV-k5O0_.js",
+      "sha256": "d6988edaa3141a5faf86864bfb2a420ef6c2f3548276b2cee89d05181715cb93",
+      "bytes": 251
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/smartphone-W74F2m3I.js",
+      "sha256": "f88be34358f8e4c43630d297a421b8d2120313535b2518a4f811b95c1503a3e1",
+      "bytes": 198
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/triangle-alert-DC-beWQw.js",
+      "sha256": "e23f4e761f33681cb201ba8ae4ac87292b00f3554907122ce973f75f0038486c",
+      "bytes": 266
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/square-CXwNzlOy.js",
+      "sha256": "48a630c7c9657069e5c087befaa134f1507ee1c99cd7d15e4aad08aec59e8494",
+      "bytes": 148
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/arrow-left-XBoRHigd.js",
+      "sha256": "ec6e92814734992bc63fd9439cd31e878f1f8095d5d1ce80f981ec0547c55d85",
+      "bytes": 166
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/volume-x-BTFnTumB.js",
+      "sha256": "353ab2f0835ed0c9cd3515d438408bde489add7bd724a87bfdbd9cb350fbcb06",
+      "bytes": 391
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/navigation-hrhpOdUK.js",
+      "sha256": "0df0d2e4aed084552d148d65c29dab9b2b034ea27c39a2c8300912128901f606",
+      "bytes": 149
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/sliders-vertical-B8ykITc9.js",
+      "sha256": "21c1163851e1b9d387d8be135dc9d4f311207a0794b7623cf232a922443b8d93",
+      "bytes": 423
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/rotate-ccw-D07-bxsg.js",
+      "sha256": "22969c07eb1b5b3d0d31bf10ea5c29a7f9353d04b37b8b516528053e6bc901e3",
+      "bytes": 201
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/plus-B6XE6d7H.js",
+      "sha256": "dd0b2047f0790fc507bd0b6318fa9a682b681abbc901c9852d29c23d1ac8072e",
+      "bytes": 223
+    },
+    {
+      "url": "https://qari.solusikoding.com/assets/calendar-1wMEO2EA.js",
+      "sha256": "856b0ed7707799ec8a03bd0f9819e5986f9e0380761a71244a15c45b9d12cb68",
+      "bytes": 258
+    }
+  ]
+}

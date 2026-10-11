@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/RamadanPage-D5oWvCfN.js",
+      "binding": "_e",
+      "sha256": "7dc88036705c7fe07cf8ac42a388ce9f7d65866a653d266b28660f7978740ebe"
+    }
+  ],
+  "notes": [
+    "Transkripsi sumber, bukan pengesahan sanad atau penetapan waktu ibadah. Perlu review editorial."
+  ],
+  "data": [
+    {
+      "id": "niat_puasa",
+      "title": "Niat Puasa Ramadan",
+      "arabic": "نَوَيْتُ صَوْمَ غَدٍ عَنْ أَدَاءِ فَرْضِ شَهْرِ رَمَضَانَ هٰذِهِ السَّنَةِ لِلَّهِ تَعَالَى",
+      "latin": "Nawaitu shauma ghadin 'an adaa'i fardhi syahri ramadhana hadzihis sanati lillahi ta'ala",
+      "translation": "Aku niat puasa esok hari untuk menunaikan fardhu bulan Ramadan tahun ini karena Allah Ta'ala",
+      "when": "Dibaca malam hari sebelum tidur atau sebelum imsak"
+    },
+    {
+      "id": "doa_sahur",
+      "title": "Doa Setelah Sahur",
+      "arabic": "اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ بِرَحْمَتِكَ الَّتِيْ وَسِعَتْ كُلَّ شَيْءٍ أَنْ تَغْفِرَ لِيْ",
+      "latin": "Allahumma inni as'aluka birahmatikallatii wasi'at kulla syai'in an taghfira lii",
+      "translation": "Ya Allah, aku memohon kepada-Mu dengan rahmat-Mu yang meliputi segala sesuatu, agar Engkau mengampuniku",
+      "when": "Dibaca setelah selesai sahur"
+    },
+    {
+      "id": "doa_berbuka",
+      "title": "Doa Berbuka Puasa",
+      "arabic": "اَللّٰهُمَّ لَكَ صُمْتُ وَبِكَ اٰمَنْتُ وَعَلَى رِزْقِكَ أَفْطَرْتُ بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِيْنَ",
+      "latin": "Allahumma laka shumtu wa bika aamantu wa 'ala rizqika afthartu birahmatika ya arhamar rahimin",
+      "translation": "Ya Allah, karena-Mu aku berpuasa, dan kepada-Mu aku beriman, dan dengan rezeki-Mu aku berbuka, dengan rahmat-Mu wahai Yang Maha Pengasih",
+      "when": "Dibaca saat akan berbuka puasa"
+    },
+    {
+      "id": "doa_10_tengah",
+      "title": "Doa 10 Hari Kedua (Ampunan)",
+      "arabic": "أَسْتَغْفِرُ اللهَ رَبِّيْ مِنْ كُلِّ ذَنْبٍ وَأَتُوْبُ إِلَيْهِ",
+      "latin": "Astaghfirullaaha rabbii min kulli dzanbin wa atuubu ilaihi",
+      "translation": "Aku memohon ampunan kepada Allah Tuhanku dari segala dosa dan aku bertaubat kepada-Nya",
+      "when": "10 hari kedua Ramadan"
+    },
+    {
+      "id": "doa_lailatul_qadr",
+      "title": "Doa Malam Lailatul Qadr",
+      "arabic": "اللَّهُمَّ إِنِّى أَسْأَلُكَ أَنْ تَجْعَلَنِى مِنَ الْفَائِزِينَ فِى لَيْلَةِ الْقَدْرِ",
+      "latin": "Allahumma inni as'aluka an taj'alani minal faa'izin fi lailatil qadr",
+      "translation": "Ya Allah, aku memohon kepada-Mu agar Engkau menjadikanku termasuk orang-orang yang beruntung di malam Lailatul Qadr",
+      "when": "Malam-malam ganjil 10 hari terakhir"
+    }
+  ]
+}

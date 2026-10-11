@@ -1,0 +1,11 @@
+---
+import illustration from '../assets/illustrations/generated-5.webp';
+
+interface Props { class?: string }
+const { class: className } = Astro.props;
+---
+<img class:list={['home-art', className]} src={illustration.src} width="170" height="150" alt="" aria-hidden="true" decoding="async" />
+
+<style>
+  .home-art { display:block; flex:0 0 min(170px,40%); width:min(170px,40%); height:auto; aspect-ratio:17/15; object-fit:cover; border-radius:12px; }
+</style>

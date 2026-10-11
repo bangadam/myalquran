@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/RamadanPage-D5oWvCfN.js",
+      "binding": "H"
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "pages": 20,
+      "label": "1 Juz"
+    },
+    {
+      "pages": 100,
+      "label": "5 Juz"
+    },
+    {
+      "pages": 200,
+      "label": "10 Juz"
+    },
+    {
+      "pages": 400,
+      "label": "20 Juz"
+    },
+    {
+      "pages": 604,
+      "label": "Khatam!"
+    }
+  ]
+}

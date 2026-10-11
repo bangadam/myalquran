@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/TarteelStudioPage-BG4z_1-z.js",
+      "sha256": "3394299e454c75bbf69647b941a086f26982aa59ff4db6b6a7587bf25f95287b",
+      "binding": "z",
+      "range": {
+        "start": 996,
+        "end": 2995,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "id": "muzammil",
+      "name": "Muzammil Hasballah",
+      "arabicName": "مُزَمِّل - المسجد الكبير",
+      "tagline": "Gema megah & hangat khas Muzammil Hasballah",
+      "description": "Reverb hall masjid yang luas dengan vokal bass tebal dan echo lembut khas imam muda Masjid Al-Lathif / Salman ITB.",
+      "icon": "🕌",
+      "badge": "Populer",
+      "settings": {
+        "presetId": "muzammil",
+        "reverbWet": 0.36,
+        "reverbDuration": 3.2,
+        "reverbDecay": 2.6,
+        "delayTime": 0.2,
+        "delayFeedback": 0.24,
+        "delayWet": 0.18,
+        "lowGain": 4,
+        "highGain": 2.5,
+        "compression": true
+      }
+    },
+    {
+      "id": "haramain",
+      "name": "Haramain (Imam Makkah)",
+      "arabicName": "الحرمين الشريفين",
+      "tagline": "Echo berwibawa khas Masjidil Haram & Nabawi",
+      "description": "Echo berjarak dan gema khas sound system pengeras suara Masjidil Haram Makkah yang menggetarkan hati.",
+      "icon": "🕋",
+      "badge": "Megah",
+      "settings": {
+        "presetId": "haramain",
+        "reverbWet": 0.44,
+        "reverbDuration": 4.2,
+        "reverbDecay": 2.2,
+        "delayTime": 0.24,
+        "delayFeedback": 0.32,
+        "delayWet": 0.28,
+        "lowGain": 2,
+        "highGain": 3,
+        "compression": true
+      }
+    },
+    {
+      "id": "studio",
+      "name": "Studio Murottal",
+      "arabicName": "استوديو ترتيل",
+      "tagline": "Vokal jernih, tebal, & intim ruang rekaman",
+      "description": "Akustik ruang rekaman profesional kedap suara dengan vokal hangat tanpa distorsi echo.",
+      "icon": "🎙️",
+      "settings": {
+        "presetId": "studio",
+        "reverbWet": 0.2,
+        "reverbDuration": 1.5,
+        "reverbDecay": 3.2,
+        "delayTime": 0,
+        "delayFeedback": 0,
+        "delayWet": 0,
+        "lowGain": 4.5,
+        "highGain": 2,
+        "compression": true
+      }
+    },
+    {
+      "id": "nabawi",
+      "name": "Kubah Masjid (Dome)",
+      "arabicName": "قبة المسجد",
+      "tagline": "Akustik kubah lembut menenangkan",
+      "description": "Pantulan melingkar kubah masjid yang lembut dengan suasana syahdu dan khusyuk.",
+      "icon": "🏛️",
+      "settings": {
+        "presetId": "nabawi",
+        "reverbWet": 0.38,
+        "reverbDuration": 3.6,
+        "reverbDecay": 2.5,
+        "delayTime": 0.18,
+        "delayFeedback": 0.2,
+        "delayWet": 0.16,
+        "lowGain": 2.5,
+        "highGain": 1.5,
+        "compression": true
+      }
+    },
+    {
+      "id": "clean",
+      "name": "Natural (Suara Asli)",
+      "arabicName": "صوت طبيعي",
+      "tagline": "Rekaman vokal murni tanpa efek gema",
+      "description": "Hanya penyesuaian gain dan kompresi lembut tanpa penambahan reverb atau delay.",
+      "icon": "🔊",
+      "settings": {
+        "presetId": "clean",
+        "reverbWet": 0,
+        "reverbDuration": 1,
+        "reverbDecay": 2,
+        "delayTime": 0,
+        "delayFeedback": 0,
+        "delayWet": 0,
+        "lowGain": 0,
+        "highGain": 0,
+        "compression": true
+      }
+    }
+  ]
+}

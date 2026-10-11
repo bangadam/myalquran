@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/QiblaPage-FvCyQS4k.js",
+      "sha256": "6e558144195f8715d13d2ef35d9b914a76907698ab00b93982f9105f0f6fefc2",
+      "binding": "a",
+      "range": {
+        "start": 6737,
+        "end": 6830,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": [
+    "U",
+    "U-TL",
+    "TL",
+    "T-TL",
+    "T",
+    "T-TG",
+    "TG",
+    "S-TG",
+    "S",
+    "S-BD",
+    "BD",
+    "B-BD",
+    "B",
+    "B-BL",
+    "BL",
+    "U-BL"
+  ]
+}

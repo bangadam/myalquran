@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/RamadanPage-D5oWvCfN.js",
+      "binding": "_e"
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "id": "niat_puasa",
+      "category": "Niat & Sahur",
+      "title": "Niat Puasa Ramadan",
+      "when": "Dibaca malam hari sebelum tidur atau sebelum imsak",
+      "newRef": "ramadan/prayers-new.json#niat_puasa"
+    },
+    {
+      "id": "doa_sahur",
+      "category": "Niat & Sahur",
+      "title": "Doa Setelah Sahur",
+      "when": "Dibaca setelah selesai sahur",
+      "newRef": "ramadan/prayers-new.json#doa_sahur"
+    },
+    {
+      "id": "doa_berbuka",
+      "category": "Berbuka Puasa",
+      "title": "Doa Berbuka Puasa",
+      "when": "Dibaca saat akan berbuka puasa",
+      "newRef": "ramadan/prayers-new.json#doa_berbuka"
+    },
+    {
+      "id": "doa_berbuka_2",
+      "category": "Berbuka Puasa",
+      "title": "Doa Berbuka (Riwayat Abu Dawud)",
+      "when": "Dibaca setelah berbuka",
+      "existingRef": {
+        "file": "data/doa.json",
+        "id": 141
+      }
+    },
+    {
+      "id": "doa_10_pertama",
+      "category": "10 Hari Pertama",
+      "title": "Doa 10 Hari Pertama (Rahmat)",
+      "when": "10 hari pertama Ramadan",
+      "existingRef": {
+        "file": "data/surat/23.json",
+        "ayah": 118,
+        "relation": "prayer excerpt of verse; source omits wa-qul"
+      }
+    },
+    {
+      "id": "doa_10_tengah",
+      "category": "10 Hari Kedua",
+      "title": "Doa 10 Hari Kedua (Ampunan)",
+      "when": "10 hari kedua Ramadan",
+      "newRef": "ramadan/prayers-new.json#doa_10_tengah"
+    },
+    {
+      "id": "doa_10_akhir",
+      "category": "10 Hari Terakhir",
+      "title": "Doa 10 Hari Terakhir (Perlindungan)",
+      "when": "10 hari terakhir Ramadan, terutama malam ganjil",
+      "existingRef": {
+        "file": "data/doa.json",
+        "id": 143
+      }
+    },
+    {
+      "id": "doa_lailatul_qadr",
+      "category": "10 Hari Terakhir",
+      "title": "Doa Malam Lailatul Qadr",
+      "when": "Malam-malam ganjil 10 hari terakhir",
+      "newRef": "ramadan/prayers-new.json#doa_lailatul_qadr"
+    }
+  ]
+}

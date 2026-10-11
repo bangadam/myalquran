@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/MosquePage-rF5ItnzA.js",
+      "sha256": "133525ce5ecc5b9f7663557e7292dce0662e67b39482cf67dd0edd2268077611",
+      "binding": "C",
+      "range": {
+        "start": 190516,
+        "end": 190665,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": {
+    "endpoints": [
+      "https://overpass-api.de/api/interpreter",
+      "https://overpass.kumi.systems/api/interpreter",
+      "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+    ],
+    "query": "[out:json][timeout:25];(node[\"amenity\"=\"place_of_worship\"][\"religion\"=\"muslim\"](around:5000,-6.2088,106.8456);way[\"amenity\"=\"place_of_worship\"][\"religion\"=\"muslim\"](around:5000,-6.2088,106.8456);node[\"amenity\"=\"place_of_worship\"][\"building\"=\"mosque\"](around:5000,-6.2088,106.8456);way[\"amenity\"=\"place_of_worship\"][\"building\"=\"mosque\"](around:5000,-6.2088,106.8456);node[\"building\"=\"mosque\"](around:5000,-6.2088,106.8456);way[\"building\"=\"mosque\"](around:5000,-6.2088,106.8456););out center body;>;out skel qt;",
+    "cacheTtlSeconds": 900,
+    "cacheMaxDistanceMeters": 500,
+    "sourceUiMergeDistanceMeters": 20,
+    "attemptFailures": [
+      {
+        "url": "https://overpass-api.de/api/interpreter",
+        "error": "HTTP 504"
+      },
+      {
+        "url": "https://overpass.kumi.systems/api/interpreter",
+        "error": "HTTP 500"
+      },
+      {
+        "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+        "error": "The operation timed out."
+      }
+    ]
+  }
+}

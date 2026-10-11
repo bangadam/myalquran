@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/QiblaPage-FvCyQS4k.js",
+      "sha256": "6e558144195f8715d13d2ef35d9b914a76907698ab00b93982f9105f0f6fefc2"
+    }
+  ],
+  "notes": [],
+  "data": {
+    "kaaba": {
+      "latitude": 21.4225,
+      "longitude": 39.8262
+    },
+    "earthRadiusKm": 6371,
+    "alignmentToleranceDegrees": 5,
+    "smoothingFactor": 0.3,
+    "formula": "atan2(sin(deltaLongitude), cos(latitude) * tan(kaabaLatitude) - sin(latitude) * cos(deltaLongitude)); radians converted to degrees, normalized to [0,360)"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/index-eBmjwcpA.js",
+      "binding": "Eb"
+    }
+  ],
+  "notes": [
+    "Ekspresi fungsi disimpan sebagai string dokumentasi; jangan dieksekusi dengan eval."
+  ],
+  "data": {
+    "sourceExpression": "(s,c)=>{const d=Di[s];return{before:{title:`${c.notificationBefore} Menit Lagi Menuju ${d}`,body:`Waktu ${d} akan segera tiba. Bersiaplah untuk sholat.`},after:{title:`Waktu Sholat ${d}`,body:`Sudah masuk waktu ${d}. Mari tunaikan sholat.`},reminder:{title:`Pengingat Sholat ${d}`,body:`${c.reminderBeforeNext} menit lagi waktu ${d} akan berakhir.`}}}",
+    "defaultSettings": {
+      "enabled": false,
+      "notificationBefore": 5,
+      "notificationAfter": 5,
+      "reminderBeforeNext": 15,
+      "enabledPrayers": {
+        "fajr": true,
+        "dhuhr": true,
+        "asr": true,
+        "maghrib": true,
+        "isha": true
+      },
+      "enabledNotifications": {
+        "before": true,
+        "after": true,
+        "reminder": true
+      },
+      "location": null,
+      "calculationMethod": 20
+    }
+  }
+}

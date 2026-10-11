@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { locales, type Locale } from '../../lib/content';
+import { mosqueSnapshot } from '../../lib/devotional';
+import { interfaceLabels } from '../../lib/interface-labels';
+
+export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
+const locale = Astro.params.locale as Locale;
+const t = interfaceLabels[locale].devotional;
+const date = new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(mosqueSnapshot.timestamp));
+---
+<BaseLayout title={t.mosques} locale={locale}>
+  <header class="border-b border-[var(--divider)] pb-5"><p class="text-muted-foreground">{t.mosqueIntro}</p></header>
+  <p class="availability">{t.mosqueDate}</p>
+  <p class="text-sm text-muted-foreground"><time datetime={mosqueSnapshot.timestamp}>{date}</time> · {t.distance}: {mosqueSnapshot.center.latitude}, {mosqueSnapshot.center.longitude} · {mosqueSnapshot.radiusMeters / 1000} km</p>
+  <h2 class="mt-5">{t.mosques} · {mosqueSnapshot.entries.length}</h2>
+  <ol class="p-0 list-none divide-y divide-[var(--divider)]">
+    {mosqueSnapshot.entries.map(entry => <li class="py-4 min-h-11"><span class="font-medium" lang={entry.name ? 'id' : locale}>{entry.name ?? t.mosqueUnnamed}</span><br/><span class="text-sm text-muted-foreground">{t.distance}: {new Intl.NumberFormat(locale, { maximumFractionDigits: 2 }).format(entry.distanceKm)} km</span> <span class="text-xs text-muted-foreground">OSM {entry.id}</span></li>)}
+  </ol>
+  <p class="availability">{t.attribution} <a href="https://www.openstreetmap.org/copyright" rel="license">openstreetmap.org/copyright</a></p>
+</BaseLayout>

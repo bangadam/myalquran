@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/SearchPage-B7YUcBL_.js",
+      "sha256": "e4c2a9800856157808d72c6897cfcf43542fb96ebd5a02dd225624e5381236a4",
+      "binding": "f",
+      "range": {
+        "start": 156,
+        "end": 1081,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "id": "sabar",
+      "label": "Sabar",
+      "labelId": "Kesabaran",
+      "keywords": [
+        "sabar",
+        "bersabar",
+        "kesabaran"
+      ]
+    },
+    {
+      "id": "sholat",
+      "label": "Sholat",
+      "labelId": "Sholat",
+      "keywords": [
+        "shalat",
+        "sholat",
+        "sembahyang",
+        "ruku",
+        "sujud"
+      ]
+    },
+    {
+      "id": "taubat",
+      "label": "Taubat",
+      "labelId": "Bertaubat",
+      "keywords": [
+        "taubat",
+        "ampun",
+        "istighfar",
+        "dosa"
+      ]
+    },
+    {
+      "id": "rezeki",
+      "label": "Rezeki",
+      "labelId": "Rezeki",
+      "keywords": [
+        "rezeki",
+        "rizki",
+        "kekayaan",
+        "harta"
+      ]
+    },
+    {
+      "id": "akhirat",
+      "label": "Akhirat",
+      "labelId": "Hari Akhir",
+      "keywords": [
+        "akhirat",
+        "kiamat",
+        "surga",
+        "neraka"
+      ]
+    },
+    {
+      "id": "syukur",
+      "label": "Syukur",
+      "labelId": "Bersyukur",
+      "keywords": [
+        "syukur",
+        "bersyukur",
+        "nikmat"
+      ]
+    },
+    {
+      "id": "ikhlas",
+      "label": "Ikhlas",
+      "labelId": "Keikhlasan",
+      "keywords": [
+        "ikhlas",
+        "tulus",
+        "riya"
+      ]
+    },
+    {
+      "id": "taqwa",
+      "label": "Taqwa",
+      "labelId": "Ketakwaan",
+      "keywords": [
+        "taqwa",
+        "takwa",
+        "bertakwa"
+      ]
+    },
+    {
+      "id": "sedekah",
+      "label": "Sedekah",
+      "labelId": "Sedekah/Infaq",
+      "keywords": [
+        "sedekah",
+        "infaq",
+        "zakat",
+        "derma"
+      ]
+    },
+    {
+      "id": "doa",
+      "label": "Doa",
+      "labelId": "Berdoa",
+      "keywords": [
+        "doa",
+        "berdoa",
+        "memohon",
+        "minta"
+      ]
+    }
+  ]
+}

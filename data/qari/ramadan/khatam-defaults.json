@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/index-eBmjwcpA.js",
+      "sha256": "6393b49d9484f06f3d560c5e38408443bf48f4dd43e083a34bf56f2e444e74ed",
+      "binding": "um",
+      "range": {
+        "start": 224403,
+        "end": 224506,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": {
+    "targetKhatam": 1,
+    "currentPage": 0,
+    "totalPages": 604,
+    "targetPerDay": 4,
+    "lastReadDate": null,
+    "streak": 0,
+    "longestStreak": 0
+  }
+}

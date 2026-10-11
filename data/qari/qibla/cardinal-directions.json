@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/QiblaPage-FvCyQS4k.js",
+      "sha256": "6e558144195f8715d13d2ef35d9b914a76907698ab00b93982f9105f0f6fefc2",
+      "binding": "g",
+      "range": {
+        "start": 1261,
+        "end": 1485,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "angle": 0,
+      "label": "U",
+      "fullLabel": "UTARA",
+      "color": "#ef4444"
+    },
+    {
+      "angle": 90,
+      "label": "T",
+      "fullLabel": "TIMUR",
+      "color": "#6b7280"
+    },
+    {
+      "angle": 180,
+      "label": "S",
+      "fullLabel": "SELATAN",
+      "color": "#6b7280"
+    },
+    {
+      "angle": 270,
+      "label": "B",
+      "fullLabel": "BARAT",
+      "color": "#6b7280"
+    }
+  ]
+}

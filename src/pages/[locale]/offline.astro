@@ -9,9 +9,8 @@ export function getStaticPaths() { return locales.map(locale => ({ params: { loc
 const locale = Astro.params.locale as Locale;
 const t = labels(locale);
 ---
-<BaseLayout title={t.offlineTitle} locale={locale} section="offline">
+<BaseLayout title={t.offlineTitle} barTitle={interfaceLabels[locale].downloads} locale={locale} section="offline">
   <header class="border-b border-[var(--divider)] pb-5 mb-6">
-    <h1>{interfaceLabels[locale].downloads}</h1>
     <p class="metadata mb-0" lang={locale}>{localeNames[locale]}</p>
   </header>
 

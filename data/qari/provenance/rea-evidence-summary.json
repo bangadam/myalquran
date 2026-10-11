@@ -1,0 +1,2432 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [],
+  "notes": [
+    "Ringkasan turunan evidence REA; bukan bundle REA lengkap yang dapat diimpor. DOM/teks ayat duplikat, font, vendor JS, dan nilai storage tidak disimpan."
+  ],
+  "data": [
+    {
+      "evidenceId": "ev_06935458f0b598ada653e3570d2589493d65f2799d7209ea837068aeff7b0490",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some network requests had not completed when capture ended; later activity is unknown.",
+        "Browser host platform and architecture were not observed."
+      ],
+      "completeness": {
+        "equality_eligible": false,
+        "missing_sections": [
+          "events"
+        ],
+        "status": "incomplete",
+        "truncated_sections": []
+      },
+      "steps": [
+        {
+          "stepId": "scenario_start",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Memuat...\" [level=3]",
+            "- heading \"Pintasan Ibadah\" [level=3]",
+            "- heading \"Daftar Surat Al-Quran\" [level=2]"
+          ]
+        },
+        {
+          "stepId": "open-prayer",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/prayer"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-prayer",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/prayer"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Jadwal Sholat\" [level=1]",
+            "- heading \"Ashar\" [level=2]",
+            "- heading \"Garis Waktu Hari Ini\" [level=3]",
+            "- heading \"Jadwal Hari Ini\" [level=2]",
+            "- heading \"Metode Perhitungan\" [level=2]",
+            "- heading \"Pengaturan Notifikasi\" [level=2]"
+          ]
+        },
+        {
+          "stepId": "open-qibla",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/qibla"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-qibla",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/qibla"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Arah Kiblat\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "open-mosque",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/mosque"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-mosque",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/mosque"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]"
+          ]
+        }
+      ],
+      "requests": [
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726747?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726747?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726749?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726749?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726750?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726751?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "evidenceId": "ev_4f241f815715bde2bbb6845d0b20fe8bfffc13efc49f32d182f8df3707b24370",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ],
+      "completeness": {
+        "equality_eligible": true,
+        "missing_sections": [],
+        "status": "complete",
+        "truncated_sections": []
+      },
+      "steps": [
+        {
+          "stepId": "scenario_start",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Memuat...\" [level=3]",
+            "- heading \"Pintasan Ibadah\" [level=3]",
+            "- heading \"Daftar Surat Al-Quran\" [level=2]"
+          ]
+        },
+        {
+          "stepId": "open-bookmarks",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/bookmarks"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-bookmarks",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/bookmarks"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Ayat Tersimpan\" [level=1]",
+            "- heading \"Belum ada bookmark\" [level=3]"
+          ]
+        },
+        {
+          "stepId": "open-history",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/history"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-history",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/history"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Riwayat Bacaan\" [level=1]",
+            "- heading \"Belum ada riwayat\" [level=3]"
+          ]
+        },
+        {
+          "stepId": "open-settings",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/settings"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-settings",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/settings"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Pengaturan\" [level=1]",
+            "- heading \"Tampilan\" [level=2]",
+            "- heading \"Audio & Murottal\" [level=2]",
+            "- heading \"Fitur Musiman & Pengujian\" [level=2]",
+            "- heading \"Statistik\" [level=2]",
+            "- heading \"Aplikasi & Akses Offline (PWA)\" [level=2]",
+            "- heading \"Perangkat\" [level=2]",
+            "- heading \"Penyimpanan, Cadangan & Cache\" [level=2]",
+            "- heading \"Tentang\" [level=2]"
+          ]
+        }
+      ],
+      "requests": [
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726759?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726760?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726760?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726760?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726762?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726762?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "evidenceId": "ev_6f42559595e0d0d7e11dfec7a283e50442fb87570ccc1bcec0a5166b3073b542",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ],
+      "completeness": {
+        "equality_eligible": true,
+        "missing_sections": [],
+        "status": "complete",
+        "truncated_sections": []
+      },
+      "steps": [
+        {
+          "stepId": "scenario_start",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Memuat...\" [level=3]",
+            "- heading \"Pintasan Ibadah\" [level=3]",
+            "- heading \"Daftar Surat Al-Quran\" [level=2]"
+          ]
+        },
+        {
+          "stepId": "open-tajweed",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/tajweed"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-tajweed",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/tajweed"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Panduan Tajweed\" [level=1]",
+            "- heading \"Warna Tajweed\" [level=2]",
+            "- heading \"Referensi Cepat Warna\" [level=3]",
+            "- heading \"14 Hukum Tajweed\" [level=3]",
+            "- heading \"Hamzah Wasl\" [level=3]",
+            "- heading \"Idgham Syamsiyah\" [level=3]",
+            "- heading \"Ghunnah (Dengung)\" [level=3]",
+            "- heading \"Ikhfa\" [level=3]",
+            "- heading \"Madd (Panjang)\" [level=3]",
+            "- heading \"Qalqalah\" [level=3]",
+            "- heading \"Iqlab\" [level=3]",
+            "- heading \"Idgham\" [level=3]",
+            "- heading \"Ikhfa Syafawi\" [level=3]",
+            "- heading \"Saktah (Berhenti Sejenak)\" [level=3]",
+            "- heading \"Idgham Mutamatsilain\" [level=3]",
+            "- heading \"Idgham Mutaqaribain\" [level=3]",
+            "- heading \"Idgham Mutajanisain\" [level=3]",
+            "- heading \"Izhar (Jelas)\" [level=3]"
+          ]
+        },
+        {
+          "stepId": "open-tasbih",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/tasbih"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-tasbih",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/tasbih"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Tasbih Digital\" [level=1]",
+            "- heading \"Koleksi Bacaan Dzikir\" [level=2]"
+          ]
+        },
+        {
+          "stepId": "open-calendar",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/calendar"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-calendar",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/calendar"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Kalender Hijriyah\" [level=1]",
+            "- heading \"Rabi al-Thani 1448 H\" [level=2]"
+          ]
+        }
+      ],
+      "requests": [
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726741?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726742?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726743?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726743?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726744?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/hToGCalendar/4/1448",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726744?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "evidenceId": "ev_71227ed1566c85aa2ac9dd65fda7d7b7eaf69ef05d8b178e07cab318d8202cdb",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ],
+      "completeness": {
+        "equality_eligible": true,
+        "missing_sections": [],
+        "status": "complete",
+        "truncated_sections": []
+      },
+      "steps": [
+        {
+          "stepId": "scenario_start",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Memuat...\" [level=3]",
+            "- heading \"Pintasan Ibadah\" [level=3]",
+            "- heading \"Daftar Surat Al-Quran\" [level=2]"
+          ]
+        },
+        {
+          "stepId": "open-juz",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/juz"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Memuat...\" [level=3]",
+            "- heading \"Pintasan Ibadah\" [level=3]",
+            "- heading \"Daftar Surat Al-Quran\" [level=2]"
+          ]
+        },
+        {
+          "stepId": "inspect-juz",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/juz"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Ashar\" [level=3]",
+            "- heading \"Pintasan Ibadah\" [level=3]",
+            "- heading \"Daftar Surat Al-Quran\" [level=2]",
+            "- heading \"Al-Faatiha\" [level=3]",
+            "- heading \"Al-Baqara\" [level=3]",
+            "- heading \"Aal-i-Imraan\" [level=3]",
+            "- heading \"An-Nisaa\" [level=3]",
+            "- heading \"Al-Maaida\" [level=3]",
+            "- heading \"Al-An'aam\" [level=3]",
+            "- heading \"Al-A'raaf\" [level=3]",
+            "- heading \"Al-Anfaal\" [level=3]",
+            "- heading \"At-Tawba\" [level=3]",
+            "- heading \"Yunus\" [level=3]",
+            "- heading \"Hud\" [level=3]",
+            "- heading \"Yusuf\" [level=3]",
+            "- heading \"Ar-Ra'd\" [level=3]",
+            "- heading \"Ibrahim\" [level=3]",
+            "- heading \"Al-Hijr\" [level=3]",
+            "- heading \"An-Nahl\" [level=3]",
+            "- heading \"Al-Israa\" [level=3]",
+            "- heading \"Al-Kahf\" [level=3]",
+            "- heading \"Maryam\" [level=3]",
+            "- heading \"Taa-Haa\" [level=3]",
+            "- heading \"Al-Anbiyaa\" [level=3]",
+            "- heading \"Al-Hajj\" [level=3]",
+            "- heading \"Al-Muminoon\" [level=3]",
+            "- heading \"An-Noor\" [level=3]",
+            "- heading \"Al-Furqaan\" [level=3]",
+            "- heading \"Ash-Shu'araa\" [level=3]",
+            "- heading \"An-Naml\" [level=3]",
+            "- heading \"Al-Qasas\" [level=3]",
+            "- heading \"Al-Ankaboot\" [level=3]",
+            "- heading \"Ar-Room\" [level=3]",
+            "- heading \"Luqman\" [level=3]",
+            "- heading \"As-Sajda\" [level=3]",
+            "- heading \"Al-Ahzaab\" [level=3]",
+            "- heading \"Saba\" [level=3]",
+            "- heading \"Faatir\" [level=3]",
+            "- heading \"Yaseen\" [level=3]",
+            "- heading \"As-Saaffaat\" [level=3]",
+            "- heading \"Saad\" [level=3]",
+            "- heading \"Az-Zumar\" [level=3]",
+            "- heading \"Ghafir\" [level=3]",
+            "- heading \"Fussilat\" [level=3]",
+            "- heading \"Ash-Shura\" [level=3]",
+            "- heading \"Az-Zukhruf\" [level=3]",
+            "- heading \"Ad-Dukhaan\" [level=3]",
+            "- heading \"Al-Jaathiya\" [level=3]",
+            "- heading \"Al-Ahqaf\" [level=3]",
+            "- heading \"Muhammad\" [level=3]",
+            "- heading \"Al-Fath\" [level=3]",
+            "- heading \"Al-Hujuraat\" [level=3]",
+            "- heading \"Qaaf\" [level=3]",
+            "- heading \"Adh-Dhaariyat\" [level=3]",
+            "- heading \"At-Tur\" [level=3]",
+            "- heading \"An-Najm\" [level=3]",
+            "- heading \"Al-Qamar\" [level=3]",
+            "- heading \"Ar-Rahmaan\" [level=3]",
+            "- heading \"Al-Waaqia\" [level=3]",
+            "- heading \"Al-Hadid\" [level=3]",
+            "- heading \"Al-Mujaadila\" [level=3]",
+            "- heading \"Al-Hashr\" [level=3]",
+            "- heading \"Al-Mumtahana\" [level=3]",
+            "- heading \"As-Saff\" [level=3]",
+            "- heading \"Al-Jumu'a\" [level=3]",
+            "- heading \"Al-Munaafiqoon\" [level=3]",
+            "- heading \"At-Taghaabun\" [level=3]",
+            "- heading \"At-Talaaq\" [level=3]",
+            "- heading \"At-Tahrim\" [level=3]",
+            "- heading \"Al-Mulk\" [level=3]",
+            "- heading \"Al-Qalam\" [level=3]",
+            "- heading \"Al-Haaqqa\" [level=3]",
+            "- heading \"Al-Ma'aarij\" [level=3]",
+            "- heading \"Nooh\" [level=3]",
+            "- heading \"Al-Jinn\" [level=3]",
+            "- heading \"Al-Muzzammil\" [level=3]",
+            "- heading \"Al-Muddaththir\" [level=3]",
+            "- heading \"Al-Qiyaama\" [level=3]",
+            "- heading \"Al-Insaan\" [level=3]",
+            "- heading \"Al-Mursalaat\" [level=3]",
+            "- heading \"An-Naba\" [level=3]",
+            "- heading \"An-Naazi'aat\" [level=3]",
+            "- heading \"Abasa\" [level=3]",
+            "- heading \"At-Takwir\" [level=3]",
+            "- heading \"Al-Infitaar\" [level=3]",
+            "- heading \"Al-Mutaffifin\" [level=3]",
+            "- heading \"Al-Inshiqaaq\" [level=3]",
+            "- heading \"Al-Burooj\" [level=3]",
+            "- heading \"At-Taariq\" [level=3]",
+            "- heading \"Al-A'laa\" [level=3]",
+            "- heading \"Al-Ghaashiya\" [level=3]",
+            "- heading \"Al-Fajr\" [level=3]",
+            "- heading \"Al-Balad\" [level=3]",
+            "- heading \"Ash-Shams\" [level=3]",
+            "- heading \"Al-Lail\" [level=3]",
+            "- heading \"Ad-Dhuhaa\" [level=3]",
+            "- heading \"Ash-Sharh\" [level=3]",
+            "- heading \"At-Tin\" [level=3]",
+            "- heading \"Al-Alaq\" [level=3]",
+            "- heading \"Al-Qadr\" [level=3]",
+            "- heading \"Al-Bayyina\" [level=3]",
+            "- heading \"Az-Zalzala\" [level=3]",
+            "- heading \"Al-Aadiyaat\" [level=3]",
+            "- heading \"Al-Qaari'a\" [level=3]",
+            "- heading \"At-Takaathur\" [level=3]",
+            "- heading \"Al-Asr\" [level=3]",
+            "- heading \"Al-Humaza\" [level=3]",
+            "- heading \"Al-Fil\" [level=3]",
+            "- heading \"Quraish\" [level=3]",
+            "- heading \"Al-Maa'un\" [level=3]",
+            "- heading \"Al-Kawthar\" [level=3]",
+            "- heading \"Al-Kaafiroon\" [level=3]",
+            "- heading \"An-Nasr\" [level=3]",
+            "- heading \"Al-Masad\" [level=3]",
+            "- heading \"Al-Ikhlaas\" [level=3]",
+            "- heading \"Al-Falaq\" [level=3]",
+            "- heading \"An-Naas\" [level=3]"
+          ]
+        }
+      ],
+      "requests": [
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726764?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726765?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "evidenceId": "ev_a634372ff1f4759b3b08303e7bd7e8686ad72f582038fc35d7517bf14aeb2dbb",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some network requests had not completed when capture ended; later activity is unknown.",
+        "Browser host platform and architecture were not observed."
+      ],
+      "completeness": {
+        "equality_eligible": false,
+        "missing_sections": [
+          "events"
+        ],
+        "status": "incomplete",
+        "truncated_sections": []
+      },
+      "steps": [
+        {
+          "stepId": "scenario_start",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Memuat...\" [level=3]",
+            "- heading \"Pintasan Ibadah\" [level=3]",
+            "- heading \"Daftar Surat Al-Quran\" [level=2]"
+          ]
+        },
+        {
+          "stepId": "open-tajweed",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/tajweed"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-tajweed",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/tajweed"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Panduan Tajweed\" [level=1]",
+            "- heading \"Warna Tajweed\" [level=2]",
+            "- heading \"Referensi Cepat Warna\" [level=3]",
+            "- heading \"14 Hukum Tajweed\" [level=3]",
+            "- heading \"Hamzah Wasl\" [level=3]",
+            "- heading \"Idgham Syamsiyah\" [level=3]",
+            "- heading \"Ghunnah (Dengung)\" [level=3]",
+            "- heading \"Ikhfa\" [level=3]",
+            "- heading \"Madd (Panjang)\" [level=3]",
+            "- heading \"Qalqalah\" [level=3]",
+            "- heading \"Iqlab\" [level=3]",
+            "- heading \"Idgham\" [level=3]",
+            "- heading \"Ikhfa Syafawi\" [level=3]",
+            "- heading \"Saktah (Berhenti Sejenak)\" [level=3]",
+            "- heading \"Idgham Mutamatsilain\" [level=3]",
+            "- heading \"Idgham Mutaqaribain\" [level=3]",
+            "- heading \"Idgham Mutajanisain\" [level=3]",
+            "- heading \"Izhar (Jelas)\" [level=3]"
+          ]
+        },
+        {
+          "stepId": "open-tasbih",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/tasbih"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-tasbih",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/tasbih"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Tasbih Digital\" [level=1]",
+            "- heading \"Koleksi Bacaan Dzikir\" [level=2]"
+          ]
+        },
+        {
+          "stepId": "open-calendar",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/calendar"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-calendar",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/calendar"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Kalender Hijriyah\" [level=1]",
+            "- heading \"Rabi al-Thani 1448 H\" [level=2]"
+          ]
+        },
+        {
+          "stepId": "open-prayer",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/prayer"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-prayer",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/prayer"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Jadwal Sholat\" [level=1]",
+            "- heading \"Ashar\" [level=2]",
+            "- heading \"Garis Waktu Hari Ini\" [level=3]",
+            "- heading \"Jadwal Hari Ini\" [level=2]",
+            "- heading \"Metode Perhitungan\" [level=2]",
+            "- heading \"Pengaturan Notifikasi\" [level=2]"
+          ]
+        },
+        {
+          "stepId": "open-qibla",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/qibla"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-qibla",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/qibla"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Arah Kiblat\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "open-mosque",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/mosque"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-mosque",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/mosque"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "open-ramadan",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/ramadan"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-ramadan",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/ramadan"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Ramadan Specials\" [level=1]",
+            "- heading \"Target Khatam\" [level=3]",
+            "- heading \"Amal Yaumi\" [level=3]"
+          ]
+        },
+        {
+          "stepId": "open-tarteel",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/tarteel"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-tarteel",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/tarteel"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Studio Rekam Tarteel\" [level=1]",
+            "- heading \"Pilih Karakter Akustik (Preset)\" [level=3]",
+            "- heading \"Muzammil Hasballah\" [level=4]",
+            "- heading \"Haramain (Imam Makkah)\" [level=4]",
+            "- heading \"Studio Murottal\" [level=4]",
+            "- heading \"Kubah Masjid (Dome)\" [level=4]",
+            "- heading \"Natural (Suara Asli)\" [level=4]",
+            "- heading \"Koleksi Rekaman Saya\" [level=3]"
+          ]
+        },
+        {
+          "stepId": "open-search",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/search"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-search",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/search"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Cari Ayat\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "open-bookmarks",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/bookmarks"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-bookmarks",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/bookmarks"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Ayat Tersimpan\" [level=1]",
+            "- heading \"Belum ada bookmark\" [level=3]"
+          ]
+        },
+        {
+          "stepId": "open-history",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/history"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-history",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/history"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Riwayat Bacaan\" [level=1]",
+            "- heading \"Belum ada riwayat\" [level=3]"
+          ]
+        },
+        {
+          "stepId": "open-settings",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/settings"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-settings",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/settings"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Pengaturan\" [level=1]",
+            "- heading \"Tampilan\" [level=2]",
+            "- heading \"Audio & Murottal\" [level=2]",
+            "- heading \"Fitur Musiman & Pengujian\" [level=2]",
+            "- heading \"Statistik\" [level=2]",
+            "- heading \"Aplikasi & Akses Offline (PWA)\" [level=2]",
+            "- heading \"Perangkat\" [level=2]",
+            "- heading \"Penyimpanan, Cadangan & Cache\" [level=2]",
+            "- heading \"Tentang\" [level=2]"
+          ]
+        },
+        {
+          "stepId": "open-juz",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/juz"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Memuat...\" [level=3]",
+            "- heading \"Pintasan Ibadah\" [level=3]",
+            "- heading \"Daftar Surat Al-Quran\" [level=2]",
+            "- heading \"Al-Faatiha\" [level=3]",
+            "- heading \"Al-Baqara\" [level=3]",
+            "- heading \"Aal-i-Imraan\" [level=3]",
+            "- heading \"An-Nisaa\" [level=3]",
+            "- heading \"Al-Maaida\" [level=3]",
+            "- heading \"Al-An'aam\" [level=3]",
+            "- heading \"Al-A'raaf\" [level=3]",
+            "- heading \"Al-Anfaal\" [level=3]",
+            "- heading \"At-Tawba\" [level=3]",
+            "- heading \"Yunus\" [level=3]",
+            "- heading \"Hud\" [level=3]",
+            "- heading \"Yusuf\" [level=3]",
+            "- heading \"Ar-Ra'd\" [level=3]",
+            "- heading \"Ibrahim\" [level=3]",
+            "- heading \"Al-Hijr\" [level=3]",
+            "- heading \"An-Nahl\" [level=3]",
+            "- heading \"Al-Israa\" [level=3]",
+            "- heading \"Al-Kahf\" [level=3]",
+            "- heading \"Maryam\" [level=3]",
+            "- heading \"Taa-Haa\" [level=3]",
+            "- heading \"Al-Anbiyaa\" [level=3]",
+            "- heading \"Al-Hajj\" [level=3]",
+            "- heading \"Al-Muminoon\" [level=3]",
+            "- heading \"An-Noor\" [level=3]",
+            "- heading \"Al-Furqaan\" [level=3]",
+            "- heading \"Ash-Shu'araa\" [level=3]",
+            "- heading \"An-Naml\" [level=3]",
+            "- heading \"Al-Qasas\" [level=3]",
+            "- heading \"Al-Ankaboot\" [level=3]",
+            "- heading \"Ar-Room\" [level=3]",
+            "- heading \"Luqman\" [level=3]",
+            "- heading \"As-Sajda\" [level=3]",
+            "- heading \"Al-Ahzaab\" [level=3]",
+            "- heading \"Saba\" [level=3]",
+            "- heading \"Faatir\" [level=3]",
+            "- heading \"Yaseen\" [level=3]",
+            "- heading \"As-Saaffaat\" [level=3]",
+            "- heading \"Saad\" [level=3]",
+            "- heading \"Az-Zumar\" [level=3]",
+            "- heading \"Ghafir\" [level=3]",
+            "- heading \"Fussilat\" [level=3]",
+            "- heading \"Ash-Shura\" [level=3]",
+            "- heading \"Az-Zukhruf\" [level=3]",
+            "- heading \"Ad-Dukhaan\" [level=3]",
+            "- heading \"Al-Jaathiya\" [level=3]",
+            "- heading \"Al-Ahqaf\" [level=3]",
+            "- heading \"Muhammad\" [level=3]",
+            "- heading \"Al-Fath\" [level=3]",
+            "- heading \"Al-Hujuraat\" [level=3]",
+            "- heading \"Qaaf\" [level=3]",
+            "- heading \"Adh-Dhaariyat\" [level=3]",
+            "- heading \"At-Tur\" [level=3]",
+            "- heading \"An-Najm\" [level=3]",
+            "- heading \"Al-Qamar\" [level=3]",
+            "- heading \"Ar-Rahmaan\" [level=3]",
+            "- heading \"Al-Waaqia\" [level=3]",
+            "- heading \"Al-Hadid\" [level=3]",
+            "- heading \"Al-Mujaadila\" [level=3]",
+            "- heading \"Al-Hashr\" [level=3]",
+            "- heading \"Al-Mumtahana\" [level=3]",
+            "- heading \"As-Saff\" [level=3]",
+            "- heading \"Al-Jumu'a\" [level=3]",
+            "- heading \"Al-Munaafiqoon\" [level=3]",
+            "- heading \"At-Taghaabun\" [level=3]",
+            "- heading \"At-Talaaq\" [level=3]",
+            "- heading \"At-Tahrim\" [level=3]",
+            "- heading \"Al-Mulk\" [level=3]",
+            "- heading \"Al-Qalam\" [level=3]",
+            "- heading \"Al-Haaqqa\" [level=3]",
+            "- heading \"Al-Ma'aarij\" [level=3]",
+            "- heading \"Nooh\" [level=3]",
+            "- heading \"Al-Jinn\" [level=3]",
+            "- heading \"Al-Muzzammil\" [level=3]",
+            "- heading \"Al-Muddaththir\" [level=3]",
+            "- heading \"Al-Qiyaama\" [level=3]",
+            "- heading \"Al-Insaan\" [level=3]",
+            "- heading \"Al-Mursalaat\" [level=3]",
+            "- heading \"An-Naba\" [level=3]",
+            "- heading \"An-Naazi'aat\" [level=3]",
+            "- heading \"Abasa\" [level=3]",
+            "- heading \"At-Takwir\" [level=3]",
+            "- heading \"Al-Infitaar\" [level=3]",
+            "- heading \"Al-Mutaffifin\" [level=3]",
+            "- heading \"Al-Inshiqaaq\" [level=3]",
+            "- heading \"Al-Burooj\" [level=3]",
+            "- heading \"At-Taariq\" [level=3]",
+            "- heading \"Al-A'laa\" [level=3]",
+            "- heading \"Al-Ghaashiya\" [level=3]",
+            "- heading \"Al-Fajr\" [level=3]",
+            "- heading \"Al-Balad\" [level=3]",
+            "- heading \"Ash-Shams\" [level=3]",
+            "- heading \"Al-Lail\" [level=3]",
+            "- heading \"Ad-Dhuhaa\" [level=3]",
+            "- heading \"Ash-Sharh\" [level=3]",
+            "- heading \"At-Tin\" [level=3]",
+            "- heading \"Al-Alaq\" [level=3]",
+            "- heading \"Al-Qadr\" [level=3]",
+            "- heading \"Al-Bayyina\" [level=3]",
+            "- heading \"Az-Zalzala\" [level=3]",
+            "- heading \"Al-Aadiyaat\" [level=3]",
+            "- heading \"Al-Qaari'a\" [level=3]",
+            "- heading \"At-Takaathur\" [level=3]",
+            "- heading \"Al-Asr\" [level=3]",
+            "- heading \"Al-Humaza\" [level=3]",
+            "- heading \"Al-Fil\" [level=3]",
+            "- heading \"Quraish\" [level=3]",
+            "- heading \"Al-Maa'un\" [level=3]",
+            "- heading \"Al-Kawthar\" [level=3]",
+            "- heading \"Al-Kaafiroon\" [level=3]",
+            "- heading \"An-Nasr\" [level=3]",
+            "- heading \"Al-Masad\" [level=3]",
+            "- heading \"Al-Ikhlaas\" [level=3]",
+            "- heading \"Al-Falaq\" [level=3]",
+            "- heading \"An-Naas\" [level=3]"
+          ]
+        },
+        {
+          "stepId": "inspect-juz",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/juz"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Ashar\" [level=3]",
+            "- heading \"Pintasan Ibadah\" [level=3]",
+            "- heading \"Daftar Surat Al-Quran\" [level=2]",
+            "- heading \"Al-Faatiha\" [level=3]",
+            "- heading \"Al-Baqara\" [level=3]",
+            "- heading \"Aal-i-Imraan\" [level=3]",
+            "- heading \"An-Nisaa\" [level=3]",
+            "- heading \"Al-Maaida\" [level=3]",
+            "- heading \"Al-An'aam\" [level=3]",
+            "- heading \"Al-A'raaf\" [level=3]",
+            "- heading \"Al-Anfaal\" [level=3]",
+            "- heading \"At-Tawba\" [level=3]",
+            "- heading \"Yunus\" [level=3]",
+            "- heading \"Hud\" [level=3]",
+            "- heading \"Yusuf\" [level=3]",
+            "- heading \"Ar-Ra'd\" [level=3]",
+            "- heading \"Ibrahim\" [level=3]",
+            "- heading \"Al-Hijr\" [level=3]",
+            "- heading \"An-Nahl\" [level=3]",
+            "- heading \"Al-Israa\" [level=3]",
+            "- heading \"Al-Kahf\" [level=3]",
+            "- heading \"Maryam\" [level=3]",
+            "- heading \"Taa-Haa\" [level=3]",
+            "- heading \"Al-Anbiyaa\" [level=3]",
+            "- heading \"Al-Hajj\" [level=3]",
+            "- heading \"Al-Muminoon\" [level=3]",
+            "- heading \"An-Noor\" [level=3]",
+            "- heading \"Al-Furqaan\" [level=3]",
+            "- heading \"Ash-Shu'araa\" [level=3]",
+            "- heading \"An-Naml\" [level=3]",
+            "- heading \"Al-Qasas\" [level=3]",
+            "- heading \"Al-Ankaboot\" [level=3]",
+            "- heading \"Ar-Room\" [level=3]",
+            "- heading \"Luqman\" [level=3]",
+            "- heading \"As-Sajda\" [level=3]",
+            "- heading \"Al-Ahzaab\" [level=3]",
+            "- heading \"Saba\" [level=3]",
+            "- heading \"Faatir\" [level=3]",
+            "- heading \"Yaseen\" [level=3]",
+            "- heading \"As-Saaffaat\" [level=3]",
+            "- heading \"Saad\" [level=3]",
+            "- heading \"Az-Zumar\" [level=3]",
+            "- heading \"Ghafir\" [level=3]",
+            "- heading \"Fussilat\" [level=3]",
+            "- heading \"Ash-Shura\" [level=3]",
+            "- heading \"Az-Zukhruf\" [level=3]",
+            "- heading \"Ad-Dukhaan\" [level=3]",
+            "- heading \"Al-Jaathiya\" [level=3]",
+            "- heading \"Al-Ahqaf\" [level=3]",
+            "- heading \"Muhammad\" [level=3]",
+            "- heading \"Al-Fath\" [level=3]",
+            "- heading \"Al-Hujuraat\" [level=3]",
+            "- heading \"Qaaf\" [level=3]",
+            "- heading \"Adh-Dhaariyat\" [level=3]",
+            "- heading \"At-Tur\" [level=3]",
+            "- heading \"An-Najm\" [level=3]",
+            "- heading \"Al-Qamar\" [level=3]",
+            "- heading \"Ar-Rahmaan\" [level=3]",
+            "- heading \"Al-Waaqia\" [level=3]",
+            "- heading \"Al-Hadid\" [level=3]",
+            "- heading \"Al-Mujaadila\" [level=3]",
+            "- heading \"Al-Hashr\" [level=3]",
+            "- heading \"Al-Mumtahana\" [level=3]",
+            "- heading \"As-Saff\" [level=3]",
+            "- heading \"Al-Jumu'a\" [level=3]",
+            "- heading \"Al-Munaafiqoon\" [level=3]",
+            "- heading \"At-Taghaabun\" [level=3]",
+            "- heading \"At-Talaaq\" [level=3]",
+            "- heading \"At-Tahrim\" [level=3]",
+            "- heading \"Al-Mulk\" [level=3]",
+            "- heading \"Al-Qalam\" [level=3]",
+            "- heading \"Al-Haaqqa\" [level=3]",
+            "- heading \"Al-Ma'aarij\" [level=3]",
+            "- heading \"Nooh\" [level=3]",
+            "- heading \"Al-Jinn\" [level=3]",
+            "- heading \"Al-Muzzammil\" [level=3]",
+            "- heading \"Al-Muddaththir\" [level=3]",
+            "- heading \"Al-Qiyaama\" [level=3]",
+            "- heading \"Al-Insaan\" [level=3]",
+            "- heading \"Al-Mursalaat\" [level=3]",
+            "- heading \"An-Naba\" [level=3]",
+            "- heading \"An-Naazi'aat\" [level=3]",
+            "- heading \"Abasa\" [level=3]",
+            "- heading \"At-Takwir\" [level=3]",
+            "- heading \"Al-Infitaar\" [level=3]",
+            "- heading \"Al-Mutaffifin\" [level=3]",
+            "- heading \"Al-Inshiqaaq\" [level=3]",
+            "- heading \"Al-Burooj\" [level=3]",
+            "- heading \"At-Taariq\" [level=3]",
+            "- heading \"Al-A'laa\" [level=3]",
+            "- heading \"Al-Ghaashiya\" [level=3]",
+            "- heading \"Al-Fajr\" [level=3]",
+            "- heading \"Al-Balad\" [level=3]",
+            "- heading \"Ash-Shams\" [level=3]",
+            "- heading \"Al-Lail\" [level=3]",
+            "- heading \"Ad-Dhuhaa\" [level=3]",
+            "- heading \"Ash-Sharh\" [level=3]",
+            "- heading \"At-Tin\" [level=3]",
+            "- heading \"Al-Alaq\" [level=3]",
+            "- heading \"Al-Qadr\" [level=3]",
+            "- heading \"Al-Bayyina\" [level=3]",
+            "- heading \"Az-Zalzala\" [level=3]",
+            "- heading \"Al-Aadiyaat\" [level=3]",
+            "- heading \"Al-Qaari'a\" [level=3]",
+            "- heading \"At-Takaathur\" [level=3]",
+            "- heading \"Al-Asr\" [level=3]",
+            "- heading \"Al-Humaza\" [level=3]",
+            "- heading \"Al-Fil\" [level=3]",
+            "- heading \"Quraish\" [level=3]",
+            "- heading \"Al-Maa'un\" [level=3]",
+            "- heading \"Al-Kawthar\" [level=3]",
+            "- heading \"Al-Kaafiroon\" [level=3]",
+            "- heading \"An-Nasr\" [level=3]",
+            "- heading \"Al-Masad\" [level=3]",
+            "- heading \"Al-Ikhlaas\" [level=3]",
+            "- heading \"Al-Falaq\" [level=3]",
+            "- heading \"An-Naas\" [level=3]"
+          ]
+        }
+      ],
+      "requests": [
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726624?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726625?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726627?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726627?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/hToGCalendar/4/1448",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726629?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726630?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726632?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726632?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726635?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726635?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726637?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726638?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726640?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726640?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726643?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726643?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah/1/editions/quran-tajweed,ar.alafasy,id.indonesian",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726645?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726646?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726648?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726648?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726651?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726651?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726653?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726654?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726656?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726656?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "evidenceId": "ev_b2675521c6067567af49cd73d1b851cb5427f9692f58fc6695c6ef16b40bb0fd",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ],
+      "completeness": {
+        "equality_eligible": true,
+        "missing_sections": [],
+        "status": "complete",
+        "truncated_sections": []
+      },
+      "steps": [
+        {
+          "stepId": "scenario_start",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Memuat...\" [level=3]",
+            "- heading \"Pintasan Ibadah\" [level=3]",
+            "- heading \"Daftar Surat Al-Quran\" [level=2]"
+          ]
+        },
+        {
+          "stepId": "open-ramadan",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/ramadan"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-ramadan",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/ramadan"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Ramadan Specials\" [level=1]",
+            "- heading \"Target Khatam\" [level=3]",
+            "- heading \"Amal Yaumi\" [level=3]"
+          ]
+        },
+        {
+          "stepId": "open-tarteel",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/tarteel"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-tarteel",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/tarteel"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Studio Rekam Tarteel\" [level=1]",
+            "- heading \"Pilih Karakter Akustik (Preset)\" [level=3]",
+            "- heading \"Muzammil Hasballah\" [level=4]",
+            "- heading \"Haramain (Imam Makkah)\" [level=4]",
+            "- heading \"Studio Murottal\" [level=4]",
+            "- heading \"Kubah Masjid (Dome)\" [level=4]",
+            "- heading \"Natural (Suara Asli)\" [level=4]",
+            "- heading \"Koleksi Rekaman Saya\" [level=3]"
+          ]
+        },
+        {
+          "stepId": "open-search",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/search"
+          },
+          "headings": [
+            "- heading \"Qari\" [level=1]"
+          ]
+        },
+        {
+          "stepId": "inspect-search",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/search"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Cari Ayat\" [level=1]"
+          ]
+        }
+      ],
+      "requests": [
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726753?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726754?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726755?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726755?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah/1/editions/quran-tajweed,ar.alafasy,id.indonesian",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726756?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726757?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "evidenceId": "ev_f282d9f8cd4c26728327031ee749a98988ffa9880a5b75395f79cded7e085319",
+      "operation": "capture_browser_scenario",
+      "authority": "controlled-replay",
+      "confidence": "observed",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Some selected network content was unavailable; per-transaction content states retain the reason.",
+        "Browser host platform and architecture were not observed."
+      ],
+      "completeness": {
+        "equality_eligible": false,
+        "missing_sections": [
+          "events"
+        ],
+        "status": "incomplete",
+        "truncated_sections": []
+      },
+      "steps": [
+        {
+          "stepId": "scenario_start",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/"
+          },
+          "headings": []
+        },
+        {
+          "stepId": "settle-home",
+          "status": "completed",
+          "url": {
+            "origin": "https://qari.solusikoding.com",
+            "query_parameter_names": [],
+            "redacted": false,
+            "url": "https://qari.solusikoding.com/"
+          },
+          "headings": [
+            "- heading \"Pasang Aplikasi Qari\" [level=4]",
+            "- heading \"Qari\" [level=1]",
+            "- heading \"Ashar\" [level=3]",
+            "- heading \"Pintasan Ibadah\" [level=3]",
+            "- heading \"Daftar Surat Al-Quran\" [level=2]",
+            "- heading \"Al-Faatiha\" [level=3]",
+            "- heading \"Al-Baqara\" [level=3]",
+            "- heading \"Aal-i-Imraan\" [level=3]",
+            "- heading \"An-Nisaa\" [level=3]",
+            "- heading \"Al-Maaida\" [level=3]",
+            "- heading \"Al-An'aam\" [level=3]",
+            "- heading \"Al-A'raaf\" [level=3]",
+            "- heading \"Al-Anfaal\" [level=3]",
+            "- heading \"At-Tawba\" [level=3]",
+            "- heading \"Yunus\" [level=3]",
+            "- heading \"Hud\" [level=3]",
+            "- heading \"Yusuf\" [level=3]",
+            "- heading \"Ar-Ra'd\" [level=3]",
+            "- heading \"Ibrahim\" [level=3]",
+            "- heading \"Al-Hijr\" [level=3]",
+            "- heading \"An-Nahl\" [level=3]",
+            "- heading \"Al-Israa\" [level=3]",
+            "- heading \"Al-Kahf\" [level=3]",
+            "- heading \"Maryam\" [level=3]",
+            "- heading \"Taa-Haa\" [level=3]",
+            "- heading \"Al-Anbiyaa\" [level=3]",
+            "- heading \"Al-Hajj\" [level=3]",
+            "- heading \"Al-Muminoon\" [level=3]",
+            "- heading \"An-Noor\" [level=3]",
+            "- heading \"Al-Furqaan\" [level=3]",
+            "- heading \"Ash-Shu'araa\" [level=3]",
+            "- heading \"An-Naml\" [level=3]",
+            "- heading \"Al-Qasas\" [level=3]",
+            "- heading \"Al-Ankaboot\" [level=3]",
+            "- heading \"Ar-Room\" [level=3]",
+            "- heading \"Luqman\" [level=3]",
+            "- heading \"As-Sajda\" [level=3]",
+            "- heading \"Al-Ahzaab\" [level=3]",
+            "- heading \"Saba\" [level=3]",
+            "- heading \"Faatir\" [level=3]",
+            "- heading \"Yaseen\" [level=3]",
+            "- heading \"As-Saaffaat\" [level=3]",
+            "- heading \"Saad\" [level=3]",
+            "- heading \"Az-Zumar\" [level=3]",
+            "- heading \"Ghafir\" [level=3]",
+            "- heading \"Fussilat\" [level=3]",
+            "- heading \"Ash-Shura\" [level=3]",
+            "- heading \"Az-Zukhruf\" [level=3]",
+            "- heading \"Ad-Dukhaan\" [level=3]",
+            "- heading \"Al-Jaathiya\" [level=3]",
+            "- heading \"Al-Ahqaf\" [level=3]",
+            "- heading \"Muhammad\" [level=3]",
+            "- heading \"Al-Fath\" [level=3]",
+            "- heading \"Al-Hujuraat\" [level=3]",
+            "- heading \"Qaaf\" [level=3]",
+            "- heading \"Adh-Dhaariyat\" [level=3]",
+            "- heading \"At-Tur\" [level=3]",
+            "- heading \"An-Najm\" [level=3]",
+            "- heading \"Al-Qamar\" [level=3]",
+            "- heading \"Ar-Rahmaan\" [level=3]",
+            "- heading \"Al-Waaqia\" [level=3]",
+            "- heading \"Al-Hadid\" [level=3]",
+            "- heading \"Al-Mujaadila\" [level=3]",
+            "- heading \"Al-Hashr\" [level=3]",
+            "- heading \"Al-Mumtahana\" [level=3]",
+            "- heading \"As-Saff\" [level=3]",
+            "- heading \"Al-Jumu'a\" [level=3]",
+            "- heading \"Al-Munaafiqoon\" [level=3]",
+            "- heading \"At-Taghaabun\" [level=3]",
+            "- heading \"At-Talaaq\" [level=3]",
+            "- heading \"At-Tahrim\" [level=3]",
+            "- heading \"Al-Mulk\" [level=3]",
+            "- heading \"Al-Qalam\" [level=3]",
+            "- heading \"Al-Haaqqa\" [level=3]",
+            "- heading \"Al-Ma'aarij\" [level=3]",
+            "- heading \"Nooh\" [level=3]",
+            "- heading \"Al-Jinn\" [level=3]",
+            "- heading \"Al-Muzzammil\" [level=3]",
+            "- heading \"Al-Muddaththir\" [level=3]",
+            "- heading \"Al-Qiyaama\" [level=3]",
+            "- heading \"Al-Insaan\" [level=3]",
+            "- heading \"Al-Mursalaat\" [level=3]",
+            "- heading \"An-Naba\" [level=3]",
+            "- heading \"An-Naazi'aat\" [level=3]",
+            "- heading \"Abasa\" [level=3]",
+            "- heading \"At-Takwir\" [level=3]",
+            "- heading \"Al-Infitaar\" [level=3]",
+            "- heading \"Al-Mutaffifin\" [level=3]",
+            "- heading \"Al-Inshiqaaq\" [level=3]",
+            "- heading \"Al-Burooj\" [level=3]",
+            "- heading \"At-Taariq\" [level=3]",
+            "- heading \"Al-A'laa\" [level=3]",
+            "- heading \"Al-Ghaashiya\" [level=3]",
+            "- heading \"Al-Fajr\" [level=3]",
+            "- heading \"Al-Balad\" [level=3]",
+            "- heading \"Ash-Shams\" [level=3]",
+            "- heading \"Al-Lail\" [level=3]",
+            "- heading \"Ad-Dhuhaa\" [level=3]",
+            "- heading \"Ash-Sharh\" [level=3]",
+            "- heading \"At-Tin\" [level=3]",
+            "- heading \"Al-Alaq\" [level=3]",
+            "- heading \"Al-Qadr\" [level=3]",
+            "- heading \"Al-Bayyina\" [level=3]",
+            "- heading \"Az-Zalzala\" [level=3]",
+            "- heading \"Al-Aadiyaat\" [level=3]",
+            "- heading \"Al-Qaari'a\" [level=3]",
+            "- heading \"At-Takaathur\" [level=3]",
+            "- heading \"Al-Asr\" [level=3]",
+            "- heading \"Al-Humaza\" [level=3]",
+            "- heading \"Al-Fil\" [level=3]",
+            "- heading \"Quraish\" [level=3]",
+            "- heading \"Al-Maa'un\" [level=3]",
+            "- heading \"Al-Kawthar\" [level=3]",
+            "- heading \"Al-Kaafiroon\" [level=3]",
+            "- heading \"An-Nasr\" [level=3]",
+            "- heading \"Al-Masad\" [level=3]",
+            "- heading \"Al-Ikhlaas\" [level=3]",
+            "- heading \"Al-Falaq\" [level=3]",
+            "- heading \"An-Naas\" [level=3]"
+          ]
+        }
+      ],
+      "requests": [
+        {
+          "url": "https://api.alquran.cloud/v1/surah",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/1791726392?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 302
+        },
+        {
+          "url": "https://api.aladhan.com/v1/gToH/11-10-2026",
+          "status": 200
+        },
+        {
+          "url": "https://api.aladhan.com/v1/timings/11-10-2026?latitude=-6.2088&longitude=106.8456&method=20",
+          "status": 200
+        }
+      ]
+    }
+  ]
+}

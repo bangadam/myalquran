@@ -1,0 +1,88 @@
+---
+import { labels, surahDirectory, contentAvailability, type Locale } from '../lib/content';
+import { interfaceLabels } from '../lib/interface-labels';
+import { dailyVerseEntries, dailyVerseForDate, selectDailyVerse } from '../lib/daily';
+import ContentAvailability from './ContentAvailability.astro';
+import { BookOpen, Heart, Bookmark, Download, Info, Languages, Settings, Clock3, Bell, CalendarDays, Compass, MapPin, CircleDot, Moon, Sun, ListChecks } from 'lucide-react';
+
+const { locale } = Astro.props as { locale: Locale };
+const t = labels(locale);
+const availability = contentAvailability(locale);
+const ui = interfaceLabels[locale];
+const dailyEntries = dailyVerseEntries.map((_, index) => dailyVerseForDate(new Date(Date.UTC(1970, 0, index + 1)), locale));
+const selected = selectDailyVerse(new Date());
+const initial = dailyEntries[dailyVerseEntries.indexOf(selected)];
+const services = [
+  { label: ui.quranNav, href: `/${locale}/surat/`, icon: BookOpen },
+  { label: ui.tajwid.title, href: `/${locale}/tajwid/`, icon: BookOpen },
+  { label: ui.dailyVerse, href: '#daily-heading', icon: Sun },
+  { label: ui.prayer.schedule, href: `/${locale}/jadwal-shalat/`, icon: Clock3 },
+  { label: ui.prayer.reminders, href: `/${locale}/pengingat/`, icon: Bell },
+  { label: ui.devotional.calendar, href: `/${locale}/kalender/`, icon: CalendarDays },
+  { label: ui.devotional.qibla, href: `/${locale}/kiblat/`, icon: Compass },
+  { label: ui.devotional.mosques, href: `/${locale}/masjid/`, icon: MapPin },
+  { label: ui.devotional.tasbih, href: `/${locale}/tasbih/`, icon: CircleDot },
+  { label: ui.ramadan.title, href: `/${locale}/ramadan/`, icon: Moon },
+  { label: ui.ramadan.checklist, href: `/${locale}/ramadan/#amal-checklist`, icon: ListChecks },
+  { label: ui.prayerService, href: `/${locale}/doa/`, icon: Heart },
+  { label: ui.downloads, href: `/${locale}/offline/`, icon: Download },
+  { label: ui.savedNav, href: `/${locale}/tersimpan/`, icon: Bookmark },
+  { label: ui.aboutService, href: `/${locale}/tentang/`, icon: Info },
+  { label: ui.languageService, href: `/${locale}/bahasa/`, icon: Languages },
+  { label: ui.settings, href: `/${locale}/pengaturan/`, icon: Settings }
+];
+---
+<>
+  <section aria-labelledby="services-heading" class="home-services">
+    <h2 id="services-heading">{ui.services}</h2>
+    <div class="service-grid">{services.map(({ label, href, icon: Icon }) => <a href={href} data-settings-link={href.endsWith('/pengaturan/') ? '' : undefined}>
+      <span class="service-icon"><Icon size={22} aria-hidden="true" /></span><span>{label}</span>
+    </a>)}</div>
+  </section>
+  {(availability.surahs < availability.totalSurahs || availability.commentary < availability.totalSurahs || availability.prayers < availability.totalPrayers) && <aside class="availability"><h2 class="mt-0">{t.availability}</h2><ContentAvailability locale={locale} headingLevel={3} /></aside>}
+  <section aria-labelledby="continue-heading" class="home-resume" data-library data-locale={locale} data-verse-label={t.verse} data-unavailable={t.savedUnavailable} data-surah-catalog={JSON.stringify(surahDirectory(locale).map(s => ({ number: s.number, title: s.latin, count: s.count })))}>
+    <h2 id="continue-heading">{ui.continueReading}</h2>
+    <a data-resume data-resume-label={ui.continueReading} hidden></a>
+    <a class="text-link" href={`/${locale}/surat/`}>{ui.directory} →</a>
+  </section>
+  <section class="home-daily" aria-labelledby="daily-heading" data-daily-entries={JSON.stringify(dailyEntries)} data-daily-locale={locale} data-daily-title={ui.dailyVerse} data-daily-read-surah={t.readSurah}>
+    <h2 id="daily-heading" data-daily-title>{ui.featuredVerse}</h2>
+    <p class="metadata" data-daily-theme lang="id">{initial.theme}</p>
+    <p class="metadata" data-daily-reference>{initial.surahName} {initial.surah}:{initial.ayah}</p>
+    <p class="arabic" lang="ar" dir="rtl" data-daily-arabic>{initial.arabic}</p>
+    <p class="reader-text" lang={locale} data-daily-translation hidden={!initial.translation}>{initial.translation}</p>
+    <p class="intro" data-daily-missing hidden={!!initial.translation}>{t.missingTranslation} {t.arabicOnly}</p>
+    <p class="metadata" data-daily-credit hidden={!initial.translationSource}><span data-daily-credit-text>{initial.translationSource?.title} · v{initial.translationSource?.version} · </span><a class="text-link" data-daily-publisher href={initial.translationSource?.url} lang="en">{initial.translationSource?.publisher}</a></p>
+    <a class="text-link" data-daily-link href={`/${locale}/surat/${initial.surah}/#ayat-${initial.ayah}`}>{t.readSurah} {initial.surahName} →</a>
+  </section>
+  <script>
+    const panel = document.querySelector<HTMLElement>('[data-daily-entries]');
+    if (panel) {
+      const entries = JSON.parse(panel.dataset.dailyEntries ?? '[]') as Array<{ theme: string; surah: number; surahName: string; ayah: number; arabic: string; translation: string | null; translationSource: { title: string; version: string; publisher: string; url: string } | null }>;
+      const now = new Date();
+      const day = Math.floor(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) / 86400000);
+      const entry = entries[((day % entries.length) + entries.length) % entries.length];
+      if (entry) {
+        panel.querySelector<HTMLElement>('[data-daily-title]')!.textContent = panel.dataset.dailyTitle ?? '';
+        panel.querySelector<HTMLElement>('[data-daily-theme]')!.textContent = entry.theme;
+        panel.querySelector<HTMLElement>('[data-daily-reference]')!.textContent = `${entry.surahName} ${entry.surah}:${entry.ayah}`;
+        panel.querySelector<HTMLElement>('[data-daily-arabic]')!.textContent = entry.arabic;
+        const translation = panel.querySelector<HTMLElement>('[data-daily-translation]')!;
+        translation.textContent = entry.translation ?? '';
+        translation.hidden = !entry.translation;
+        panel.querySelector<HTMLElement>('[data-daily-missing]')!.hidden = !!entry.translation;
+        const credit = panel.querySelector<HTMLElement>('[data-daily-credit]')!;
+        credit.hidden = !entry.translationSource;
+        if (entry.translationSource) {
+          credit.querySelector<HTMLElement>('[data-daily-credit-text]')!.textContent = `${entry.translationSource.title} · v${entry.translationSource.version} · `;
+          const publisher = credit.querySelector<HTMLAnchorElement>('[data-daily-publisher]')!;
+          publisher.href = entry.translationSource.url;
+          publisher.textContent = entry.translationSource.publisher;
+        }
+        const link = panel.querySelector<HTMLAnchorElement>('[data-daily-link]')!;
+        link.href = `/${panel.dataset.dailyLocale}/surat/${entry.surah}/#ayat-${entry.ayah}`;
+        link.textContent = `${panel.dataset.dailyReadSurah} ${entry.surahName} →`;
+      }
+    }
+  </script>
+</>

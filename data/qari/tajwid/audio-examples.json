@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/TajweedGuidePage-DYkYuBcm.js",
+      "sha256": "1d2c46c0d2268f94a64b6fdfafca6c5e7c806ab920f3f13c93513f6a8ceecc46",
+      "binding": "E",
+      "range": {
+        "start": 153,
+        "end": 2598,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": {
+    "h": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1.mp3",
+      "ayahRef": "Al-Fatihah 1:1",
+      "textExample": "بِسْمِ ٱللَّهِ - hamzah wasl pada ٱ"
+    },
+    "l": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1.mp3",
+      "ayahRef": "Al-Fatihah 1:1",
+      "textExample": "ٱلرَّحْمَـٰنِ - lam dilebur ke ra"
+    },
+    "n": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1.mp3",
+      "ayahRef": "Al-Fatihah 1:1",
+      "textExample": "ٱلرَّحْمَـٰنِ - ghunnah pada ـٰ"
+    },
+    "g": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/10.mp3",
+      "ayahRef": "Al-Baqarah 2:3",
+      "textExample": "مِمَّا - mim tasydid dengan ghunnah"
+    },
+    "p": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/9.mp3",
+      "ayahRef": "Al-Baqarah 2:2",
+      "textExample": "لِلْمُتَّقِينَ - contoh ikhfa"
+    },
+    "a": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/12.mp3",
+      "ayahRef": "Al-Baqarah 2:5",
+      "textExample": "هُدًى مِّن - tanwin bertemu mim"
+    },
+    "m": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/8.mp3",
+      "ayahRef": "Al-Baqarah 2:1",
+      "textExample": "الٓمٓ - madd pada huruf hijaiyah"
+    },
+    "o": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/11.mp3",
+      "ayahRef": "Al-Baqarah 2:4",
+      "textExample": "وَمَآ أُنزِلَ - madd lazim"
+    },
+    "q": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/11.mp3",
+      "ayahRef": "Al-Baqarah 2:4",
+      "textExample": "مِن قَبْلِكَ - qalqalah pada ب mati"
+    },
+    "u": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/9.mp3",
+      "ayahRef": "Al-Baqarah 2:2",
+      "textExample": "هُدًى لِلْمُتَّقِينَ - iqlab"
+    },
+    "i": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/17.mp3",
+      "ayahRef": "Al-Baqarah 2:10",
+      "textExample": "وَلَهُم عَذَابٌ - idgham"
+    },
+    "f": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/10.mp3",
+      "ayahRef": "Al-Baqarah 2:3",
+      "textExample": "يُنفِقُونَ - ikhfa syafawi"
+    },
+    "s": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3757.mp3",
+      "ayahRef": "Ya-Sin 36:52",
+      "textExample": "مَرْقَدِنَا ۜ هَـٰذَا - saktah"
+    },
+    "w": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/17.mp3",
+      "ayahRef": "Al-Baqarah 2:10",
+      "textExample": "قُلُوبِهِم مَرَضٌ - mim bertemu mim"
+    },
+    "c": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/15.mp3",
+      "ayahRef": "Al-Baqarah 2:8",
+      "textExample": "وَمَا هُم بِمُؤْمِنِينَ - idgham mutaqaribain"
+    },
+    "d": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/240.mp3",
+      "ayahRef": "Al-Baqarah 2:233",
+      "textExample": "قَدْ تَبَيَّنَ - dal bertemu ta"
+    },
+    "b": {
+      "url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2162.mp3",
+      "ayahRef": "Al-Kahf 18:22",
+      "textExample": "قُل رَّبِّى أَعْلَمُ - izhar halqi"
+    }
+  }
+}

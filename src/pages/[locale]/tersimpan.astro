@@ -7,8 +7,7 @@ const locale = Astro.params.locale as Locale;
 const t = labels(locale), ui = interfaceLabels[locale];
 ---
 <BaseLayout title={t.saved} locale={locale}>
-  <a class="back-link" href={`/${locale}/`}>← {ui.directory}</a>
-  <h1>{t.saved}</h1><p class="intro">{ui.stored}</p>
+  <p class="intro">{ui.stored}</p>
   <section data-library data-locale={locale} data-verse-label={t.verse} data-unavailable={t.savedUnavailable} data-remove-label={t.removeVerse} data-open-label={ui.openVerse} data-surah-catalog={JSON.stringify(surahDirectory(locale).map(s => ({ number: s.number, title: s.latin, count: s.count })))}>
     <p data-saved-empty role="status">{t.savedEmpty}</p>
     <ol data-saved-list class="saved-list"></ol>

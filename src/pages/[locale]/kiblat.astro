@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { locales, type Locale } from '../../lib/content';
+import { mosqueSnapshot, qiblaBearing, qiblaDefinition } from '../../lib/devotional';
+import { interfaceLabels } from '../../lib/interface-labels';
+
+export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
+const locale = Astro.params.locale as Locale;
+const t = interfaceLabels[locale].devotional;
+const center = mosqueSnapshot.center;
+const bearing = qiblaBearing(center.latitude, center.longitude)!;
+---
+<BaseLayout title={t.qibla} locale={locale}>
+  <header class="border-b border-[var(--divider)] pb-5"><p class="text-muted-foreground">{t.qiblaIntro}</p></header>
+  <section data-qibla data-kaaba-lat={qiblaDefinition.kaaba.latitude} data-kaaba-lon={qiblaDefinition.kaaba.longitude} data-tolerance={qiblaDefinition.alignmentToleranceDegrees} data-invalid={t.coordinatesInvalid} data-location-denied={t.locationDenied} data-location-unsupported={t.locationUnsupported} data-sensor-unsupported={t.sensorUnsupported} data-sensor-denied={t.sensorDenied} data-sensor-waiting={t.sensorWaiting} data-aligned={t.aligned} data-not-aligned={t.notAligned} data-sensor-heading={t.sensorHeading} class="space-y-4">
+    <p class="availability">{t.defaultLocation}</p>
+    <form data-coordinate-form class="grid gap-3">
+      <label class="grid gap-1">{t.latitude}<input name="latitude" required type="number" step="any" min="-90" max="90" value={center.latitude} class="min-h-11 rounded-md border border-input bg-background px-3" /></label>
+      <label class="grid gap-1">{t.longitude}<input name="longitude" required type="number" step="any" min="-180" max="180" value={center.longitude} class="min-h-11 rounded-md border border-input bg-background px-3" /></label>
+      <button type="submit" class="min-h-11 rounded-md bg-primary px-4 text-primary-foreground">{t.calculate}</button>
+    </form>
+    <p class="text-sm text-muted-foreground" data-selected-location>{t.latitude}: {center.latitude} · {t.longitude}: {center.longitude}</p>
+    <p role="status" aria-live="polite" data-qibla-status></p>
+    <figure class="rounded-lg bg-secondary p-4 text-center">
+      <svg data-compass viewBox="0 0 240 240" width="240" height="240" class="max-w-full mx-auto text-primary" role="img" aria-label={`${t.bearing}: ${bearing.toFixed(1)} ${t.degrees}`}>
+        <circle cx="120" cy="120" r="88" fill="none" stroke="currentColor" stroke-width="2" />
+        <text x="120" y="19" text-anchor="middle" fill="currentColor" font-size="15">{t.north.slice(0, 1)}</text><text x="120" y="235" text-anchor="middle" fill="currentColor" font-size="15">{t.south.slice(0, 1)}</text>
+        <text x="225" y="125" text-anchor="middle" fill="currentColor" font-size="15">{t.east.slice(0, 1)}</text><text x="15" y="125" text-anchor="middle" fill="currentColor" font-size="15">{t.west.slice(0, 1)}</text>
+        <g data-needle transform={`rotate(${bearing} 120 120)`}><path d="M120 34 L133 139 L120 127 L107 139 Z" fill="currentColor"/><circle cx="120" cy="120" r="5" fill="var(--background)"/></g>
+      </svg>
+      <figcaption class="font-semibold tabular-nums">{t.bearing}: <output data-bearing>{bearing.toFixed(1)}</output>° ({t.north})</figcaption>
+    </figure>
+    <div data-permissions hidden class="grid gap-2">
+      <button type="button" data-use-location class="min-h-11 rounded-md border border-input px-4">{t.useLocation}</button>
+      <button type="button" data-use-sensor class="min-h-11 rounded-md border border-input px-4">{t.useSensor}</button>
+    </div>
+    <p class="text-sm text-muted-foreground">{t.sensorCaution}</p>
+  </section>
+</BaseLayout>
+<script>
+  const root = document.querySelector<HTMLElement>('[data-qibla]');
+  if (root) {
+    const form = root.querySelector<HTMLFormElement>('[data-coordinate-form]')!;
+    const status = root.querySelector<HTMLElement>('[data-qibla-status]')!;
+    const svg = root.querySelector<SVGSVGElement>('[data-compass]')!;
+    const kaabaLat = Number(root.dataset.kaabaLat) * Math.PI / 180;
+    const kaabaLon = Number(root.dataset.kaabaLon);
+    let bearing = Number(root.querySelector<HTMLOutputElement>('[data-bearing]')!.value);
+    const calculate = () => {
+      const lat = Number((form.elements.namedItem('latitude') as HTMLInputElement).value);
+      const lon = Number((form.elements.namedItem('longitude') as HTMLInputElement).value);
+      if (!Number.isFinite(lat) || !Number.isFinite(lon) || Math.abs(lat) > 90 || Math.abs(lon) > 180 || (lat === Number(root.dataset.kaabaLat) && lon === kaabaLon)) { status.textContent = root.dataset.invalid ?? ''; return; }
+      const phi = lat * Math.PI / 180, delta = (kaabaLon - lon) * Math.PI / 180;
+      bearing = (Math.atan2(Math.sin(delta), Math.cos(phi) * Math.tan(kaabaLat) - Math.sin(phi) * Math.cos(delta)) * 180 / Math.PI + 360) % 360;
+      root.querySelector<HTMLOutputElement>('[data-bearing]')!.value = bearing.toFixed(1);
+      root.querySelector<SVGGElement>('[data-needle]')!.setAttribute('transform', `rotate(${bearing} 120 120)`);
+      svg.setAttribute('aria-label', `${root.querySelector('figcaption')?.textContent?.split(':')[0]}: ${bearing.toFixed(1)}°`);
+      root.querySelector<HTMLElement>('[data-selected-location]')!.textContent = `${(form.elements.namedItem('latitude') as HTMLInputElement).labels?.[0]?.textContent}: ${lat} · ${(form.elements.namedItem('longitude') as HTMLInputElement).labels?.[0]?.textContent}: ${lon}`;
+      status.textContent = '';
+    };
+    form.addEventListener('submit', event => { event.preventDefault(); calculate(); });
+    root.querySelector<HTMLElement>('[data-permissions]')!.hidden = false;
+    root.querySelector('[data-use-location]')?.addEventListener('click', () => {
+      if (!navigator.geolocation) { status.textContent = root.dataset.locationUnsupported ?? ''; return; }
+      navigator.geolocation.getCurrentPosition(position => {
+        (form.elements.namedItem('latitude') as HTMLInputElement).value = String(position.coords.latitude);
+        (form.elements.namedItem('longitude') as HTMLInputElement).value = String(position.coords.longitude);
+        calculate();
+      }, () => { status.textContent = root.dataset.locationDenied ?? ''; }, { timeout: 10000, maximumAge: 0 });
+    });
+    root.querySelector('[data-use-sensor]')?.addEventListener('click', async () => {
+      if (!('DeviceOrientationEvent' in window)) { status.textContent = root.dataset.sensorUnsupported ?? ''; return; }
+      const orientation = DeviceOrientationEvent as typeof DeviceOrientationEvent & { requestPermission?: () => Promise<'granted' | 'denied'> };
+      try {
+        if (orientation.requestPermission && await orientation.requestPermission() !== 'granted') { status.textContent = root.dataset.sensorDenied ?? ''; return; }
+        status.textContent = root.dataset.sensorWaiting ?? '';
+        window.addEventListener('deviceorientation', event => {
+          const ios = event as DeviceOrientationEvent & { webkitCompassHeading?: number };
+          const heading = ios.webkitCompassHeading ?? (event.absolute && event.alpha !== null ? 360 - event.alpha : null);
+          if (heading === null || !Number.isFinite(heading)) { status.textContent = root.dataset.sensorUnsupported ?? ''; return; }
+          const difference = Math.abs(((heading - bearing + 540) % 360) - 180);
+          status.textContent = `${root.dataset.sensorHeading}: ${heading.toFixed(1)}° · ${difference <= Number(root.dataset.tolerance) ? root.dataset.aligned : root.dataset.notAligned}`;
+        }, { passive: true });
+      } catch { status.textContent = root.dataset.sensorDenied ?? ''; }
+    });
+  }
+</script>

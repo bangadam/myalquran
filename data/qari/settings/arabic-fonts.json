@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/SettingsPage-Sw0YBdqT.js",
+      "sha256": "f34cb07f88c1d7b6f6fe822c7acd4a357259e98104637aff0e435f2128840905",
+      "binding": null,
+      "range": {
+        "start": 7647,
+        "end": 7848,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "id": "scheherazade",
+      "name": "Scheherazade",
+      "desc": "Klasik",
+      "cls": "font-scheherazade"
+    },
+    {
+      "id": "noto",
+      "name": "Noto Naskh",
+      "desc": "Modern",
+      "cls": "font-noto"
+    },
+    {
+      "id": "amiri",
+      "name": "Amiri",
+      "desc": "Tradisional",
+      "cls": "font-amiri"
+    }
+  ]
+}

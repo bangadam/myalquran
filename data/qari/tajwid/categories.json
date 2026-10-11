@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/TajweedGuidePage-DYkYuBcm.js",
+      "sha256": "1d2c46c0d2268f94a64b6fdfafca6c5e7c806ab920f3f13c93513f6a8ceecc46",
+      "binding": "d",
+      "range": {
+        "start": 7028,
+        "end": 7230,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "id": "all",
+      "label": "Semua"
+    },
+    {
+      "id": "nun-tanwin",
+      "label": "Nun & Tanwin"
+    },
+    {
+      "id": "mim",
+      "label": "Mim Mati"
+    },
+    {
+      "id": "madd",
+      "label": "Mad"
+    },
+    {
+      "id": "qalqalah",
+      "label": "Qalqalah"
+    },
+    {
+      "id": "lam",
+      "label": "Lam"
+    },
+    {
+      "id": "other",
+      "label": "Lainnya"
+    }
+  ]
+}

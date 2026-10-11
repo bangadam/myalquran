@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/TarteelStudioPage-BG4z_1-z.js",
+      "sha256": "3394299e454c75bbf69647b941a086f26982aa59ff4db6b6a7587bf25f95287b",
+      "binding": "r",
+      "range": {
+        "start": 4656,
+        "end": 4743,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": [
+    "audio/webm;codecs=opus",
+    "audio/webm",
+    "audio/mp4",
+    "audio/ogg;codecs=opus",
+    "audio/wav"
+  ]
+}

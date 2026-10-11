@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/index-eBmjwcpA.js",
+      "sha256": "6393b49d9484f06f3d560c5e38408443bf48f4dd43e083a34bf56f2e444e74ed",
+      "binding": "Ev",
+      "range": {
+        "start": 200233,
+        "end": 201463,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "id": "ar.alafasy",
+      "name": "Mishary Rashid Alafasy",
+      "nameAr": "مشاري راشد العفاسي"
+    },
+    {
+      "id": "ar.abdulbasitmurattal",
+      "name": "Abdul Basit (Murattal)",
+      "nameAr": "عبد الباسط عبد الصمد",
+      "bitrate": 192
+    },
+    {
+      "id": "ar.abdulsamad",
+      "name": "Abdul Basit (Mujawwad)",
+      "nameAr": "عبد الباسط عبد الصمد - مجود",
+      "bitrate": 64
+    },
+    {
+      "id": "ar.husary",
+      "name": "Mahmoud Khalil Al-Husary",
+      "nameAr": "محمود خليل الحصري"
+    },
+    {
+      "id": "ar.husarymujawwad",
+      "name": "Al-Husary (Mujawwad)",
+      "nameAr": "محمود خليل الحصري - مجود"
+    },
+    {
+      "id": "ar.minshawi",
+      "name": "Mohamed Siddiq El-Minshawi",
+      "nameAr": "محمد صديق المنشاوي"
+    },
+    {
+      "id": "ar.minshawimujawwad",
+      "name": "El-Minshawi (Mujawwad)",
+      "nameAr": "محمد صديق المنشاوي - مجود"
+    },
+    {
+      "id": "ar.shaatree",
+      "name": "Abu Bakr Al-Shatri",
+      "nameAr": "أبو بكر الشاطري"
+    },
+    {
+      "id": "ar.hanirifai",
+      "name": "Hani Ar-Rifai",
+      "nameAr": "هاني الرفاعي"
+    },
+    {
+      "id": "ar.mahermuaiqly",
+      "name": "Maher Al-Muaiqly",
+      "nameAr": "ماهر المعيقلي"
+    },
+    {
+      "id": "ar.hudhaify",
+      "name": "Ali Al-Hudhaify",
+      "nameAr": "علي الحذيفي"
+    },
+    {
+      "id": "ar.ahmedajamy",
+      "name": "Ahmed Al-Ajmi",
+      "nameAr": "أحمد العجمي"
+    },
+    {
+      "id": "ar.abdurrahmaansudais",
+      "name": "Abdurrahman As-Sudais",
+      "nameAr": "عبدالرحمن السديس"
+    },
+    {
+      "id": "ar.saoodshuraym",
+      "name": "Saud Ash-Shuraym",
+      "nameAr": "سعود الشريم"
+    },
+    {
+      "id": "ar.muhammadayyoub",
+      "name": "Muhammad Ayyub",
+      "nameAr": "محمد أيوب"
+    },
+    {
+      "id": "ar.muhammadjibreel",
+      "name": "Muhammad Jibreel",
+      "nameAr": "محمد جبريل"
+    }
+  ]
+}

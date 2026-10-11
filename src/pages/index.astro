@@ -1,12 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { labels, locales, localeNames } from '../lib/content';
-import ContentAvailability from '../components/ContentAvailability.astro';
+import Home from '../components/Home.astro';
 import { interfaceLabels } from '../lib/interface-labels';
-const t = labels('id');
 ---
-<BaseLayout title="MyAlQuran" locale="id">
-  <h1>{t.language}</h1><p class="intro">{interfaceLabels.id.languageHelp}</p>
-  <ul class="prayer-list">{locales.map(locale => <li><a href={`/${locale}/`} lang={locale}>{localeNames[locale]} <span aria-hidden="true">→</span></a></li>)}</ul>
-  <aside class="availability"><h2 class="mt-0">{t.availability}</h2>{locales.map(language => <ContentAvailability locale={language} displayLocale="id" />)}</aside>
+<BaseLayout title={interfaceLabels.id.home} locale="id" section="home">
+  <Home locale="id" />
 </BaseLayout>

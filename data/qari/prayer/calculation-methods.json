@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "sourceSite": "https://qari.solusikoding.com/",
+  "extractedAt": "2026-10-11T13:57:52.593Z",
+  "sources": [
+    {
+      "url": "https://qari.solusikoding.com/assets/index-eBmjwcpA.js",
+      "sha256": "6393b49d9484f06f3d560c5e38408443bf48f4dd43e083a34bf56f2e444e74ed",
+      "binding": "Mv",
+      "range": {
+        "start": 210436,
+        "end": 211014,
+        "unit": "UTF-16 code units, end exclusive"
+      }
+    }
+  ],
+  "notes": [],
+  "data": [
+    {
+      "id": 20,
+      "name": "Kemenag RI",
+      "description": "Kementerian Agama Republik Indonesia"
+    },
+    {
+      "id": 4,
+      "name": "Umm Al-Qura",
+      "description": "Umm Al-Qura University, Makkah"
+    },
+    {
+      "id": 3,
+      "name": "MWL",
+      "description": "Muslim World League"
+    },
+    {
+      "id": 2,
+      "name": "ISNA",
+      "description": "Islamic Society of North America"
+    },
+    {
+      "id": 5,
+      "name": "Egyptian",
+      "description": "Egyptian General Authority of Survey"
+    },
+    {
+      "id": 1,
+      "name": "Karachi",
+      "description": "University of Islamic Sciences, Karachi"
+    },
+    {
+      "id": 7,
+      "name": "Tehran",
+      "description": "Institute of Geophysics, University of Tehran"
+    },
+    {
+      "id": 15,
+      "name": "Muhammadiyah",
+      "description": "Muhammadiyah Majlis Tarjih, Indonesia"
+    }
+  ]
+}
