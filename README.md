@@ -2,7 +2,7 @@
 
 A focused, multilingual Quran reader with translations, tafsir, prayers, devotional tools, personal bookmarks, and offline reading. Built with Astro, React islands, and a local SQLite content archive.
 
-[Open the earlier Cloudflare preview](https://preview.myalquran-4c7.pages.dev) · [GitHub repository](https://github.com/bangadam/myalquran)
+[Open the Cloudflare preview](https://preview.myalquran-4c7.pages.dev) · [GitHub repository](https://github.com/bangadam/myalquran)
 
 **Preview release:** Quran translations and tafsir are available in four languages. The prayer collection is currently available in Indonesian; other locales explicitly disclose this limitation. Content rights and editorial review remain release requirements.
 
